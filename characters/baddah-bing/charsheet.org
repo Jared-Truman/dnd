@@ -1,0 +1,129 @@
+#+TILE: Baddah Boom - Character Sheet
+
+* Constants
+  #+NAME: define-constants-with-src-block
+  #+BEGIN_SRC elisp :var table=stats :colnames yes :results output drawer :cache yes :lang elisp
+    (dnd-output-ability-constants table)
+  #+END_SRC
+
+  #+RESULTS[90dcf18344cfb2df6a08ee7b9b63bbedebdf7fa1]: define-constants-with-src-block
+  :results:
+  #+CONSTANTS: STR=17
+  #+CONSTANTS: DEX=13
+  #+CONSTANTS: CON=14
+  #+CONSTANTS: INT=8
+  #+CONSTANTS: WIS=10
+  #+CONSTANTS: CHA=12
+  #+CONSTANTS: PROF=2
+  :end:
+  
+* Traits
+  | Level | Race  | Subrace    | Class   | Subclass | Age | Alignment    | Size        |
+  |-------+-------+------------+---------+----------+-----+--------------+-------------|
+  |     3 | Gnome | Rock Gnome | Fighter | Brute    |  20 | Chaotic Good | Small (3ft) |
+
+* Stats  
+  | Speed | Hit Points | AC | Death Saves | Inspiration |
+  |-------+------------+----+-------------+-------------|
+  | 25 ft | 31/31      | 18 |             |             |
+
+* Abilities and Skills
+  #+name: stats
+  | Ability | Score | Mod | PB | Roll      | Skill           |
+  |---------+-------+-----+----+-----------+-----------------|
+  | STR     |    17 |   3 | X  | 1d20 + 5  | Saving Throw    |
+  |         |       |     |    | 1d20 + 3  | Athletics       |
+  |---------+-------+-----+----+-----------+-----------------|
+  | DEX     |    13 |   1 |    | 1d20 + 1  | Saving Throw    |
+  |         |       |     |    | 1d20 + 1  | Acrobatics      |
+  |         |       |     | X  | 1d20 + 3  | Sleight of Hand |
+  |         |       |     |    | 1d20 + 1  | Stealth         |
+  |---------+-------+-----+----+-----------+-----------------|
+  | CON     |    14 |   2 | X  | 1d20 + 4  | Saving Throw    |
+  |---------+-------+-----+----+-----------+-----------------|
+  | INT     |     8 |  -1 |    | 1d20 + -1 | Saving Throw    |
+  |         |       |     |    | 1d20 + -1 | Arcana          |
+  |         |       |     |    | 1d20 + -1 | History         |
+  |         |       |     |    | 1d20 + -1 | Investigation   |
+  |         |       |     |    | 1d20 + -1 | Nature          |
+  |         |       |     |    | 1d20 + -1 | Religion        |
+  |---------+-------+-----+----+-----------+-----------------|
+  | WIS     |    10 |   0 |    | 1d20 + 0  | Saving Throw    |
+  |         |       |     |    | 1d20 + 0  | Animal Handling |
+  |         |       |     | X  | 1d20 + 2  | Insight         |
+  |         |       |     |    | 1d20 + 0  | Medicine        |
+  |         |       |     |    | 1d20 + 0  | Perception      |
+  |         |       |     |    | 1d20 + 0  | Survival        |
+  |---------+-------+-----+----+-----------+-----------------|
+  | CHA     |    12 |   1 |    | 1d20 + 1  | Saving Throw    |
+  |         |       |     | X  | 1d20 + 3  | Deception       |
+  |         |       |     | X  | 1d20 + 3  | Intimidation    |
+  |         |       |     |    | 1d20 + 1  | Performance     |
+  |         |       |     |    | 1d20 + 1  | Persuasion      |
+  |---------+-------+-----+----+-----------+-----------------|
+  | PROF    |     2 |     |    |           |                 |
+  #+TBLFM: @2$3='(calc-dnd-mod (string-to-number (org-table-get-constant $1)))
+  #+TBLFM: @4$3='(calc-dnd-mod (string-to-number (org-table-get-constant $1)))
+  #+TBLFM: @8$3='(calc-dnd-mod (string-to-number (org-table-get-constant $1)))
+  #+TBLFM: @9$3='(calc-dnd-mod (string-to-number (org-table-get-constant $1)))
+  #+TBLFM: @15$3='(calc-dnd-mod (string-to-number (org-table-get-constant $1)))
+  #+TBLFM: @21$3='(calc-dnd-mod (string-to-number (org-table-get-constant $1)))
+  #+TBLFM: @2$5..@3$5='(concat "1d20 + " (number-to-string (+ (if (string= $4 "X") $PROF 0) (calc-dnd-mod (string-to-number (org-table-get-constant @2$1))))))
+  #+TBLFM: @4$5..@7$5='(concat "1d20 + " (number-to-string (+ (if (string= $4 "X") $PROF 0) (calc-dnd-mod (string-to-number (org-table-get-constant @4$1))))))
+  #+TBLFM: @8$5..@8$5='(concat "1d20 + " (number-to-string (+ (if (string= $4 "X") $PROF 0) (calc-dnd-mod (string-to-number (org-table-get-constant @8$1))))))
+  #+TBLFM: @9$5..@14$5='(concat "1d20 + " (number-to-string (+ (if (string= $4 "X") $PROF 0) (calc-dnd-mod (string-to-number (org-table-get-constant @9$1))))))
+  #+TBLFM: @15$5..@20$5='(concat "1d20 + " (number-to-string (+ (if (string= $4 "X") $PROF 0) (calc-dnd-mod (string-to-number (org-table-get-constant @15$1))))))
+  #+TBLFM: @21$5..@25$5='(concat "1d20 + " (number-to-string (+ (if (string= $4 "X") $PROF 0) (calc-dnd-mod (string-to-number (org-table-get-constant @21$1))))))
+  
+  
+* Attacks
+  #+NAME: attacks
+  | Weapon           | Ability | Prof | Type        | Die | Mod To Hit | Roll                                     |
+  |------------------+---------+------+-------------+-----+------------+------------------------------------------|
+  | Shortsword       | DEX     | X    | Piercing    | 1d6 |          3 | 1d6 + 1                                  |
+  | Shortsword       | STR     | X    | Piercing    | 1d6 |          5 | 1d6 + 3                                  |
+  | Boom's Guantlets | STR     | X    | Bludgeoning | 1d4 |          5 | 2d4 + 3 + 1d8(iron fist bonus lightning) |
+  #+TBLFM: $6='(+ (if (string= $3 "X") $PROF 0) (calc-dnd-mod (string-to-number (org-table-get-constant $2))))
+  #+TBLFM: $7='(concat $5 " + " (number-to-string (calc-dnd-mod (string-to-number (org-table-get-constant $2)))))
+
+* Proficiencies
+  | Languages | Tools          | Armor   | Weapons |
+  |-----------+----------------+---------+---------|
+  | Common    | Tinker's Tools | Light   | Simple  |
+  | Gnomish   | Disguise Kit   | Medium  | Martial |
+  |           | Forgery Kit    | Heavy   |         |
+  |           |                | Shields |         |
+
+* Equipment
+  | Name           | Quantity | Cost (gp) | Weight (lbs) | Total Weight (lbs) | Total Cost (gp) |
+  |----------------+----------+-----------+--------------+--------------------+-----------------|
+  | Arrow          |       20 |       .05 |          .05 |                 1. |              1. |
+  |----------------+----------+-----------+--------------+--------------------+-----------------|
+  | Carry Capacity |      170 |           |              |                61. |            201. |
+  #+TBLFM: $5=($2 * $4)
+  #+TBLFM: $6=($2 * $3)
+  #+TBLFM: @4$5=vsum(@2$5..@3$5)
+  #+TBLFM: @4$6=vsum(@2$6..@3$6)
+  #+TBLFM: @4$2=($STR * 10)
+    
+** Money
+   | Copper | Silver | Electrum | Gold | Platinum | Total (Gold) |
+   |--------+--------+----------+------+----------+--------------|
+   |      0 |      0 |        0 |    0 |        0 |            0 |
+   #+TBLFM: $6=(($1 / 100) + ($2 / 10) + ($3 / 2) + $4 + ($5 * 10))
+
+
+*** TODO :grocery list:
+   Shortsword *
+   some bow and arrows/bolts *
+   Two melee weapons for you
+   Two mastiffs *
+   1 large bedroll?
+   rations *
+   Thieves tools
+   Disguise kit
+   smiths tools *
+   tinker tools *
+   2 x fine clothes 
+   2 x peasant clothes *
+   Additional armor (scale mail / chain mail / shield)

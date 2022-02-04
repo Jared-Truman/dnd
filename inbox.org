@@ -1,0 +1,4 @@
+#+STARTUP: content showstars indent
+#+FILETAGS: dnd inbox
+* TODO Create better templates for DND captue
+/Entered on/ [2022-01-24 Mon 09:51]
