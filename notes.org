@@ -1,0 +1,10 @@
+#+STARTUP: content showstars indent
+#+FILETAGS: dnd notes
+* Note ()
+/Entered on/ [2022-01-24 Mon 09:50]
+
+Testing Dnd functions
+* Note ([[file:~/Dropbox/dnd/characters/ribbet_downey_jr/stats.org::*Skills][Skills]]) :frog:
+/Entered on/ [2022-01-25 Tue 11:05]
+
+Ribbet Downey Jr is the best 

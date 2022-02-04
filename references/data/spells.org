@@ -1,0 +1,418 @@
+#+STARTUP: content showstars indent
+#+FILETAGS: spell
+
+* Spells
+** 0th level                                                       :cantrip:
+*** Abjuration                                                      :abjur:
+**** Resistance                                  :cleric:druid:artificier:
+*** Conjuration                                                      :conj:
+**** Mage Hand                   :bard:sorcerer:warlock:wizard:artificier:
+**** Poison Spray               :druid:sorcerer:warlock:wizard:artificier:
+**** Produce Flame                                                 :druid:
+**** Acid Splash                              :sorcerer:wizard:artificier:
+*** Divination                                                        :div:
+**** True Strike                            :bard:sorcerer:warlock:wizard:
+**** Guidance                                    :cleric:druid:artificier:
+*** Enchantment                                                      :ench:
+**** Vicious Mockery                                                :bard:
+*** Evocation                                                        :evoc:
+**** Dancing Lights                      :bard:sorcerer:wizard:artificier:
+**** Light                        :bard:cleric:sorcerer:wizard:artificier:
+**** Sacred Flame                                                 :cleric:
+**** Fire Bolt                                :sorcerer:wizard:artificier:
+**** Ray of Frost                             :sorcerer:wizard:artificier:
+**** Shocking Grasp                           :sorcerer:wizard:artificier:
+**** Eldritch Blast                                              :warlock:
+*** Illusion                                                        :illus:
+**** Minor Illusion                         :bard:sorcerer:warlock:wizard:
+*** Necromancy                                                      :necro:
+**** Spare the Dying                                   :cleric:artificier:
+**** Chill Touch                                 :sorcerer:warlock:wizard:
+*** Transmutation                                                   :trans:
+**** Mending                :bard:cleric:druid:sorcerer:wizard:artificier:
+**** Message                             :bard:sorcerer:wizard:artificier:
+**** Prestidigitation            :bard:sorcerer:warlock:wizard:artificier:
+**** Thaumaturgy                                                  :cleric:
+**** Druidcraft                                                    :druid:
+**** Shillelagh                                                    :druid:
+** 1st level                                                          :lvl1:
+*** Abjuration                                                      :abjur:
+**** Protection from Evil and Good         :cleric:paladin:warlock:wizard:
+**** Sanctuary                                         :cleric:artificier:
+**** Shield of Faith                                      :cleric:paladin:
+**** Alarm                                      :ranger:wizard:artificier:
+**** Mage Armor                                          :sorcerer:wizard:
+**** Shield                                              :sorcerer:wizard:
+*** Conjuration                                                      :conj:
+**** Unseen Servant                                  :bard:warlock:wizard:
+**** Entangle                                                      :druid:
+**** Fog Cloud                              :druid:ranger:sorcerer:wizard:
+**** Find Familiar                                                :wizard:
+**** Floating Disk                                                :wizard:
+**** Grease                                            :wizard:artificier:
+*** Divination                                                        :div:
+**** Comprehend Languages                   :bard:sorcerer:warlock:wizard:
+**** Detect Evil and Good                                 :cleric:paladin:
+**** Detect Magic :bard:cleric:druid:paladin:ranger:sorcerer:wizard:artificier:
+**** Detect Poison and Disease               :cleric:druid:paladin:ranger:
+**** Identify                                     :bard:wizard:artificier:
+**** Speak with Animals                                :bard:druid:ranger:
+**** Hunter's Mark                                                :ranger:
+*** Enchantment                                                      :ench:
+**** Animal Friendship                                 :bard:druid:ranger:
+**** Bane                                                    :bard:cleric:
+**** Bless                                                :cleric:paladin:
+**** Charm Person                     :bard:druid:sorcerer:warlock:wizard:
+**** Command                                              :cleric:paladin:
+**** Heroism                                                :bard:paladin:
+**** Hideous Laughter                                        :bard:wizard:
+**** Sleep                                          :bard:sorcerer:wizard:
+*** Evocation                                                        :evoc:
+**** Cure Wounds             :bard:cleric:druid:paladin:ranger:artificier:
+**** Faerie Fire                                   :bard:druid:artificier:
+**** Healing Word                                      :bard:cleric:druid:
+**** Thunderwave                              :bard:druid:sorcerer:wizard:
+**** Guiding Bolt                                                 :cleric:
+**** Divine Favor                                                :paladin:
+**** Wrathful Smite                                              :paladin:
+**** Burning Hands                                       :sorcerer:wizard:
+**** Chromatic Orb                                       :sorcerer:wizard:
+**** Magic Missile                                       :sorcerer:wizard:
+**** Hellish Rebuke                                              :warlock:
+*** Illusion                                                        :illus:
+**** Disguise Self                       :bard:sorcerer:wizard:artificier:
+**** Illusory Script                                 :bard:warlock:wizard:
+**** Silent Image                                   :bard:sorcerer:wizard:
+**** Color Spray                                         :sorcerer:wizard:
+*** Necromancy                                                      :necro:
+**** Inflict Wounds                                               :cleric:
+**** False Life                               :sorcerer:wizard:artificier:
+*** Transmutation                                                   :trans:
+**** Feather Fall                        :bard:sorcerer:wizard:artificier:
+**** Longstrider                     :bard:druid:ranger:wizard:artificier:
+**** Create or Destroy Water                                :cleric:druid:
+**** Purify Food and Drink               :cleric:druid:paladin:artificier:
+**** Goodberry                                              :druid:ranger:
+**** Jump                                   :druid:ranger:sorcerer:wizard:
+**** Expeditious Retreat              :sorcerer:warlock:wizard:artificier:
+** 2nd level                                                          :lvl2:
+*** Abjuration                                                      :abjur:
+**** Aid                                       :cleric:paladin:artificier:
+**** Lesser Restoration      :bard:cleric:druid:paladin:ranger:artificier:
+**** Protection from Poison       :cleric:druid:paladin:ranger:artificier:
+**** Warding Bond                                                 :cleric:
+**** Pass without Trace                                     :druid:ranger:
+**** Arcane Lock                                       :wizard:artificier:
+*** Conjuration                                                      :conj:
+**** Flaming Sphere                                         :druid:wizard:
+**** Find Steed                                                  :paladin:
+**** Misty Step                                  :sorcerer:warlock:wizard:
+**** Web                                      :sorcerer:wizard:artificier:
+*** Divination                                                        :div:
+**** Detect Thoughts                                :bard:sorcerer:wizard:
+**** Locate Animals or Plants                          :bard:druid:ranger:
+**** Locate Object               :bard:cleric:druid:paladin:ranger:wizard:
+**** See Invisibility                    :bard:sorcerer:wizard:artificier:
+**** Augury                                                       :cleric:
+**** Find Traps                                      :cleric:druid:ranger:
+*** Enchantment                                                      :ench:
+**** Animal Messenger                                  :bard:druid:ranger:
+**** Calm Emotions                                           :bard:cleric:
+**** Enthrall                                               :bard:warlock:
+**** Hold Person               :bard:cleric:druid:sorcerer:warlock:wizard:
+**** Suggestion                             :bard:sorcerer:warlock:wizard:
+**** Zone of Truth                                   :bard:cleric:paladin:
+*** Evocation                                                        :evoc:
+**** Shatter                                :bard:sorcerer:warlock:wizard:
+**** Continual Flame                            :cleric:wizard:artificier:
+**** Prayer of Healing                                            :cleric:
+**** Spiritual Weapon                                             :cleric:
+**** Flame Blade                                                   :druid:
+**** Gust of Wind                                  :druid:sorcerer:wizard:
+**** Moonbeam                                                      :druid:
+**** Branding Smite                                              :paladin:
+**** Darkness                                    :sorcerer:warlock:wizard:
+**** Scorching Ray                                       :sorcerer:wizard:
+**** Acid Arrow                                                   :wizard:
+*** Illusion                                                        :illus:
+**** Invisibility                :bard:sorcerer:warlock:wizard:artificier:
+**** Magic Mouth                                  :bard:wizard:artificier:
+**** Silence                                          :bard:cleric:ranger:
+**** Blur                                     :sorcerer:wizard:artificier:
+**** Mirror Image                                :sorcerer:warlock:wizard:
+**** Arcanist's Magic Aura                                        :wizard:
+*** Necromancy                                                      :necro:
+**** Blindness/Deafness                      :bard:cleric:sorcerer:wizard:
+**** Gentle Repose                                         :cleric:wizard:
+**** Ray of Enfeeblement                                  :warlock:wizard:
+*** Transmutation                                                   :trans:
+**** Enhance Ability               :bard:cleric:druid:sorcerer:artificier:
+**** Heat Metal                                    :bard:druid:artificier:
+**** Knock                                          :bard:sorcerer:wizard:
+**** Barkskin                                               :druid:ranger:
+**** Darkvision (Spell)          :druid:ranger:sorcerer:wizard:artificier:
+**** Spike Growth                                           :druid:ranger:
+**** Magic Weapon                              :paladin:wizard:artificier:
+**** Alter Self                               :sorcerer:wizard:artificier:
+**** Enlarge/Reduce                           :sorcerer:wizard:artificier:
+**** Levitate                                 :sorcerer:wizard:artificier:
+**** Spider Climb                     :sorcerer:warlock:wizard:artificier:
+**** Rope Trick                                        :wizard:artificier:
+** 3rd level                                                          :lvl3:
+*** Abjuration                                                      :abjur:
+**** Dispel Magic :bard:cleric:druid:paladin:sorcerer:warlock:wizard:artificier:
+**** Glyph of Warding                      :bard:cleric:wizard:artificier:
+**** Nondetection                                     :bard:ranger:wizard:
+**** Beacon of Hope                                               :cleric:
+**** Magic Circle                          :cleric:paladin:warlock:wizard:
+**** Protection from Energy :cleric:druid:ranger:sorcerer:wizard:artificier:
+**** Remove Curse                          :cleric:paladin:warlock:wizard:
+**** Counterspell                                :sorcerer:warlock:wizard:
+*** Conjuration                                                      :conj:
+**** Stinking Cloud                                 :bard:sorcerer:wizard:
+**** Create Food and Water                     :cleric:paladin:artificier:
+**** Spirit Guardians                                             :cleric:
+**** Call Lightning                                                :druid:
+**** Conjure Animals                                        :druid:ranger:
+**** Sleet Storm                                   :druid:sorcerer:wizard:
+*** Divination                                                        :div:
+**** Clairvoyance                            :bard:cleric:sorcerer:wizard:
+**** Tongues                         :bard:cleric:sorcerer:warlock:wizard:
+*** Enchantment                                                      :ench:
+*** Evocation                                                        :evoc:
+**** Sending                                          :bard:cleric:wizard:
+**** Tiny Hut                                                :bard:wizard:
+**** Daylight                       :cleric:druid:paladin:ranger:sorcerer:
+**** Mass Healing Word                                            :cleric:
+**** Wind Wall                                              :druid:ranger:
+**** Fireball                                            :sorcerer:wizard:
+**** Lightning Bolt                                      :sorcerer:wizard:
+*** Illusion                                                        :illus:
+**** Fear                                   :bard:sorcerer:warlock:wizard:
+**** Hypnotic Pattern                       :bard:sorcerer:warlock:wizard:
+**** Major Image                            :bard:sorcerer:warlock:wizard:
+**** Phantom Steed                                                :wizard:
+*** Necromancy                                                      :necro:
+**** Bestow Curse                                     :bard:cleric:wizard:
+**** Speak with Dead                                         :bard:cleric:
+**** Feign Death                                :bard:cleric:druid:wizard:
+**** Animate Dead                                          :cleric:wizard:
+**** Revivify                                  :cleric:paladin:artificier:
+**** Vampiric Touch                                       :warlock:wizard:
+*** Transmutation                                                   :trans:
+**** Plant Growth                                      :bard:druid:ranger:
+**** Speak with Plants                                 :bard:druid:ranger:
+**** Meld into Stone                                        :cleric:druid:
+**** Water Walk                  :cleric:druid:ranger:sorcerer:artificier:
+**** Water Breathing             :druid:ranger:sorcerer:wizard:artificier:
+**** Blink                                    :sorcerer:wizard:artificier:
+**** Fly                              :sorcerer:warlock:wizard:artificier:
+**** Gaseous Form                                :sorcerer:warlock:wizard:
+**** Haste                                    :sorcerer:wizard:artificier:
+**** Slow                                                :sorcerer:wizard:
+** 4th level                                                          :lvl4:
+*** Abjuration                                                      :abjur:
+**** Freedom of Movement             :bard:cleric:druid:ranger:artificier:
+**** Banishment                   :cleric:paladin:sorcerer:warlock:wizard:
+**** Death Ward                                           :cleric:paladin:
+**** Stoneskin                   :druid:ranger:sorcerer:wizard:artificier:
+**** Private Sanctum                                              :wizard:
+*** Conjuration                                                      :conj:
+**** Dimension Door                         :bard:sorcerer:warlock:wizard:
+**** Guardian of Faith                                            :cleric:
+**** Conjure Minor Elementals                               :druid:wizard:
+**** Conjure Woodland Beings                                :druid:ranger:
+**** Black Tentacles                                              :wizard:
+**** Faithful Hound                                               :wizard:
+**** Secret Chest                                                 :wizard:
+*** Divination                                                        :div:
+**** Locate Creature             :bard:cleric:druid:paladin:ranger:wizard:
+**** Divination                                                   :cleric:
+**** Arcane Eye                                        :wizard:artificier:
+*** Enchantment                                                      :ench:
+**** Compulsion                                                     :bard:
+**** Confusion                                :bard:druid:sorcerer:wizard:
+**** Dominate Beast                                       :druid:sorcerer:
+*** Evocation                                                        :evoc:
+**** Ice Storm                                     :druid:sorcerer:wizard:
+**** Wall of Fire                                  :druid:sorcerer:wizard:
+**** Fire Shield                                                  :wizard:
+**** Resilient Sphere                                             :wizard:
+*** Illusion                                                        :illus:
+**** Greater Invisibility                           :bard:sorcerer:wizard:
+**** Hallucinatory Terrain                     :bard:druid:warlock:wizard:
+**** Phantasmal Killer                                            :wizard:
+*** Necromancy                                                      :necro:
+**** Blight                                :druid:sorcerer:warlock:wizard:
+*** Transmutation                                                   :trans:
+**** Polymorph                                :bard:druid:sorcerer:wizard:
+**** Control Water                                   :cleric:druid:wizard:
+**** Stone Shape                          :cleric:druid:wizard:artificier:
+**** Giant Insect                                                  :druid:
+**** Fabricate                                         :wizard:artificier:
+** 5th level                                                          :lvl5:
+*** Abjuration                                                      :abjur:
+**** Greater Restoration                    :bard:cleric:druid:artificier:
+**** Planar Binding                             :bard:cleric:druid:wizard:
+**** Dispel Evil and Good                                 :cleric:paladin:
+**** Antilife Shell                                                :druid:
+*** Conjuration                                                      :conj:
+**** Teleportation Circle                           :bard:sorcerer:wizard:
+**** Insect Plague                                 :cleric:druid:sorcerer:
+**** Conjure Elemental                                      :druid:wizard:
+**** Tree Stride                                            :druid:ranger:
+**** Cloudkill                                           :sorcerer:wizard:
+*** Divination                                                        :div:
+**** Legend Lore                                      :bard:cleric:wizard:
+**** Scrying                            :bard:cleric:druid:warlock:wizard:
+**** Commune                                                      :cleric:
+**** Commune with Nature                                    :druid:ranger:
+**** Contact Other Plane                                  :warlock:wizard:
+**** Telepathic Bond                                              :wizard:
+*** Enchantment                                                      :ench:
+**** Dominate Person                                :bard:sorcerer:wizard:
+**** Geas                               :bard:cleric:druid:paladin:wizard:
+**** Hold Monster                           :bard:sorcerer:warlock:wizard:
+**** Modify Memory                                           :bard:wizard:
+*** Evocation                                                        :evoc:
+**** Mass Cure Wounds                                  :bard:cleric:druid:
+**** Flame Strike                                                 :cleric:
+**** Hallow                                                       :cleric:
+**** Wall of Stone                      :druid:sorcerer:wizard:artificier:
+**** Cone of Cold                                        :sorcerer:wizard:
+**** Arcane Hand                                                  :wizard:
+**** Wall of Force                                                :wizard:
+*** Illusion                                                        :illus:
+**** Dream                                           :bard:warlock:wizard:
+**** Mislead                                                 :bard:wizard:
+**** Seeming                                        :bard:sorcerer:wizard:
+**** Creation                                 :sorcerer:wizard:artificier:
+*** Necromancy                                                      :necro:
+**** Raise Dead                                      :bard:cleric:paladin:
+**** Contagion                                              :cleric:druid:
+*** Transmutation                                                   :trans:
+**** Animate Objects                     :bard:sorcerer:wizard:artificier:
+**** Awaken                                                   :bard:druid:
+**** Reincarnate                                                   :druid:
+**** Telekinesis                                         :sorcerer:wizard:
+**** Passwall                                                     :wizard:
+** 6th level                                                          :lvl6:
+*** Abjuration                                                      :abjur:
+**** Guards and Wards                                        :bard:wizard:
+**** Forbiddance                                                  :cleric:
+**** Globe of Invulnerability                            :sorcerer:wizard:
+*** Conjuration                                                      :conj:
+**** Heroes' Feast                                          :cleric:druid:
+**** Planar Ally                                                  :cleric:
+**** Word of Recall                                               :cleric:
+**** Conjure Fey                                           :druid:warlock:
+**** Transport via Plants                                          :druid:
+**** Wall of Thorns                                                :druid:
+**** Instant Summons                                              :wizard:
+*** Divination                                                        :div:
+**** Find the Path                                     :bard:cleric:druid:
+**** True Seeing                     :bard:cleric:sorcerer:warlock:wizard:
+*** Enchantment                                                      :ench:
+**** Irresistible Dance                                      :bard:wizard:
+**** Mass Suggestion                        :bard:sorcerer:warlock:wizard:
+*** Evocation                                                        :evoc:
+**** Blade Barrier                                                :cleric:
+**** Heal                                                   :cleric:druid:
+**** Sunbeam                                       :druid:sorcerer:wizard:
+**** Chain Lightning                                     :sorcerer:wizard:
+**** Contingency                                                  :wizard:
+**** Freezing Sphere                                              :wizard:
+**** Wall of Ice                                                  :wizard:
+*** Illusion                                                        :illus:
+**** Programmed Illusion                                     :bard:wizard:
+*** Necromancy                                                      :necro:
+**** Eyebite                                :bard:sorcerer:warlock:wizard:
+**** Create Undead                                 :cleric:warlock:wizard:
+**** Harm                                                         :cleric:
+**** Circle of Death                             :sorcerer:warlock:wizard:
+**** Magic Jar                                                    :wizard:
+*** Transmutation                                                   :trans:
+**** Move Earth                                    :druid:sorcerer:wizard:
+**** Wind Walk                                                     :druid:
+**** Disintegrate                                        :sorcerer:wizard:
+**** Flesh to Stone                                       :warlock:wizard:
+** 7th level                                                          :lvl7:
+*** Abjuration                                                      :abjur:
+**** Symbol                                           :bard:cleric:wizard:
+*** Conjuration                                                      :conj:
+**** Magnificent Mansion                                     :bard:wizard:
+**** Teleport                                       :bard:sorcerer:wizard:
+**** Conjure Celestial                                            :cleric:
+**** Plane Shift                    :cleric:druid:sorcerer:warlock:wizard:
+*** Divination                                                        :div:
+*** Enchantment                                                      :ench:
+*** Evocation                                                        :evoc:
+**** Arcane Sword                                            :bard:wizard:
+**** Forcecage                                       :bard:warlock:wizard:
+**** Divine Word                                                  :cleric:
+**** Fire Storm                                    :cleric:druid:sorcerer:
+**** Delayed Blast Fireball                              :sorcerer:wizard:
+**** Prismatic Spray                                     :sorcerer:wizard:
+*** Illusion                                                        :illus:
+**** Mirage Arcane                                     :bard:druid:wizard:
+**** Project Image                                           :bard:wizard:
+**** Simulacrum                                                   :wizard:
+*** Necromancy                                                      :necro:
+**** Resurrection                                            :bard:cleric:
+**** Finger of Death                             :sorcerer:warlock:wizard:
+*** Transmutation                                                   :trans:
+**** Etherealness                    :bard:cleric:sorcerer:warlock:wizard:
+**** Regenerate                                        :bard:cleric:druid:
+**** Reverse Gravity                               :druid:sorcerer:wizard:
+**** Sequester                                                    :wizard:
+** 8th level                                                          :lvl8:
+*** Abjuration                                                      :abjur:
+**** Mind Blank                                              :bard:wizard:
+**** Antimagic Field                                       :cleric:wizard:
+**** Holy Aura                                                    :cleric:
+*** Conjuration                                                      :conj:
+**** Incendiary Cloud                                    :sorcerer:wizard:
+**** Demiplane                                            :warlock:wizard:
+**** Maze                                                         :wizard:
+*** Divination                                                        :div:
+*** Enchantment                                                      :ench:
+**** Dominate Monster                       :bard:sorcerer:warlock:wizard:
+**** Feeblemind                                :bard:druid:warlock:wizard:
+**** Power Word Stun                        :bard:sorcerer:warlock:wizard:
+**** Antipathy/Sympathy                                     :druid:wizard:
+*** Evocation                                                        :evoc:
+**** Earthquake                                    :cleric:druid:sorcerer:
+**** Sunburst                                      :druid:sorcerer:wizard:
+*** Illusion                                                        :illus:
+*** Necromancy                                                      :necro:
+**** Clone                                                        :wizard:
+*** Transmutation                                                   :trans:
+**** Glibness                                               :bard:warlock:
+**** Control Weather                                 :cleric:druid:wizard:
+**** Animal Shapes                                                 :druid:
+** 9th level                                                          :lvl9:
+*** Abjuration                                                      :abjur:
+**** Imprisonment                                         :warlock:wizard:
+**** Prismatic Wall                                               :wizard:
+*** Conjuration                                                      :conj:
+**** Gate                                         :cleric:sorcerer:wizard:
+**** Storm of Vengeance                                            :druid:
+**** Wish                                                :sorcerer:wizard:
+*** Divination                                                        :div:
+**** Foresight                                 :bard:druid:warlock:wizard:
+*** Enchantment                                                      :ench:
+**** Power Word Kill                        :bard:sorcerer:warlock:wizard:
+*** Evocation                                                        :evoc:
+**** Mass Heal                                                    :cleric:
+**** Meteor Swarm                                        :sorcerer:wizard:
+*** Illusion                                                        :illus:
+**** Weird                                                        :wizard:
+*** Necromancy                                                      :necro:
+**** Astral Projection                             :cleric:warlock:wizard:
+**** True Resurrection                                      :cleric:druid:
+*** Transmutation                                                   :trans:
+**** True Polymorph                                  :bard:warlock:wizard:
+**** Shapechange                                            :druid:wizard:
+**** Time Stop                                           :sorcerer:wizard:
+
+
