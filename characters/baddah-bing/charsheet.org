@@ -111,7 +111,7 @@ the weapon’s damage increases by an amount based on your level in this class
   | Shortsword       | DEX     | X    | Piercing    | 1d6 |          3 | 1d6 + 1       |
   | Shortsword       | STR     | X    | Piercing    | 1d6 |          5 | 1d6 + 3       |
   | Boom's Guantlets | STR     | X    | Bludgeoning | 1d4 |          5 | 2d4 + 3 + 2d8 |
-  |                  |         |      |             |     |            |               |
+  | Club             | STR     |      | Bludgeoning | 1d4 |            |               |
   #+TBLFM: $6='(+ (if (string= $3 "X") $PROF 0) (calc-dnd-mod (string-to-number (org-table-get-constant $2))))
   #+TBLFM: $7='(concat $5 " + " (number-to-string (calc-dnd-mod (string-to-number (org-table-get-constant $2)))))
  
@@ -140,9 +140,9 @@ the weapon’s damage increases by an amount based on your level in this class
   #+TBLFM: $5=($2 * $4)
   #+TBLFM: $6=($2 * $3)
   #+TBLFM: @11$5=vsum(@2$5..@11$5)
-  #+TBLFM: @11$6=vsum(@2$6..@11$6)
+  #+TBLFM: @11$6=vsum(@2$6..@10$6)
   #+TBLFM: @11$2=($STR * 10)
-    
+ 
 ** Money
    | Copper | Silver | Electrum | Gold | Platinum | Total (Gold) |
    |--------+--------+----------+------+----------+--------------|
