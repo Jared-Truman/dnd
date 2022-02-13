@@ -1,0 +1,4 @@
+#+STARTUP: content showstars indent
+#+FILETAGS: dnd inbox chewy 
+* TODO Update charsheet.
+/Entered on/ [2022-02-10 Thu 16:29]

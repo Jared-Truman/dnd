@@ -1,0 +1,91 @@
+#+TILE: Homunculus Servant
+
+* Stats
+  | Race      | Size | Walking Speed | Flying Speed | AC | Hit Points | Hit Dice |
+  |-----------+------+---------------+--------------+----+------------+----------|
+  | Construct | Tiny | 20 feet       | 30 feet      | 13 |          7 |      3d4 |
+
+* Abilities
+  | Ability | Score | Mod | PB | Roll      | Skill           |
+  |---------+-------+-----+----+-----------+-----------------|
+  | STR     |     4 |  -3 |    | 1d20 + -3 | Saving Throw    |
+  |         |       |     |    | 1d20 + -3 | Athletics       |
+  |---------+-------+-----+----+-----------+-----------------|
+  | DEX     |    15 |   2 | X  | 1d20 + 4  | Saving Throw    |
+  |         |       |     |    | 1d20 + 2  | Acrobatics      |
+  |         |       |     |    | 1d20 + 2  | Sleight of Hand |
+  |         |       |     | X  | 1d20 + 4  | Stealth         |
+  |---------+-------+-----+----+-----------+-----------------|
+  | CON     |    12 |   1 |    | 1d20 + 1  | Saving Throw    |
+  |---------+-------+-----+----+-----------+-----------------|
+  | INT     |    10 |   0 |    | 1d20 + 0  | Saving Throw    |
+  |         |       |     |    | 1d20 + 0  | Arcana          |
+  |         |       |     |    | 1d20 + 0  | History         |
+  |         |       |     | X  | 1d20 + 2  | Investigation   |
+  |         |       |     |    | 1d20 + 0  | Nature          |
+  |         |       |     |    | 1d20 + 0  | Religion        |
+  |---------+-------+-----+----+-----------+-----------------|
+  | WIS     |    10 |   0 |    | 1d20 + 0  | Saving Throw    |
+  |         |       |     |    | 1d20 + 0  | Animal Handling |
+  |         |       |     |    | 1d20 + 0  | Insight         |
+  |         |       |     |    | 1d20 + 0  | Medicine        |
+  |         |       |     | XX | 1d20 + 4  | Perception      |
+  |         |       |     |    | 1d20 + 0  | Survival        |
+  |---------+-------+-----+----+-----------+-----------------|
+  | CHA     |     7 |  -2 |    | 1d20 + -2 | Saving Throw    |
+  |         |       |     |    | 1d20 + -2 | Deception       |
+  |         |       |     |    | 1d20 + -2 | Intimidation    |
+  |         |       |     |    | 1d20 + -2 | Performance     |
+  |         |       |     |    | 1d20 + -2 | Persuasion      |
+  |---------+-------+-----+----+-----------+-----------------|
+  | PROF    |     2 |     |    | Challenge | 2               |
+  #+TBLFM: @2$3='(calc-dnd-mod (string-to-number @2$2))
+  #+TBLFM: @4$3='(calc-dnd-mod (string-to-number @4$2))
+  #+TBLFM: @8$3='(calc-dnd-mod (string-to-number @8$2))
+  #+TBLFM: @9$3='(calc-dnd-mod (string-to-number @9$2))
+  #+TBLFM: @15$3='(calc-dnd-mod (string-to-number @15$2))
+  #+TBLFM: @21$3='(calc-dnd-mod (string-to-number @21$2))
+  #+TBLFM: @2$5..@3$5='(concat "1d20 + " (number-to-string (+ (calc-dnd-pb @26$2 $4) (calc-dnd-mod (string-to-number @2$2)))))
+  #+TBLFM: @4$5..@7$5='(concat "1d20 + " (number-to-string (+ (calc-dnd-pb @26$2 $4) (calc-dnd-mod (string-to-number @4$2)))))
+  #+TBLFM: @8$5..@8$5='(concat "1d20 + " (number-to-string (+ (calc-dnd-pb @26$2 $4) (calc-dnd-mod (string-to-number @8$2)))))
+  #+TBLFM: @9$5..@14$5='(concat "1d20 + " (number-to-string (+ (calc-dnd-pb @26$2 $4) (calc-dnd-mod (string-to-number @9$2)))))
+  #+TBLFM: @15$5..@20$5='(concat "1d20 + " (number-to-string (+ (calc-dnd-pb @26$2 $4) (calc-dnd-mod (string-to-number @15$2)))))
+  #+TBLFM: @21$5..@25$5='(concat "1d20 + " (number-to-string (+ (calc-dnd-pb @26$2 $4) (calc-dnd-mod (string-to-number @21$2)))))
+  #+TBLFM: @26$6=$2
+
+* Actions           
+  - Force Strike ::
+    Ranged Weapon Attack: your spell attack modifier to hit, range 30 ft., one target you can see.
+    Hit: 1d4 + PB force damage
+
+* Reactions
+  - Channel Magic ::
+    The homunculus delivers a spell you cast that has a range of touch. The homunculus must be within 120 feet of you.
+
+* Features
+** Special Features     
+   - Evasion ::
+     If the homunculus is subjected to an effect that allows it to make a Dexterity saving th row to take only half
+     damage, it instead takes no damage if it succeeds on the saving th row, and only half damage if it fails. It can't
+     use this trait if it's incapacitated.
+
+** Traits  
+   - natural armor :: AC 13
+   - Hit Points :: 1 + INT + LVL (the homunculus has a number of Hit Dice [d4] equal to your artificer level)
+   - Speed :: Walking 20 ft. | Flying 30 ft.
+
+** Damage Immunities
+   - poison
+
+** Condition Immunities
+   - exhaustion
+   - poisoned
+
+** Senses
+   - darkvision 60 ft.
+   - passive Perception 10 + (PB x 2)
+     - 14
+
+** Languages
+   - understands the languages you speak
+
