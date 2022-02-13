@@ -1,0 +1,27 @@
+#+STARTUP: content showstars indent
+#+FILETAGS: dnd background baddah_bing
+* Charlatan
+Kill Proficiencies: Deception, Sleight of Hand
+Tool Proficiencies: Disguise kit, Forgery kit
+Equipment:
+- Fine clothes 
+- Disguise kit
+- One of the following:
+    - ten stoppered bottles filled with colored liquid
+    - set of weighted dice
+    - deck of marked cards
+    - signet ring of an imaginary duke
+- Pouch containing 15 gp
+* Favorite Scheme
+5 - I put on new identities like clothes
+
+Feature: False Identity
+You have created a second identity that includes documentation, established acquaintances,
+and disguises that allow you to assume that persona. Additionally, you can forge documents
+including official papers and personal letters, as long as you have seen an example of the
+kind of document or the handwriting you are trying to copy.
+* Personality Trait
+* Ideal
+* Bond
+* Flaw
+

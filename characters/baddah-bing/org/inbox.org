@@ -1,2 +1,4 @@
 #+STARTUP: content showstars indent
-#+FILETAGS: dnd inbox baddah_boom
+#+FILETAGS: dnd inbox baddah_bing
+* TODO Talk with baddah boom to retrofit plate mail from orcs
+/Entered on/ [2022-02-10 Thu 16:17]
