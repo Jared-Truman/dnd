@@ -1,15 +1,15 @@
 #+TILE: Baddah Bing - Character Sheet
 
-* Constant
+* Constants
   #+NAME: define-constants-with-src-block
   #+BEGIN_SRC elisp :var table=stats :colnames yes :results output drawer :cache yes :lang elisp
     (dnd-output-ability-constants table)
   #+END_SRC
 
-  #+RESULTS[e183e7600ece855cb5cf6f0eb6ecaba2d51295fb]: define-constants-with-src-block
+  #+RESULTS[1fd68bde4889e019495d05294461b09b0afb80e5]: define-constants-with-src-block
   :results:
   #+CONSTANTS: STR=19
-  #+CONSTANTS: DEX=13
+  #+CONSTANTS: DEX=14
   #+CONSTANTS: CON=14
   #+CONSTANTS: INT=8
   #+CONSTANTS: WIS=10
@@ -25,7 +25,7 @@
 * Stats  
   | Speed | Hit Points | AC | Death Saves | Inspiration |
   |-------+------------+----+-------------+-------------|
-  | 25 ft | 35/50      | 18 |             |             |
+  | 25 ft | 50/50      | 18 |             |             |
 
 * Abilities and Skills
   #+name: stats
@@ -34,10 +34,10 @@
   | STR     |    19 |   4 | X  | 1d20 + 7  | Saving Throw    |
   |         |       |     |    | 1d20 + 4  | Athletics       |
   |---------+-------+-----+----+-----------+-----------------|
-  | DEX     |    13 |   1 |    | 1d20 + 1  | Saving Throw    |
-  |         |       |     |    | 1d20 + 1  | Acrobatics      |
-  |         |       |     | X  | 1d20 + 4  | Sleight of Hand |
-  |         |       |     |    | 1d20 + 1  | Stealth         |
+  | DEX     |    14 |   2 | X  | 1d20 + 5  | Saving Throw    |
+  |         |       |     |    | 1d20 + 2  | Acrobatics      |
+  |         |       |     | X  | 1d20 + 5  | Sleight of Hand |
+  |         |       |     |    | 1d20 + 2  | Stealth         |
   |---------+-------+-----+----+-----------+-----------------|
   | CON     |    14 |   2 | X  | 1d20 + 5  | Saving Throw    |
   |---------+-------+-----+----+-----------+-----------------|
@@ -76,34 +76,23 @@
   #+TBLFM: @21$5..@25$5='(concat "1d20 + " (number-to-string (+ (if (string= $4 "X") $PROF 0) (calc-dnd-mod (string-to-number (org-table-get-constant @21$1))))))
 
 ** Abilities
-*** Two Weapon fighting
-W hen you take the Attack action and attack with a light
-melee weapon that you’re holding in one hand, you can
-use a bonus action to attack with a different light melee
-weapon that you’re holding in the other hand. You don't
-add your ability m odifier to the damage of the bonus
-attack, unless that modifier is negative.
-If either w eapon has the thrown property, you
-can throw the weapon, instead of making a melee
-attack with it.
-
 *** Second Wind
-You have a limited well of stamina that you can draw on to protect yourself
-from harm. On your turn, you can use a bonus action to regain hit points equal
-to 1d10 + your fighter level.
+    You have a limited well of stamina that you can draw on to protect yourself
+    from harm. On your turn, you can use a bonus action to regain hit points equal
+    to 1d10 + your fighter level.
 
-Once you use this feature, you must finish a short or long rest before you can use it again.
+    Once you use this feature, you must finish a short or long rest before you can use it again.
 
 *** Action Surge
-You can push yourself beyond your normal limits for a moment.
-On your turn, you can take one additional action.
+    You can push yourself beyond your normal limits for a moment.
+    On your turn, you can take one additional action.
 
-Once you use this feature, you must finish a short or long rest before you can use it again.
-Starting at 17th level, you can use it twice before a rest, but only once on the same turn.
+    Once you use this feature, you must finish a short or long rest before you can use it again.
+    Starting at 17th level, you can use it twice before a rest, but only once on the same turn.
 
 *** Brute Force
-Whenever you hit with a weapon that you’re proficient with and deal damage,
- the weapon’s damage increases by an amount based on your level in this class
+    Whenever you hit with a weapon that you’re proficient with and deal damage,
+    the weapon’s damage increases by an amount based on your level in this class
 
 | Lvl | Damage |
 |-----+--------|
@@ -112,13 +101,19 @@ Whenever you hit with a weapon that you’re proficient with and deal damage,
 |  16 |    1d8 |
 | 20  |   1d10 |
 
+** Feats
+*** Resilient 
+    - Choose one ability score. You gain the following benefits:
+      Increase the chosen ability score by 1, to a maximum of 20.
+    - You gain proficiency in saving throws using the chosen ability : DEX
+
 * Attacks
   #+NAME: attacks
-  | Weapon           | Ability | Prof | Type        | Die | Mod To Hit | Roll          |
-  |------------------+---------+------+-------------+-----+------------+---------------|
-  | Shortsword       | DEX     | X    | Piercing    | 1d6 |          4 | 1d6 + 1       |
-  | Shortsword       | STR     | X    | Piercing    | 1d6 |          7 | 1d6 + 4       |
-  | Boom's Guantlets | STR     | X    | Bludgeoning | 1d4 |          7 | 1d4 + 4 + 1d8 |
+  | Weapon           | Ability | Prof | Type        | Die | Mod To Hit | Roll    |
+  |------------------+---------+------+-------------+-----+------------+---------|
+  | Shortsword       | DEX     | X    | Piercing    | 1d6 |          5 | 1d6 + 2 |
+  | Shortsword       | STR     | X    | Piercing    | 1d6 |          7 | 1d6 + 4 |
+  | Boom's Guantlets | STR     | X    | Bludgeoning | 1d4 |          7 | 1d4 + 4 |
   #+TBLFM: $6='(+ (if (string= $3 "X") $PROF 0) (calc-dnd-mod (string-to-number (org-table-get-constant $2))))
   #+TBLFM: $7='(concat $5 " + " (number-to-string (calc-dnd-mod (string-to-number (org-table-get-constant $2)))))
  
@@ -131,22 +126,20 @@ Whenever you hit with a weapon that you’re proficient with and deal damage,
   |           |                | Shields |         |
 
 * Equipment
-  | Name                    | Quantity | Cost (gp) | Weight (lbs) | Total Weight (lbs) | Total Cost (gp) |
-  |-------------------------+----------+-----------+--------------+--------------------+-----------------|
-  | Arrow                   |       20 |       .05 |          .05 |                 1. |              1. |
-  | Short Sword             |        3 |        10 |            2 |                  6 |              30 |
-  | Short Bow               |        1 |        25 |            2 |                  2 |              25 |
-  | Mastiff                 |        2 |        25 |            0 |                  0 |              50 |
-  | Common Clothes          |        2 |        .5 |            3 |                  6 |              1. |
-  | Smith Tools             |        1 |        20 |            8 |                  8 |              20 |
-  | Tinker Tools            |        1 |        50 |           10 |                 10 |              50 |
-  | Saddle Bags             |        2 |         4 |            8 |                 16 |               8 |
-  | Rations                 |        4 |        .5 |            2 |                  8 |              2. |
-  | Fine clothes            |        2 |        15 |            3 |                    |                 |
-  |                         |          |           |              |                    |                 |
-  | Suit plate armor scraps |       10 |      1500 |           60 |                    |                 |
-  |-------------------------+----------+-----------+--------------+--------------------+-----------------|
-  | Carry Capacity          |      190 |           |              |                57. |            187. |
+  | Name           | Quantity | Cost (gp) | Weight (lbs) | Total Weight (lbs) | Total Cost (gp) |
+  |----------------+----------+-----------+--------------+--------------------+-----------------|
+  | Arrow          |       20 |       .05 |          .05 |                 1. |              1. |
+  | Short Sword    |        3 |        10 |            2 |                  6 |              30 |
+  | Short Bow      |        1 |        25 |            2 |                  2 |              25 |
+  | Mastiff        |        2 |        25 |            0 |                  0 |              50 |
+  | Common Clothes |        2 |        .5 |            3 |                  6 |              1. |
+  | Smith Tools    |        1 |        20 |            8 |                  8 |              20 |
+  | Tinker Tools   |        1 |        50 |           10 |                 10 |              50 |
+  | Saddle Bags    |        2 |         4 |            8 |                 16 |               8 |
+  | Rations        |        4 |        .5 |            2 |                  8 |              2. |
+  | Fine clothes   |        2 |        15 |            3 |                  6 |              30 |
+  |----------------+----------+-----------+--------------+--------------------+-----------------|
+  | Carry Capacity |      190 |           |              |                  0 |               0 |
   #+TBLFM: $5=($2 * $4)
   #+TBLFM: $6=($2 * $3)
   #+TBLFM: @14$5=vsum(@2$5..@14$5)
@@ -158,23 +151,6 @@ Whenever you hit with a weapon that you’re proficient with and deal damage,
    |--------+--------+----------+------+----------+--------------|
    |      0 |      0 |        0 |    0 |        0 |            0 |
    #+TBLFM: $6=(($1 / 100) + ($2 / 10) + ($3 / 2) + $4 + ($5 * 10))
-
-   Grab 10 suits of scraped armor in triboar
-   
-   We own an ax beak that we ride.
-   
-   kaitlyn sarser the bar keep.
-      Investing in the theater for this. 1000 gp.
-      Writing a contract. - written and we have 2 a week shows about iron fist, 10% of sales, and 50% of tonic sales.
-   The lord protector(darthra) - sending us to Everland we are being sent to Danavar
-
-
-   eveland we sold 9 armor to a dwarf named tark.
-
-   krowen valharroh  after drinking wine. the feyrun, concerned that giants are being more aggressive. Agents sent but didnt make it.
-
-   Kryshilir the stone giant. their god laid out heirarchy and its broken. Hotun-shul (place) knowledge broken hierarchy.
-
    
 
    

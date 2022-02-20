@@ -1,6 +1,4 @@
-
-
-#+TILE: Baddah Boom - Character Sheet
+#+TILE: Chewy Eshieldoor - Character Sheet
 
 * Constants
   #+NAME: define-constants-with-src-block
@@ -8,40 +6,40 @@
     (dnd-output-ability-constants table)
   #+END_SRC
 
-  #+RESULTS[90dcf18344cfb2df6a08ee7b9b63bbedebdf7fa1]: define-constants-with-src-block
+  #+RESULTS[1c0756520bc96a55ee8e0cbc9f098e41dda5e6f7]: define-constants-with-src-block
   :results:
   #+CONSTANTS: STR=17
   #+CONSTANTS: DEX=13
-  #+CONSTANTS: CON=14
+  #+CONSTANTS: CON=15
   #+CONSTANTS: INT=8
   #+CONSTANTS: WIS=10
   #+CONSTANTS: CHA=12
-  #+CONSTANTS: PROF=2
+  #+CONSTANTS: PROF=3
   :end:
   
 * Traits
-  | Level | Race  | Subrace    | Class   | Subclass | Age | Alignment    | Size        |
-  |-------+-------+------------+---------+----------+-----+--------------+-------------|
-  |     3 | Gnome | Rock Gnome | Fighter | Brute    |  20 | Chaotic Good | Small (3ft) |
+  | Level | Race    | Subrace | Class     | Subclass | Age | Alignment | Size        |
+  |-------+---------+---------+-----------+----------+-----+-----------+-------------|
+  |     5 | Goliath |         | Barbarian |          |  27 |           | Medium(305) |
 
 * Stats  
   | Speed | Hit Points | AC | Death Saves | Inspiration |
   |-------+------------+----+-------------+-------------|
-  | 25 ft | 31/31      | 18 |             |             |
+  | 30 ft | 43/43      |    |             |             |
 
 * Abilities and Skills
   #+name: stats
   | Ability | Score | Mod | PB | Roll      | Skill           |
   |---------+-------+-----+----+-----------+-----------------|
-  | STR     |    17 |   3 | X  | 1d20 + 5  | Saving Throw    |
-  |         |       |     |    | 1d20 + 3  | Athletics       |
+  | STR     |    17 |   3 | X  | 1d20 + 6  | Saving Throw    |
+  |         |       |     | X  | 1d20 + 6  | Athletics       |
   |---------+-------+-----+----+-----------+-----------------|
   | DEX     |    13 |   1 |    | 1d20 + 1  | Saving Throw    |
   |         |       |     |    | 1d20 + 1  | Acrobatics      |
-  |         |       |     | X  | 1d20 + 3  | Sleight of Hand |
+  |         |       |     |    | 1d20 + 1  | Sleight of Hand |
   |         |       |     |    | 1d20 + 1  | Stealth         |
   |---------+-------+-----+----+-----------+-----------------|
-  | CON     |    14 |   2 | X  | 1d20 + 4  | Saving Throw    |
+  | CON     |    15 |   2 | X  | 1d20 + 5  | Saving Throw    |
   |---------+-------+-----+----+-----------+-----------------|
   | INT     |     8 |  -1 |    | 1d20 + -1 | Saving Throw    |
   |         |       |     |    | 1d20 + -1 | Arcana          |
@@ -52,18 +50,18 @@
   |---------+-------+-----+----+-----------+-----------------|
   | WIS     |    10 |   0 |    | 1d20 + 0  | Saving Throw    |
   |         |       |     |    | 1d20 + 0  | Animal Handling |
-  |         |       |     | X  | 1d20 + 2  | Insight         |
+  |         |       |     |    | 1d20 + 0  | Insight         |
   |         |       |     |    | 1d20 + 0  | Medicine        |
   |         |       |     |    | 1d20 + 0  | Perception      |
-  |         |       |     |    | 1d20 + 0  | Survival        |
+  |         |       |     | X  | 1d20 + 3  | Survival        |
   |---------+-------+-----+----+-----------+-----------------|
   | CHA     |    12 |   1 |    | 1d20 + 1  | Saving Throw    |
-  |         |       |     | X  | 1d20 + 3  | Deception       |
-  |         |       |     | X  | 1d20 + 3  | Intimidation    |
+  |         |       |     |    | 1d20 + 1  | Deception       |
+  |         |       |     | X  | 1d20 + 4  | Intimidation    |
   |         |       |     |    | 1d20 + 1  | Performance     |
   |         |       |     |    | 1d20 + 1  | Persuasion      |
   |---------+-------+-----+----+-----------+-----------------|
-  | PROF    |     2 |     |    |           |                 |
+  | PROF    |     3 |     |    |           |                 |
   #+TBLFM: @2$3='(calc-dnd-mod (string-to-number (org-table-get-constant $1)))
   #+TBLFM: @4$3='(calc-dnd-mod (string-to-number (org-table-get-constant $1)))
   #+TBLFM: @8$3='(calc-dnd-mod (string-to-number (org-table-get-constant $1)))
@@ -78,70 +76,88 @@
   #+TBLFM: @21$5..@25$5='(concat "1d20 + " (number-to-string (+ (if (string= $4 "X") $PROF 0) (calc-dnd-mod (string-to-number (org-table-get-constant @21$1))))))
 
 ** Abilities
-*** Second Wind
-You have a limited well of stamina that you can draw on to protect yourself
-from harm. On your turn, you can use a bonus action to regain hit points equal
-to 1d10 + your fighter level.
+*** Rage
+    In battle, you fight with primal ferocity. On your turn, you can enter a rage as a bonus action.
 
-Once you use this feature, you must finish a short or long rest before you can use it again.
+    While raging, you gain the following benefits if you aren't wearing heavy armor:
 
-*** Action Surge
-You can push yourself beyond your normal limits for a moment.
-On your turn, you can take one additional action.
+    You have advantage on Strength checks and Strength saving throws.
+    When you make a melee weapon attack using Strength, you gain a bonus to the damage roll that increases as you gain levels as a barbarian, as shown in the Rage Damage column of the Barbarian table.
+You have resistance to bludgeoning, piercing, and slashing damage.
+If you are able to cast spells, you can't cast them or concentrate on them while raging.
 
-Once you use this feature, you must finish a short or long rest before you can use it again.
-Starting at 17th level, you can use it twice before a rest, but only once on the same turn.
+Your rage lasts for 1 minute. It ends early if you are knocked unconscious or if your turn ends and you haven't attacked a hostile creature since your last turn or taken damage since then. You can also end your rage on your turn as a bonus action.
 
-*** Brute Force
-Whenever you hit with a weapon that you’re proficient with and deal damage,
-the weapon’s damage increases by an amount based on your level in this class
+Once you have raged the number of times shown for your barbarian level in the Rages column of the Barbarian table, you must finish a long rest before you can rage again.
 
-| Lvl | Damage |
-|-----+--------|
-|   3 |    1d4 |
-|  10 |    1d6 |
-|  16 |    1d8 |
-| 20  |   1d10 |
+| Level | Rage Damage |     Rages |
+|-------+-------------+-----------|
+|   1-2 |          +2 |         2 |
+|   3-5 |          +2 |         3 |
+|   6-8 |          +2 |         4 |
+|  9-11 |          +3 |         4 |
+| 12-15 |          +3 |         5 |
+|    16 |          +4 |         5 |
+| 16-19 |          +4 |         6 |
+|    20 |          +4 | Unlimited |
 
+*** Unarmored Defense
+    While you are not wearing any armor, your armor class equals
+    10 + your Dexterity modifier + your Constitution modifier.
+    You can use a shield and still gain this benefit.
+
+*** Danger Sense
+    At 2nd level, you gain an uncanny sense of when things nearby aren't as they should be,
+    giving you an edge when you dodge away from danger. You have advantage on Dexterity saving
+    throws against effects that you can see, such as traps and spells. To gain this benefit,
+    you can't be blinded, deafened, or incapacitated.
+
+*** Reckless Attack
+    Starting at 2nd level, you can throw aside all concern for defense to attack with fierce desperation.
+    When you make your first attack on your turn, you can decide to attack recklessly.
+    Doing so gives you advantage on melee weapon attack rolls using Strength during this turn,
+    but attack rolls against you have advantage until your next turn.
+
+*** Extra Attack
+Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.
+
+* Feats
+** Shield Master
+   You use shields not just for protection but also for offense. You gain the following benefits while you are wielding a shield:
+
+If you take the Attack action on your turn, you can use a bonus action to try to shove a creature within 5 feet of you with your shield.
+If you aren't incapacitated, you can add your shield's AC bonus to any Dexterity saving throw you make against a spell or other harmful effect that targets only you.
+If you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you can use your reaction to take no damage if you succeed on the saving throw, interposing your shield between yourself and the source of the effect.
   
 * Attacks
   #+NAME: attacks
-  | Weapon           | Ability | Prof | Type        | Die | Mod To Hit | Roll          |
-  |------------------+---------+------+-------------+-----+------------+---------------|
-  | Shortsword       | DEX     | X    | Piercing    | 1d6 |          3 | 1d6 + 1       |
-  | Shortsword       | STR     | X    | Piercing    | 1d6 |          5 | 1d6 + 3       |
-  | Boom's Guantlets | STR     | X    | Bludgeoning | 1d4 |          5 | 2d4 + 3 + 2d8 |
-  | Club             | STR     |      | Bludgeoning | 1d4 |            |               |
+  | Weapon   | Ability | Prof | Type        |  Die | Mod To Hit | Roll     |
+  |----------+---------+------+-------------+------+------------+----------|
+  | Shield   | STR     | X    | Bludgeoning |  0d2 |          6 | 0d2 + 3  |
+  | Shield   | STR     | X    | Bludgeoning |  1d4 |          6 | 1d4 + 3  |
+  | Great Ax | STR     | X    | Slashing    | 1d12 |          6 | 1d12 + 3 |
   #+TBLFM: $6='(+ (if (string= $3 "X") $PROF 0) (calc-dnd-mod (string-to-number (org-table-get-constant $2))))
   #+TBLFM: $7='(concat $5 " + " (number-to-string (calc-dnd-mod (string-to-number (org-table-get-constant $2)))))
  
 * Proficiencies
-  | Languages | Tools          | Armor   | Weapons |
-  |-----------+----------------+---------+---------|
-  | Common    | Tinker's Tools | Light   | Simple  |
-  | Gnomish   | Disguise Kit   | Medium  | Martial |
-  |           | Forgery Kit    | Heavy   |         |
-  |           |                | Shields |         |
+  | Languages | Tools | Armor   | Weapons |
+  |-----------+-------+---------+---------|
+  | Common    |       | Light   | Simple  |
+  | Giant     |       | Medium  | Martial |
+  |           |       | Shields |         |
 
 * Equipment
   | Name           | Quantity | Cost (gp) | Weight (lbs) | Total Weight (lbs) | Total Cost (gp) |
   |----------------+----------+-----------+--------------+--------------------+-----------------|
-  | Arrow          |       20 |       .05 |          .05 |                 1. |              1. |
-  | Short Sword    |        3 |        10 |            2 |                  6 |              30 |
-  | Short Bow      |        1 |        25 |            2 |                  2 |              25 |
-  | Mastiff        |        2 |        25 |            0 |                  0 |              50 |
-  | Common Clothes |        2 |        .5 |            3 |                  6 |              1. |
-  | Smith Tools    |        1 |        20 |            8 |                  8 |              20 |
-  | Tinker Tools   |        1 |        50 |           10 |                 10 |              50 |
-  | Saddle Bags    |        2 |         4 |            8 |                 16 |               8 |
-  | Rations        |        4 |        .5 |            2 |                  8 |              2. |
+  | Explorer Pack  |        1 |         0 |            0 |                 1. |              1. |
+  | Javalins       |        4 |         0 |            0 |                    |                 |
   |----------------+----------+-----------+--------------+--------------------+-----------------|
   | Carry Capacity |      170 |           |              |                57. |            187. |
   #+TBLFM: $5=($2 * $4)
   #+TBLFM: $6=($2 * $3)
-  #+TBLFM: @11$5=vsum(@2$5..@11$5)
-  #+TBLFM: @11$6=vsum(@2$6..@10$6)
-  #+TBLFM: @11$2=($STR * 10)
+  #+TBLFM: @12$5=vsum(@2$5..@12$5)
+  #+TBLFM: @12$6=vsum(@2$6..@11$6)
+  #+TBLFM: @12$2=($STR * 10)
  
 ** Money
    | Copper | Silver | Electrum | Gold | Platinum | Total (Gold) |
