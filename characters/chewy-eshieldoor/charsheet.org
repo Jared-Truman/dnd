@@ -6,40 +6,40 @@
     (dnd-output-ability-constants table)
   #+END_SRC
 
-  #+RESULTS[90dcf18344cfb2df6a08ee7b9b63bbedebdf7fa1]: define-constants-with-src-block
+  #+RESULTS[1c0756520bc96a55ee8e0cbc9f098e41dda5e6f7]: define-constants-with-src-block
   :results:
   #+CONSTANTS: STR=17
   #+CONSTANTS: DEX=13
-  #+CONSTANTS: CON=14
+  #+CONSTANTS: CON=15
   #+CONSTANTS: INT=8
   #+CONSTANTS: WIS=10
   #+CONSTANTS: CHA=12
-  #+CONSTANTS: PROF=2
+  #+CONSTANTS: PROF=3
   :end:
   
 * Traits
-  | Level | Race    | Subrace | Class     | Subclass | Age | Alignment    | Size        |
-  |-------+---------+---------+-----------+----------+-----+--------------+-------------|
-  |     5 | Goliath |         | Barbarian |          |  27 |  | Medium(305) |
+  | Level | Race    | Subrace | Class     | Subclass | Age | Alignment | Size        |
+  |-------+---------+---------+-----------+----------+-----+-----------+-------------|
+  |     5 | Goliath |         | Barbarian |          |  27 |           | Medium(305) |
 
 * Stats  
   | Speed | Hit Points | AC | Death Saves | Inspiration |
   |-------+------------+----+-------------+-------------|
-  | 30 ft |            |    |             |             |
+  | 30 ft | 43/43      |    |             |             |
 
 * Abilities and Skills
   #+name: stats
   | Ability | Score | Mod | PB | Roll      | Skill           |
   |---------+-------+-----+----+-----------+-----------------|
-  | STR     |    17 |   3 | X  | 1d20 + 5  | Saving Throw    |
-  |         |       |     | X  | 1d20 + 3  | Athletics       |
+  | STR     |    17 |   3 | X  | 1d20 + 6  | Saving Throw    |
+  |         |       |     | X  | 1d20 + 6  | Athletics       |
   |---------+-------+-----+----+-----------+-----------------|
   | DEX     |    13 |   1 |    | 1d20 + 1  | Saving Throw    |
   |         |       |     |    | 1d20 + 1  | Acrobatics      |
-  |         |       |     |    | 1d20 + 3  | Sleight of Hand |
+  |         |       |     |    | 1d20 + 1  | Sleight of Hand |
   |         |       |     |    | 1d20 + 1  | Stealth         |
   |---------+-------+-----+----+-----------+-----------------|
-  | CON     |    15 |   2 | X  | 1d20 + 4  | Saving Throw    |
+  | CON     |    15 |   2 | X  | 1d20 + 5  | Saving Throw    |
   |---------+-------+-----+----+-----------+-----------------|
   | INT     |     8 |  -1 |    | 1d20 + -1 | Saving Throw    |
   |         |       |     |    | 1d20 + -1 | Arcana          |
@@ -50,14 +50,14 @@
   |---------+-------+-----+----+-----------+-----------------|
   | WIS     |    10 |   0 |    | 1d20 + 0  | Saving Throw    |
   |         |       |     |    | 1d20 + 0  | Animal Handling |
-  |         |       |     |    | 1d20 + 2  | Insight         |
+  |         |       |     |    | 1d20 + 0  | Insight         |
   |         |       |     |    | 1d20 + 0  | Medicine        |
   |         |       |     |    | 1d20 + 0  | Perception      |
-  |         |       |     | X  | 1d20 + 0  | Survival        |
+  |         |       |     | X  | 1d20 + 3  | Survival        |
   |---------+-------+-----+----+-----------+-----------------|
   | CHA     |    12 |   1 |    | 1d20 + 1  | Saving Throw    |
-  |         |       |     |    | 1d20 + 3  | Deception       |
-  |         |       |     | X  | 1d20 + 3  | Intimidation    |
+  |         |       |     |    | 1d20 + 1  | Deception       |
+  |         |       |     | X  | 1d20 + 4  | Intimidation    |
   |         |       |     |    | 1d20 + 1  | Performance     |
   |         |       |     |    | 1d20 + 1  | Persuasion      |
   |---------+-------+-----+----+-----------+-----------------|
@@ -131,11 +131,11 @@ If you are subjected to an effect that allows you to make a Dexterity saving thr
   
 * Attacks
   #+NAME: attacks
-  | Weapon   | Ability | Prof | Type        |  Die | Mod To Hit | Roll    |
-  |----------+---------+------+-------------+------+------------+---------|
-  | Shield   | STR     | X    | Bludgeoning |  0d2 |          3 | 1d6 + 1 |
-  | Shield   | STR     | X    | Bludgeoning |  1d4 |          3 | 1d6 + 1 |
-  | Great Ax | STR     | X    | Slashing    | 1d12 |          5 | 1d6 + 3 |
+  | Weapon   | Ability | Prof | Type        |  Die | Mod To Hit | Roll     |
+  |----------+---------+------+-------------+------+------------+----------|
+  | Shield   | STR     | X    | Bludgeoning |  0d2 |          6 | 0d2 + 3  |
+  | Shield   | STR     | X    | Bludgeoning |  1d4 |          6 | 1d4 + 3  |
+  | Great Ax | STR     | X    | Slashing    | 1d12 |          6 | 1d12 + 3 |
   #+TBLFM: $6='(+ (if (string= $3 "X") $PROF 0) (calc-dnd-mod (string-to-number (org-table-get-constant $2))))
   #+TBLFM: $7='(concat $5 " + " (number-to-string (calc-dnd-mod (string-to-number (org-table-get-constant $2)))))
  
@@ -144,28 +144,20 @@ If you are subjected to an effect that allows you to make a Dexterity saving thr
   |-----------+-------+---------+---------|
   | Common    |       | Light   | Simple  |
   | Giant     |       | Medium  | Martial |
-  |           |       | Heavy   |         |
   |           |       | Shields |         |
 
 * Equipment
   | Name           | Quantity | Cost (gp) | Weight (lbs) | Total Weight (lbs) | Total Cost (gp) |
   |----------------+----------+-----------+--------------+--------------------+-----------------|
-  | Arrow          |       20 |       .05 |          .05 |                 1. |              1. |
-  | Short Sword    |        3 |        10 |            2 |                  6 |              30 |
-  | Short Bow      |        1 |        25 |            2 |                  2 |              25 |
-  | Mastiff        |        2 |        25 |            0 |                  0 |              50 |
-  | Common Clothes |        2 |        .5 |            3 |                  6 |              1. |
-  | Smith Tools    |        1 |        20 |            8 |                  8 |              20 |
-  | Tinker Tools   |        1 |        50 |           10 |                 10 |              50 |
-  | Saddle Bags    |        2 |         4 |            8 |                 16 |               8 |
-  | Rations        |        4 |        .5 |            2 |                  8 |              2. |
+  | Explorer Pack  |        1 |         0 |            0 |                 1. |              1. |
+  | Javalins       |        4 |         0 |            0 |                    |                 |
   |----------------+----------+-----------+--------------+--------------------+-----------------|
   | Carry Capacity |      170 |           |              |                57. |            187. |
   #+TBLFM: $5=($2 * $4)
   #+TBLFM: $6=($2 * $3)
-  #+TBLFM: @11$5=vsum(@2$5..@11$5)
-  #+TBLFM: @11$6=vsum(@2$6..@10$6)
-  #+TBLFM: @11$2=($STR * 10)
+  #+TBLFM: @12$5=vsum(@2$5..@12$5)
+  #+TBLFM: @12$6=vsum(@2$6..@11$6)
+  #+TBLFM: @12$2=($STR * 10)
  
 ** Money
    | Copper | Silver | Electrum | Gold | Platinum | Total (Gold) |
