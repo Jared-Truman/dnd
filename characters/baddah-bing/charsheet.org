@@ -25,7 +25,7 @@
 * Stats  
   | Speed | Hit Points | AC | Death Saves | Inspiration |
   |-------+------------+----+-------------+-------------|
-  | 25 ft | 50/50      | 18 |             |             |
+  | 25 ft | 48/50      | 18 |             |             |
 
 * Abilities and Skills
   #+name: stats
@@ -138,13 +138,14 @@
   | Saddle Bags    |        2 |         4 |            8 |                 16 |               8 |
   | Rations        |        4 |        .5 |            2 |                  8 |              2. |
   | Fine clothes   |        2 |        15 |            3 |                  6 |              30 |
+  | Bed Roll       |        1 |         0 |              |                    |                 |
   |----------------+----------+-----------+--------------+--------------------+-----------------|
   | Carry Capacity |      190 |           |              |                  0 |               0 |
   #+TBLFM: $5=($2 * $4)
   #+TBLFM: $6=($2 * $3)
-  #+TBLFM: @14$5=vsum(@2$5..@14$5)
-  #+TBLFM: @14$6=vsum(@2$6..@10$6)
-  #+TBLFM: @14$2=($STR * 10)
+  #+TBLFM: @15$5=vsum(@2$5..@15$5)
+  #+TBLFM: @15$6=vsum(@2$6..@10$6)
+  #+TBLFM: @15$2=($STR * 10)
 
 ** Money
    | Copper | Silver | Electrum | Gold | Platinum | Total (Gold) |
