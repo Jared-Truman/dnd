@@ -6,9 +6,9 @@
     (dnd-output-ability-constants table)
   #+END_SRC
 
-  #+RESULTS[1fd68bde4889e019495d05294461b09b0afb80e5]: define-constants-with-src-block
+  #+RESULTS[d2bead2789e3d7d9b2c9461b026bf7a0c8bf2cea]: define-constants-with-src-block
   :results:
-  #+CONSTANTS: STR=19
+  #+CONSTANTS: STR=20
   #+CONSTANTS: DEX=14
   #+CONSTANTS: CON=14
   #+CONSTANTS: INT=8
@@ -31,10 +31,10 @@
   #+name: stats
   | Ability | Score | Mod | PB | Roll      | Skill           |
   |---------+-------+-----+----+-----------+-----------------|
-  | STR     |    19 |   4 | X  | 1d20 + 7  | Saving Throw    |
-  |         |       |     |    | 1d20 + 4  | Athletics       |
+  | STR     |    20 |   5 | X  | 1d20 + 8  | Saving Throw    |
+  |         |       |     |    | 1d20 + 5  | Athletics       |
   |---------+-------+-----+----+-----------+-----------------|
-  | DEX     |    14 |   2 | X  | 1d20 + 5  | Saving Throw    |
+  | DEX     |    14 |   2 |    | 1d20 + 2  | Saving Throw    |
   |         |       |     |    | 1d20 + 2  | Acrobatics      |
   |         |       |     | X  | 1d20 + 5  | Sleight of Hand |
   |         |       |     |    | 1d20 + 2  | Stealth         |
@@ -99,21 +99,17 @@
 |   3 |    1d4 |
 |  10 |    1d6 |
 |  16 |    1d8 |
-| 20  |   1d10 |
+|  20 |   1d10 |
 
 ** Feats
-*** Resilient 
-    - Choose one ability score. You gain the following benefits:
-      Increase the chosen ability score by 1, to a maximum of 20.
-    - You gain proficiency in saving throws using the chosen ability : DEX
 
 * Attacks
   #+NAME: attacks
   | Weapon           | Ability | Prof | Type        | Die | Mod To Hit | Roll    |
   |------------------+---------+------+-------------+-----+------------+---------|
   | Shortsword       | DEX     | X    | Piercing    | 1d6 |          5 | 1d6 + 2 |
-  | Shortsword       | STR     | X    | Piercing    | 1d6 |          7 | 1d6 + 4 |
-  | Boom's Guantlets | STR     | X    | Bludgeoning | 1d4 |          7 | 1d4 + 4 |
+  | Shortsword       | STR     | X    | Piercing    | 1d6 |          8 | 1d6 + 5 |
+  | Boom's Guantlets | STR     | X    | Bludgeoning | 1d4 |          8 | 1d4 + 5 |
   #+TBLFM: $6='(+ (if (string= $3 "X") $PROF 0) (calc-dnd-mod (string-to-number (org-table-get-constant $2))))
   #+TBLFM: $7='(concat $5 " + " (number-to-string (calc-dnd-mod (string-to-number (org-table-get-constant $2)))))
  
@@ -134,18 +130,19 @@
   | Mastiff        |        2 |        25 |            0 |                  0 |              50 |
   | Common Clothes |        2 |        .5 |            3 |                  6 |              1. |
   | Smith Tools    |        1 |        20 |            8 |                  8 |              20 |
+  | Thieves Tools  |        1 |        25 |            1 |                  1 |              25 |
   | Tinker Tools   |        1 |        50 |           10 |                 10 |              50 |
   | Saddle Bags    |        2 |         4 |            8 |                 16 |               8 |
   | Rations        |        4 |        .5 |            2 |                  8 |              2. |
   | Fine clothes   |        2 |        15 |            3 |                  6 |              30 |
-  | Bed Roll       |        1 |         0 |              |                    |                 |
+  | Bed Roll       |        1 |         1 |            7 |                  7 |               1 |
   |----------------+----------+-----------+--------------+--------------------+-----------------|
-  | Carry Capacity |      190 |           |              |                  0 |               0 |
+  | Carry Capacity |      200 |           |              |                71. |            210. |
   #+TBLFM: $5=($2 * $4)
   #+TBLFM: $6=($2 * $3)
-  #+TBLFM: @15$5=vsum(@2$5..@15$5)
-  #+TBLFM: @15$6=vsum(@2$6..@10$6)
-  #+TBLFM: @15$2=($STR * 10)
+  #+TBLFM: @14$5=vsum(@2$5..@14$5)
+  #+TBLFM: @14$6=vsum(@2$6..@10$6)
+  #+TBLFM: @14$2=($STR * 10)
 
 ** Money
    | Copper | Silver | Electrum | Gold | Platinum | Total (Gold) |
