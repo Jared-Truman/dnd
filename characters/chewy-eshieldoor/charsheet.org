@@ -18,9 +18,9 @@
   :end:
   
 * Traits
-  | Level | Race    | Subrace | Class     | Subclass | Age | Alignment | Size        |
-  |-------+---------+---------+-----------+----------+-----+-----------+-------------|
-  |     7 | Goliath |         | Barbarian |          |  27 | Neutral   | Medium(305) |
+  | Level | Race    | Subrace | Class     | Subclass           | Age | Alignment | Size            |
+  |-------+---------+---------+-----------+--------------------+-----+-----------+-----------------|
+  |     7 | Goliath |         | Barbarian | Bear Totem Warrior |  27 | Neutral   | Medium(340) 8FT |
 
 * Stats  
   | Speed | Hit Points | AC | Death Saves | Inspiration |
@@ -114,6 +114,15 @@
     throws against effects that you can see, such as traps and spells. To gain this benefit,
     you can't be blinded, deafened, or incapacitated.
 
+*** Totem Spirit - Bear
+    Lvl 3:
+    *Bear*. While raging, you have resistance to all damage except psychic damage.
+    The spirit of the bear makes you tough enough to stand up to any punishment.
+
+    Lvl 6:
+    *Bear*. You gain the might of a bear. Your carrying capacity (including maximum load and maximum lift)
+    is doubled, and you have advantage on Strength checks made to push, pull, lift, or break objects.
+    
 *** Reckless Attack
     Starting at 2nd level, you can throw aside all concern for defense to attack with fierce desperation.
     When you make your first attack on your turn, you can decide to attack recklessly.
@@ -123,7 +132,7 @@
 *** Extra Attack
     Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.
 
-* Feral Instinct
+*** Feral Instinct
   By 7th level, your instincts are so honed that you have advantage on
   initiative rolls.
   
