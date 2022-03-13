@@ -20,12 +20,12 @@
 * Traits
   | Level | Race    | Subrace | Class     | Subclass | Age | Alignment | Size        |
   |-------+---------+---------+-----------+----------+-----+-----------+-------------|
-  |     5 | Goliath |         | Barbarian |          |  27 |           | Medium(305) |
+  |     7 | Goliath |         | Barbarian |          |  27 | Neutral   | Medium(305) |
 
 * Stats  
   | Speed | Hit Points | AC | Death Saves | Inspiration |
   |-------+------------+----+-------------+-------------|
-  | 30 ft | 43/43      |    |             |             |
+  | 40 ft | 57/57      | 18 |             |             |
 
 * Abilities and Skills
   #+name: stats
@@ -81,14 +81,16 @@
 
     While raging, you gain the following benefits if you aren't wearing heavy armor:
 
-    You have advantage on Strength checks and Strength saving throws.
-    When you make a melee weapon attack using Strength, you gain a bonus to the damage roll that increases as you gain levels as a barbarian, as shown in the Rage Damage column of the Barbarian table.
-You have resistance to bludgeoning, piercing, and slashing damage.
-If you are able to cast spells, you can't cast them or concentrate on them while raging.
-
-Your rage lasts for 1 minute. It ends early if you are knocked unconscious or if your turn ends and you haven't attacked a hostile creature since your last turn or taken damage since then. You can also end your rage on your turn as a bonus action.
-
-Once you have raged the number of times shown for your barbarian level in the Rages column of the Barbarian table, you must finish a long rest before you can rage again.
+    - You have advantage on Strength checks and Strength saving throws.
+    - When you make a melee weapon attack using Strength, you gain a bonus to the damage roll that increases
+      as you gain levels as a barbarian, as shown in the Rage Damage column of the Barbarian table.
+    - You have resistance to bludgeoning, piercing, and slashing damage.
+    - If you are able to cast spells, you can't cast them or concentrate on them while raging.
+    - Your rage lasts for 1 minute. It ends early if you are knocked unconscious or if your turn
+      ends and you haven't attacked a hostile creature since your last turn or taken damage since then.
+    - You can also end your rage on your turn as a bonus action.
+    - Once you have raged the number of times shown for your barbarian level in the Rages column of the
+      Barbarian table, you must finish a long rest before you can rage again.
 
 | Level | Rage Damage |     Rages |
 |-------+-------------+-----------|
@@ -119,23 +121,35 @@ Once you have raged the number of times shown for your barbarian level in the Ra
     but attack rolls against you have advantage until your next turn.
 
 *** Extra Attack
-Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.
+    Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.
 
+* Feral Instinct
+  By 7th level, your instincts are so honed that you have advantage on
+  initiative rolls.
+  
+  Additionally, if you are surprised at the beginning of combat and aren't
+  incapacitated, you can act normally on your first turn, but only if you
+  enter your rage before doing anything else on that turn.
+  
 * Feats
 ** Shield Master
    You use shields not just for protection but also for offense. You gain the following benefits while you are wielding a shield:
 
-If you take the Attack action on your turn, you can use a bonus action to try to shove a creature within 5 feet of you with your shield.
-If you aren't incapacitated, you can add your shield's AC bonus to any Dexterity saving throw you make against a spell or other harmful effect that targets only you.
-If you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you can use your reaction to take no damage if you succeed on the saving throw, interposing your shield between yourself and the source of the effect.
+   - If you take the Attack action on your turn, you can use a bonus action to try to shove a creature within 5 feet
+     of you with your shield.
+   - If you aren't incapacitated, you can add your shield's AC bonus to any Dexterity saving throw you make against
+     a spell or other harmful effect that targets only you.
+   - If you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage,
+     you can use your reaction to take no damage if you succeed on the saving throw,
+     interposing your shield between yourself and the source of the effect.
   
 * Attacks
   #+NAME: attacks
-  | Weapon   | Ability | Prof | Type        |  Die | Mod To Hit | Roll     |
-  |----------+---------+------+-------------+------+------------+----------|
-  | Shield   | STR     | X    | Bludgeoning |  0d2 |          6 | 0d2 + 3  |
-  | Shield   | STR     | X    | Bludgeoning |  1d4 |          6 | 1d4 + 3  |
-  | Great Ax | STR     | X    | Slashing    | 1d12 |          6 | 1d12 + 3 |
+  | Weapon    | Ability | Prof | Type        |  Die | Mod To Hit | Roll     |
+  |-----------+---------+------+-------------+------+------------+----------|
+  | Shield    | STR     | X    | Bludgeoning |  0d2 |          6 | 0d2 + 3  |
+  | Shield +1 | STR     | X    | Bludgeoning |  1d4 |          6 | 1d4 + 3  |
+  | Great Ax  | STR     | X    | Slashing    | 1d12 |          6 | 1d12 + 3 |
   #+TBLFM: $6='(+ (if (string= $3 "X") $PROF 0) (calc-dnd-mod (string-to-number (org-table-get-constant $2))))
   #+TBLFM: $7='(concat $5 " + " (number-to-string (calc-dnd-mod (string-to-number (org-table-get-constant $2)))))
  
@@ -147,17 +161,21 @@ If you are subjected to an effect that allows you to make a Dexterity saving thr
   |           |       | Shields |         |
 
 * Equipment
-  | Name           | Quantity | Cost (gp) | Weight (lbs) | Total Weight (lbs) | Total Cost (gp) |
-  |----------------+----------+-----------+--------------+--------------------+-----------------|
-  | Explorer Pack  |        1 |         0 |            0 |                 1. |              1. |
-  | Javalins       |        4 |         0 |            0 |                    |                 |
-  |----------------+----------+-----------+--------------+--------------------+-----------------|
-  | Carry Capacity |      170 |           |              |                57. |            187. |
+  | Name              | Quantity | Cost (gp) | Weight (lbs) | Total Weight (lbs) | Total Cost (gp) |
+  |-------------------+----------+-----------+--------------+--------------------+-----------------|
+  | Explorer Pack     |        1 |         0 |            0 |                  0 |               0 |
+  | Javalins          |        4 |         0 |            0 |                  0 |               0 |
+  | Breast plate      |        1 |       400 |              |                  0 |             400 |
+  | Potion of heroism |        1 |           |              |                    |                 |
+  | Elixir of health  |          |           |              |                    |                 |
+  | Map               |        1 |       .05 |            0 |                    |                 |
+  |-------------------+----------+-----------+--------------+--------------------+-----------------|
+  | Carry Capacity    |      170 |           |              |                  0 |               0 |
   #+TBLFM: $5=($2 * $4)
   #+TBLFM: $6=($2 * $3)
-  #+TBLFM: @12$5=vsum(@2$5..@12$5)
-  #+TBLFM: @12$6=vsum(@2$6..@11$6)
-  #+TBLFM: @12$2=($STR * 10)
+  #+TBLFM: @16$5=vsum(@2$5..@16$5)
+  #+TBLFM: @16$6=vsum(@2$6..@15$6)
+  #+TBLFM: @16$2=($STR * 10)
  
 ** Money
    | Copper | Silver | Electrum | Gold | Platinum | Total (Gold) |
