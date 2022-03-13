@@ -23,9 +23,9 @@
   |     7 | Goliath |         | Barbarian | Bear Totem Warrior |  27 | Neutral   | Medium(340) 8FT |
 
 * Stats  
-  | Speed | Hit Points | AC | Death Saves | Inspiration |
-  |-------+------------+----+-------------+-------------|
-  | 40 ft | 57/57      | 18 |             |             |
+  | Speed | Hit Points | AC             | Death Saves | Inspiration |
+  |-------+------------+----------------+-------------+-------------|
+  | 40 ft | 57/57      | 18 +1 (shield) |             |             |
 
 * Abilities and Skills
   #+name: stats
