@@ -25,11 +25,11 @@
 * Stats  
   | Speed | Hit Points | AC             | Death Saves | Inspiration |
   |-------+------------+----------------+-------------+-------------|
-  | 40 ft | 57/57      | 18 +1 (shield) |             |             |
+  | 40 ft | 41/57      | 18 +1 (shield) |             |             |
 
 * Abilities and Skills
   #+name: stats
-  | Ability | Score | Mod | PB | Roll      | Skill           |
+  | Ability | Score  | Mod | PB | Roll      | Skill           |
   |---------+-------+-----+----+-----------+-----------------|
   | STR     |    17 |   3 | X  | 1d20 + 6  | Saving Throw    |
   |         |       |     | X  | 1d20 + 6  | Athletics       |
@@ -79,7 +79,7 @@
 *** Rage
     In battle, you fight with primal ferocity. On your turn, you can enter a rage as a bonus action.
 
-    While raging, you gain the following benefits if you aren't wearing heavy armor:
+    While ragi,ng, you gain the following benefits if you aren't wearing heavy armor:
 
     - You have advantage on Strength checks and Strength saving throws.
     - When you make a melee weapon attack using Strength, you gain a bonus to the damage roll that increases
