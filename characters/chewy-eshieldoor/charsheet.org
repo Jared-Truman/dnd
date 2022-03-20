@@ -1,3 +1,4 @@
+
 #+TILE: Chewy Eshieldoor - Character Sheet
 
 * Constants
@@ -16,6 +17,8 @@
   #+CONSTANTS: CHA=12
   #+CONSTANTS: PROF=3
   :end:
+
+  LEVEL 8
   
 * Traits
   | Level | Race    | Subrace | Class     | Subclass           | Age | Alignment | Size            |
@@ -25,7 +28,7 @@
 * Stats  
   | Speed | Hit Points | AC             | Death Saves | Inspiration |
   |-------+------------+----------------+-------------+-------------|
-  | 40 ft | 41/57      | 18 +1 (shield) |             |             |
+  | 40 ft | 57/57      | 18 +1 (shield) |             |             |
 
 * Abilities and Skills
   #+name: stats
@@ -79,7 +82,7 @@
 *** Rage
     In battle, you fight with primal ferocity. On your turn, you can enter a rage as a bonus action.
 
-    While ragi,ng, you gain the following benefits if you aren't wearing heavy armor:
+    While raging, you gain the following benefits if you aren't wearing heavy armor:
 
     - You have advantage on Strength checks and Strength saving throws.
     - When you make a melee weapon attack using Strength, you gain a bonus to the damage roll that increases
@@ -139,6 +142,13 @@
   Additionally, if you are surprised at the beginning of combat and aren't
   incapacitated, you can act normally on your first turn, but only if you
   enter your rage before doing anything else on that turn.
+
+* Racial Ability
+** Stone’s Endurance
+   You can focus yourself to occasionally shrug off injury.
+  When you take damage, you can use your reaction to roll a d12. Add your Constitution modifier to the number rolled and reduce the damage by that total.
+  After you use this trait, you can’t use it again until you finish a short or long rest.
+  1d12 + Const Mod
   
 * Feats
 ** Shield Master
@@ -170,24 +180,25 @@
   |           |       | Shields |         |
 
 * Equipment
-  | Name              | Quantity | Cost (gp) | Weight (lbs) | Total Weight (lbs) | Total Cost (gp) |
-  |-------------------+----------+-----------+--------------+--------------------+-----------------|
-  | Explorer Pack     |        1 |         0 |            0 |                  0 |               0 |
-  | Javalins          |        4 |         0 |            0 |                  0 |               0 |
-  | Breast plate      |        1 |       400 |              |                  0 |             400 |
-  | Potion of heroism |        1 |           |              |                    |                 |
-  | Elixir of health  |          |           |              |                    |                 |
-  | Map               |        1 |       .05 |            0 |                    |                 |
-  |-------------------+----------+-----------+--------------+--------------------+-----------------|
-  | Carry Capacity    |      170 |           |              |                  0 |               0 |
+  | Name                           | Quantity | Cost (gp) | Weight (lbs) | Total Weight (lbs) | Total Cost (gp) |
+  |--------------------------------+----------+-----------+--------------+--------------------+-----------------|
+  | Explorer Pack                  |        1 |         0 |            0 |                  0 |               0 |
+  | Javalins                       |        4 |         0 |            0 |                  0 |               0 |
+  | Breast plate                   |        1 |       400 |              |                  0 |             400 |
+  | Potion of heroism              |        1 |           |              |                    |                 |
+  | Elixir of health               |          |           |              |                    |                 |
+  | Map                            |        1 |       .05 |            0 |                    |                 |
+  | Gold Band from Kerry Red Spear |        1 |           |              |                    |                 |
+  |--------------------------------+----------+-----------+--------------+--------------------+-----------------|
+  | Carry Capacity                 |      170 |           |              |                  0 |               0 |
   #+TBLFM: $5=($2 * $4)
   #+TBLFM: $6=($2 * $3)
-  #+TBLFM: @16$5=vsum(@2$5..@16$5)
-  #+TBLFM: @16$6=vsum(@2$6..@15$6)
-  #+TBLFM: @16$2=($STR * 10)
+  #+TBLFM: @17$5=vsum(@2$5..@17$5)
+  #+TBLFM: @17$6=vsum(@2$6..@16$6)
+  #+TBLFM: @17$2=($STR * 10)
  
 ** Money
    | Copper | Silver | Electrum | Gold | Platinum | Total (Gold) |
    |--------+--------+----------+------+----------+--------------|
-   |      0 |      0 |        0 |    0 |        0 |            0 |
+   |      0 |      0 |        0 |  750 |        0 |            0 |
    #+TBLFM: $6=(($1 / 100) + ($2 / 10) + ($3 / 2) + $4 + ($5 * 10))
