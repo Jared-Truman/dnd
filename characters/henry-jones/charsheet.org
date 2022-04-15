@@ -1,0 +1,216 @@
+
+#+TILE: Dr Henry Jones - Character Sheet
+
+* Constants
+  #+NAME: define-constants-with-src-block
+  #+BEGIN_SRC elisp :var table=stats :colnames yes :results output drawer :cache yes :lang elisp
+    (dnd-output-ability-constants table)
+  #+END_SRC
+
+  #+RESULTS[0df4bdd98dd3b5083249531c8fc0877a08e5032d]: define-constants-with-src-block
+  :results:
+  #+CONSTANTS: STR=19
+  #+CONSTANTS: DEX=13
+  #+CONSTANTS: CON=15
+  #+CONSTANTS: INT=8
+  #+CONSTANTS: WIS=10
+  #+CONSTANTS: CHA=12
+  #+CONSTANTS: PROF=3
+  :end:
+
+  LEVEL 8
+  
+* Traits
+  | Level | Race  | Subrace | Class     | Subclass     | Age | Alignment    | Size             |
+  |-------+-------+---------+-----------+--------------+-----+--------------+------------------|
+  |     5 | Human | Variant | Artificer | Battle Smith |  37 | Chaotic Good | Medium(175) 6'1" |
+
+** Variant Human
+   
+If your campaign uses the optional feat rules from the Player’s Handbook, your Dungeon Master might allow these variant traits, all of which replace the human’s Ability Score Increase trait.
+
+Ability Score Increase
+Two different ability scores of your choice increase by 1.
+
+Skills
+You gain proficiency in one skill of your choice.
+
+Feat
+You gain one feat of your choice.
+
+
+* Stats  
+  | Speed | Hit Points       | AC       | Death Saves | Inspiration |
+  |-------+------------------+----------+-------------+-------------|
+  |    30 | 1d8 + CON (or 5) | 12 + DEX |             |             |
+
+* Abilities and Skills
+  #+name: stats
+  | Ability | Score | Mod | PB | Roll           | Skill                 |
+  |---------+-------+-----+----+----------------+-----------------------|
+  | STR     |       |   4 |    | 1d20 + 7       | Saving Throw          |
+  |         |       |     |    | 1d20 + 7       | Athletics             |
+  |---------+-------+-----+----+----------------+-----------------------|
+  | DEX     |       |   1 |    | 1d20 + 1       | Saving Throw          |
+  |         |       |     |    | 1d20 + 1       | Acrobatics            |
+  |         |       |     |    | 1d20 + 1       | Sleight of Hand       |
+  |         |       |     |    | 1d20 + 1       | Stealth               |
+  |---------+-------+-----+----+----------------+-----------------------|
+  | CON     |       |   2 | X  | 1d20 + 5       | Saving Throw          |
+  |---------+-------+-----+----+----------------+-----------------------|
+  | INT     |       |  -1 | X  | 1d20 + -1      | Saving Throw          |
+  |         |       |     |    | 1d20 + -1      | Arcana                |
+  |         |       |     | X  | 1d20 + -1      | History               |
+  |         |       |     | X  | 1d20 + -1      | Investigation         |
+  |         |       |     |    | 1d20 + -1      | Nature                |
+  |         |       |     |    | 1d20 + -1      | Religion              |
+  |---------+-------+-----+----+----------------+-----------------------|
+  | WIS     |       |   0 |    | 1d20 + 0       | Saving Throw          |
+  |         |       |     |    | 1d20 + 0       | Animal Handling       |
+  |         |       |     |    | 1d20 + 0       | Insight               |
+  |         |       |     |    | 1d20 + 0       | Medicine              |
+  |         |       |     | X  | 1d20 + 0       | Perception            |
+  |         |       |     |    | 1d20 + 3       | Survival              |
+  |---------+-------+-----+----+----------------+-----------------------|
+  | CHA     |       |   1 |    | 1d20 + 1       | Saving Throw          |
+  |         |       |     |    | 1d20 + 1       | Deception             |
+  |         |       |     |    | 1d20 + 4       | Intimidation          |
+  |         |       |     |    | 1d20 + 1       | Performance           |
+  |         |       |     |    | 1d20 + 1       | Persuasion            |
+  |---------+-------+-----+----+----------------+-----------------------|
+  | PROF    |     3 |     |    |                |                       |
+  | SCA     |       |     |    | 8 + PROF + INT | SPELL CASTING ABILITY |
+  | SAM     |       |     |    | PROF + INT     | SPELL ATT MOD         |
+  #+TBLFM: @2$3='(calc-dnd-mod (string-to-number (org-table-get-constant $1)))
+  #+TBLFM: @4$3='(calc-dnd-mod (string-to-number (org-table-get-constant $1)))
+  #+TBLFM: @8$3='(calc-dnd-mod (string-to-number (org-table-get-constant $1)))
+  #+TBLFM: @9$3='(calc-dnd-mod (string-to-number (org-table-get-constant $1)))
+  #+TBLFM: @15$3='(calc-dnd-mod (string-to-number (org-table-get-constant $1)))
+  #+TBLFM: @21$3='(calc-dnd-mod (string-to-number (org-table-get-constant $1)))
+  #+TBLFM: @2$5..@3$5='(concat "1d20 + " (number-to-string (+ (if (string= $4 "X") $PROF 0) (calc-dnd-mod (string-to-number (org-table-get-constant @2$1))))))
+  #+TBLFM: @4$5..@7$5='(concat "1d20 + " (number-to-string (+ (if (string= $4 "X") $PROF 0) (calc-dnd-mod (string-to-number (org-table-get-constant @4$1))))))
+  #+TBLFM: @8$5..@8$5='(concat "1d20 + " (number-to-string (+ (if (string= $4 "X") $PROF 0) (calc-dnd-mod (string-to-number (org-table-get-constant @8$1))))))
+  #+TBLFM: @9$5..@14$5='(concat "1d20 + " (number-to-string (+ (if (string= $4 "X") $PROF 0) (calc-dnd-mod (string-to-number (org-table-get-constant @9$1))))))
+  #+TBLFM: @15$5..@20$5='(concat "1d20 + " (number-to-string (+ (if (string= $4 "X") $PROF 0) (calc-dnd-mod (string-to-number (org-table-get-constant @15$1))))))
+  #+TBLFM: @21$5..@25$5='(concat "1d20 + " (number-to-string (+ (if (string= $4 "X") $PROF 0) (calc-dnd-mod (string-to-number (org-table-get-constant @21$1))))))
+
+** Abilities
+*** Magical Tinkering :lvl:1:
+    Must have thieves' tools or artisan's tools in hand. Tiny Non-magical object use action add one of the following:
+
+    | Object | Property                                                                                                                                                                                                                          |
+    |--------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+    |        | The object sheds bright light in a 5-foot radius and dim light for an additional 5 feet.                                                                                                                                          |
+    |        | Whenever tapped by a creature, the object emits a recorded message that can be heard up to 10 feet away. You utter the message when you bestow this property on the object, and the recording can be no more than 6 seconds long. |
+    |        | The object continuously emits your choice of an odor or a nonverbal sound (wind, waves, chirping, or the like). The chosen phenomenon is perceivable up to 10 feet away.                                                          |
+    |        | A static visual effect appears on one of the object's surfaces. This effect can be a picture, up to 25 words of text, lines and shapes, or a mixture of these elements, as you like.                                              |
+
+    The chosen property lasts indefinitely. As an action, you can touch the object and end the property early.
+
+    Apply to multiple objects, single property from above per object. Number of objects equal to INT mod (minimum 1).
+    If you try to exceed your maximum, the oldest property immediately ends, and then the new property applies.
+*** Infuse Item
+At 2nd level, you've gained the ability to imbue mundane items with certain magical infusions, turning those objects into magic items.
+Whenever you finish a long rest, you can touch a nonmagical object and imbue it with one of your artificer infusions, turning it into a magic item. An infusion works on only certain kinds of objects, as specified in the infusion's description. If the item requires attunement, you can attune yourself to it the instant you infuse the item. If you decide to attune to the item later, you must do so using the normal process for attunement (see the attunement rules in the Dungeon Master's Guide).
+
+Your infusion remains in an item indefinitely, but when you die, the infusion vanishes after a number of days equal to your Intelligence modifier (minimum of 1 day). The infusion also vanishes if you replace your knowledge of the infusion.
+
+You can infuse more than one nonmagical object at the end of a long rest; the maximum number of objects appears in the Infused Items column of the Artificer table. You must touch each of the objects, and each of your infusions can be in only one object at a time. Moreover, no object can bear more than one of your infusions at a time. If you try to exceed your maximum number of infusions, the oldest infusion ends, and then the new infusion applies.
+
+If an infusion ends on an item that contains other things, like a bag of holding, its contents harmlessly appear in and around its space.
+
+
+*** Flash of Genius :lvl:7:
+At 7th level, you've gained the ability to come up with solutions under pressure. When you or another creature you can see within 30 feet of you makes an ability check or a saving throw, you can use your reaction to add your Intelligence modifier to the roll.
+
+You can use this feature a number of times equal to your Intelligence modifier (minimum of once). You regain all expended uses when you finish a long rest.
+
+*** Magic Item Adept :lvl:10:
+When you reach 10th level, you achieve a profound understanding of how to use and make magic items:
+
+You can attune to up to four magic items at once.
+If you craft a magic item with a rarity of common or uncommon, it takes you a quarter of the normal time, and it costs you half as much of the usual gold.
+
+* Racial  
+
+* Class
+** Ability Score Improvement
+   When you reach 4th level, 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.
+** Ritual Casting
+You can cast an artificer spell as a ritual if that spell has the ritual tag and you have the spell prepared.
+** The Right Tool for the Job :lvl:3:
+    With thieves' tools or artisan's tools in hand, you can magically create one set of artisan's tools 
+    in an unoccupied space within 5 feet of you. This creation requires 1 hour of uninterrupted work, 
+    which can coincide with a short or long rest. Though the product of magic, the tools are nonmagical, 
+    and they vanish when you use this feature again.
+
+** Battle Ready :lvl:3:
+   When you reach 3rd level, your combat training and your experiments with magic have paid off in two ways:
+
+   You gain proficiency with martial weapons.
+   When you attack with a magic weapon, you can use your Intelligence modifier, instead of Strength or Dexterity modifier, for the attack and damage rolls.
+
+** Extra Attack
+   Starting at 5th level, you can attack twice, rather than once, whenever you take the Attack action on your turn.
+
+** Tool Expertise
+   At 6th level, your proficiency bonus is now doubled for any ability check you make that uses your proficiency with a tool.
+
+** Arcane Jolt
+   At 9th level, you've learn new ways to channel arcane energy to harm or heal. When either you hit a target with a magic weapon attack or your steel defender hits a target, you can channel magical energy through the strike to create one of the following effects:
+
+   The target takes an extra 2d6 force damage.
+   Choose one creature or object you can see within 30 feet of the target. Healing energy flows into the chosen recipient, restoring 2d6 hit points to it.
+   You can use this energy a number of times equal to your Intelligence modifier (minimum of once), but you can do so no more than once on a turn. You regain all expended uses when you finish a long rest.
+
+* Feats
+** Tavern Brawler
+   Accustomed to rough-and-tumble fighting using whatever weapons happen to be at hand, you gain the following benefits:
+
+   - Increase your Strength or Constitution score by 1, to a maximum of 20.
+   - You are proficient with improvised weapons.
+   - Your unarmed strike uses a d4 for damage.
+   - When you hit a creature with an unarmed strike or an improvised weapon on your turn,
+   you can use a bonus action to attempt to grapple the target.
+  
+* Attacks
+  #+NAME: attacks
+  | Weapon | Ability | Prof | Type     | Die | Mod To Hit | Roll |
+  |--------+---------+------+----------+-----+------------+------|
+  | Whip   | INT     |      | Slashing | 1d4 |            |      |
+  |        |         |      |          |     |            |      |
+  #+TBLFM: $6='(+ (if (string= $3 "X") $PROF 0) (calc-dnd-mod (string-to-number (org-table-get-constant $2))))
+  #+TBLFM: $7='(concat $5 " + " (number-to-string (calc-dnd-mod (string-to-number (org-table-get-constant $2)))))
+ 
+* Proficiencies
+  | Languages | Tools        | Armor   | Weapons    |
+  |-----------+--------------+---------+------------|
+  | Common    | Thieves      | Light   | Improvised |
+  |           | Tinkers      | Medium  | Simple     |
+  |           | Cartographer | Shields | Martial    |
+  |           | Smith        |         |            |
+
+* Equipment
+  | Name                  | Quantity | Cost (gp) | Weight (lbs) | Total Weight (lbs) | Total Cost (gp) |
+  |-----------------------+----------+-----------+--------------+--------------------+-----------------|
+  | Studded Leather Armor |        1 |        45 |           13 |                  0 |               0 |
+  | Whip                  |        1 |         2 |            3 |                    |                 |
+  | Light Crossbow        |        1 |        25 |            5 |                    |                 |
+  | Bolts                 |       20 |           |              |                    |                 |
+  | Thieves tools         |        1 |           |              |                    |                 |
+  | Dungeoneer's Pack     |        1 |           |              |                    |                 |
+  |-----------------------+----------+-----------+--------------+--------------------+-----------------|
+  | Carry Capacity        |          |           |              |                  0 |               0 |
+  #+TBLFM: $5=($2 * $4)
+  #+TBLFM: $6=($2 * $3)
+  #+TBLFM: @21$5=vsum(@2$5..@21$5)
+  #+TBLFM: @21$6=vsum(@2$6..@20$6)
+  #+TBLFM: @21$2=($STR * 10)
+ 
+** Money
+   | Copper | Silver | Electrum | Gold | Platinum | Total (Gold) |
+   |--------+--------+----------+------+----------+--------------|
+   |      0 |      0 |        0 |  750 |        0 |            0 |
+   #+TBLFM: $6=(($1 / 100) + ($2 / 10) + ($3 / 2) + $4 + ($5 * 10))
+
+* 

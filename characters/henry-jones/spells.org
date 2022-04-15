@@ -1,0 +1,12 @@
+#+TILE: Dr Indi Jones - Spells
+
+* Default Prepared
+** Cantrips
+ 
+** Level 1 (3/3)
+
+| lvl | Battle Smith Spells               |
+|-----+-----------------------------------|
+|   3 | Heroism, Shield                   |
+|   5 | Branding Smite, Warding Bond      |
+|   9 | Aura of Vitality, Conjure Barrage |
