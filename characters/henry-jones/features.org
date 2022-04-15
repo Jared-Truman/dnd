@@ -1,0 +1,68 @@
+#+TITLE Dr Henry Jones - Features
+* Abilities  
+** Class
+*** Magical Tinkering
+    At 1st level, you've learned how to invest a spark of magic into mundane objects. To use this ability, you must have thieves' tools or artisan's tools in hand. You then touch a Tiny nonmagical object as an action and give it one of the following magical properties of your choice:
+
+    |---------+------------------------------------------------------------------------------------------|
+    | Objects | Property                                                                                 |
+    |---------+------------------------------------------------------------------------------------------|
+    |         | The object sheds bright light in a 5-foot radius and dim light for an additional 5 feet. |
+    |---------+------------------------------------------------------------------------------------------|
+    |         | Whenever tapped by a creature, the object emits a recorded message                       |
+    |         | that can be heard up to 10 feet away. You utter the message when                         |
+    |         | you bestow this property on the object,                                                  |
+    |         | and the recording can be no more than 6 seconds long.                                    |
+    |---------+------------------------------------------------------------------------------------------|
+    |         | The chosen phenomenon is perceivable up to 10 feet away.                                 |
+    |         | The object continuously emits your choice of an odor or a nonverbal sound                |
+    |         | EX. wind, waves, chirping, or the like.                                                  |
+    |---------+------------------------------------------------------------------------------------------|
+    |         | A static visual effect appears on one of the object's surfaces.                          |
+    |         | This effect can be a picture, up to 25 words of text, lines and shapes,                  |
+    |         | or a mixture of these elements, as you like.                                             |
+    |---------+------------------------------------------------------------------------------------------|
+
+    Multiple objects, one feature per object, and the chosen property lasts indefinitely. As an action, you can touch the object and end the property early..
+    Number of objects per feature equal to your Intelligence modifier.
+    If you try to exceed your maximum, the oldest property immediately ends, and then the new property applies.
+*** Ability Score Improvement :lvl:4:8:12:16:19:
+    When you reach 4th level, 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.
+*** Ritual Casting
+ You can cast an artificer spell as a ritual if that spell has the ritual tag and you have the spell prepared.
+*** The Right Tool for the Job                                        :lvl:3:
+     With thieves' tools or artisan's tools in hand, you can magically create one set of artisan's tools 
+     in an unoccupied space within 5 feet of you. This creation requires 1 hour of uninterrupted work, 
+     which can coincide with a short or long rest. Though the product of magic, the tools are nonmagical, 
+     and they vanish when you use this feature again.
+
+*** Battle Ready                                                      :lvl:3:
+    When you reach 3rd level, your combat training and your experiments with magic have paid off in two ways:
+
+    You gain proficiency with martial weapons.
+    When you attack with a magic weapon, you can use your Intelligence modifier, instead of Strength or Dexterity modifier, for the attack and damage rolls.
+
+*** Extra Attack
+    Starting at 5th level, you can attack twice, rather than once, whenever you take the Attack action on your turn.
+
+*** Tool Expertise
+    At 6th level, your proficiency bonus is now doubled for any ability check you make that uses your proficiency with a tool.
+
+*** Arcane Jolt
+    At 9th level, you've learn new ways to channel arcane energy to harm or heal. When either you hit a target with a magic weapon attack or your steel defender hits a target, you can channel magical energy through the strike to create one of the following effects:
+
+    The target takes an extra 2d6 force damage.
+    Choose one creature or object you can see within 30 feet of the target. Healing energy flows into the chosen recipient, restoring 2d6 hit points to it.
+    You can use this energy a number of times equal to your Intelligence modifier (minimum of once), but you can do so no more than once on a turn. You regain all expended uses when you finish a long rest.
+
+** Feats
+*** Tavern Brawler
+    Accustomed to rough-and-tumble fighting using whatever weapons happen to be at hand, you gain the following benefits:
+
+    - Increase your Strength or Constitution score by 1, to a maximum of 20.
+    - You are proficient with improvised weapons.
+    - Your unarmed strike uses a d4 for damage.
+    - When you hit a creature with an unarmed strike or an improvised weapon on your turn,
+    you can use a bonus action to attempt to grapple the target.
+
+** Racial

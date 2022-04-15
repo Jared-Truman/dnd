@@ -17,8 +17,6 @@
   #+CONSTANTS: CHA=12
   #+CONSTANTS: PROF=3
   :end:
-
-  LEVEL 8
   
 * Traits
   | Level | Race    | Subrace | Class     | Subclass           | Age | Alignment | Size            |
