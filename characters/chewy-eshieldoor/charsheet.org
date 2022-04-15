@@ -7,9 +7,9 @@
     (dnd-output-ability-constants table)
   #+END_SRC
 
-  #+RESULTS[1c0756520bc96a55ee8e0cbc9f098e41dda5e6f7]: define-constants-with-src-block
+  #+RESULTS[0df4bdd98dd3b5083249531c8fc0877a08e5032d]: define-constants-with-src-block
   :results:
-  #+CONSTANTS: STR=17
+  #+CONSTANTS: STR=19
   #+CONSTANTS: DEX=13
   #+CONSTANTS: CON=15
   #+CONSTANTS: INT=8
@@ -23,7 +23,7 @@
 * Traits
   | Level | Race    | Subrace | Class     | Subclass           | Age | Alignment | Size            |
   |-------+---------+---------+-----------+--------------------+-----+-----------+-----------------|
-  |     7 | Goliath |         | Barbarian | Bear Totem Warrior |  27 | Neutral   | Medium(340) 8FT |
+  |     8 | Goliath |         | Barbarian | Bear Totem Warrior |  27 | Neutral   | Medium(340) 8FT |
 
 * Stats  
   | Speed | Hit Points | AC             | Death Saves | Inspiration |
@@ -32,10 +32,10 @@
 
 * Abilities and Skills
   #+name: stats
-  | Ability | Score  | Mod | PB | Roll      | Skill           |
+  | Ability | Score | Mod | PB | Roll      | Skill           |
   |---------+-------+-----+----+-----------+-----------------|
-  | STR     |    17 |   3 | X  | 1d20 + 6  | Saving Throw    |
-  |         |       |     | X  | 1d20 + 6  | Athletics       |
+  | STR     |    19 |   4 | X  | 1d20 + 7  | Saving Throw    |
+  |         |       |     | X  | 1d20 + 7  | Athletics       |
   |---------+-------+-----+----+-----------+-----------------|
   | DEX     |    13 |   1 |    | 1d20 + 1  | Saving Throw    |
   |         |       |     |    | 1d20 + 1  | Acrobatics      |
@@ -166,9 +166,9 @@
   #+NAME: attacks
   | Weapon    | Ability | Prof | Type        |  Die | Mod To Hit | Roll     |
   |-----------+---------+------+-------------+------+------------+----------|
-  | Shield    | STR     | X    | Bludgeoning |  0d2 |          6 | 0d2 + 3  |
-  | Shield +1 | STR     | X    | Bludgeoning |  1d4 |          6 | 1d4 + 3  |
-  | Great Ax  | STR     | X    | Slashing    | 1d12 |          6 | 1d12 + 3 |
+  | Shield    | STR     | X    | Bludgeoning |  0d2 |          7 | 0d2 + 4  |
+  | Shield +1 | STR     | X    | Bludgeoning |  1d4 |          7 | 1d4 + 4  |
+  | Great Ax  | STR     | X    | Slashing    | 1d12 |          7 | 1d12 + 4 |
   #+TBLFM: $6='(+ (if (string= $3 "X") $PROF 0) (calc-dnd-mod (string-to-number (org-table-get-constant $2))))
   #+TBLFM: $7='(concat $5 " + " (number-to-string (calc-dnd-mod (string-to-number (org-table-get-constant $2)))))
  
@@ -185,10 +185,10 @@
   | Explorer Pack                  |        1 |         0 |            0 |                  0 |               0 |
   | Javalins                       |        4 |         0 |            0 |                  0 |               0 |
   | Breast plate                   |        1 |       400 |              |                  0 |             400 |
-  | Potion of heroism              |        1 |           |              |                    |                 |
-  | Elixir of health               |          |           |              |                    |                 |
-  | Map                            |        1 |       .05 |            0 |                    |                 |
-  | Gold Band from Kerry Red Spear |        1 |           |              |                    |                 |
+  | Potion of heroism              |        1 |           |              |                  0 |               0 |
+  | Elixir of health               |          |           |              |                  0 |               0 |
+  | Map                            |        1 |       .05 |            0 |                  0 |            0.05 |
+  | Gold Band from Kerry Red Spear |        1 |           |              |                  0 |               0 |
   |--------------------------------+----------+-----------+--------------+--------------------+-----------------|
   | Carry Capacity                 |      170 |           |              |                  0 |               0 |
   #+TBLFM: $5=($2 * $4)
