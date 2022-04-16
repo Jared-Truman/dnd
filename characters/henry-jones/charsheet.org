@@ -7,15 +7,17 @@
     (dnd-output-ability-constants table)
   #+END_SRC
 
-  #+RESULTS[0df4bdd98dd3b5083249531c8fc0877a08e5032d]: define-constants-with-src-block
+  #+RESULTS[a4ac99e01eb5540901335777b99370dc72b5ac04]: define-constants-with-src-block
   :results:
-  #+CONSTANTS: STR=19
-  #+CONSTANTS: DEX=13
-  #+CONSTANTS: CON=15
-  #+CONSTANTS: INT=8
-  #+CONSTANTS: WIS=10
-  #+CONSTANTS: CHA=12
-  #+CONSTANTS: PROF=3
+  #+CONSTANTS: STR=11
+  #+CONSTANTS: DEX=15
+  #+CONSTANTS: CON=13
+  #+CONSTANTS: INT=18
+  #+CONSTANTS: WIS=14
+  #+CONSTANTS: CHA=11
+  #+CONSTANTS: PROF=2
+  #+CONSTANTS: SCA=13
+  #+CONSTANTS: SAM=5
   :end:
 
   LEVEL 8
@@ -40,47 +42,47 @@ You gain one feat of your choice.
 
 
 * Stats  
-  | Speed | Hit Points       | AC       | Death Saves | Inspiration |
-  |-------+------------------+----------+-------------+-------------|
-  |    30 | 1d8 + CON (or 5) | 12 + DEX |             |             |
+  | Speed | Hit Points | AC     | Death Saves | Inspiration |
+  |-------+------------+--------+-------------+-------------|
+  |    30 |         39 | 14 + 1 |             |             |
 
 * Abilities and Skills
   #+name: stats
   | Ability | Score | Mod | PB | Roll           | Skill                 |
   |---------+-------+-----+----+----------------+-----------------------|
-  | STR     |       |   4 |    | 1d20 + 7       | Saving Throw          |
-  |         |       |     |    | 1d20 + 7       | Athletics             |
+  | STR     |    11 |   0 |    | 1d20 + 0       | Saving Throw          |
+  |         |       |     |    | 1d20 + 0       | Athletics             |
   |---------+-------+-----+----+----------------+-----------------------|
-  | DEX     |       |   1 |    | 1d20 + 1       | Saving Throw          |
-  |         |       |     |    | 1d20 + 1       | Acrobatics            |
-  |         |       |     |    | 1d20 + 1       | Sleight of Hand       |
-  |         |       |     |    | 1d20 + 1       | Stealth               |
+  | DEX     |    15 |   2 |    | 1d20 + 2       | Saving Throw          |
+  |         |       |     |    | 1d20 + 2       | Acrobatics            |
+  |         |       |     |    | 1d20 + 2       | Sleight of Hand       |
+  |         |       |     |    | 1d20 + 2       | Stealth               |
   |---------+-------+-----+----+----------------+-----------------------|
-  | CON     |       |   2 | X  | 1d20 + 5       | Saving Throw          |
+  | CON     |    13 |   1 | X  | 1d20 + 3       | Saving Throw          |
   |---------+-------+-----+----+----------------+-----------------------|
-  | INT     |       |  -1 | X  | 1d20 + -1      | Saving Throw          |
-  |         |       |     |    | 1d20 + -1      | Arcana                |
-  |         |       |     | X  | 1d20 + -1      | History               |
-  |         |       |     | X  | 1d20 + -1      | Investigation         |
-  |         |       |     |    | 1d20 + -1      | Nature                |
-  |         |       |     |    | 1d20 + -1      | Religion              |
+  | INT     |    18 |   4 | X  | 1d20 + 6       | Saving Throw          |
+  |         |       |     |    | 1d20 + 4       | Arcana                |
+  |         |       |     | X  | 1d20 + 6       | History               |
+  |         |       |     | X  | 1d20 + 6       | Investigation         |
+  |         |       |     |    | 1d20 + 4       | Nature                |
+  |         |       |     |    | 1d20 + 4       | Religion              |
   |---------+-------+-----+----+----------------+-----------------------|
-  | WIS     |       |   0 |    | 1d20 + 0       | Saving Throw          |
-  |         |       |     |    | 1d20 + 0       | Animal Handling       |
-  |         |       |     |    | 1d20 + 0       | Insight               |
-  |         |       |     |    | 1d20 + 0       | Medicine              |
-  |         |       |     |    | 1d20 + 0       | Perception            |
-  |         |       |     | X  | 1d20 + 3       | Survival              |
+  | WIS     |    14 |   2 |    | 1d20 + 2       | Saving Throw          |
+  |         |       |     |    | 1d20 + 2       | Animal Handling       |
+  |         |       |     |    | 1d20 + 2       | Insight               |
+  |         |       |     |    | 1d20 + 2       | Medicine              |
+  |         |       |     |    | 1d20 + 2       | Perception            |
+  |         |       |     | X  | 1d20 + 4       | Survival              |
   |---------+-------+-----+----+----------------+-----------------------|
-  | CHA     |       |   1 |    | 1d20 + 1       | Saving Throw          |
-  |         |       |     |    | 1d20 + 1       | Deception             |
-  |         |       |     |    | 1d20 + 4       | Intimidation          |
-  |         |       |     |    | 1d20 + 1       | Performance           |
-  |         |       |     |    | 1d20 + 1       | Persuasion            |
+  | CHA     |    11 |   0 |    | 1d20 + 0       | Saving Throw          |
+  |         |       |     |    | 1d20 + 0       | Deception             |
+  |         |       |     |    | 1d20 + 0       | Intimidation          |
+  |         |       |     |    | 1d20 + 0       | Performance           |
+  |         |       |     |    | 1d20 + 0       | Persuasion            |
   |---------+-------+-----+----+----------------+-----------------------|
-  | PROF    |     3 |     |    |                |                       |
-  | SCA     |       |     |    | 8 + PROF + INT | SPELL CASTING ABILITY |
-  | SAM     |       |     |    | PROF + INT     | SPELL ATT MOD         |
+  | PROF    |     2 |     |    |                |                       |
+  | SCA     |    13 |     |    | 8 + PROF + INT | SPELL CASTING ABILITY |
+  | SAM     |     5 |     |    | PROF + INT     | SPELL ATT MOD         |
   #+TBLFM: @2$3='(calc-dnd-mod (string-to-number (org-table-get-constant $1)))
   #+TBLFM: @4$3='(calc-dnd-mod (string-to-number (org-table-get-constant $1)))
   #+TBLFM: @8$3='(calc-dnd-mod (string-to-number (org-table-get-constant $1)))
@@ -96,30 +98,30 @@ You gain one feat of your choice.
   
 * Attacks
   #+NAME: attacks
-  | Weapon | Ability | Prof | Type     | Die | Mod To Hit | Roll |
-  |--------+---------+------+----------+-----+------------+------|
-  | Whip   | INT     |      | Slashing | 1d4 |            |      |
-  |        |         |      |          |     |            |      |
+  | Weapon          | Ability | Prof | Type     | Die | Mod To Hit | Roll    |
+  |-----------------+---------+------+----------+-----+------------+---------|
+  | Whip            | INT     | X    | Slashing | 1d4 |          6 | 1d4 + 4 |
+  | Light Cross Bow | INT     | X    | Piercing | 1d8 |          6 | 1d8 + 4 |
   #+TBLFM: $6='(+ (if (string= $3 "X") $PROF 0) (calc-dnd-mod (string-to-number (org-table-get-constant $2))))
   #+TBLFM: $7='(concat $5 " + " (number-to-string (calc-dnd-mod (string-to-number (org-table-get-constant $2)))))
  
 * Proficiencies
-  | Languages | Tools        | Armor   | Weapons    |
-  |-----------+--------------+---------+------------|
-  | Common    | Thieves      | Light   | Improvised |
-  |           | Tinkers      | Medium  | Simple     |
-  |           | Cartographer | Shields | Martial    |
-  |           | Smith        |         |            |
+  | Languages       | Tools        | Armor   | Weapons    |
+  |-----------------+--------------+---------+------------|
+  | Common          | Thieves      | Light   | Improvised |
+  | Elvish          | Tinkers      | Medium  | Simple     |
+  | Secret Rebelion | Cartographer | Shields | Martial    |
+  |                 | Smith        |         |            |
 
 * Equipment
   | Name                  | Quantity | Cost (gp) | Weight (lbs) | Total Weight (lbs) | Total Cost (gp) |
   |-----------------------+----------+-----------+--------------+--------------------+-----------------|
-  | Studded Leather Armor |        1 |        45 |           13 |                  0 |               0 |
-  | Whip                  |        1 |         2 |            3 |                    |                 |
-  | Light Crossbow        |        1 |        25 |            5 |                    |                 |
-  | Bolts                 |       20 |           |              |                    |                 |
-  | Thieves tools         |        1 |           |              |                    |                 |
-  | Dungeoneer's Pack     |        1 |           |              |                    |                 |
+  | Studded Leather Armor |        1 |        45 |           13 |                 13 |              45 |
+  | Whip                  |        1 |         2 |            3 |                  3 |               2 |
+  | Light Crossbow        |        1 |        25 |            5 |                  5 |              25 |
+  | Bolts                 |       20 |           |              |                  0 |               0 |
+  | Thieves tools         |        1 |           |              |                  0 |               0 |
+  | Dungeoneer's Pack     |        1 |           |              |                  0 |               0 |
   |-----------------------+----------+-----------+--------------+--------------------+-----------------|
   | Carry Capacity        |          |           |              |                  0 |               0 |
   #+TBLFM: $5=($2 * $4)
@@ -131,5 +133,7 @@ You gain one feat of your choice.
 ** Money
    | Copper | Silver | Electrum | Gold | Platinum | Total (Gold) |
    |--------+--------+----------+------+----------+--------------|
-   |      0 |      0 |        0 |  750 |        0 |            0 |
+   |      0 |      0 |        0 |   10 |        0 |            0 |
    #+TBLFM: $6=(($1 / 100) + ($2 / 10) + ($3 / 2) + $4 + ($5 * 10)) 
+
+magical crystal infused into my body for communication / GPS. This can be used to find it and others. There is a secret language used by the rebellion that i can use
