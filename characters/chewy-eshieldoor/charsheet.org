@@ -26,7 +26,7 @@
 * Stats  
   | Speed | Hit Points | AC             | Death Saves | Inspiration | Hit dice |
   |-------+------------+----------------+-------------+-------------+----------|
-  | 40 ft | 42/64      | 18 +1 (shield) |             |             | 7        |
+  | 40 ft | 37/64      | 18 +1 (shield) |             |             | 7        |
 
 * Abilities and Skills
   #+name: stats
@@ -104,9 +104,9 @@
 | 16-19 |          +4 |         6 |
 |    20 |          +4 | Unlimited |
 
-| Rages Used | In Rage | Turns Left (10) |
-|------------+---------+-----------------|
-|          4 |         |                 |
+| Total | Rages Used | In Rage | Turns Left (10) |
+|-------+------------+---------+-----------------|
+|     4 |          3 | x       |               9 |
 
 *** Unarmored Defense
     While you are not wearing any armor, your armor class equals
