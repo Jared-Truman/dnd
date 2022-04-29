@@ -26,7 +26,7 @@
 * Stats  
   | Speed | Hit Points | AC             | Death Saves | Inspiration | Hit dice |
   |-------+------------+----------------+-------------+-------------+----------|
-  | 40 ft | 37/64      | 18 +1 (shield) |             |             | 7        |
+  | 40 ft | 58/64      | 18 +1 (shield) |             |             |        3 |
 
 * Abilities and Skills
   #+name: stats
@@ -147,7 +147,7 @@
 
 * Racial Ability
 ** Stone’s Endurance
-   You can focus yourself to occasionally shrug off injury.
+  You can focus yourself to occasionally shrug off injury.
   When you take damage, you can use your reaction to roll a d12. Add your Constitution modifier to the number rolled and reduce the damage by that total.
   After you use this trait, you can’t use it again until you finish a short or long rest.
   1d12 + Const Mod
@@ -195,13 +195,14 @@
   | Bear Onesy                        |        1 |           |              |                    |                 |
   | Calabasts spell book dropped      |        1 |           |              |                    |                 |
   | Whip                              |        1 |           |              |                    |                 |
+  | Rock Hammers                      |        3 |           |              |                    |                 |
   |-----------------------------------+----------+-----------+--------------+--------------------+-----------------|
   | Carry Capacity                    |      170 |           |              |                  0 |               0 |
   #+TBLFM: $5=($2 * $4)
   #+TBLFM: $6=($2 * $3)
-  #+TBLFM: @20$5=vsum(@2$5..@20$5)
-  #+TBLFM: @20$6=vsum(@2$6..@19$6)
-  #+TBLFM: @20$2=($STR * 10)
+  #+TBLFM: @21$5=vsum(@2$5..@21$5)
+  #+TBLFM: @21$6=vsum(@2$6..@20$6)
+  #+TBLFM: @21$2=($STR * 10)
  
 ** Money
    | Copper | Silver | Electrum | Gold | Platinum | Total (Gold) |
