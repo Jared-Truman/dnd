@@ -1,0 +1,49 @@
+#+TITLE Dr Henry Jones - Features
+* Abilities  
+** Class
+*** Bardic Inspiration
+    You can inspire others through stirring words or music. To do so, you use a bonus action on your turn to choose one creature other than yourself within 60 feet of you who can hear you. That creature gains one Bardic Inspiration die, a d6.
+
+    Once within the next 10 minutes, the creature can roll the die and add the number rolled to one ability check, attack roll, or saving throw it makes. The creature can wait until after it rolls the d20 before deciding to use the Bardic Inspiration die, but must decide before the DM says whether the roll succeeds or fails. Once the Bardic Inspiration die is rolled, it is lost. A creature can have only one Bardic Inspiration die at a time.
+
+    You can use this feature a number of times equal to your Charisma modifier (a minimum of once). You regain any expended uses when you finish a long rest.
+
+    Your Bardic Inspiration die changes when you reach certain levels in this class. The die becomes a d8 at 5th level, a d10 at 10th level, and a d12 at 15th level.
+
+*** Jack of All Trades
+    Starting at 2nd level, you can add half your proficiency bonus, rounded down, to any ability check you make that doesn’t already include your proficiency bonus.
+
+*** Song of Rest
+    Beginning at 2nd level, you can use soothing music or oration to help revitalize your wounded allies during a short rest. If you or any friendly creatures who can hear your performance regain hit points at the end of the short rest by spending one or more Hit Dice, each of those creatures regains an extra 1d6 hit points.
+
+    The extra hit points increase when you reach certain levels in this class: to 1d8 at 9th level, to 1d10 at 13th level, and to 1d12 at 17th level.
+
+*** Font of Inspiration
+    Beginning when you reach 5th level, you regain all of your expended uses of Bardic Inspiration when you finish a short or long rest.
+** Bard College
+*** Psychic Blades
+    When you join the College of Whispers at 3rd level, you gain the ability to make your weapon attacks magically toxic to a creature’s mind.
+
+    When you hit a creature with a weapon attack, you can expend one use of your Bardic Inspiration to deal an extra 2d6 psychic damage to that target. You can do so only once per round on your turn.
+
+    The psychic damage increases when you reach certain levels in this class, increasing to 3d6 at 5th level, 5d6 at 10th level, and 8d6 at 15th level.
+
+*** Words of Terror
+    At 3rd level, you learn to infuse innocent-seeming words with an insidious magic that can inspire terror.
+
+    If you speak to a humanoid alone for at least 1 minute, you can attempt to seed paranoia in its mind. At the end of the conversation, the target must succeed on a Wisdom saving throw against your spell save DC or be frightened of you or another creature of your choice. The target is frightened in this way for 1 hour, until it is attacked or damaged, or until it witnesses its allies being attacked or damaged.
+
+    If the target succeeds on its saving throw, the target has no hint that you tried to frighten it.
+
+    Once you use this feature, you can’t use it again until you finish a short or long rest.
+
+** Feats
+
+** Racial
+
+*** Shapechanger
+    As an action, you can change your appearance and your voice. You determine the specifics of the changes,
+    including your coloration, hair length, and sex. You can also adjust your height and weight, but not so much that your size changes. You can make yourself appear as a member of another race, though none of your game statistics change. You can’t duplicate the appearance of a creature you’ve never seen, and you must adopt a form that has the same basic arrangement of limbs that you have. Your clothing and equipment aren’t changed by this trait.
+
+    You stay in the new form until you use an action to revert to your true form or until you die.
+

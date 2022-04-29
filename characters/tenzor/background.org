@@ -1,0 +1,9 @@
+
+#+STARTUP: content showstars indent
+#+FILETAGS: dnd background tenzor
+* Features                          :feature:
+* Personality Trait
+* Ideal
+* Bond
+* Flaw
+

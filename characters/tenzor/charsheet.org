@@ -1,0 +1,143 @@
+
+#+TILE: Tenzor - Character Sheet
+
+* Constants
+  #+NAME: define-constants-with-src-block
+  #+BEGIN_SRC elisp :var table=stats :colnames yes :results output drawer :cache yes :lang elisp
+    (dnd-output-ability-constants table)
+  #+END_SRC
+
+  #+RESULTS[a4ac99e01eb5540901335777b99370dc72b5ac04]: define-constants-with-src-block
+  :results:
+  #+CONSTANTS: STR=11
+  #+CONSTANTS: DEX=15
+  #+CONSTANTS: CON=13
+  #+CONSTANTS: INT=18
+  #+CONSTANTS: WIS=14
+  #+CONSTANTS: CHA=11
+  #+CONSTANTS: PROF=2
+  #+CONSTANTS: SCA=13
+  #+CONSTANTS: SAM=5
+  :end:
+
+  LEVEL 8
+  
+* Traits
+  | Level | Race       | Subrace | Class | Subclass | Age | Alignment       | Size             |
+  |-------+------------+---------+-------+----------+-----+-----------------+------------------|
+  |     5 | Changeling |         | Bard  |          |  37 | Chaotic Neutral | Medium(155) 5'9" |
+
+* Stats  
+  | Speed | Hit Points | AC | Death Saves | Inspiration | Hit Dice |
+  |-------+------------+----+-------------+-------------+----------|
+  |    30 |            |    |             |             | (1d8) 5  |
+
+** Features
+Hit Points at 1st Level: 8 + your Constitution modifier
+Hit Points at Higher Levels: 1d8 (or 5) + your Constitution modifier per bard level after 1st
+
+Ability Score Bonus:1
+
+* Abilities and Skills
+  #+name: stats
+  | Ability | Score | Mod | PB | Roll           | Skill                 |
+  |---------+-------+-----+----+----------------+-----------------------|
+  | STR     |       |   0 |    | 1d20 + 0       | Saving Throw          |
+  |         |       |     |    | 1d20 + 0       | Athletics             |
+  |---------+-------+-----+----+----------------+-----------------------|
+  | DEX     |     1 |   2 |    | 1d20 + 2       | Saving Throw          |
+  |         |       |     |    | 1d20 + 2       | Acrobatics            |
+  |         |       |     |    | 1d20 + 2       | Sleight of Hand       |
+  |         |       |     |    | 1d20 + 2       | Stealth               |
+  |---------+-------+-----+----+----------------+-----------------------|
+  | CON     |       |   1 |    | 1d20 + 3       | Saving Throw          |
+  |---------+-------+-----+----+----------------+-----------------------|
+  | INT     |       |   4 |    | 1d20 + 6       | Saving Throw          |
+  |         |       |     |    | 1d20 + 4       | Arcana                |
+  |         |       |     |    | 1d20 + 6       | History               |
+  |         |       |     | X  | 1d20 + 6       | Investigation         |
+  |         |       |     |    | 1d20 + 4       | Nature                |
+  |         |       |     |    | 1d20 + 4       | Religion              |
+  |---------+-------+-----+----+----------------+-----------------------|
+  | WIS     |       |   2 |    | 1d20 + 2       | Saving Throw          |
+  |         |       |     |    | 1d20 + 2       | Animal Handling       |
+  |         |       |     | X  | 1d20 + 2       | Insight               |
+  |         |       |     |    | 1d20 + 2       | Medicine              |
+  |         |       |     | X  | 1d20 + 2       | Perception            |
+  |         |       |     |    | 1d20 + 4       | Survival              |
+  |---------+-------+-----+----+----------------+-----------------------|
+  | CHA     |     2 |   0 |    | 1d20 + 0       | Saving Throw          |
+  |         |       |     | XX | 1d20 + 0       | Deception             |
+  |         |       |     |    | 1d20 + 0       | Intimidation          |
+  |         |       |     |    | 1d20 + 0       | Performance           |
+  |         |       |     | XX | 1d20 + 0       | Persuasion            |
+  |---------+-------+-----+----+----------------+-----------------------|
+  | PROF    |     3 |     |    |                |                       |
+  | SCA     |       |     |    | 8 + PROF + CHA | SPELL CASTING ABILITY |
+  | SAM     |       |     |    | PROF + CHA     | SPELL ATT MOD         |
+  #+TBLFM: @2$3='(calc-dnd-mod (string-to-number (org-table-get-constant $1)))
+  #+TBLFM: @4$3='(calc-dnd-mod (string-to-number (org-table-get-constant $1)))
+  #+TBLFM: @8$3='(calc-dnd-mod (string-to-number (org-table-get-constant $1)))
+  #+TBLFM: @9$3='(calc-dnd-mod (string-to-number (org-table-get-constant $1)))
+  #+TBLFM: @15$3='(calc-dnd-mod (string-to-number (org-table-get-constant $1)))
+  #+TBLFM: @21$3='(calc-dnd-mod (string-to-number (org-table-get-constant $1)))
+  #+TBLFM: @2$5..@3$5='(concat "1d20 + " (number-to-string (+ (if (string= $4 "X") $PROF 0) (calc-dnd-mod (string-to-number (org-table-get-constant @2$1))))))
+  #+TBLFM: @4$5..@7$5='(concat "1d20 + " (number-to-string (+ (if (string= $4 "X") $PROF 0) (calc-dnd-mod (string-to-number (org-table-get-constant @4$1))))))
+  #+TBLFM: @8$5..@8$5='(concat "1d20 + " (number-to-string (+ (if (string= $4 "X") $PROF 0) (calc-dnd-mod (string-to-number (org-table-get-constant @8$1))))))
+  #+TBLFM: @9$5..@14$5='(concat "1d20 + " (number-to-string (+ (if (string= $4 "X") $PROF 0) (calc-dnd-mod (string-to-number (org-table-get-constant @9$1))))))
+  #+TBLFM: @15$5..@20$5='(concat "1d20 + " (number-to-string (+ (if (string= $4 "X") $PROF 0) (calc-dnd-mod (string-to-number (org-table-get-constant @15$1))))))
+  #+TBLFM: @21$5..@25$5='(concat "1d20 + " (number-to-string (+ (if (string= $4 "X") $PROF 0) (calc-dnd-mod (string-to-number (org-table-get-constant @21$1))))))
+  
+* Attacks
+  #+NAME: attacks
+  | Weapon       | Ability | Prof | Type        | Die | Mod To Hit | Roll    |
+  |--------------+---------+------+-------------+-----+------------+---------|
+  | Light Hammer | STR     | X    | Bludgeoning | 1d4 |          6 | 1d4 + 4 |
+  | Dagger       | DEX     | X    | Piercing    | 1d4 |          6 | 1d8 + 4 |
+  #+TBLFM: $6='(+ (if (string= $3 "X") $PROF 0) (calc-dnd-mod (string-to-number (org-table-get-constant $2))))
+  #+TBLFM: $7='(concat $5 " + " (number-to-string (calc-dnd-mod (string-to-number (org-table-get-constant $2)))))
+ 
+* Proficiencies
+  | Languages  | Tools | Armor | Weapons        | Instruments |
+  |------------+-------+-------+----------------+-------------|
+  | Common     |       | Light | Simple         | Piccolo     |
+  | Elvish     |       |       | Hand Crossbows | Steel Drum  |
+  | Primordial |       |       | Long-swords    | Guitar      |
+  |            |       |       | Rapiers        |             |
+  |            |       |       | Short-swords   |             |
+
+* Equipment
+  | Name                        | Quantity | Cost (gp) | Weight (lbs) | Total Weight (lbs) | Total Cost (gp) |
+  |-----------------------------+----------+-----------+--------------+--------------------+-----------------|
+  | Diplomats Pack              |        1 |        45 |           13 |                 13 |              45 |
+  | Leather Armor (11 + DEX)    |        1 |         0 |            3 |                  3 |               2 |
+  | Steel Drum (Shield (+2 AC)) |        1 |        25 |            5 |                  5 |              25 |
+  |                             |          |           |              |                  0 |               0 |
+  |                             |          |           |              |                  0 |               0 |
+  |                             |          |           |              |                  0 |               0 |
+  |-----------------------------+----------+-----------+--------------+--------------------+-----------------|
+  | Carry Capacity              |          |           |              |                  0 |               0 |
+  #+TBLFM: $5=($2 * $4)
+  #+TBLFM: $6=($2 * $3)
+  #+TBLFM: @21$5=vsum(@2$5..@21$5)
+  #+TBLFM: @21$6=vsum(@2$6..@20$6)
+  #+TBLFM: @21$2=($STR * 10)
+
+** Diplomats Pack
+   - a chest
+   - 2 cases for maps and Scrolls
+   - a set of Fine clothes
+   - a bottle of ink
+   - an Ink pen
+   - a lamp
+   - 2 flasks of oil
+   - 5 sheets of paper
+   - a vial of Perfume
+   - Sealing wax
+   - soap.
+
+** Money
+   | Copper | Silver | Electrum | Gold | Platinum | Total (Gold) |
+   |--------+--------+----------+------+----------+--------------|
+   |      0 |      0 |        0 |   10 |        0 |            0 |
+   #+TBLFM: $6=(($1 / 100) + ($2 / 10) + ($3 / 2) + $4 + ($5 * 10)) 
