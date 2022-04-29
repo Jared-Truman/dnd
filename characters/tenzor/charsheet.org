@@ -19,13 +19,11 @@
   #+CONSTANTS: SCA=13
   #+CONSTANTS: SAM=5
   :end:
-
-  LEVEL 8
   
 * Traits
-  | Level | Race       | Subrace | Class | Subclass | Age | Alignment       | Size             |
-  |-------+------------+---------+-------+----------+-----+-----------------+------------------|
-  |     5 | Changeling |         | Bard  |          |  37 | Chaotic Neutral | Medium(155) 5'9" |
+  | Level | Race       | Subrace | Class | Subclass            | Age | Alignment    | Size             |
+  |-------+------------+---------+-------+---------------------+-----+--------------+------------------|
+  |     5 | Changeling |         | Bard  | College of Whispers |  37 | Chaotic Good | Medium(155) 5'9" |
 
 * Stats  
   | Speed | Hit Points | AC | Death Saves | Inspiration | Hit Dice |
@@ -45,7 +43,7 @@ Ability Score Bonus:1
   | STR     |       |   0 |    | 1d20 + 0       | Saving Throw          |
   |         |       |     |    | 1d20 + 0       | Athletics             |
   |---------+-------+-----+----+----------------+-----------------------|
-  | DEX     |     1 |   2 |    | 1d20 + 2       | Saving Throw          |
+  | DEX     |     1 |   2 | X  | 1d20 + 2       | Saving Throw          |
   |         |       |     |    | 1d20 + 2       | Acrobatics            |
   |         |       |     |    | 1d20 + 2       | Sleight of Hand       |
   |         |       |     |    | 1d20 + 2       | Stealth               |
@@ -66,7 +64,7 @@ Ability Score Bonus:1
   |         |       |     | X  | 1d20 + 2       | Perception            |
   |         |       |     |    | 1d20 + 4       | Survival              |
   |---------+-------+-----+----+----------------+-----------------------|
-  | CHA     |     2 |   0 |    | 1d20 + 0       | Saving Throw          |
+  | CHA     |     2 |   0 | X  | 1d20 + 0       | Saving Throw          |
   |         |       |     | XX | 1d20 + 0       | Deception             |
   |         |       |     |    | 1d20 + 0       | Intimidation          |
   |         |       |     |    | 1d20 + 0       | Performance           |
