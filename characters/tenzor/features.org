@@ -1,4 +1,5 @@
-#+TITLE Dr Henry Jones - Features
+
+#+TILE: Tenzor - Character Sheet
 * Abilities  
 ** Class
 *** Bardic Inspiration
@@ -55,6 +56,13 @@
 
     Once you use this feature, you can’t use it again until you finish a short or long rest.
 
+** Background
+*** False Identity
+   You have created a second identity that includes documentation, established acquaintances,
+   and disguises that allow you to assume that persona. Additionally, you can forge documents
+   including official papers and personal letters, as long as you have seen an example of the kind of document or
+   the handwriting you are trying to copy.
+
 ** Feats
 
 ** Racial
@@ -68,4 +76,5 @@
     changed by this trait.
 
     You stay in the new form until you use an action to revert to your true form or until you die.
+
 

@@ -7,18 +7,22 @@
     (dnd-output-ability-constants table)
   #+END_SRC
 
-  #+RESULTS[a4ac99e01eb5540901335777b99370dc72b5ac04]: define-constants-with-src-block
+  #+RESULTS[2325ced39ab1fcb2ab265f8476707f72d8030235]: define-constants-with-src-block
   :results:
-  #+CONSTANTS: STR=11
-  #+CONSTANTS: DEX=15
-  #+CONSTANTS: CON=13
-  #+CONSTANTS: INT=18
-  #+CONSTANTS: WIS=14
-  #+CONSTANTS: CHA=11
-  #+CONSTANTS: PROF=2
-  #+CONSTANTS: SCA=13
-  #+CONSTANTS: SAM=5
+  #+CONSTANTS: STR=15
+  #+CONSTANTS: DEX=19
+  #+CONSTANTS: CON=17
+  #+CONSTANTS: INT=14
+  #+CONSTANTS: WIS=11
+  #+CONSTANTS: CHA=20
+  #+CONSTANTS: PROF=3
+  #+CONSTANTS: SCA=
+  #+CONSTANTS: SAM=
   :end:
+
+15
+11
+14
   
 * Traits
   | Level | Race       | Subrace | Class | Subclass            | Age | Alignment    | Size             |
@@ -28,7 +32,7 @@
 * Stats  
   | Speed | Hit Points | AC | Death Saves | Inspiration | Hit Dice |
   |-------+------------+----+-------------+-------------+----------|
-  |    30 |            |    |             |             | (1d8) 5  |
+  |    30 |         45 | 15 |             |             | (1d8) 5  |
 
 ** Features
 Hit Points at 1st Level: 8 + your Constitution modifier
@@ -40,35 +44,35 @@ Ability Score Bonus:1
   #+name: stats
   | Ability | Score | Mod | PB | Roll           | Skill                 |
   |---------+-------+-----+----+----------------+-----------------------|
-  | STR     |       |   0 |    | 1d20 + 0       | Saving Throw          |
-  |         |       |     |    | 1d20 + 0       | Athletics             |
+  | STR     |    15 |   2 |    | 1d20 + 2       | Saving Throw          |
+  |         |       |     |    | 1d20 + 2       | Athletics             |
   |---------+-------+-----+----+----------------+-----------------------|
-  | DEX     |     1 |   2 | X  | 1d20 + 2       | Saving Throw          |
-  |         |       |     |    | 1d20 + 2       | Acrobatics            |
-  |         |       |     |    | 1d20 + 2       | Sleight of Hand       |
-  |         |       |     |    | 1d20 + 2       | Stealth               |
+  | DEX     |    19 |   4 | X  | 1d20 + 7       | Saving Throw          |
+  |         |       |     |    | 1d20 + 4       | Acrobatics            |
+  |         |       |     | X  | 1d20 + 7       | Sleight of Hand       |
+  |         |       |     |    | 1d20 + 4       | Stealth               |
   |---------+-------+-----+----+----------------+-----------------------|
-  | CON     |       |   1 |    | 1d20 + 3       | Saving Throw          |
+  | CON     |    17 |   3 |    | 1d20 + 3       | Saving Throw          |
   |---------+-------+-----+----+----------------+-----------------------|
-  | INT     |       |   4 |    | 1d20 + 6       | Saving Throw          |
-  |         |       |     |    | 1d20 + 4       | Arcana                |
-  |         |       |     |    | 1d20 + 6       | History               |
-  |         |       |     | X  | 1d20 + 6       | Investigation         |
-  |         |       |     |    | 1d20 + 4       | Nature                |
-  |         |       |     |    | 1d20 + 4       | Religion              |
+  | INT     |    14 |   2 |    | 1d20 + 2       | Saving Throw          |
+  |         |       |     |    | 1d20 + 2       | Arcana                |
+  |         |       |     |    | 1d20 + 2       | History               |
+  |         |       |     | X  | 1d20 + 5       | Investigation         |
+  |         |       |     |    | 1d20 + 2       | Nature                |
+  |         |       |     |    | 1d20 + 2       | Religion              |
   |---------+-------+-----+----+----------------+-----------------------|
-  | WIS     |       |   2 |    | 1d20 + 2       | Saving Throw          |
-  |         |       |     |    | 1d20 + 2       | Animal Handling       |
-  |         |       |     | X  | 1d20 + 2       | Insight               |
-  |         |       |     |    | 1d20 + 2       | Medicine              |
-  |         |       |     | X  | 1d20 + 2       | Perception            |
-  |         |       |     |    | 1d20 + 4       | Survival              |
+  | WIS     |    11 |   0 |    | 1d20 + 0       | Saving Throw          |
+  |         |       |     |    | 1d20 + 0       | Animal Handling       |
+  |         |       |     | X  | 1d20 + 3       | Insight               |
+  |         |       |     |    | 1d20 + 0       | Medicine              |
+  |         |       |     | XX | 1d20 + 0       | Perception            |
+  |         |       |     |    | 1d20 + 0       | Survival              |
   |---------+-------+-----+----+----------------+-----------------------|
-  | CHA     |     2 |   0 | X  | 1d20 + 0       | Saving Throw          |
-  |         |       |     | XX | 1d20 + 0       | Deception             |
-  |         |       |     |    | 1d20 + 0       | Intimidation          |
-  |         |       |     |    | 1d20 + 0       | Performance           |
-  |         |       |     | XX | 1d20 + 0       | Persuasion            |
+  | CHA     |    20 |   5 | X  | 1d20 + 8       | Saving Throw          |
+  |         |       |     | XX | 1d20 + 5       | Deception             |
+  |         |       |     |    | 1d20 + 5       | Intimidation          |
+  |         |       |     |    | 1d20 + 5       | Performance           |
+  |         |       |     | XX | 1d20 + 5       | Persuasion            |
   |---------+-------+-----+----+----------------+-----------------------|
   | PROF    |     3 |     |    |                |                       |
   | SCA     |       |     |    | 8 + PROF + CHA | SPELL CASTING ABILITY |
@@ -90,29 +94,29 @@ Ability Score Bonus:1
   #+NAME: attacks
   | Weapon       | Ability | Prof | Type        | Die | Mod To Hit | Roll    |
   |--------------+---------+------+-------------+-----+------------+---------|
-  | Light Hammer | STR     | X    | Bludgeoning | 1d4 |          6 | 1d4 + 4 |
-  | Dagger       | DEX     | X    | Piercing    | 1d4 |          6 | 1d8 + 4 |
+  | Light Hammer | STR     | X    | Bludgeoning | 1d4 |          5 | 1d4 + 2 |
+  | Dagger       | DEX     | X    | Piercing    | 1d4 |          7 | 1d4 + 4 |
   #+TBLFM: $6='(+ (if (string= $3 "X") $PROF 0) (calc-dnd-mod (string-to-number (org-table-get-constant $2))))
   #+TBLFM: $7='(concat $5 " + " (number-to-string (calc-dnd-mod (string-to-number (org-table-get-constant $2)))))
  
 * Proficiencies
-  | Languages  | Tools | Armor | Weapons        | Instruments |
-  |------------+-------+-------+----------------+-------------|
-  | Common     |       | Light | Simple         | Piccolo     |
-  | Elvish     |       |       | Hand Crossbows | Steel Drum  |
-  | Primordial |       |       | Long-swords    | Guitar      |
-  |            |       |       | Rapiers        |             |
-  |            |       |       | Short-swords   |             |
+  | Languages  | Tools | Instruments | Kits     | Armor | Weapons        |
+  |------------+-------+-------------+----------+-------+----------------|
+  | Common     |       | Piccolo     | Disguise | Light | Simple         |
+  | Elvish     |       | Steel Drum  | Forgery  |       | Hand Crossbows |
+  | Primordial |       | Guitar      |          |       | Long-swords    |
+  |            |       |             |          |       | Rapiers        |
+  |            |       |             |          |       | Short-swords   |
 
 * Equipment
   | Name                        | Quantity | Cost (gp) | Weight (lbs) | Total Weight (lbs) | Total Cost (gp) |
   |-----------------------------+----------+-----------+--------------+--------------------+-----------------|
   | Diplomats Pack              |        1 |        45 |           13 |                 13 |              45 |
-  | Leather Armor (11 + DEX)    |        1 |         0 |            3 |                  3 |               2 |
+  | Leather Armor (11 + DEX)    |        1 |         0 |            3 |                  3 |               0 |
   | Steel Drum (Shield (+2 AC)) |        1 |        25 |            5 |                  5 |              25 |
-  |                             |          |           |              |                  0 |               0 |
-  |                             |          |           |              |                  0 |               0 |
-  |                             |          |           |              |                  0 |               0 |
+  | Fine Clothes                |        1 |         0 |              |                  0 |               0 |
+  | Disguise                    |        1 |         0 |              |                  0 |               0 |
+  | Signet Ring of a duke       |        1 |         0 |              |                  0 |               0 |
   |-----------------------------+----------+-----------+--------------+--------------------+-----------------|
   | Carry Capacity              |          |           |              |                  0 |               0 |
   #+TBLFM: $5=($2 * $4)
