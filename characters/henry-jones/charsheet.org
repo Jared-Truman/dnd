@@ -1,0 +1,139 @@
+
+#+TILE: Dr Henry Jones - Character Sheet
+
+* Constants
+  #+NAME: define-constants-with-src-block
+  #+BEGIN_SRC elisp :var table=stats :colnames yes :results output drawer :cache yes :lang elisp
+    (dnd-output-ability-constants table)
+  #+END_SRC
+
+  #+RESULTS[a4ac99e01eb5540901335777b99370dc72b5ac04]: define-constants-with-src-block
+  :results:
+  #+CONSTANTS: STR=11
+  #+CONSTANTS: DEX=15
+  #+CONSTANTS: CON=13
+  #+CONSTANTS: INT=18
+  #+CONSTANTS: WIS=14
+  #+CONSTANTS: CHA=11
+  #+CONSTANTS: PROF=2
+  #+CONSTANTS: SCA=13
+  #+CONSTANTS: SAM=5
+  :end:
+
+  LEVEL 8
+  
+* Traits
+  | Level | Race  | Subrace | Class     | Subclass     | Age | Alignment    | Size             |
+  |-------+-------+---------+-----------+--------------+-----+--------------+------------------|
+  |     5 | Human | Variant | Artificer | Battle Smith |  37 | Chaotic Good | Medium(175) 6'1" |
+
+** Variant Human
+   
+If your campaign uses the optional feat rules from the Player’s Handbook, your Dungeon Master might allow these variant traits, all of which replace the human’s Ability Score Increase trait.
+
+Ability Score Increase
+Two different ability scores of your choice increase by 1.
+
+Skills
+You gain proficiency in one skill of your choice.
+
+Feat
+You gain one feat of your choice.
+
+
+* Stats  
+  | Speed | Hit Points | AC     | Death Saves | Inspiration |
+  |-------+------------+--------+-------------+-------------|
+  |    30 |         39 | 14 + 1 |             |             |
+
+* Abilities and Skills
+  #+name: stats
+  | Ability | Score | Mod | PB | Roll           | Skill                 |
+  |---------+-------+-----+----+----------------+-----------------------|
+  | STR     |    11 |   0 |    | 1d20 + 0       | Saving Throw          |
+  |         |       |     |    | 1d20 + 0       | Athletics             |
+  |---------+-------+-----+----+----------------+-----------------------|
+  | DEX     |    15 |   2 |    | 1d20 + 2       | Saving Throw          |
+  |         |       |     |    | 1d20 + 2       | Acrobatics            |
+  |         |       |     |    | 1d20 + 2       | Sleight of Hand       |
+  |         |       |     |    | 1d20 + 2       | Stealth               |
+  |---------+-------+-----+----+----------------+-----------------------|
+  | CON     |    13 |   1 | X  | 1d20 + 3       | Saving Throw          |
+  |---------+-------+-----+----+----------------+-----------------------|
+  | INT     |    18 |   4 | X  | 1d20 + 6       | Saving Throw          |
+  |         |       |     |    | 1d20 + 4       | Arcana                |
+  |         |       |     | X  | 1d20 + 6       | History               |
+  |         |       |     | X  | 1d20 + 6       | Investigation         |
+  |         |       |     |    | 1d20 + 4       | Nature                |
+  |         |       |     |    | 1d20 + 4       | Religion              |
+  |---------+-------+-----+----+----------------+-----------------------|
+  | WIS     |    14 |   2 |    | 1d20 + 2       | Saving Throw          |
+  |         |       |     |    | 1d20 + 2       | Animal Handling       |
+  |         |       |     |    | 1d20 + 2       | Insight               |
+  |         |       |     |    | 1d20 + 2       | Medicine              |
+  |         |       |     |    | 1d20 + 2       | Perception            |
+  |         |       |     | X  | 1d20 + 4       | Survival              |
+  |---------+-------+-----+----+----------------+-----------------------|
+  | CHA     |    11 |   0 |    | 1d20 + 0       | Saving Throw          |
+  |         |       |     |    | 1d20 + 0       | Deception             |
+  |         |       |     |    | 1d20 + 0       | Intimidation          |
+  |         |       |     |    | 1d20 + 0       | Performance           |
+  |         |       |     |    | 1d20 + 0       | Persuasion            |
+  |---------+-------+-----+----+----------------+-----------------------|
+  | PROF    |     2 |     |    |                |                       |
+  | SCA     |    13 |     |    | 8 + PROF + INT | SPELL CASTING ABILITY |
+  | SAM     |     5 |     |    | PROF + INT     | SPELL ATT MOD         |
+  #+TBLFM: @2$3='(calc-dnd-mod (string-to-number (org-table-get-constant $1)))
+  #+TBLFM: @4$3='(calc-dnd-mod (string-to-number (org-table-get-constant $1)))
+  #+TBLFM: @8$3='(calc-dnd-mod (string-to-number (org-table-get-constant $1)))
+  #+TBLFM: @9$3='(calc-dnd-mod (string-to-number (org-table-get-constant $1)))
+  #+TBLFM: @15$3='(calc-dnd-mod (string-to-number (org-table-get-constant $1)))
+  #+TBLFM: @21$3='(calc-dnd-mod (string-to-number (org-table-get-constant $1)))
+  #+TBLFM: @2$5..@3$5='(concat "1d20 + " (number-to-string (+ (if (string= $4 "X") $PROF 0) (calc-dnd-mod (string-to-number (org-table-get-constant @2$1))))))
+  #+TBLFM: @4$5..@7$5='(concat "1d20 + " (number-to-string (+ (if (string= $4 "X") $PROF 0) (calc-dnd-mod (string-to-number (org-table-get-constant @4$1))))))
+  #+TBLFM: @8$5..@8$5='(concat "1d20 + " (number-to-string (+ (if (string= $4 "X") $PROF 0) (calc-dnd-mod (string-to-number (org-table-get-constant @8$1))))))
+  #+TBLFM: @9$5..@14$5='(concat "1d20 + " (number-to-string (+ (if (string= $4 "X") $PROF 0) (calc-dnd-mod (string-to-number (org-table-get-constant @9$1))))))
+  #+TBLFM: @15$5..@20$5='(concat "1d20 + " (number-to-string (+ (if (string= $4 "X") $PROF 0) (calc-dnd-mod (string-to-number (org-table-get-constant @15$1))))))
+  #+TBLFM: @21$5..@25$5='(concat "1d20 + " (number-to-string (+ (if (string= $4 "X") $PROF 0) (calc-dnd-mod (string-to-number (org-table-get-constant @21$1))))))
+  
+* Attacks
+  #+NAME: attacks
+  | Weapon          | Ability | Prof | Type     | Die | Mod To Hit | Roll    |
+  |-----------------+---------+------+----------+-----+------------+---------|
+  | Whip            | INT     | X    | Slashing | 1d4 |          6 | 1d4 + 4 |
+  | Light Cross Bow | INT     | X    | Piercing | 1d8 |          6 | 1d8 + 4 |
+  #+TBLFM: $6='(+ (if (string= $3 "X") $PROF 0) (calc-dnd-mod (string-to-number (org-table-get-constant $2))))
+  #+TBLFM: $7='(concat $5 " + " (number-to-string (calc-dnd-mod (string-to-number (org-table-get-constant $2)))))
+ 
+* Proficiencies
+  | Languages       | Tools        | Armor   | Weapons    |
+  |-----------------+--------------+---------+------------|
+  | Common          | Thieves      | Light   | Improvised |
+  | Elvish          | Tinkers      | Medium  | Simple     |
+  | Secret Rebelion | Cartographer | Shields | Martial    |
+  |                 | Smith        |         |            |
+
+* Equipment
+  | Name                  | Quantity | Cost (gp) | Weight (lbs) | Total Weight (lbs) | Total Cost (gp) |
+  |-----------------------+----------+-----------+--------------+--------------------+-----------------|
+  | Studded Leather Armor |        1 |        45 |           13 |                 13 |              45 |
+  | Whip                  |        1 |         2 |            3 |                  3 |               2 |
+  | Light Crossbow        |        1 |        25 |            5 |                  5 |              25 |
+  | Bolts                 |       20 |           |              |                  0 |               0 |
+  | Thieves tools         |        1 |           |              |                  0 |               0 |
+  | Dungeoneer's Pack     |        1 |           |              |                  0 |               0 |
+  |-----------------------+----------+-----------+--------------+--------------------+-----------------|
+  | Carry Capacity        |          |           |              |                  0 |               0 |
+  #+TBLFM: $5=($2 * $4)
+  #+TBLFM: $6=($2 * $3)
+  #+TBLFM: @21$5=vsum(@2$5..@21$5)
+  #+TBLFM: @21$6=vsum(@2$6..@20$6)
+  #+TBLFM: @21$2=($STR * 10)
+ 
+** Money
+   | Copper | Silver | Electrum | Gold | Platinum | Total (Gold) |
+   |--------+--------+----------+------+----------+--------------|
+   |      0 |      0 |        0 |   10 |        0 |            0 |
+   #+TBLFM: $6=(($1 / 100) + ($2 / 10) + ($3 / 2) + $4 + ($5 * 10)) 
+
+magical crystal infused into my body for communication / GPS. This can be used to find it and others. There is a secret language used by the rebellion that i can use

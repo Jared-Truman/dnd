@@ -1,0 +1,8 @@
+#+STARTUP: content showstars indent
+#+FILETAGS: dnd background baddah_bing
+* Features                          :feature:
+* Personality Trait
+* Ideal
+* Bond
+* Flaw
+
