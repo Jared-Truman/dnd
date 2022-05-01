@@ -1,4 +1,4 @@
-#+TILE: Dr Indi Jones - Spells
+#+TILE: Tenzor - Spells
 
 * Default Prepared
 ** Cantrips
@@ -25,9 +25,12 @@
     Components: V
     Duration: Instantaneous
 **** Description    
-    You unleash a string of insults laced with subtle enchantments at a creature you can see within range. If the target can hear you (though it need not understand you), it must succeed on a Wisdom saving throw or take 1d4 psychic damage and have disadvantage on the next attack roll it makes before the end of its next turn.
+    You unleash a string of insults laced with subtle enchantments at a creature you can see within range.
+    If the target can hear you (though it need not understand you), it must succeed on a Wisdom saving throw
+    or take 1d4 psychic damage and have disadvantage on the next attack roll it makes before the end of its next turn.
     
-    At Higher Levels. This spell’s damage increases by 1d4 when you reach 5th level (2d4), 11th level (3d4), and 17th level (4d4).
+    At Higher Levels. This spell’s damage increases by 1d4 when you reach 5th level (2d4),
+    11th level (3d4), and 17th level (4d4).
 ** Level 1 (4/4)
 *** Dissonant Whispers
 **** Requirements
@@ -36,9 +39,15 @@
     Components: V
     Duration: Instantaneous
 **** Description    
-    You whisper a discordant melody that only one creature of your choice within range can hear, wracking it with terrible pain. The target must make a Wisdom saving throw. On a failed save, it takes 3d6 psychic damage and must immediately use its reaction, if available, to move as far as its speed allows away from you. The creature doesn’t move into obviously dangerous ground, such as a fire or a pit. On a successful save, the target takes half as much damage and doesn’t have to move away. A deafened creature automatically succeeds on the save.
+    You whisper a discordant melody that only one creature of your choice within range can hear,
+    wracking it with terrible pain. The target must make a Wisdom saving throw. On a failed save,
+    it takes 3d6 psychic damage and must immediately use its reaction, if available, to move as far
+    as its speed allows away from you. The creature doesn’t move into obviously dangerous ground,
+    such as a fire or a pit. On a successful save, the target takes half as much damage and doesn’t have to move away.
+    A deafened creature automatically succeeds on the save.
     
-    At Higher Levels. When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d6 for each slot level above 1st.
+    At Higher Levels. When you cast this spell using a spell slot of 2nd level or higher,
+    the damage increases by 1d6 for each slot level above 1st.
 *** Healing Word
 **** Requirements
     Casting Time: 1 bonus action
@@ -73,7 +82,7 @@
     In addition, unsecured objects that are completely within the area of effect are automatically pushed 10 feet away from you by the spell’s effect, and the spell emits a thunderous boom audible out to 300 feet.
     
     At Higher Levels. When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d8 for each slot level above 1st.
-** Level 2 (3/3)
+** Level 2 (2/3)
 *** Silence
 **** Requirements
     Casting Time: 1 action
@@ -84,12 +93,16 @@
     For the duration, no sound can be created within or pass through a 20-foot-radius sphere centered on a point you choose within range. Any creature or object entirely inside the sphere is immune to thunder damage, and creatures are deafened while entirely inside it. Casting a spell that includes a verbal component is impossible there.
 *** Invisibility
 **** Requirements
-    Casting Time: 1 action
-    Range: 120 feet
-    Components: V, S
-    Duration: Concentration, up to 10 minutes
+     Casting Time: 1 action
+     Range: Touch
+     Components: V, S, M (an eyelash encased in gum arabic)
+     Duration: Concentration, up to 1 hour
 **** Description    
-    For the duration, no sound can be created within or pass through a 20-foot-radius sphere centered on a point you choose within range. Any creature or object entirely inside the sphere is immune to thunder damage, and creatures are deafened while entirely inside it. Casting a spell that includes a verbal component is impossible there.
+     A creature you touch becomes invisible until the spell ends. Anything the target is wearing or carrying is
+     invisible as long as it is on the target’s person. The spell ends for a target that attacks or casts a spell.
+
+     At Higher Levels. When you cast this spell using a spell slot of 3rd level or higher, you can target one
+     additional creature for each slot level above 2nd.
 *** Shatter
 **** Requirements
     Casting Time: 1 action
@@ -97,13 +110,16 @@
     Components: V, S, M (a chip of mica)
     Duration: Instantaneous
 **** Description    
-    A sudden loud ringing noise, painfully intense, erupts from a point of your choice within range. Each creature in a 10-foot-radius sphere centered on that point must make a Constitution saving throw. A creature takes 3d8 thunder damage on a failed save, or half as much damage on a successful one. A creature made of inorganic material such as stone, crystal, or metal has disadvantage on this saving throw.
+    A sudden loud ringing noise, painfully intense, erupts from a point of your choice within range.
+    Each creature in a 10-foot-radius sphere centered on that point must make a Constitution saving throw.
+    A creature takes 3d8 thunder damage on a failed save, or half as much damage on a successful one.
+    A creature made of inorganic material such as stone, crystal, or metal has disadvantage on this saving throw.
     
     A nonmagical object that isn’t being worn or carried also takes the damage if it’s in the spell’s area.
     
     At Higher Levels. When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d8 for each slot level above 2nd.
     
-** Level 3 (2/2)
+** Level 3 (0/2)
 *** Dispel Magic
 **** Requirements
     Casting Time: 1 action
