@@ -26,7 +26,7 @@
 * Stats  
   | Speed | Hit Points | AC             | Death Saves | Inspiration | Hit dice |
   |-------+------------+----------------+-------------+-------------+----------|
-  | 40 ft | 58/64      | 18 +1 (shield) |             |             |        3 |
+  | 40 ft | 64/64      | 18 +1 (shield) |             |             |        8 |
 
 * Abilities and Skills
   #+name: stats
@@ -106,7 +106,7 @@
 
 | Total | Rages Used | In Rage | Turns Left (10) |
 |-------+------------+---------+-----------------|
-|     4 |          3 | x       |               9 |
+|     4 |            |         |                 |
 
 *** Unarmored Defense
     While you are not wearing any armor, your armor class equals
@@ -171,7 +171,6 @@
   | Shield +1 | STR     | X    | Bludgeoning |  0d2 |          7 | 0d2 + 4  |
   | Shield +1 | STR     | X    | Bludgeoning |  1d4 |          7 | 1d4 + 4  |
   | Great Ax  | STR     | X    | Slashing    | 1d12 |          7 | 1d12 + 4 |
-  | Whip      | STR     | X    | Slashing    |  1d4 |          7 | 1d4 + 4  |
   | Javelin   | STR     | X    | Piercing    |  1d6 |          7 | 1d6 + 4  |
   #+TBLFM: $6='(+ (if (string= $3 "X") $PROF 0) (calc-dnd-mod (string-to-number (org-table-get-constant $2))))
   #+TBLFM: $7='(concat $5 " + " (number-to-string (calc-dnd-mod (string-to-number (org-table-get-constant $2)))))
