@@ -26,7 +26,7 @@
 * Stats  
   | Speed | Hit Points | AC             | Death Saves | Inspiration | Hit dice |
   |-------+------------+----------------+-------------+-------------+----------|
-  | 40 ft | 64/64      | 18 +1 (shield) |             |             |        8 |
+  | 40 ft | 58/64      | 18 +1 (shield) |             |             |        8 |
 
 * Abilities and Skills
   #+name: stats
@@ -193,7 +193,6 @@
   | Gold Band from Kerry Red Spear    |        1 |           |              |                  0 |               0 |
   | Bear Onesy                        |        1 |           |              |                    |                 |
   | Calabasts spell book dropped      |        1 |           |              |                    |                 |
-  | Whip                              |        1 |           |              |                    |                 |
   | Rock Hammers                      |        3 |           |              |                    |                 |
   |-----------------------------------+----------+-----------+--------------+--------------------+-----------------|
   | Carry Capacity                    |      170 |           |              |                  0 |               0 |
