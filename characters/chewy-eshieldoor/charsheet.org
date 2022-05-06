@@ -26,7 +26,7 @@
 * Stats  
   | Speed | Hit Points | AC             | Death Saves | Inspiration | Hit dice |
   |-------+------------+----------------+-------------+-------------+----------|
-  | 40 ft | 42/64      | 18 +1 (shield) |             |             | 7        |
+  | 40 ft | 58/64      | 18 +1 (shield) |             |             |        8 |
 
 * Abilities and Skills
   #+name: stats
@@ -104,9 +104,9 @@
 | 16-19 |          +4 |         6 |
 |    20 |          +4 | Unlimited |
 
-| Rages Used | In Rage | Turns Left (10) |
-|------------+---------+-----------------|
-|          4 |         |                 |
+| Total | Rages Used | In Rage | Turns Left (10) |
+|-------+------------+---------+-----------------|
+|     4 |            |         |                 |
 
 *** Unarmored Defense
     While you are not wearing any armor, your armor class equals
@@ -147,7 +147,7 @@
 
 * Racial Ability
 ** Stone’s Endurance
-   You can focus yourself to occasionally shrug off injury.
+  You can focus yourself to occasionally shrug off injury.
   When you take damage, you can use your reaction to roll a d12. Add your Constitution modifier to the number rolled and reduce the damage by that total.
   After you use this trait, you can’t use it again until you finish a short or long rest.
   1d12 + Const Mod
@@ -171,7 +171,6 @@
   | Shield +1 | STR     | X    | Bludgeoning |  0d2 |          7 | 0d2 + 4  |
   | Shield +1 | STR     | X    | Bludgeoning |  1d4 |          7 | 1d4 + 4  |
   | Great Ax  | STR     | X    | Slashing    | 1d12 |          7 | 1d12 + 4 |
-  | Whip      | STR     | X    | Slashing    |  1d4 |          7 | 1d4 + 4  |
   | Javelin   | STR     | X    | Piercing    |  1d6 |          7 | 1d6 + 4  |
   #+TBLFM: $6='(+ (if (string= $3 "X") $PROF 0) (calc-dnd-mod (string-to-number (org-table-get-constant $2))))
   #+TBLFM: $7='(concat $5 " + " (number-to-string (calc-dnd-mod (string-to-number (org-table-get-constant $2)))))
@@ -194,14 +193,14 @@
   | Gold Band from Kerry Red Spear    |        1 |           |              |                  0 |               0 |
   | Bear Onesy                        |        1 |           |              |                    |                 |
   | Calabasts spell book dropped      |        1 |           |              |                    |                 |
-  | Whip                              |        1 |           |              |                    |                 |
+  | Rock Hammers                      |        3 |           |              |                    |                 |
   |-----------------------------------+----------+-----------+--------------+--------------------+-----------------|
   | Carry Capacity                    |      170 |           |              |                  0 |               0 |
   #+TBLFM: $5=($2 * $4)
   #+TBLFM: $6=($2 * $3)
-  #+TBLFM: @20$5=vsum(@2$5..@20$5)
-  #+TBLFM: @20$6=vsum(@2$6..@19$6)
-  #+TBLFM: @20$2=($STR * 10)
+  #+TBLFM: @21$5=vsum(@2$5..@21$5)
+  #+TBLFM: @21$6=vsum(@2$6..@20$6)
+  #+TBLFM: @21$2=($STR * 10)
  
 ** Money
    | Copper | Silver | Electrum | Gold | Platinum | Total (Gold) |
