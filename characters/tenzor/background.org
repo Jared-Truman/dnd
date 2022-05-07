@@ -1,0 +1,14 @@
+
+#+STARTUP: content showstars indent
+#+FILETAGS: dnd background tenzor
+* Features                                                          :feature:
+** Chalaton
+* Personality Trait
+I keep multiple holy symbols on me and invoke whatever deity might come in useful at any given moment.
+* Ideal
+Charity. I distribute the money I acquire to the people who really need it. (Good)
+* Bond
+	A powerful person killed someone I love. Some day soon, I'll have my revenge.
+* Flaw
+I'm too greedy for my own good. I can't resist taking a risk if there's money involved.
+
