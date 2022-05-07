@@ -57,13 +57,13 @@
     This magic weapon grants a +1 bonus to attack and damage rolls made with it.
 
     The bonus increases to +2 when you reach 10th level in this class.
-***   Repeating Shot
+*** Repeating Shot
     Item: A simple or martial weapon with the ammunition property (requires attunement)
 
     This magic weapon grants a + 1 bonus to attack and damage rolls made with it when it's used to make a ranged attack, and it ignores the loading property if it has it.
 
     If you load no ammunition in the weapon, it produces its own, automatically creating one piece of magic ammunition when you make a ranged attack with it. The ammunition created by the weapon vanishes the instant after it hits or misses a target.
-** Level 1 (4/4)
+** Level 1 (3/4)
 *** Cure Wounds
     Casting Time: 1 action
     Range: Touch

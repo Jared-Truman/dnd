@@ -100,23 +100,30 @@
   |                 | Smith        |         |            |
 
 * Equipment
-  | Name                  | Quantity | Cost (gp) | Weight (lbs) | Total Weight (lbs) | Total Cost (gp) |
-  |-----------------------+----------+-----------+--------------+--------------------+-----------------|
-  | Studded Leather Armor |        1 |        45 |           13 |                 13 |              45 |
-  | Whip                  |        1 |         2 |            3 |                  3 |               2 |
-  | Light Crossbow        |        1 |        25 |            5 |                  5 |              25 |
-  | Bolts                 |       20 |           |              |                  0 |               0 |
-  | Thieves tools         |        1 |           |              |                  0 |               0 |
-  | Dungeoneer's Pack     |        1 |           |              |                  0 |               0 |
-  | Common (2d4 +2)       |        2 |           |              |                  0 |               0 |
-  | Normal (4d4 + 4)      |        2 |           |              |                  0 |               0 |
-  |-----------------------+----------+-----------+--------------+--------------------+-----------------|
-  | Carry Capacity        |          |           |              |                  0 |               0 |
+  | Name                            | Quantity | Cost (gp) | Weight (lbs) | Total Weight (lbs) | Total Cost (gp) |
+  |---------------------------------+----------+-----------+--------------+--------------------+-----------------|
+  | Studded Leather Armor           |        1 |        45 |           13 |                 13 |              45 |
+  | Whip                            |        1 |         2 |            3 |                  3 |               2 |
+  | Light Crossbow                  |        1 |        25 |            5 |                  5 |              25 |
+  | Bolts                           |       20 |           |              |                  0 |               0 |
+  | Thieves tools                   |        1 |           |              |                  0 |               0 |
+  | Dungeoneer's Pack               |        1 |           |              |                  0 |               0 |
+  | Common (2d4 +2)                 |        2 |           |              |                  0 |               0 |
+  | Normal (4d4 + 4)                |        2 |           |              |                  0 |               0 |
+  | Presvarus Cloak of Displacement |          |           |              |                    |                 |
+  |---------------------------------+----------+-----------+--------------+--------------------+-----------------|
+  | Carry Capacity                  |          |           |              |                  0 |               0 |
   #+TBLFM: $5=($2 * $4)
   #+TBLFM: $6=($2 * $3)
-  #+TBLFM: @24$5=vsum(@2$5..@24$5)
-  #+TBLFM: @24$6=vsum(@2$6..@23$6)
-  #+TBLFM: @24$2=($STR * 10)
+  #+TBLFM: @29$5=vsum(@2$5..@29$5)
+  #+TBLFM: @29$6=vsum(@2$6..@28$6)
+  #+TBLFM: @29$2=($STR * 10)
+
+** Cloak of Displacement
+   While you wear this cloak, it projects an Illusion that makes you appear to be standing in a place 
+   near your actual Location, causing any creature to have disadvantage on Attack rolls against you. 
+   If you take damage, the property ceases to function until the start of your next turn. This 
+   property is suppressed while you are Incapacitated, Restrained, or otherwise unable to move.
  
 ** Money
    | Copper | Silver | Electrum | Gold | Platinum | Total (Gold) |
