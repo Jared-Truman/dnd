@@ -7,15 +7,15 @@
     (dnd-output-ability-constants table)
   #+END_SRC
 
-  #+RESULTS[a4ac99e01eb5540901335777b99370dc72b5ac04]: define-constants-with-src-block
+  #+RESULTS[5310e9e18c677ec03347432db99e13a9c7cfc473]: define-constants-with-src-block
   :results:
   #+CONSTANTS: STR=11
   #+CONSTANTS: DEX=15
   #+CONSTANTS: CON=13
-  #+CONSTANTS: INT=18
+  #+CONSTANTS: INT=20
   #+CONSTANTS: WIS=14
-  #+CONSTANTS: CHA=11
-  #+CONSTANTS: PROF=2
+  #+CONSTANTS: CHA=13
+  #+CONSTANTS: PROF=3
   #+CONSTANTS: SCA=13
   #+CONSTANTS: SAM=5
   :end:
@@ -25,26 +25,12 @@
 * Traits
   | Level | Race  | Subrace | Class     | Subclass     | Age | Alignment    | Size             |
   |-------+-------+---------+-----------+--------------+-----+--------------+------------------|
-  |     5 | Human | Variant | Artificer | Battle Smith |  37 | Chaotic Good | Medium(175) 6'1" |
-
-** Variant Human
-   
-If your campaign uses the optional feat rules from the Player’s Handbook, your Dungeon Master might allow these variant traits, all of which replace the human’s Ability Score Increase trait.
-
-Ability Score Increase
-Two different ability scores of your choice increase by 1.
-
-Skills
-You gain proficiency in one skill of your choice.
-
-Feat
-You gain one feat of your choice.
-
+  |    10 | Human | Variant | Artificer | Battle Smith |  37 | Chaotic Good | Medium(175) 6'1" |
 
 * Stats  
-  | Speed | Hit Points | AC     | Death Saves | Inspiration |
-  |-------+------------+--------+-------------+-------------|
-  |    30 |         39 | 14 + 1 |             |             |
+  | Speed | Hit Points | AC | Death Saves    | Inspiration |
+  |-------+------------+----+----------------+-------------|
+  |    30 | 5/63       | 14 | Save:  Death:  |             |
 
 * Abilities and Skills
   #+name: stats
@@ -58,31 +44,31 @@ You gain one feat of your choice.
   |         |       |     |    | 1d20 + 2       | Sleight of Hand       |
   |         |       |     |    | 1d20 + 2       | Stealth               |
   |---------+-------+-----+----+----------------+-----------------------|
-  | CON     |    13 |   1 | X  | 1d20 + 3       | Saving Throw          |
+  | CON     |    13 |   1 | X  | 1d20 + 4       | Saving Throw          |
   |---------+-------+-----+----+----------------+-----------------------|
-  | INT     |    18 |   4 | X  | 1d20 + 6       | Saving Throw          |
-  |         |       |     |    | 1d20 + 4       | Arcana                |
-  |         |       |     | X  | 1d20 + 6       | History               |
-  |         |       |     | X  | 1d20 + 6       | Investigation         |
-  |         |       |     |    | 1d20 + 4       | Nature                |
-  |         |       |     |    | 1d20 + 4       | Religion              |
+  | INT     |    20 |   5 | X  | 1d20 + 8       | Saving Throw          |
+  |         |       |     |    | 1d20 + 5       | Arcana                |
+  |         |       |     | X  | 1d20 + 8       | History               |
+  |         |       |     | X  | 1d20 + 8       | Investigation         |
+  |         |       |     |    | 1d20 + 5       | Nature                |
+  |         |       |     |    | 1d20 + 5       | Religion              |
   |---------+-------+-----+----+----------------+-----------------------|
   | WIS     |    14 |   2 |    | 1d20 + 2       | Saving Throw          |
   |         |       |     |    | 1d20 + 2       | Animal Handling       |
   |         |       |     |    | 1d20 + 2       | Insight               |
   |         |       |     |    | 1d20 + 2       | Medicine              |
   |         |       |     |    | 1d20 + 2       | Perception            |
-  |         |       |     | X  | 1d20 + 4       | Survival              |
+  |         |       |     | X  | 1d20 + 5       | Survival              |
   |---------+-------+-----+----+----------------+-----------------------|
-  | CHA     |    11 |   0 |    | 1d20 + 0       | Saving Throw          |
-  |         |       |     |    | 1d20 + 0       | Deception             |
-  |         |       |     |    | 1d20 + 0       | Intimidation          |
-  |         |       |     |    | 1d20 + 0       | Performance           |
-  |         |       |     |    | 1d20 + 0       | Persuasion            |
+  | CHA     |    13 |   1 |    | 1d20 + 1       | Saving Throw          |
+  |         |       |     |    | 1d20 + 1       | Deception             |
+  |         |       |     |    | 1d20 + 1       | Intimidation          |
+  |         |       |     |    | 1d20 + 1       | Performance           |
+  |         |       |     |    | 1d20 + 1       | Persuasion            |
   |---------+-------+-----+----+----------------+-----------------------|
-  | PROF    |     2 |     |    |                |                       |
-  | SCA     |    13 |     |    | 8 + PROF + INT | SPELL CASTING ABILITY |
-  | SAM     |     5 |     |    | PROF + INT     | SPELL ATT MOD         |
+  | PROF    |     3 |     |    |                |                       |
+  | SCA     |    16 |     |    | 8 + PROF + INT | SPELL CASTING ABILITY |
+  | SAM     |     8 |     |    | PROF + INT     | SPELL ATT MOD         |
   #+TBLFM: @2$3='(calc-dnd-mod (string-to-number (org-table-get-constant $1)))
   #+TBLFM: @4$3='(calc-dnd-mod (string-to-number (org-table-get-constant $1)))
   #+TBLFM: @8$3='(calc-dnd-mod (string-to-number (org-table-get-constant $1)))
@@ -100,8 +86,8 @@ You gain one feat of your choice.
   #+NAME: attacks
   | Weapon          | Ability | Prof | Type     | Die | Mod To Hit | Roll    |
   |-----------------+---------+------+----------+-----+------------+---------|
-  | Whip            | INT     | X    | Slashing | 1d4 |          6 | 1d4 + 4 |
-  | Light Cross Bow | INT     | X    | Piercing | 1d8 |          6 | 1d8 + 4 |
+  | Whip            | INT     | X    | Slashing | 1d4 |          8 | 1d4 + 5 |
+  | Light Cross Bow | INT     | X    | Piercing | 1d8 |          8 | 1d8 + 5 |
   #+TBLFM: $6='(+ (if (string= $3 "X") $PROF 0) (calc-dnd-mod (string-to-number (org-table-get-constant $2))))
   #+TBLFM: $7='(concat $5 " + " (number-to-string (calc-dnd-mod (string-to-number (org-table-get-constant $2)))))
  
@@ -122,13 +108,15 @@ You gain one feat of your choice.
   | Bolts                 |       20 |           |              |                  0 |               0 |
   | Thieves tools         |        1 |           |              |                  0 |               0 |
   | Dungeoneer's Pack     |        1 |           |              |                  0 |               0 |
+  | Common (2d4 +2)       |        2 |           |              |                  0 |               0 |
+  | Normal (4d4 + 4)      |        2 |           |              |                  0 |               0 |
   |-----------------------+----------+-----------+--------------+--------------------+-----------------|
   | Carry Capacity        |          |           |              |                  0 |               0 |
   #+TBLFM: $5=($2 * $4)
   #+TBLFM: $6=($2 * $3)
-  #+TBLFM: @21$5=vsum(@2$5..@21$5)
-  #+TBLFM: @21$6=vsum(@2$6..@20$6)
-  #+TBLFM: @21$2=($STR * 10)
+  #+TBLFM: @24$5=vsum(@2$5..@24$5)
+  #+TBLFM: @24$6=vsum(@2$6..@23$6)
+  #+TBLFM: @24$2=($STR * 10)
  
 ** Money
    | Copper | Silver | Electrum | Gold | Platinum | Total (Gold) |

@@ -35,6 +35,15 @@
 
     This spell can physically repair a magic item or construct, but the spell can’t restore magic to such an object.
 
+*** Sword Burst
+    Casting Time: 1 action
+    Range: Self (5-foot radius)
+    Components: V
+    Duration: Instantaneous
+    
+    You create a momentary circle of spectral blades that sweep around you. All other creatures within 5 feet of you must succeed on a Dexterity saving throw or take 1d6 force damage.
+
+    At Higher Levels. This spell's damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6)
 ** Infusions
 *** Enhanced Defense
     Item: A suit of armor or a shield
@@ -42,21 +51,18 @@
     A creature gains a +1 bonus to Armor Class while wearing (armor) or wielding (shield) the infused item.
 
     The bonus increases to +2 when you reach 10th level in this class.
-
 *** Enhanced Weapon
     Item: A simple or martial weapon
 
     This magic weapon grants a +1 bonus to attack and damage rolls made with it.
 
     The bonus increases to +2 when you reach 10th level in this class.
-   
 ***   Repeating Shot
     Item: A simple or martial weapon with the ammunition property (requires attunement)
 
     This magic weapon grants a + 1 bonus to attack and damage rolls made with it when it's used to make a ranged attack, and it ignores the loading property if it has it.
 
     If you load no ammunition in the weapon, it produces its own, automatically creating one piece of magic ammunition when you make a ranged attack with it. The ammunition created by the weapon vanishes the instant after it hits or misses a target.
-
 ** Level 1 (4/4)
 *** Cure Wounds
     Casting Time: 1 action
@@ -67,7 +73,6 @@
     A creature you touch regains a number of hit points equal to 1d8 + your spellcasting ability modifier. This spell has no effect on undead or constructs.
     
     At Higher Levels. When you cast this spell using a spell slot of 2nd level or higher, the healing increases by 1d8 for each slot level above 1st.
-
 *** Disguise Self
     Casting Time: 1 action
     Range: Self
@@ -96,7 +101,6 @@
     Choose up to five falling creatures within range. A falling creature’s rate of descent slows to 60
     feet per round until the spell ends. If the creature lands before the spell ends, it takes no falling
     damage and can land on its feet, and the spell ends for that creature.
-    
 *** Faerie Fire
     Casting Time: 1 action
     Range: 60 feet
@@ -110,7 +114,7 @@
     
     Any attack roll against an affected creature or object has advantage if the attacker can see it, and the
     affected creature or object can’t benefit from being invisible.
-** Level 2 (2/2)
+** Level 2 (3/3)
 *** Blur
     Casting Time: 1 action
     Range: Self
@@ -139,6 +143,29 @@
     At Higher Levels. When you cast this spell using a spell slot of 3rd level or higher, the damage
     increases by 1d8 for each slot level above 2nd.
 
+    
+** Level 3 (0/2)
+*** Fly
+    Casting Time: 1 action
+    Range: Touch
+    Components: V, S, M (a wing feather from any bird)
+    Duration: Concentration, up to 10 minutes
+    
+    You touch a willing creature. The target gains a flying speed of 60 feet for the duration. When the spell ends, the target falls if it is still aloft, unless it can stop the fall.
+
+    At Higher Levels. When you cast this spell using a spell slot of 4th level or higher, you can target one additional creature for each slot level above 3rd.
+*** Ashardalon's Stride
+    Casting Time: 1 bonus action
+    Range: Self
+    Components: V,S
+    Duration: Concentration, up to 1 minute
+    
+    The billowing flames of a dragon blast from your feet, granting you explosive speed. For the duration, your speed increases by 20 feet and moving doesn’t provoke opportunity attacks.
+    
+    When you move within 5 feet of a creature or an object that isn’t being worn or carried, it takes 1d6 fire damage from your trail of heat. A creature or object can take this damage only once during a turn.
+
+    At Higher Levels. When you cast this spell using a spell slot of 4th level or higher, increase your speed by 5 feet for each spell slot level above 3rd. The spell deals an additional 1d6 fire damage for each slot level above 3rd.
+    
 * Artificer Spells
 | lvl | Battle Smith Spells               |
 |-----+-----------------------------------|
