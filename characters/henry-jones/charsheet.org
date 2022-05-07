@@ -110,7 +110,7 @@
   | Dungeoneer's Pack               |        1 |           |              |                  0 |               0 |
   | Common (2d4 +2)                 |        2 |           |              |                  0 |               0 |
   | Normal (4d4 + 4)                |        2 |           |              |                  0 |               0 |
-  | Presvarus Cloak of Displacement |          |           |              |                    |                 |
+  | Presvarus Cloak of Displacement |        1 |           |              |                    |                 |
   |---------------------------------+----------+-----------+--------------+--------------------+-----------------|
   | Carry Capacity                  |          |           |              |                  0 |               0 |
   #+TBLFM: $5=($2 * $4)
