@@ -26,7 +26,7 @@
 * Stats  
   | Speed | Hit Points | AC             | Death Saves | Inspiration | Hit dice |
   |-------+------------+----------------+-------------+-------------+----------|
-  | 40 ft | 58/64      | 18 +1 (shield) |             |             |        8 |
+  | 40 ft | 20/64      | 18 +1 (shield) |             |             |        8 |
 
 * Abilities and Skills
   #+name: stats
@@ -106,7 +106,7 @@
 
 | Total | Rages Used | In Rage | Turns Left (10) |
 |-------+------------+---------+-----------------|
-|     4 |            |         |                 |
+|     4 |          1 | x       | 10              |
 
 *** Unarmored Defense
     While you are not wearing any armor, your armor class equals
@@ -183,24 +183,25 @@
   |           |       | Shields |         |
 
 * Equipment
-  | Name                              | Quantity | Cost (gp) | Weight (lbs) | Total Weight (lbs) | Total Cost (gp) |
-  |-----------------------------------+----------+-----------+--------------+--------------------+-----------------|
-  | Explorer Pack                     |        1 |         0 |            0 |                  0 |               0 |
-  | Javalins                          |        4 |         0 |            0 |                  0 |               0 |
-  | Breast plate                      |        1 |       400 |              |                  0 |             400 |
-  | Greater Healing Potions (4d4 + 4) |        3 |           |              |                  0 |               0 |
-  | Map                               |        1 |       .05 |            0 |                  0 |            0.05 |
-  | Gold Band from Kerry Red Spear    |        1 |           |              |                  0 |               0 |
-  | Bear Onesy                        |        1 |           |              |                    |                 |
-  | Calabasts spell book dropped      |        1 |           |              |                    |                 |
-  | Rock Hammers                      |        3 |           |              |                    |                 |
-  |-----------------------------------+----------+-----------+--------------+--------------------+-----------------|
-  | Carry Capacity                    |      170 |           |              |                  0 |               0 |
+  | Name                                         | Quantity | Cost (gp) | Weight (lbs) | Total Weight (lbs) | Total Cost (gp) |
+  |----------------------------------------------+----------+-----------+--------------+--------------------+-----------------|
+  | Explorer Pack                                |        1 |         0 |            0 |                  0 |               0 |
+  | Javalins                                     |        4 |         0 |            0 |                  0 |               0 |
+  | Breast plate                                 |        1 |       400 |              |                  0 |             400 |
+  | Greater Healing Potions (4d4 + 4)            |        2 |           |              |                  0 |               0 |
+  | Map                                          |        1 |       .05 |            0 |                  0 |            0.05 |
+  | Gold Band from Kerry Red Spear               |        1 |           |              |                  0 |               0 |
+  | Bear Onesy                                   |        1 |           |              |                    |                 |
+  | Calabasts spell book dropped (gave to regan) |        1 |           |              |                    |                 |
+  | Rock Hammers                                 |        3 |           |              |                    |                 |
+  | Spell book from Kellem                       |        1 |           |              |                    |                 |
+  |----------------------------------------------+----------+-----------+--------------+--------------------+-----------------|
+  | Carry Capacity                               |      170 |           |              |                  0 |               0 |
   #+TBLFM: $5=($2 * $4)
   #+TBLFM: $6=($2 * $3)
-  #+TBLFM: @21$5=vsum(@2$5..@21$5)
-  #+TBLFM: @21$6=vsum(@2$6..@20$6)
-  #+TBLFM: @21$2=($STR * 10)
+  #+TBLFM: @22$5=vsum(@2$5..@22$5)
+  #+TBLFM: @22$6=vsum(@2$6..@21$6)
+  #+TBLFM: @22$2=($STR * 10)
  
 ** Money
    | Copper | Silver | Electrum | Gold | Platinum | Total (Gold) |
