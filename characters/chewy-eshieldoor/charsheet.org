@@ -22,12 +22,14 @@
   | Level | Race    | Subrace | Class     | Subclass           | Age | Alignment | Size            |
   |-------+---------+---------+-----------+--------------------+-----+-----------+-----------------|
   |     8 | Goliath |         | Barbarian | Bear Totem Warrior |  27 | Neutral   | Medium(340) 8FT |
-
+ 
 * Stats  
-  | Speed | Hit Points | AC             | Death Saves | Inspiration | Hit dice |
-  |-------+------------+----------------+-------------+-------------+----------|
-  | 40 ft | 64/64      | 18 +1 (shield) |             |             |        3 |
+  | Speed | Hit Points | AC             | Death Saves | Inspiration | Hit dice | Exhaustion |
+  |-------+------------+----------------+-------------+-------------+----------+------------|
+  | 40 ft | 61/64      | 18 +1 (shield) |             |             |        6 |          1 |
 
+3
+  
 * Abilities and Skills
   #+name: stats
   | Ability | Score | Mod | PB | Roll      | Skill           |
@@ -66,15 +68,7 @@
   #+TBLFM: @2$3='(calc-dnd-mod (string-to-number (org-table-get-constant $1)))
   #+TBLFM: @4$3='(calc-dnd-mod (string-to-number (org-table-get-constant $1)))
   #+TBLFM: @8$3='(calc-dnd-mod (string-to-number (org-table-get-constant $1)))
-  #+TBLFM: @9$3='(calc-dnd-mod (string-to-number (org-table-get-constant $1)))
-  #+TBLFM: @15$3='(calc-dnd-mod (string-to-number (org-table-get-constant $1)))
-  #+TBLFM: @21$3='(calc-dnd-mod (string-to-number (org-table-get-constant $1)))
-  #+TBLFM: @2$5..@3$5='(concat "1d20 + " (number-to-string (+ (if (string= $4 "X") $PROF 0) (calc-dnd-mod (string-to-number (org-table-get-constant @2$1))))))
-  #+TBLFM: @4$5..@7$5='(concat "1d20 + " (number-to-string (+ (if (string= $4 "X") $PROF 0) (calc-dnd-mod (string-to-number (org-table-get-constant @4$1))))))
-  #+TBLFM: @8$5..@8$5='(concat "1d20 + " (number-to-string (+ (if (string= $4 "X") $PROF 0) (calc-dnd-mod (string-to-number (org-table-get-constant @8$1))))))
-  #+TBLFM: @9$5..@14$5='(concat "1d20 + " (number-to-string (+ (if (string= $4 "X") $PROF 0) (calc-dnd-mod (string-to-number (org-table-get-constant @9$1))))))
-  #+TBLFM: @15$5..@20$5='(concat "1d20 + " (number-to-string (+ (if (string= $4 "X") $PROF 0) (calc-dnd-mod (string-to-number (org-table-get-constant @15$1))))))
-  #+TBLFM: @21$5..@25$5='(concat "1d20 + " (number-to-string (+ (if (string= $4 "X") $PROF 0) (calc-dnd-mod (string-to-number (org-table-get-constant @21$1))))))
+  #+TBLFM: @9$3='(calc-dnd-mod (string-to-number (org-table-get-constant $1)))ble-get-constant @21$1))))))
 
 ** Abilities
 *** Rage
@@ -85,12 +79,7 @@
     - You have advantage on Strength checks and Strength saving throws.
     - When you make a melee weapon attack using Strength, you gain a bonus to the damage roll that increases
       as you gain levels as a barbarian, as shown in the Rage Damage column of the Barbarian table.
-    - You have resistance to bludgeoning, piercing, and slashing damage.
-    - If you are able to cast spells, you can't cast them or concentrate on them while raging.
-    - Your rage lasts for 1 minute. It ends early if you are knocked unconscious or if your turn
-      ends and you haven't attacked a hostile creature since your last turn or taken damage since then.
-    - You can also end your rage on your turn as a bonus action.
-    - Once you have raged the number of times shown for your barbarian level in the Rages column of the
+    - You have resistance to bludgeoning, piercs shown for your barbarian level in the Rages column of the
       Barbarian table, you must finish a long rest before you can rage again.
 
 | Level | Rage Damage |     Rages |
@@ -103,10 +92,11 @@
 |    16 |          +4 |         5 |
 | 16-19 |          +4 |         6 |
 |    20 |          +4 | Unlimited |
+|       |             |           |
 
 | Total | Rages Used | In Rage | Turns Left (10) |
 |-------+------------+---------+-----------------|
-|     4 |          2 | x       | 5               |
+|     4 |            |         |                 |
 
 *** Unarmored Defense
     While you are not wearing any armor, your armor class equals
@@ -151,6 +141,7 @@
   When you take damage, you can use your reaction to roll a d12. Add your Constitution modifier to the number rolled and reduce the damage by that total.
   After you use this trait, you can’t use it again until you finish a short or long rest.
   1d12 + Const Mod
+
   
 * Feats
 ** Shield Master
@@ -166,13 +157,13 @@
   
 * Attacks
   #+NAME: attacks
-  | Weapon    | Ability | Prof | Type        |  Die | Mod To Hit | Roll     |
-  |-----------+---------+------+-------------+------+------------+----------|
-  | Shield +1 | STR     | X    | Bludgeoning |  0d2 |          7 | 0d2 + 4  |
-  | Shield +1 | STR     | X    | Bludgeoning |  1d4 |          7 | 1d4 + 4  |
-  | Great Ax  | STR     | X    | Slashing    | 1d12 |          7 | 1d12 + 4 |
-  | Javelin   | STR     | X    | Piercing    |  1d6 |          7 | 1d6 + 4  |
-  | Whip      | STR     | X    | Slashing    |  1d4 |          7 | 1d4 + 4  |
+  | Weapon    | Ability | Prof | Type        | Die | Mod To Hit | Roll    |
+  |-----------+---------+------+-------------+-----+------------+---------|
+  | Shield +1 | STR     | X    | Bludgeoning | 0d2 |          7 | 0d2 + 4 |
+  | Shield +1 | STR     | X    | Bludgeoning | 1d4 |          7 | 1d4 + 4 |
+  | Javelin   | STR     | X    | Piercing    | 1d6 |          7 | 1d6 + 4 |
+  | Hand Ax   | STR     | X    | Slashing    | 1d6 |          7 | 1d6 + 4 |
+  | Whip      | STR     | X    | Slashing    | 1d4 |          7 | 1d4 + 4 |
   #+TBLFM: $6='(+ (if (string= $3 "X") $PROF 0) (calc-dnd-mod (string-to-number (org-table-get-constant $2))))
   #+TBLFM: $7='(concat $5 " + " (number-to-string (calc-dnd-mod (string-to-number (org-table-get-constant $2)))))
  
@@ -187,7 +178,7 @@
   | Name                                         | Quantity | Cost (gp) | Weight (lbs) | Total Weight (lbs) | Total Cost (gp) |
   |----------------------------------------------+----------+-----------+--------------+--------------------+-----------------|
   | Explorer Pack                                |        1 |         0 |            0 |                  0 |               0 |
-  | Javalins                                     |        4 |         0 |            0 |                  0 |               0 |
+  | Javalins                                     |        6 |         0 |            0 |                  0 |               0 |
   | Breast plate                                 |        1 |       400 |              |                  0 |             400 |
   | Greater Healing Potions (4d4 + 4)            |        2 |           |              |                  0 |               0 |
   | Map                                          |        1 |       .05 |            0 |                  0 |            0.05 |
@@ -195,19 +186,20 @@
   | Bear Onesy                                   |        1 |           |              |                  0 |               0 |
   | Calabasts spell book dropped (gave to regan) |        1 |           |              |                  0 |               0 |
   | Rock Hammers                                 |        3 |           |              |                  0 |               0 |
-  | Spell book from Kellem                       |        1 |           |              |                  0 |               0 |
+  | 6 FT spear with silver spear tip             |        1 |           |              |                    |                 |
+  | Hand Ax                                      |        2 |           |              |                    |                 |
   |----------------------------------------------+----------+-----------+--------------+--------------------+-----------------|
   | Carry Capacity                               |      170 |           |              |                  0 |               0 |
   #+TBLFM: $5=($2 * $4)
   #+TBLFM: $6=($2 * $3)
-  #+TBLFM: @22$5=vsum(@2$5..@22$5)
-  #+TBLFM: @22$6=vsum(@2$6..@21$6)
-  #+TBLFM: @22$2=($STR * 10)
+  #+TBLFM: @24$5=vsum(@2$5..@24$5)
+  #+TBLFM: @24$6=vsum(@2$6..@23$6)
+  #+TBLFM: @24$2=($STR * 10)
  
 ** Money
    | Copper | Silver | Electrum | Gold | Platinum | Total (Gold) |
    |--------+--------+----------+------+----------+--------------|
-   |      0 |      0 |        0 |  94  |        0 |            0 |
+   |      0 |      0 |        0 | 1070 |        0 |            0 |
    #+TBLFM: $6=(($1 / 100) + ($2 / 10) + ($3 / 2) + $4 + ($5 * 10))
 
 
