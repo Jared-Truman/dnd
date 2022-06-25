@@ -21,14 +21,13 @@
 * Traits
   | Level | Race    | Subrace | Class     | Subclass           | Age | Alignment | Size            |
   |-------+---------+---------+-----------+--------------------+-----+-----------+-----------------|
-  |     8 | Goliath |         | Barbarian | Bear Totem Warrior |  27 | Neutral   | Medium(340) 8FT |
+  |     9 | Goliath |         | Barbarian | Bear Totem Warrior |  27 | Neutral   | Medium(340) 8FT |
  
 * Stats  
   | Speed | Hit Points | AC             | Death Saves | Inspiration | Hit dice | Exhaustion |
   |-------+------------+----------------+-------------+-------------+----------+------------|
-  | 40 ft | 61/64      | 18 +1 (shield) |             |             |        6 |          1 |
+  | 40 ft | 55/64      | 18 +1 (shield) |             |             |        6 |          1 |
 
-3
   
 * Abilities and Skills
   #+name: stats
@@ -96,7 +95,7 @@
 
 | Total | Rages Used | In Rage | Turns Left (10) |
 |-------+------------+---------+-----------------|
-|     4 |            |         |                 |
+|     4 |          1 |         |               7 |
 
 *** Unarmored Defense
     While you are not wearing any armor, your armor class equals
@@ -157,13 +156,13 @@
   
 * Attacks
   #+NAME: attacks
-  | Weapon    | Ability | Prof | Type        | Die | Mod To Hit | Roll    |
-  |-----------+---------+------+-------------+-----+------------+---------|
-  | Shield +1 | STR     | X    | Bludgeoning | 0d2 |          7 | 0d2 + 4 |
-  | Shield +1 | STR     | X    | Bludgeoning | 1d4 |          7 | 1d4 + 4 |
-  | Javelin   | STR     | X    | Piercing    | 1d6 |          7 | 1d6 + 4 |
-  | Hand Ax   | STR     | X    | Slashing    | 1d6 |          7 | 1d6 + 4 |
-  | Whip      | STR     | X    | Slashing    | 1d4 |          7 | 1d4 + 4 |
+  | Weapon    | Ability | Prof | Type        | Die | Mod To Hit | Roll        |
+  |-----------+---------+------+-------------+-----+------------+-------------|
+  | Shield    | STR     | X    | Bludgeoning | 0d2 |          7 | 0d2 + 4     |
+  | Shield +1 | STR     | X    | Bludgeoning | 1d4 |          7 | 1d4 + 4 + 1 |
+  | Javelin   | STR     | X    | Piercing    | 1d6 |          7 | 1d6 + 4     |
+  | Hand Ax   | STR     | X    | Slashing    | 1d6 |          7 | 1d6 + 4     |
+  | Whip      | STR     | X    | Slashing    | 1d4 |          7 | 1d4 + 4     |
   #+TBLFM: $6='(+ (if (string= $3 "X") $PROF 0) (calc-dnd-mod (string-to-number (org-table-get-constant $2))))
   #+TBLFM: $7='(concat $5 " + " (number-to-string (calc-dnd-mod (string-to-number (org-table-get-constant $2)))))
  
@@ -180,7 +179,7 @@
   | Explorer Pack                                |        1 |         0 |            0 |                  0 |               0 |
   | Javalins                                     |        6 |         0 |            0 |                  0 |               0 |
   | Breast plate                                 |        1 |       400 |              |                  0 |             400 |
-  | Greater Healing Potions (4d4 + 4)            |        2 |           |              |                  0 |               0 |
+  | Greater Healing Potions (4d4 + 4)            |        1 |           |              |                  0 |               0 |
   | Map                                          |        1 |       .05 |            0 |                  0 |            0.05 |
   | Gold Band from Kerry Red Spear               |        1 |           |              |                  0 |               0 |
   | Bear Onesy                                   |        1 |           |              |                  0 |               0 |
@@ -199,7 +198,7 @@
 ** Money
    | Copper | Silver | Electrum | Gold | Platinum | Total (Gold) |
    |--------+--------+----------+------+----------+--------------|
-   |      0 |      0 |        0 | 1070 |        0 |            0 |
+   |      0 |      0 |        0 | 1204 |        0 |            0 |
    #+TBLFM: $6=(($1 / 100) + ($2 / 10) + ($3 / 2) + $4 + ($5 * 10))
 
 
