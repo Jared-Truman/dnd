@@ -1,7 +1,7 @@
-#+TITLE Dr Henry Jones - Features
+#+TITLE Dr Henry Jones - Abilities
 * Abilities  
 ** Class
-*** Magical Tinkering
+*** Magical Tinkering :lvl:1:
     At 1st level, you've learned how to invest a spark of magic into mundane objects. To use this ability, you must have thieves' tools or artisan's tools in hand. You then touch a Tiny nonmagical object as an action and give it one of the following magical properties of your choice:
 
     |---------+------------------------------------------------------------------------------------------|
@@ -26,10 +26,46 @@
     Multiple objects, one feature per object, and the chosen property lasts indefinitely. As an action, you can touch the object and end the property early..
     Number of objects per feature equal to your Intelligence modifier.
     If you try to exceed your maximum, the oldest property immediately ends, and then the new property applies.
+    
 *** Ability Score Improvement :lvl:4:8:12:16:19:
     When you reach 4th level, 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.
+    
 *** Ritual Casting
- You can cast an artificer spell as a ritual if that spell has the ritual tag and you have the spell prepared.
+    You can cast an artificer spell as a ritual if that spell has the ritual tag and you have the spell prepared.
+
+    
+    
+*** Infuse Item :lvl:2:
+    At 2nd level, you've gained the ability to imbue mundane items with certain magical infusions,
+    turning those objects into magic items.
+
+    Infusions Known
+    When you gain this feature, pick four artificer infusions to learn. You learn additional infusions
+    of your choice when you reach certain levels in this class, as shown in the Infusions Known column
+    of the Artificer table.
+
+    Whenever you gain a level in this class, you can replace one of the artificer infusions you learned with a new one.
+
+    Infusing an Item
+    Whenever you finish a long rest, you can touch a nonmagical object and imbue it with one of
+    your artificer infusions, turning it into a magic item. An infusion works on only certain kinds of objects,
+    as specified in the infusion's description. If the item requires attunement, you can attune yourself to
+    it the instant you infuse the item. If you decide to attune to the item later, you must do so using the
+    normal process for attunement (see the attunement rules in the Dungeon Master's Guide).
+
+    Your infusion remains in an item indefinitely, but when you die, the infusion vanishes after a number
+    of days equal to your Intelligence modifier (minimum of 1 day). The infusion also vanishes if you replace
+    your knowledge of the infusion.
+
+    You can infuse more than one nonmagical object at the end of a long rest; the maximum number of
+    objects appears in the Infused Items column of the Artificer table. You must touch each of the objects,
+    and each of your infusions can be in only one object at a time. Moreover, no object can bear more than
+    one of your infusions at a time. If you try to exceed your maximum number of infusions, the oldest infusion ends,
+    and then the new infusion applies.
+
+    If an infusion ends on an item that contains other things, like a bag of holding, its contents harmlessly
+    appear in and around its space.
+    
 *** The Right Tool for the Job                                        :lvl:3:
      With thieves' tools or artisan's tools in hand, you can magically create one set of artisan's tools 
      in an unoccupied space within 5 feet of you. This creation requires 1 hour of uninterrupted work, 

@@ -1,8 +1,47 @@
 #+STARTUP: content showstars indent
 #+FILETAGS: dnd background baddah_bing
-* Features                          :feature:
-* Personality Trait
-* Ideal
-* Bond
-* Flaw
 
+* Background
+Archaeologist
+*Skill Proficiencies:* History, Survival
+*Tool Proficiencies:* Cartographer’s tools or Navigator’s tools
+*Languages:* One of your choice
+*Equipment:* A wooden case containing a map to a ruin or dungeon, a bullseye lantern, a miner’s pick,
+a set of traveler’s clothes, a shovel, a two-person tent, a trinket recovered from a dig site,
+and a pouch containing 25 gp
+
+* College :college:
+Lorehold: College of Archaeomancy
+
+Lorehold students delve deep into history, scrubbing ancient tombs, ruins and dungeons
+in search of artifacts or lore that once served great or terrible purpose. They place
+value on the past, knowing they can draw upon it to predict (or even mold) the future.
+This background serves as a leaping off point for players who want to give themselves an
+archaeological or anthropological background.
+
+These students gain proficiency in the History and Religion skills and can learn two additional
+languages. They also gain access to the Strixhaven Initiative feat and must choose Lorehold.
+Additionally, they learn spells that help their work, including the Lorehold-specific
+Borrowed Knowledge, Locate Object, Speak With Dead and Legend Lore.
+
+This College is great for Bards, Wizards, Clerics or Warlocks who focus heavily on the past.
+Barbarian following the Path of the Ancestral Guardian or Paladins who have sworn the Oath of the
+Ancients could also benefit from what Lorehold has to offer.
+
+* Features                          :feature:
+**  Historical Knowledge
+When you enter a ruin or dungeon, you can correctly ascertain its original purpose and determine
+its builders, whether those were dwarves, elves, humans, yuan-ti, or some other known race.
+In addition, you can determine the monetary value of art objects more than a century old.
+
+* Personality Trait
+You might think I’m a scholar, but I love a good brawl. These fists were made for punching.
+
+* Ideal
+Preservation. That artifact belongs in a museum. (Good)
+
+* Bond
+I hope to bring prestige to a library, a museum, or a university.
+
+* Flaw
+When given the choice of going left or right, I always go right.
