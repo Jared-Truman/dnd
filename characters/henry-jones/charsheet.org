@@ -46,10 +46,10 @@
   |---------+-------+-----+----+----------------+-----------------------|
   | INT     |    16 |   2 | X  | 1d20 + 4       | Saving Throw          |
   |         |       |     | X  | 1d20 + 2       | Arcana                |
-  |         |       |     | X  | 1d20 + 2       | History               |
+  |         |       |     | XX | 1d20 + 2       | History               |
   |         |       |     |    | 1d20 + 2       | Investigation         |
   |         |       |     |    | 1d20 + 2       | Nature                |
-  |         |       |     |    | 1d20 + 2       | Religion              |
+  |         |       |     | X  | 1d20 + 2       | Religion              |
   |---------+-------+-----+----+----------------+-----------------------|
   | WIS     |     8 |  -1 |    | 1d20 + -1      | Saving Throw          |
   |         |       |     |    | 1d20 + -1      | Animal Handling       |
@@ -90,12 +90,12 @@
   #+TBLFM: $7='(concat $5 " + " (number-to-string (calc-dnd-mod (string-to-number (org-table-get-constant $2)))))
  
 * Proficiencies
-  | Languages | Tools        | Armor   | Weapons    |
-  |-----------+--------------+---------+------------|
-  | Common    | Thieves      | Light   | Improvised |
-  | Sylvan    | Tinkers      | Medium  | Simple     |
-  | Dwarvish  | Cartographer | Shields | Martial    |
-  |           | Smith        |         |            |
+  | Languages | Tools        | Armor   | Weapons |
+  |-----------+--------------+---------+---------|
+  | Common    | Thieves      | Light   | Simple  |
+  | Sylvan    | Cartographer | Medium  |         |
+  | Dwarvish  |              | Shields |         |
+  | Elvish    |              |         |         |
 
 * Equipment
   | Name                     | Quantity | Cost (gp) | Weight (lbs) | Total Weight (lbs) | Total Cost (gp) |
