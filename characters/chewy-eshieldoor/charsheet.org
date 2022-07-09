@@ -7,15 +7,15 @@
     (dnd-output-ability-constants table)
   #+END_SRC
 
-  #+RESULTS[2ab19de836c222f0ecf2aa6ce541ceeb9fc5503a]: define-constants-with-src-block
+  #+RESULTS[de4a1f22bf8e908323f8a581e40f9ed8fc8caad2]: define-constants-with-src-block
   :results:
-  #+CONSTANTS: STR=19
+  #+CONSTANTS: STR=20
   #+CONSTANTS: DEX=13
-  #+CONSTANTS: CON=15
+  #+CONSTANTS: CON=16
   #+CONSTANTS: INT=8
-  #+CONSTANTS: WIS=10
+  #+CONSTANTS: WIS=12
   #+CONSTANTS: CHA=12
-  #+CONSTANTS: PROF=3
+  #+CONSTANTS: PROF=4
   :end:
   
 * Traits
@@ -32,15 +32,15 @@
   #+name: stats
   | Ability | Score | Mod | PB | Roll      | Skill           |
   |---------+-------+-----+----+-----------+-----------------|
-  | STR     |    19 |   4 | X  | 1d20 + 7  | Saving Throw    |
-  |         |       |     | XX | 1d20 + 7  | Athletics       |
+  | STR     |    20 |   5 | X  | 1d20 + 9  | Saving Throw    |
+  |         |       |     | XX | 1d20 + 13 | Athletics       |
   |---------+-------+-----+----+-----------+-----------------|
   | DEX     |    13 |   1 |    | 1d20 + 1  | Saving Throw    |
   |         |       |     |    | 1d20 + 1  | Acrobatics      |
   |         |       |     |    | 1d20 + 1  | Sleight of Hand |
   |         |       |     |    | 1d20 + 1  | Stealth         |
   |---------+-------+-----+----+-----------+-----------------|
-  | CON     |    15 |   2 | X  | 1d20 + 5  | Saving Throw    |
+  | CON     |    16 |   3 | X  | 1d20 + 7  | Saving Throw    |
   |---------+-------+-----+----+-----------+-----------------|
   | INT     |     8 |  -1 |    | 1d20 + -1 | Saving Throw    |
   |         |       |     |    | 1d20 + -1 | Arcana          |
@@ -49,16 +49,16 @@
   |         |       |     |    | 1d20 + -1 | Nature          |
   |         |       |     |    | 1d20 + -1 | Religion        |
   |---------+-------+-----+----+-----------+-----------------|
-  | WIS     |    10 |   0 |    | 1d20 + 0  | Saving Throw    |
-  |         |       |     |    | 1d20 + 0  | Animal Handling |
-  |         |       |     |    | 1d20 + 0  | Insight         |
-  |         |       |     |    | 1d20 + 0  | Medicine        |
-  |         |       |     | X  | 1d20 + 0  | Perception      |
-  |         |       |     | X  | 1d20 + 3  | Survival        |
+  | WIS     |    12 |   1 |    | 1d20 + 1  | Saving Throw    |
+  |         |       |     |    | 1d20 + 1  | Animal Handling |
+  |         |       |     |    | 1d20 + 1  | Insight         |
+  |         |       |     |    | 1d20 + 1  | Medicine        |
+  |         |       |     | X  | 1d20 + 5  | Perception      |
+  |         |       |     | X  | 1d20 + 5  | Survival        |
   |---------+-------+-----+----+-----------+-----------------|
   | CHA     |    12 |   1 |    | 1d20 + 1  | Saving Throw    |
   |         |       |     |    | 1d20 + 1  | Deception       |
-  |         |       |     | X  | 1d20 + 4  | Intimidation    |
+  |         |       |     | X  | 1d20 + 5  | Intimidation    |
   |         |       |     |    | 1d20 + 1  | Performance     |
   |         |       |     |    | 1d20 + 1  | Persuasion      |
   |---------+-------+-----+----+-----------+-----------------|
@@ -66,17 +66,25 @@
   #+TBLFM: @2$3='(calc-dnd-mod (string-to-number (org-table-get-constant $1)))
   #+TBLFM: @4$3='(calc-dnd-mod (string-to-number (org-table-get-constant $1)))
   #+TBLFM: @8$3='(calc-dnd-mod (string-to-number (org-table-get-constant $1)))
-  #+TBLFM: @9$3='(calc-dnd-mod (string-to-number (org-table-get-constant $1)))ble-get-constant @21$1))))))
+  #+TBLFM: @9$3='(calc-dnd-mod (string-to-number (org-table-get-constant $1)))
+  #+TBLFM: @15$3='(calc-dnd-mod (string-to-number (org-table-get-constant $1)))
+  #+TBLFM: @21$3='(calc-dnd-mod (string-to-number (org-table-get-constant $1)))
+  #+TBLFM: @2$5..@3$5='(concat "1d20 + " (number-to-string (+ (if (string= $4 "X") $PROF 0) (calc-dnd-mod (string-to-number (org-table-get-constant @2$1))))))
+  #+TBLFM: @4$5..@7$5='(concat "1d20 + " (number-to-string (+ (if (string= $4 "X") $PROF 0) (calc-dnd-mod (string-to-number (org-table-get-constant @4$1))))))
+  #+TBLFM: @8$5..@8$5='(concat "1d20 + " (number-to-string (+ (if (string= $4 "X") $PROF 0) (calc-dnd-mod (string-to-number (org-table-get-constant @8$1))))))
+  #+TBLFM: @9$5..@14$5='(concat "1d20 + " (number-to-string (+ (if (string= $4 "X") $PROF 0) (calc-dnd-mod (string-to-number (org-table-get-constant @9$1))))))
+  #+TBLFM: @15$5..@20$5='(concat "1d20 + " (number-to-string (+ (if (string= $4 "X") $PROF 0) (calc-dnd-mod (string-to-number (org-table-get-constant @15$1))))))
+  #+TBLFM: @21$5..@25$5='(concat "1d20 + " (number-to-string (+ (if (string= $4 "X") $PROF 0) (calc-dnd-mod (string-to-number (org-table-get-constant @21$1))))))
  
 * Attacks
   #+NAME: attacks
   | Weapon    | Ability | Prof | Type        | Die | Mod To Hit | Roll    |
   |-----------+---------+------+-------------+-----+------------+---------|
-  | Shield    | STR     | X    | Bludgeoning | 0d2 |          7 | 0d2 + 4 |
-  | Shield +1 | STR     | X    | Bludgeoning | 1d4 |          7 | 1d4 + 4 |
-  | Javelin   | STR     | X    | Piercing    | 1d6 |          7 | 1d6 + 4 |
-  | Hand Ax   | STR     | X    | Slashing    | 1d6 |          7 | 1d6 + 4 |
-  | Whip      | STR     | X    | Slashing    | 1d4 |          7 | 1d4 + 4 |
+  | Shield    | STR     | X    | Bludgeoning | 0d2 |          9 | 0d2 + 5 |
+  | Shield +1 | STR     | X    | Bludgeoning | 1d4 |          9 | 1d4 + 5 |
+  | Javelin   | STR     | X    | Piercing    | 1d6 |          9 | 1d6 + 5 |
+  | Hand Ax   | STR     | X    | Slashing    | 1d6 |          9 | 1d6 + 5 |
+  | Whip      | STR     | X    | Slashing    | 1d4 |          9 | 1d4 + 5 |
   #+TBLFM: $6='(+ (if (string= $3 "X") $PROF 0) (calc-dnd-mod (string-to-number (org-table-get-constant $2))))
   #+TBLFM: $7='(concat $5 " + " (number-to-string (calc-dnd-mod (string-to-number (org-table-get-constant $2)))))
  
@@ -100,13 +108,15 @@
   | 6 FT spear with silver spear tip  |        1 |           |              |                  0 |               0 |
   | Javelins                          |        6 |         0 |            0 |                  0 |               0 |
   | Hand Ax                           |        2 |           |              |                  0 |               0 |
+  | Hunter Trap                       |        1 |           |              |                  0 |               0 |
+  | Traveler's Clothes                |        1 |           |              |                  0 |               0 |
   |-----------------------------------+----------+-----------+--------------+--------------------+-----------------|
   | Carry Capacity                    |      170 |           |              |                  0 |               0 |
   #+TBLFM: $5=($2 * $4)
   #+TBLFM: $6=($2 * $3)
-  #+TBLFM: @24$5=vsum(@2$5..@24$5)
-  #+TBLFM: @24$6=vsum(@2$6..@23$6)
-  #+TBLFM: @24$2=($STR * 10)
+  #+TBLFM: @26$5=vsum(@2$5..@26$5)
+  #+TBLFM: @26$6=vsum(@2$6..@25$6)
+  #+TBLFM: @26$2=($STR * 10)
  
 ** Money
    | Copper | Silver | Electrum | Gold | Platinum | Total (Gold) |
