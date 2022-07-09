@@ -24,17 +24,16 @@
   |     9 | Goliath |         | Barbarian | Bear Totem Warrior |  27 | Neutral   | Medium(340) 8FT |
  
 * Stats  
-  | Speed | Hit Points | AC             | Death Saves | Inspiration | Hit dice | Exhaustion |
-  |-------+------------+----------------+-------------+-------------+----------+------------|
-  | 40 ft | 55/64      | 18 +1 (shield) |             |             |        6 |          1 |
+  | Speed | Hit Points       | AC             | Death Saves | Inspiration | Hit dice | Exhaustion |
+  |-------+------------------+----------------+-------------+-------------+----------+------------|
+  | 40 ft | 55/64 (d12 or 7) | 18 +1 (shield) |             |             |          |            |
 
-  
 * Abilities and Skills
   #+name: stats
   | Ability | Score | Mod | PB | Roll      | Skill           |
   |---------+-------+-----+----+-----------+-----------------|
   | STR     |    19 |   4 | X  | 1d20 + 7  | Saving Throw    |
-  |         |       |     | X  | 1d20 + 7  | Athletics       |
+  |         |       |     | XX | 1d20 + 7  | Athletics       |
   |---------+-------+-----+----+-----------+-----------------|
   | DEX     |    13 |   1 |    | 1d20 + 1  | Saving Throw    |
   |         |       |     |    | 1d20 + 1  | Acrobatics      |
@@ -54,7 +53,7 @@
   |         |       |     |    | 1d20 + 0  | Animal Handling |
   |         |       |     |    | 1d20 + 0  | Insight         |
   |         |       |     |    | 1d20 + 0  | Medicine        |
-  |         |       |     |    | 1d20 + 0  | Perception      |
+  |         |       |     | X  | 1d20 + 0  | Perception      |
   |         |       |     | X  | 1d20 + 3  | Survival        |
   |---------+-------+-----+----+-----------+-----------------|
   | CHA     |    12 |   1 |    | 1d20 + 1  | Saving Throw    |
@@ -63,132 +62,46 @@
   |         |       |     |    | 1d20 + 1  | Performance     |
   |         |       |     |    | 1d20 + 1  | Persuasion      |
   |---------+-------+-----+----+-----------+-----------------|
-  | PROF    |     3 |     |    |           |                 |
+  | PROF    |     4 |     |    |           |                 |
   #+TBLFM: @2$3='(calc-dnd-mod (string-to-number (org-table-get-constant $1)))
   #+TBLFM: @4$3='(calc-dnd-mod (string-to-number (org-table-get-constant $1)))
   #+TBLFM: @8$3='(calc-dnd-mod (string-to-number (org-table-get-constant $1)))
   #+TBLFM: @9$3='(calc-dnd-mod (string-to-number (org-table-get-constant $1)))ble-get-constant @21$1))))))
-
-** Abilities
-*** Rage
-    In battle, you fight with primal ferocity. On your turn, you can enter a rage as a bonus action.
-
-    While raging, you gain the following benefits if you aren't wearing heavy armor:
-
-    - You have advantage on Strength checks and Strength saving throws.
-    - When you make a melee weapon attack using Strength, you gain a bonus to the damage roll that increases
-      as you gain levels as a barbarian, as shown in the Rage Damage column of the Barbarian table.
-    - You have resistance to bludgeoning, piercs shown for your barbarian level in the Rages column of the
-      Barbarian table, you must finish a long rest before you can rage again.
-
-| Level | Rage Damage |     Rages |
-|-------+-------------+-----------|
-|   1-2 |          +2 |         2 |
-|   3-5 |          +2 |         3 |
-|   6-8 |          +2 |         4 |
-|  9-11 |          +3 |         4 |
-| 12-15 |          +3 |         5 |
-|    16 |          +4 |         5 |
-| 16-19 |          +4 |         6 |
-|    20 |          +4 | Unlimited |
-|       |             |           |
-
-| Total | Rages Used | In Rage | Turns Left (10) |
-|-------+------------+---------+-----------------|
-|     4 |          1 |         |               7 |
-
-*** Unarmored Defense
-    While you are not wearing any armor, your armor class equals
-    10 + your Dexterity modifier + your Constitution modifier.
-    You can use a shield and still gain this benefit.
-
-*** Danger Sense
-    At 2nd level, you gain an uncanny sense of when things nearby aren't as they should be,
-    giving you an edge when you dodge away from danger. You have advantage on Dexterity saving
-    throws against effects that you can see, such as traps and spells. To gain this benefit,
-    you can't be blinded, deafened, or incapacitated.
-
-*** Totem Spirit - Bear
-    Lvl 3:
-    *Bear*. While raging, you have resistance to all damage except psychic damage.
-    The spirit of the bear makes you tough enough to stand up to any punishment.
-
-    Lvl 6:
-    *Bear*. You gain the might of a bear. Your carrying capacity (including maximum load and maximum lift)
-    is doubled, and you have advantage on Strength checks made to push, pull, lift, or break objects.
-    
-*** Reckless Attack
-    Starting at 2nd level, you can throw aside all concern for defense to attack with fierce desperation.
-    When you make your first attack on your turn, you can decide to attack recklessly.
-    Doing so gives you advantage on melee weapon attack rolls using Strength during this turn,
-    but attack rolls against you have advantage until your next turn.
-
-*** Extra Attack
-    Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.
-
-*** Feral Instinct
-  By 7th level, your instincts are so honed that you have advantage on
-  initiative rolls.
-  
-  Additionally, if you are surprised at the beginning of combat and aren't
-  incapacitated, you can act normally on your first turn, but only if you
-  enter your rage before doing anything else on that turn.
-
-* Racial Ability
-** Stone’s Endurance
-  You can focus yourself to occasionally shrug off injury.
-  When you take damage, you can use your reaction to roll a d12. Add your Constitution modifier to the number rolled and reduce the damage by that total.
-  After you use this trait, you can’t use it again until you finish a short or long rest.
-  1d12 + Const Mod
-
-  
-* Feats
-** Shield Master
-   You use shields not just for protection but also for offense. You gain the following benefits while you are wielding a shield:
-
-   - If you take the Attack action on your turn, you can use a bonus action to try to shove a creature within 5 feet
-     of you with your shield.
-   - If you aren't incapacitated, you can add your shield's AC bonus to any Dexterity saving throw you make against
-     a spell or other harmful effect that targets only you.
-   - If you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage,
-     you can use your reaction to take no damage if you succeed on the saving throw,
-     interposing your shield between yourself and the source of the effect.
-  
+ 
 * Attacks
   #+NAME: attacks
-  | Weapon    | Ability | Prof | Type        | Die | Mod To Hit | Roll        |
-  |-----------+---------+------+-------------+-----+------------+-------------|
-  | Shield    | STR     | X    | Bludgeoning | 0d2 |          7 | 0d2 + 4     |
-  | Shield +1 | STR     | X    | Bludgeoning | 1d4 |          7 | 1d4 + 4 + 1 |
-  | Javelin   | STR     | X    | Piercing    | 1d6 |          7 | 1d6 + 4     |
-  | Hand Ax   | STR     | X    | Slashing    | 1d6 |          7 | 1d6 + 4     |
-  | Whip      | STR     | X    | Slashing    | 1d4 |          7 | 1d4 + 4     |
+  | Weapon    | Ability | Prof | Type        | Die | Mod To Hit | Roll    |
+  |-----------+---------+------+-------------+-----+------------+---------|
+  | Shield    | STR     | X    | Bludgeoning | 0d2 |          7 | 0d2 + 4 |
+  | Shield +1 | STR     | X    | Bludgeoning | 1d4 |          7 | 1d4 + 4 |
+  | Javelin   | STR     | X    | Piercing    | 1d6 |          7 | 1d6 + 4 |
+  | Hand Ax   | STR     | X    | Slashing    | 1d6 |          7 | 1d6 + 4 |
+  | Whip      | STR     | X    | Slashing    | 1d4 |          7 | 1d4 + 4 |
   #+TBLFM: $6='(+ (if (string= $3 "X") $PROF 0) (calc-dnd-mod (string-to-number (org-table-get-constant $2))))
   #+TBLFM: $7='(concat $5 " + " (number-to-string (calc-dnd-mod (string-to-number (org-table-get-constant $2)))))
  
 * Proficiencies
-  | Languages | Tools | Armor   | Weapons |
-  |-----------+-------+---------+---------|
-  | Common    |       | Light   | Simple  |
-  | Giant     |       | Medium  | Martial |
-  |           |       | Shields |         |
+  | Languages | Instruments | Tools | Armor   | Weapons |
+  |-----------+-------------+-------+---------+---------|
+  | Common    | Horn        |       | Light   | Simple  |
+  | Giant     |             |       | Medium  | Martial |
+  | Draconic  |             |       | Shields |         |
 
 * Equipment
-  | Name                                         | Quantity | Cost (gp) | Weight (lbs) | Total Weight (lbs) | Total Cost (gp) |
-  |----------------------------------------------+----------+-----------+--------------+--------------------+-----------------|
-  | Explorer Pack                                |        1 |         0 |            0 |                  0 |               0 |
-  | Javalins                                     |        6 |         0 |            0 |                  0 |               0 |
-  | Breast plate                                 |        1 |       400 |              |                  0 |             400 |
-  | Greater Healing Potions (4d4 + 4)            |        1 |           |              |                  0 |               0 |
-  | Map                                          |        1 |       .05 |            0 |                  0 |            0.05 |
-  | Gold Band from Kerry Red Spear               |        1 |           |              |                  0 |               0 |
-  | Bear Onesy                                   |        1 |           |              |                  0 |               0 |
-  | Calabasts spell book dropped (gave to regan) |        1 |           |              |                  0 |               0 |
-  | Rock Hammers                                 |        3 |           |              |                  0 |               0 |
-  | 6 FT spear with silver spear tip             |        1 |           |              |                    |                 |
-  | Hand Ax                                      |        2 |           |              |                    |                 |
-  |----------------------------------------------+----------+-----------+--------------+--------------------+-----------------|
-  | Carry Capacity                               |      170 |           |              |                  0 |               0 |
+  | Name                              | Quantity | Cost (gp) | Weight (lbs) | Total Weight (lbs) | Total Cost (gp) |
+  |-----------------------------------+----------+-----------+--------------+--------------------+-----------------|
+  | Explorer Pack                     |        1 |         0 |            0 |                  0 |               0 |
+  | Map                               |        1 |       .05 |            0 |                  0 |            0.05 |
+  | Gold Band from Kerry Red Spear    |        1 |           |              |                  0 |               0 |
+  | Bear Onesy                        |        1 |           |              |                  0 |               0 |
+  | Greater Healing Potions (4d4 + 4) |        1 |           |              |                  0 |               0 |
+  | Rock Hammers                      |        1 |           |              |                  0 |               0 |
+  | Breast plat(AC 14)                |        1 |       400 |              |                  0 |             400 |
+  | 6 FT spear with silver spear tip  |        1 |           |              |                  0 |               0 |
+  | Javelins                          |        6 |         0 |            0 |                  0 |               0 |
+  | Hand Ax                           |        2 |           |              |                  0 |               0 |
+  |-----------------------------------+----------+-----------+--------------+--------------------+-----------------|
+  | Carry Capacity                    |      170 |           |              |                  0 |               0 |
   #+TBLFM: $5=($2 * $4)
   #+TBLFM: $6=($2 * $3)
   #+TBLFM: @24$5=vsum(@2$5..@24$5)
@@ -198,7 +111,7 @@
 ** Money
    | Copper | Silver | Electrum | Gold | Platinum | Total (Gold) |
    |--------+--------+----------+------+----------+--------------|
-   |      0 |      0 |        0 | 1204 |        0 |            0 |
+   |      0 |      0 |        0 | 1214 |        0 |            0 |
    #+TBLFM: $6=(($1 / 100) + ($2 / 10) + ($3 / 2) + $4 + ($5 * 10))
 
 

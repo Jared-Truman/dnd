@@ -1,4 +1,4 @@
-#+TILE: Baddah Boom - Features
+#+TILE: Chewy - Features
 
 * Racial
 ** Stone’s Endurance

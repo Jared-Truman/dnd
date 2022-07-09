@@ -1,0 +1,131 @@
+#+STARTUP: content showstars indent
+#+TITLE: Chewy - Abilities
+
+* Abilities
+** Rage :lvl_1:
+In battle, you fight with primal ferocity. On your turn, you can enter a rage as a bonus action.
+
+While raging, you gain the following benefits if you aren't wearing heavy armor:
+
+- You have advantage on Strength checks and Strength saving throws.
+- When you make a melee weapon attack using Strength, you gain a bonus to the damage roll that increases
+  as you gain levels as a barbarian, as shown in the Rage Damage column of the Barbarian table.
+- You have resistance to bludgeoning, piercs shown for your barbarian level in the Rages column of the
+  Barbarian table, you must finish a long rest before you can rage again.
+
+ | Level | Rage Damage |     Rages |
+ |-------+-------------+-----------|
+ |   1-2 |          +2 |         2 |
+ |   3-5 |          +2 |         3 |
+ |   6-8 |          +2 |         4 |
+ |  9-11 |          +3 |         4 |
+ | 12-15 |          +3 |         5 |
+ |    16 |          +4 |         5 |
+ | 16-19 |          +4 |         6 |
+ |    20 |          +4 | Unlimited |
+
+ | Total | Rages Used | In Rage | Turns Left (10) |
+ |-------+------------+---------+-----------------|
+ |     4 |            |         |                 |
+
+** Unarmored Defense :lvl_1:
+While you are not wearing any armor, your armor class equals
+10 + your Dexterity modifier + your Constitution modifier.
+You can use a shield and still gain this benefit.
+
+** Wanderer :feature:background:
+You have an excellent memory for maps and geography, and you can always recall the
+general layout of terrain, settlements, and other features around you. In addition,
+you can find food and fresh water for yourself and up to five other people each day,
+provided that the land offers berries, small game, water, and so forth.
+
+** Danger Sense :lvl_2:
+At 2nd level, you gain an uncanny sense of when things nearby aren't as they should be,
+giving you an edge when you dodge away from danger. You have advantage on Dexterity saving
+throws against effects that you can see, such as traps and spells. To gain this benefit,
+you can't be blinded, deafened, or incapacitated.
+
+** Totem Spirit - Bear :lvl_3:
+*** Totem :lvl_3:
+*Bear*. While raging, you have resistance to all damage except psychic damage.
+The spirit of the bear makes you tough enough to stand up to any punishment.
+   
+*** Totem :lvl_6:
+*Bear*. You gain the might of a bear. Your carrying capacity (including maximum load and maximum lift)
+is doubled, and you have advantage on Strength checks made to push, pull, lift, or break objects.
+
+*** Totem :lvl_10:
+At 10th level, you can cast the commune with nature spell, but only as a ritual. When you do so, a
+spiritual version of one of the animals you chose for Totem Spirit or Aspect of the Beast appears
+to you to convey the information you seek.
+
+**** Commune with Nature
+***** Requirements
+Casting Time: 1 minute
+Range: Self
+Target: Self
+Components: V S
+Duration: Instantaneous
+
+***** Description
+You briefly become one with nature and gain knowledge of the surrounding territory. In the outdoors,
+the spell gives you knowledge of the land within 3 miles of you. In caves and other natural underground
+settings, the radius is limited to 300 feet. The spell doesn’t function where nature has been replaced
+by construction, such as in dungeons and towns. You instantly gain knowledge of up to three facts of
+your choice about any of the following subjects as they relate to the area: terrain and bodies of
+water prevalent plants, minerals, animals, or peoples powerful celestials, fey, fiends, elementals,
+or undead influence from other planes of existence buildings For example, you could determine the
+location of powerful undead in the area, the location of major sources of safe drinking water, and
+the location of any nearby towns.
+
+*** Totem :lvl_14:
+While you’re raging, any creature within 5 feet of you that’s hostile to you has disadvantage
+on attack rolls against targets other than you or another character with this feature.
+An enemy is immune to this effect if it can’t see or hear you or if it can’t be frightened.
+
+** Reckless Attack :lvl_2:
+Starting at 2nd level, you can throw aside all concern for defense to attack with fierce desperation.
+When you make your first attack on your turn, you can decide to attack recklessly.
+Doing so gives you advantage on melee weapon attack rolls using Strength during this turn,
+but attack rolls against you have advantage until your next turn.
+
+** Extra Attack :lvl_5:
+Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.
+
+** Fast Movement :lvl_5:
+Starting at 5th level, your speed increases by 10 feet while you aren't wearing heavy armor.
+
+** Feral Instinct :lvl_7:
+By 7th level, your instincts are so honed that you have advantage on
+initiative rolls.
+  
+Additionally, if you are surprised at the beginning of combat and aren't
+incapacitated, you can act normally on your first turn, but only if you
+enter your rage before doing anything else on that turn.
+
+** Brutal Critical :lvl_9:lvl_13:lvl_17:
+You can roll one additional weapon damage die when determining the extra damage
+for a critical hit with a melee attack.
+
+This increases to two additional dice at 13th level and three additional dice at 17th level.
+
+* Racial Ability
+** Stone’s Endurance :trait:race:goliath:
+You can focus yourself to occasionally shrug off injury.
+When you take damage, you can use your reaction to roll a d12. Add your Constitution modifier to the number rolled and reduce the damage by that total.
+After you use this trait, you can’t use it again until you finish a short or long rest.
+1d12 + Const Mod
+  
+* Feats
+** Shield Master
+You use shields not just for protection but also for offense.
+You gain the following benefits while you are wielding a shield:
+
+- If you take the Attack action on your turn, you can use a bonus action to try to shove a creature within 5 feet
+  of you with your shield.
+- If you aren't incapacitated, you can add your shield's AC bonus to any Dexterity saving throw you make against
+  a spell or other harmful effect that targets only you.
+- If you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage,
+  you can use your reaction to take no damage if you succeed on the saving throw,
+  interposing your shield between yourself and the source of the effect.
+
