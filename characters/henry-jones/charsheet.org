@@ -7,68 +7,66 @@
     (dnd-output-ability-constants table)
   #+END_SRC
 
-  #+RESULTS[5310e9e18c677ec03347432db99e13a9c7cfc473]: define-constants-with-src-block
+  #+RESULTS[1aaa3cc5b3f3decca2c8592a17d38d734f239c96]: define-constants-with-src-block
   :results:
-  #+CONSTANTS: STR=11
-  #+CONSTANTS: DEX=15
-  #+CONSTANTS: CON=13
-  #+CONSTANTS: INT=20
-  #+CONSTANTS: WIS=14
-  #+CONSTANTS: CHA=13
-  #+CONSTANTS: PROF=3
-  #+CONSTANTS: SCA=13
-  #+CONSTANTS: SAM=5
+  #+CONSTANTS: STR=13
+  #+CONSTANTS: DEX=12
+  #+CONSTANTS: CON=10
+  #+CONSTANTS: INT=15
+  #+CONSTANTS: WIS=8
+  #+CONSTANTS: CHA=14
+  #+CONSTANTS: PROF=2
+  #+CONSTANTS: SCA=
+  #+CONSTANTS: SAM=
   :end:
-
-  LEVEL 8
   
 * Traits
   | Level | Race  | Subrace | Class     | Subclass     | Age | Alignment    | Size             |
   |-------+-------+---------+-----------+--------------+-----+--------------+------------------|
-  |    10 | Human | Variant | Artificer | Battle Smith |  37 | Chaotic Good | Medium(175) 6'1" |
+  |    1  | Human | Variant | Artificer | Battle Smith |  37 | Chaotic Good | Medium(175) 6'1" |
 
 * Stats  
-  | Speed | Hit Points | AC | Death Saves    | Inspiration |
-  |-------+------------+----+----------------+-------------|
-  |    30 | 5/63       | 14 | Save:  Death:  |             |
+  | Speed | Hit Points | AC | Throws        | Inspiration | Hit Die |
+  |-------+------------+----+---------------+-------------+---------|
+  |    30 |          8 | 14 | Save:  Death: |             |       1 |
 
 * Abilities and Skills
   #+name: stats
   | Ability | Score | Mod | PB | Roll           | Skill                 |
   |---------+-------+-----+----+----------------+-----------------------|
-  | STR     |    11 |   0 |    | 1d20 + 0       | Saving Throw          |
-  |         |       |     |    | 1d20 + 0       | Athletics             |
+  | STR     |    13 |   1 |    | 1d20 + 1       | Saving Throw          |
+  |         |       |     |    | 1d20 + 1       | Athletics             |
   |---------+-------+-----+----+----------------+-----------------------|
-  | DEX     |    15 |   2 |    | 1d20 + 2       | Saving Throw          |
-  |         |       |     |    | 1d20 + 2       | Acrobatics            |
-  |         |       |     |    | 1d20 + 2       | Sleight of Hand       |
-  |         |       |     |    | 1d20 + 2       | Stealth               |
+  | DEX     |    12 |   1 |    | 1d20 + 1       | Saving Throw          |
+  |         |       |     |    | 1d20 + 1       | Acrobatics            |
+  |         |       |     | X  | 1d20 + 1       | Sleight of Hand       |
+  |         |       |     |    | 1d20 + 1       | Stealth               |
   |---------+-------+-----+----+----------------+-----------------------|
-  | CON     |    13 |   1 | X  | 1d20 + 4       | Saving Throw          |
+  | CON     |    10 |   0 | X  | 1d20 + 2       | Saving Throw          |
   |---------+-------+-----+----+----------------+-----------------------|
-  | INT     |    20 |   5 | X  | 1d20 + 8       | Saving Throw          |
-  |         |       |     |    | 1d20 + 5       | Arcana                |
-  |         |       |     | X  | 1d20 + 8       | History               |
-  |         |       |     | X  | 1d20 + 8       | Investigation         |
-  |         |       |     |    | 1d20 + 5       | Nature                |
-  |         |       |     |    | 1d20 + 5       | Religion              |
+  | INT     |    16 |   2 | X  | 1d20 + 4       | Saving Throw          |
+  |         |       |     | X  | 1d20 + 2       | Arcana                |
+  |         |       |     | XX | 1d20 + 2       | History               |
+  |         |       |     |    | 1d20 + 2       | Investigation         |
+  |         |       |     |    | 1d20 + 2       | Nature                |
+  |         |       |     | X  | 1d20 + 2       | Religion              |
   |---------+-------+-----+----+----------------+-----------------------|
-  | WIS     |    14 |   2 |    | 1d20 + 2       | Saving Throw          |
-  |         |       |     |    | 1d20 + 2       | Animal Handling       |
-  |         |       |     |    | 1d20 + 2       | Insight               |
-  |         |       |     |    | 1d20 + 2       | Medicine              |
-  |         |       |     |    | 1d20 + 2       | Perception            |
-  |         |       |     | X  | 1d20 + 5       | Survival              |
+  | WIS     |     8 |  -1 |    | 1d20 + -1      | Saving Throw          |
+  |         |       |     |    | 1d20 + -1      | Animal Handling       |
+  |         |       |     |    | 1d20 + -1      | Insight               |
+  |         |       |     |    | 1d20 + -1      | Medicine              |
+  |         |       |     | X  | 1d20 + -1      | Perception            |
+  |         |       |     | X  | 1d20 + -1      | Survival              |
   |---------+-------+-----+----+----------------+-----------------------|
-  | CHA     |    13 |   1 |    | 1d20 + 1       | Saving Throw          |
-  |         |       |     |    | 1d20 + 1       | Deception             |
-  |         |       |     |    | 1d20 + 1       | Intimidation          |
-  |         |       |     |    | 1d20 + 1       | Performance           |
-  |         |       |     |    | 1d20 + 1       | Persuasion            |
+  | CHA     |    15 |   2 |    | 1d20 + 2       | Saving Throw          |
+  |         |       |     |    | 1d20 + 2       | Deception             |
+  |         |       |     |    | 1d20 + 2       | Intimidation          |
+  |         |       |     |    | 1d20 + 2       | Performance           |
+  |         |       |     |    | 1d20 + 2       | Persuasion            |
   |---------+-------+-----+----+----------------+-----------------------|
-  | PROF    |     3 |     |    |                |                       |
-  | SCA     |    16 |     |    | 8 + PROF + INT | SPELL CASTING ABILITY |
-  | SAM     |     8 |     |    | PROF + INT     | SPELL ATT MOD         |
+  | PROF    |     2 |     |    |                |                       |
+  | SCA     |       |     |    | 8 + PROF + INT | SPELL CASTING ABILITY |
+  | SAM     |       |     |    | PROF + INT     | SPELL ATT MOD         |
   #+TBLFM: @2$3='(calc-dnd-mod (string-to-number (org-table-get-constant $1)))
   #+TBLFM: @4$3='(calc-dnd-mod (string-to-number (org-table-get-constant $1)))
   #+TBLFM: @8$3='(calc-dnd-mod (string-to-number (org-table-get-constant $1)))
@@ -86,38 +84,41 @@
   #+NAME: attacks
   | Weapon          | Ability | Prof | Type     | Die | Mod To Hit | Roll    |
   |-----------------+---------+------+----------+-----+------------+---------|
-  | Whip            | INT     | X    | Slashing | 1d4 |          8 | 1d4 + 5 |
-  | Light Cross Bow | INT     | X    | Piercing | 1d8 |          8 | 1d8 + 5 |
+  | Whip            | INT     | X    | Slashing | 1d4 |          4 | 1d4 + 2 |
+  | Light Cross Bow | INT     | X    | Piercing | 1d8 |          4 | 1d8 + 2 |
   #+TBLFM: $6='(+ (if (string= $3 "X") $PROF 0) (calc-dnd-mod (string-to-number (org-table-get-constant $2))))
   #+TBLFM: $7='(concat $5 " + " (number-to-string (calc-dnd-mod (string-to-number (org-table-get-constant $2)))))
  
 * Proficiencies
-  | Languages       | Tools        | Armor   | Weapons    |
-  |-----------------+--------------+---------+------------|
-  | Common          | Thieves      | Light   | Improvised |
-  | Elvish          | Tinkers      | Medium  | Simple     |
-  | Secret Rebelion | Cartographer | Shields | Martial    |
-  |                 | Smith        |         |            |
+  | Languages | Tools        | Armor   | Weapons |
+  |-----------+--------------+---------+---------|
+  | Common    | Thieves      | Light   | Simple  |
+  | Sylvan    | Cartographer | Medium  |         |
+  | Dwarvish  |              | Shields |         |
+  | Elvish    |              |         |         |
 
 * Equipment
-  | Name                            | Quantity | Cost (gp) | Weight (lbs) | Total Weight (lbs) | Total Cost (gp) |
-  |---------------------------------+----------+-----------+--------------+--------------------+-----------------|
-  | Studded Leather Armor           |        1 |        45 |           13 |                 13 |              45 |
-  | Whip                            |        1 |         2 |            3 |                  3 |               2 |
-  | Light Crossbow                  |        1 |        25 |            5 |                  5 |              25 |
-  | Bolts                           |       20 |           |              |                  0 |               0 |
-  | Thieves tools                   |        1 |           |              |                  0 |               0 |
-  | Dungeoneer's Pack               |        1 |           |              |                  0 |               0 |
-  | Common (2d4 +2)                 |        2 |           |              |                  0 |               0 |
-  | Normal (4d4 + 4)                |        2 |           |              |                  0 |               0 |
-  | Presvarus Cloak of Displacement |        1 |           |              |                    |                 |
-  |---------------------------------+----------+-----------+--------------+--------------------+-----------------|
-  | Carry Capacity                  |          |           |              |                  0 |               0 |
+  | Name                     | Quantity | Cost (gp) | Weight (lbs) | Total Weight (lbs) | Total Cost (gp) |
+  |--------------------------+----------+-----------+--------------+--------------------+-----------------|
+  | Studded Leather Armor    |        1 |        45 |           13 |                 13 |              45 |
+  | Whip                     |        1 |         2 |            3 |                  3 |               2 |
+  | Light Crossbow           |        1 |        25 |            5 |                  5 |              25 |
+  | Bolts                    |       20 |           |              |                  0 |               0 |
+  | Thieves tools            |        1 |           |              |                  0 |               0 |
+  | Dungeoneer's Pack        |        1 |           |              |                  0 |               0 |
+  | Map to a ruin or dungeon |        1 |           |              |                    |                 |
+  | Bullseye lantern         |          |           |              |                    |                 |
+  | Miner's Pick             |          |           |              |                    |                 |
+  | Traveler's clothes       |          |           |              |                    |                 |
+  | Shovel                   |          |           |              |                    |                 |
+  | 2 person tent            |          |           |              |                    |                 |
+  |--------------------------+----------+-----------+--------------+--------------------+-----------------|
+  | Carry Capacity           |          |           |              |                  0 |               0 |
   #+TBLFM: $5=($2 * $4)
   #+TBLFM: $6=($2 * $3)
-  #+TBLFM: @29$5=vsum(@2$5..@29$5)
-  #+TBLFM: @29$6=vsum(@2$6..@28$6)
-  #+TBLFM: @29$2=($STR * 10)
+  #+TBLFM: @35$5=vsum(@2$5..@35$5)
+  #+TBLFM: @35$6=vsum(@2$6..@34$6)
+  #+TBLFM: @35$2=($STR * 10)
 
 ** Cloak of Displacement
    While you wear this cloak, it projects an Illusion that makes you appear to be standing in a place 
@@ -131,4 +132,3 @@
    |      0 |      0 |        0 |   10 |        0 |            0 |
    #+TBLFM: $6=(($1 / 100) + ($2 / 10) + ($3 / 2) + $4 + ($5 * 10)) 
 
-magical crystal infused into my body for communication / GPS. This can be used to find it and others. There is a secret language used by the rebellion that i can use
