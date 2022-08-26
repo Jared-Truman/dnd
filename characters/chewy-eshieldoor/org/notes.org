@@ -1,4 +1,4 @@
- #+STARTUP: content showstars indent
+#+STARTUP: content showstars indent
 #+FILETAGS: dnd notes chewy
 * Playing with Dasha, rowgar, tregar, Chewy, and owner of cluckenbell 
 
@@ -126,3 +126,9 @@ Talk with Druewn Stone Dark a tavern owner
 Umbaxigar is really deep on the dungeon according to the tavern owner.
 We can talk with someone on 9th level
 /Entered on/ [2022-07-09 Sat 14:10]
+* Met an alchemist
+Can get some potions if we bring back 20 lbs
+Also they have a mission to retrieve a gem.
+/Entered on/ [2022-08-13 Sat 14:50]\
+* Meeting Alluin Evnehill
+/Entered on/ [2022-08-20 Sat 12:49]

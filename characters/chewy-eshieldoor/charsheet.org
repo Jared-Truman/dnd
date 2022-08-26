@@ -23,11 +23,11 @@
   | Level | Race    | Subrace | Class     | Subclass           | Age | Alignment | Size            |
   |-------+---------+---------+-----------+--------------------+-----+-----------+-----------------|
   |     9 | Goliath |         | Barbarian | Bear Totem Warrior |  27 | Neutral   | Medium(340) 8FT |
- 
+  
 * Stats  
-  | Speed | Hit Points       | AC             | Death Saves | Inspiration | Hit dice | Exhaustion |
-  |-------+------------------+----------------+-------------+-------------+----------+------------|
-  | 40 ft | 80/95 (d12 or 7) | 18 +1 (shield) |             |             | 9        |            |
+  | Speed | Hit Points       | AC             | Throws      | Inspo | Hit dice | Exhaustion |
+  |-------+------------------+----------------+-------------+-------+----------+------------|
+  | 40 ft | 84/95 (d12 or 7) | 18 +1 (shield) | Save: Fail: |       |        7 |            |
 
 * Abilities and Skills
   #+name: stats
@@ -81,7 +81,7 @@
   #+NAME: attacks
   | Weapon    | Ability | Prof | Type        | Die | Mod To Hit | Roll    |
   |-----------+---------+------+-------------+-----+------------+---------|
-  | Shield +1 | STR     | X    | Bludgeoning | 0d2 |          8 | 0d2 + 4 |
+  | Shield +1 | STR     | X    | Bludgeoning | 1d4 |          8 | 0d2 + 4 |
   | Shield +1 | STR     | X    | Bludgeoning | 1d4 |          8 | 1d4 + 4 |
   | Javelin   | STR     | X    | Piercing    | 1d6 |          8 | 1d6 + 4 |
   | Hand Ax   | STR     | X    | Slashing    | 1d6 |          8 | 1d6 + 4 |
@@ -116,9 +116,9 @@
   | Carry Capacity                    |      170 |           |              |                  0 |               0 |
   #+TBLFM: $5=($2 * $4)
   #+TBLFM: $6=($2 * $3)
-  #+TBLFM: @27$5=vsum(@2$5..@27$5)
-  #+TBLFM: @27$6=vsum(@2$6..@26$6)
-  #+TBLFM: @27$2=($STR * 10)
+  #+TBLFM: @28$5=vsum(@2$5..@28$5)
+  #+TBLFM: @28$6=vsum(@2$6..@27$6)
+  #+TBLFM: @28$2=($STR * 10)
  
 ** Money
    | Copper | Silver | Electrum | Gold | Platinum | Total (Gold) |
@@ -132,4 +132,4 @@
 * Kill Tracking
 1 kill is a point .5 is an assist
 
-2
+6.5

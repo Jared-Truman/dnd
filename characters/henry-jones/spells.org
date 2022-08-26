@@ -1,5 +1,5 @@
 #+STARTUP: content showstars indent
-#+TILE: Dr Indi Jones - Spells
+#+TITLE: Dr Indi Jones - Spells
 
 * Default Prepared
 ** Strixhaven - Lorehold
@@ -84,35 +84,38 @@ The information you learn is accurate but might be couched in figurative languag
     This spell can physically repair a magic item or construct, but the spell can’t restore magic to such an object.
 
 *** Sword Burst
+**** Requirements
 Casting Time: 1 action
 Range: Self (5-foot radius)
 Components: V
 Duration: Instantaneous
 
+**** Description
 You create a momentary circle of spectral blades that sweep around you. All other creatures within 5 feet of
 you must succeed on a Dexterity saving throw or take 1d6 force damage.
 
 At Higher Levels. This spell's damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6)
+
 ** Infusions
-*** Enhanced Defense
-    Item: A suit of armor or a shield
+*** Enhanced Defense :lvl_2:lvl_10:
+Item: A suit of armor or a shield
+    
+A creature gains a +1 bonus to Armor Class while wearing (armor) or wielding (shield) the infused item.
 
-    A creature gains a +1 bonus to Armor Class while wearing (armor) or wielding (shield) the infused item.
-
-    The bonus increases to +2 when you reach 10th level in this class.
-*** Enhanced Weapon
+The bonus increases to +2 when you reach 10th level in this class.
+*** Enhanced Weapon :lvl_2:lvl_10:
     Item: A simple or martial weapon
 
     This magic weapon grants a +1 bonus to attack and damage rolls made with it.
 
     The bonus increases to +2 when you reach 10th level in this class.
-*** Repeating Shot
+*** Repeating Shot :lvl_2:
     Item: A simple or martial weapon with the ammunition property (requires attunement)
 
     This magic weapon grants a + 1 bonus to attack and damage rolls made with it when it's used to make a ranged attack, and it ignores the loading property if it has it.
 
     If you load no ammunition in the weapon, it produces its own, automatically creating one piece of magic ammunition when you make a ranged attack with it. The ammunition created by the weapon vanishes the instant after it hits or misses a target.
-** Level 1 (2/2)
+** Level 1 (3/3)
 *** Cure Wounds
     Casting Time: 1 action
     Range: Touch
@@ -145,7 +148,7 @@ At Higher Levels. This spell's damage increases by 1d6 when you reach 5th level 
     Casting Time: 1 reaction, which you take when you or a creature within 60 feet of you falls
     Range: 60 feet
     Components: V, M (a small feather or piece of down)
-    Duration: 1 minute
+    Duration: 1 minutyvx-=e
     
     Choose up to five falling creatures within range. A falling creature’s rate of descent slows to 60
     feet per round until the spell ends. If the creature lands before the spell ends, it takes no falling
@@ -159,7 +162,6 @@ At Higher Levels. This spell's damage increases by 1d6 when you reach 5th level 
     Each object in a 20-foot cube within range is outlined in blue, green, or violet light (your choice).
     
     Any creature in the area when the spell is cast is also outlined in light if it fails a Dexterity saving throw.
-    For the duration, objects and affected creatures shed dim light in a 10-foot radius.
     
     Any attack roll against an affected creature or object has advantage if the attacker can see it, and the
     affected creature or object can’t benefit from being invisible.
@@ -223,3 +225,14 @@ At Higher Levels. This spell's damage increases by 1d6 when you reach 5th level 
 |   3 | Heroism, Shield                   |
 |   5 | Branding Smite, Warding Bond      |
 |   9 | Aura of Vitality, Conjure Barrage |
+
+  
+** Heroism
+Casting Time: 1 action
+Range: Touch
+Components: V, S
+Duration: Concentration, up to 1 minute
+
+A willing creature you touch is imbued with bravery. Until the spell ends, the creature is immune to being frightened and gains temporary hit points equal to your spellcasting ability modifier at the start of each of its turns. When the spell ends, the target loses any remaining temporary hit points from this spell.
+
+At Higher Levels. When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st.

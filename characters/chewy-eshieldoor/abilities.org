@@ -3,6 +3,13 @@
 #+TITLE: Chewy - Abilities
 
 * Abilities
+** Taunt :homebrew:
+Bonus action taunt enemies into attacking the taunter
+
+** Protection :homebrew:
+Also at 2nd level, when a creature you can see attacks a target other than you that is within 5 ft. of you,
+you can use your reaction to impose a disadvantage on the attack roll. You must be wielding a shield.
+
 ** Rage :lvl_1:
 In battle, you fight with primal ferocity. On your turn, you can enter a rage as a bonus action.
 
@@ -13,7 +20,7 @@ You have advantage on Strength checks and Strength saving throws.
 When you make a melee weapon attack using Strength, you gain a bonus to the damage roll that increases
 as you gain levels as a barbarian, as shown in the Rage Damage column of the Barbarian table.
 
-You have resistance to bludgeoning, piercs shown for your barbarian level in the Rages column of the
+You have resistance to bludgeoning, pierces shown for your barbarian level in the Rages column of the
 Barbarian table, you must finish a long rest before you can rage again.
 
  | Level | Rage Damage |     Rages |
@@ -29,7 +36,7 @@ Barbarian table, you must finish a long rest before you can rage again.
 
  | Total | Rages Used | In Rage | Turns Left (10) |
  |-------+------------+---------+-----------------|
- |     4 |        1   |       x |      10         |
+ |     4 |          1 | x       | 8               |
 
 ** Unarmored Defense :lvl_1:
 While you are not wearing any armor, your armor class equals
@@ -131,4 +138,3 @@ You gain the following benefits while you are wielding a shield:
 - If you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage,
   you can use your reaction to take no damage if you succeed on the saving throw,
   interposing your shield between yourself and the source of the effect.
-
