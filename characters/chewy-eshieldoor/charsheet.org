@@ -1,4 +1,4 @@
-#+startup: content showstars indent
+#+STARTUP: content showstars indent
 #+FILETAGS: dnd charsheet Chewy Eshieldoor
 #+TITLE: Chewy - Charsheet
 
@@ -59,7 +59,7 @@
   |---------+-------+-----+----+-----------+-----------------|
   | CHA     |    12 |   1 |    | 1d20 + 1  | Saving Throw    |
   |         |       |     |    | 1d20 + 1  | Deception       |
-  |         |       |     | X  | 1d20 + 5  | Intimidation    |
+ |         |       |     | X  | 1d20 + 5  | Intimidation    |
   |         |       |     |    | 1d20 + 1  | Performance     |
   |         |       |     |    | 1d20 + 1  | Persuasion      |
   |---------+-------+-----+----+-----------+-----------------|

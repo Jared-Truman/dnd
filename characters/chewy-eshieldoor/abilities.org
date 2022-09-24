@@ -26,7 +26,7 @@ dusk or until you take 15 or more necrotic damage from a single attack or effect
 a hostile creature.
 * Abilities
 ** Taunt :homebrew:
-Bonus action taunt enemies into attacking the taunter
+Bonus action taunt enemies into attacking the taunter (8 + PROF + STR)
 
 ** Protection :homebrew:
 Also at 2nd level, when a creature you can see attacks a target other than you that is within 5 ft. of you,
