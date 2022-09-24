@@ -1,3 +1,4 @@
+
 #+STARTUP: content showstars indent
 #+FILETAGS: dnd charsheet Chewy Eshieldoor
 #+TITLE: Chewy - Charsheet
@@ -27,7 +28,7 @@
 * Stats  
   | Speed | Hit Points       | AC             | Throws      | Inspo | Hit dice | Exhaustion |
   |-------+------------------+----------------+-------------+-------+----------+------------|
-  | 40 ft | 84/95 (d12 or 7) | 18 +1 (shield) | Save: Fail: |       |        7 |            |
+  | 40 ft | 70/95 (d12 or 7) | 18 +1 (shield) | Save: Fail: |       |        7 |            |
 
 * Abilities and Skills
   #+name: stats
@@ -59,7 +60,7 @@
   |---------+-------+-----+----+-----------+-----------------|
   | CHA     |    12 |   1 |    | 1d20 + 1  | Saving Throw    |
   |         |       |     |    | 1d20 + 1  | Deception       |
-  |         |       |     | X  | 1d20 + 5  | Intimidation    |
+ |         |       |     | X  | 1d20 + 5  | Intimidation    |
   |         |       |     |    | 1d20 + 1  | Performance     |
   |         |       |     |    | 1d20 + 1  | Persuasion      |
   |---------+-------+-----+----+-----------+-----------------|
