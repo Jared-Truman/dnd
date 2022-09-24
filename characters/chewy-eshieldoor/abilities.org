@@ -3,7 +3,7 @@
 #+TITLE: Chewy - Abilities
 
 * Equipment
-** Mourningsteel Barricade :shield:very_rare:homebrew:griffons_saddlebag:
+** Erebor - Mourningsteel Barricade :shield:very_rare:homebrew:griffons_saddlebag:
 This kite shield was once part of a shield wall that fell while allowing the evacuation of
 innocent townsfolk. The agony and blood of that battle seeped into the metal, allowing it
 to be reforged years later into a reimagined bulwark.
@@ -21,9 +21,14 @@ A creature that fails the saving throw also takes a –2 penalty to its AC until
 for each creature that takes this penalty, you gain a +1 bonus to your AC for the same duration
 (up to a maximum bonus of +5).
 
-Once this property of the shield has been used, it can’t be used again until the next
+Once this property of the shield has been used 3 times, it can’t be used again until the next
 dusk or until you take 15 or more necrotic damage from a single attack or effect from
 a hostile creature.
+
+*Protection*
+While wielding this shield, when a creature you can see attacks a target other than
+you that is within 5 feet of you, you can use your reaction to impose disadvantage
+on the attack roll. 
 * Abilities
 ** Taunt :homebrew:
 Bonus action taunt enemies into attacking the taunter (8 + PROF + STR)
@@ -58,7 +63,7 @@ Barbarian table, you must finish a long rest before you can rage again.
 
  | Total | Rages Used | In Rage | Turns Left (10) |
  |-------+------------+---------+-----------------|
- |     4 |          1 | x       | 8               |
+ |     4 |          0 |         |                 |
 
 ** Unarmored Defense :lvl_1:
 While you are not wearing any armor, your armor class equals
