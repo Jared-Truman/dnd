@@ -8,8 +8,8 @@
 | Ability | Score |
 |---------+-------|
 | STR     |    15 |
-| DEX     |    14 |
-| CON     |    13 |
+| DEX     |    13 |
+| CON     |    14 |
 | INT     |     8 |
 | WIS     |    10 |
 | CHA     |    12 |
@@ -42,6 +42,10 @@ against magic.
 
 ** Languages                                                      :language:
 You can read, speak, and write Common and Gnomish.
+
+| Type | Value  | Reason                                                   |
+|------+--------+----------------------------------------------------------|
+| ASI  | +2 STR | I was the muscles and my brother was the brains (Tashas) |
 
 * Racial (Rock Gnome)
 ** Ability Score Increase                                          :ASI:CON:

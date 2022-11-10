@@ -48,15 +48,15 @@ an ability score above 20 using this feature.
 Using the optional feats rule, you can forgo taking this feature to take a feat
 of your choice instead.
 
-| Level | Type | Value        |
-|-------+------+--------------|
-|     4 | ASI  | + 2 STR      |
-|     6 | ASI  | + 2 STR      |
-|     8 | FEAT | Skill Expert |
-|    12 |      |              |
-|    14 |      |              |
-|    16 |      |              |
-|    19 |      |              |
+| Level | Type | Value         |
+|-------+------+---------------|
+|     4 | ASI  | +2 STR        |
+|     6 | ASI  | +1 STR +1 CON |
+|     8 | FEAT | Skill Expert  |
+|    12 |      |               |
+|    14 |      |               |
+|    16 |      |               |
+|    19 |      |               |
 
 ** Extra Attack                                        :lvl_5:lvl_11:lvl_20:
 Beginning at 5th level, you can attack twice, instead of once, whenever you take
