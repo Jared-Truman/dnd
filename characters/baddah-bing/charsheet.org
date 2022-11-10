@@ -1,4 +1,8 @@
-#+TILE: Baddah Bing - Character Sheet
+#+LATEX_CLASS: dnd
+#+STARTUP: content showstars indent
+#+OPTIONS: tags:nil
+#+TITLE: Baddah Bing's Character Sheet
+#+FILETAGS: baddah bing character sheet
 
 * Constants
   #+NAME: define-constants-with-src-block
@@ -20,12 +24,12 @@
 * Traits
   | Level | Race  | Subrace    | Class   | Subclass | Age | Alignment    | Size        | Weight |
   |-------+-------+------------+---------+----------+-----+--------------+-------------+--------|
-  |     6 | Gnome | Rock Gnome | Fighter | Brute    |  20 | Chaotic Good | Small (3ft) | 34lb   |
+  |     8 | Gnome | Rock Gnome | Fighter | Cavalier |  20 | Chaotic Good | Small (3ft) | 34lb   |
 
 * Stats  
-  | Speed | Hit Points | AC | Death Saves | Inspiration |
-  |-------+------------+----+-------------+-------------|
-  | 25 ft | 48/50      | 18 |             |             |
+  | Speed | Hit Points  | AC | Saves | Inspo | Hit dice | Exhaustion |
+  |-------+-------------+----+-------+-------+----------+------------|
+  | 25 ft | 48/68 (d10) |    |       |       |        8 |            |
 
 * Abilities and Skills
   #+name: stats
@@ -75,40 +79,11 @@
   #+TBLFM: @15$5..@20$5='(concat "1d20 + " (number-to-string (+ (if (string= $4 "X") $PROF 0) (calc-dnd-mod (string-to-number (org-table-get-constant @15$1))))))
   #+TBLFM: @21$5..@25$5='(concat "1d20 + " (number-to-string (+ (if (string= $4 "X") $PROF 0) (calc-dnd-mod (string-to-number (org-table-get-constant @21$1))))))
 
-** Abilities
-*** Second Wind
-    You have a limited well of stamina that you can draw on to protect yourself
-    from harm. On your turn, you can use a bonus action to regain hit points equal
-    to 1d10 + your fighter level.
-
-    Once you use this feature, you must finish a short or long rest before you can use it again.
-
-*** Action Surge
-    You can push yourself beyond your normal limits for a moment.
-    On your turn, you can take one additional action.
-
-    Once you use this feature, you must finish a short or long rest before you can use it again.
-    Starting at 17th level, you can use it twice before a rest, but only once on the same turn.
-
-*** Brute Force
-    Whenever you hit with a weapon that you’re proficient with and deal damage,
-    the weapon’s damage increases by an amount based on your level in this class
-
-| Lvl | Damage |
-|-----+--------|
-|   3 |    1d4 |
-|  10 |    1d6 |
-|  16 |    1d8 |
-|  20 |   1d10 |
-
-** Feats
-
 * Attacks
   #+NAME: attacks
   | Weapon           | Ability | Prof | Type        | Die | Mod To Hit | Roll    |
   |------------------+---------+------+-------------+-----+------------+---------|
-  | Shortsword       | DEX     | X    | Piercing    | 1d6 |          5 | 1d6 + 2 |
-  | Shortsword       | STR     | X    | Piercing    | 1d6 |          8 | 1d6 + 5 |
+  | War Hammer       | STR     | X    | Piercing    | 1d6 |          5 | 1d6 + 2 |
   | Boom's Guantlets | STR     | X    | Bludgeoning | 1d4 |          8 | 1d4 + 5 |
   #+TBLFM: $6='(+ (if (string= $3 "X") $PROF 0) (calc-dnd-mod (string-to-number (org-table-get-constant $2))))
   #+TBLFM: $7='(concat $5 " + " (number-to-string (calc-dnd-mod (string-to-number (org-table-get-constant $2)))))
