@@ -150,3 +150,10 @@ from a feature, such as Expertise, that doubles your proficiency bonus.
 | Skill           |        |
 | Skill Expertise |        |
 
+* Racial
+
+** Gnome Cunning
+You have advantage on all Intelligence, Wisdom, and Charisma saving throws
+against magic.
+
+
