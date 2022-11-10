@@ -1,7 +1,7 @@
 #+LATEX_CLASS: dnd
 #+STARTUP: content showstars indent
 #+OPTIONS: tags:nil
-#+TITLE: Baddah Bing's background Sheet
+#+TITLE: Baddah Bing's Background Sheet
 #+FILETAGS: baddah bing background sheet
 
 * Charlatan                      :deception:sleight_of_hand:disguise:forgery:
@@ -21,10 +21,11 @@ Equipment:
 5 - I put on new identities like clothes
 
 Feature: False Identity
-You have created a second identity that includes documentation, established acquaintances,
-and disguises that allow you to assume that persona. Additionally, you can forge documents
-including official papers and personal letters, as long as you have seen an example of the
-kind of document or the handwriting you are trying to copy.
+You have created a second identity that includes documentation, established
+acquaintances, and disguises that allow you to assume that persona.
+Additionally, you can forge documents including official papers and personal
+letters, as long as you have seen an example of the kind of document or the
+handwriting you are trying to copy.
 
 * Personality Trait
 Flattery is my preferred trick for getting what I want.
