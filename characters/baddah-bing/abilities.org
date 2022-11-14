@@ -24,7 +24,7 @@ Once you use this feature, you must finish a short or long rest before you can
 use it again.
 
 |------+---|
-| Used |   |
+| Used | x |
 |------+---|
 
 ** Action Surge                                               :lvl_2:lvl_17:
@@ -36,7 +36,7 @@ use it again. Starting at 17th level, you can use it twice before a rest, but
 only once on the same turn.
 
 |------+---+---|
-| Used |   | ~ |
+| Used | x | ~ |
 |------+---+---|
 
 ** Ability Score Improvement :lvl_4:lvl_6:lvl_8:lvl_12:lvl_14:lvl_16:lvl_19:
@@ -52,7 +52,7 @@ of your choice instead.
 |-------+------+---------------|
 |     4 | ASI  | +2 STR        |
 |     6 | ASI  | +1 STR +1 CON |
-|     8 | FEAT | Skill Expert  |
+|     8 | FEAT | Sentinel      |
 |    12 |      |               |
 |    14 |      |               |
 |    16 |      |               |
@@ -74,7 +74,7 @@ You can use this feature twice between long rests starting at 13th level and
 three times between long rests starting at 17th level.
 
 |------+---+---+---+---|
-| Used |   |   | ~ | ~ |
+| Used | x |   | ~ | ~ |
 |------+---+---+---+---|
   
 * Subclass (Cavalier)
@@ -132,23 +132,17 @@ opportunity attack, and you can’t use it on the same turn that you take your
 normal reaction.
 
 * Feats
+** Sentinel
+You have mastered techniques to take advantage of every drop in any enemy's
+guard, gaining the following benefits.
 
-** Skill Expert          :Tashas_Cauldron_Of_Everything:ASI:Skill:Expertise:
-You have honed your proficiency with particular skills, granting you the
-following benefits:
+When you hit a creature with an opportunity attack, the creature's speed
+becomes 0 for the rest of the turn.
 
-Increase one ability score of your choice by 1, to a maximum of 20.
-You gain proficiency in one skill of your choice.
-Choose one skill in which you have proficiency. You gain expertise with that
-skill, which means your proficiency bonus is doubled for any ability check you
-make with it. The skill you choose must be one that isn't already benefiting
-from a feature, such as Expertise, that doubles your proficiency bonus.
-
-| Type            | Value  |
-|-----------------+--------|
-| ASI             | +1 STR |
-| Skill           |        |
-| Skill Expertise |        |
+Creatures provoke opportunity attacks from you even if they take the Disengage
+action before leaving your reach. When a creature makes an attack against a
+target other than you (and that target doesn't have this feat), you can use
+your reaction to make a melee weapon attack against the attacking creature.
 
 * Racial
 
@@ -156,4 +150,28 @@ from a feature, such as Expertise, that doubles your proficiency bonus.
 You have advantage on all Intelligence, Wisdom, and Charisma saving throws
 against magic.
 
+* Boom Infusions
 
+- Radiant Weapon ::
+  This magic weapon grants a +1 bonus to attack and damage rolls made
+  with it. While holding it, the wielder can take a bonus action to cause
+  it to shed bright light in a 30-foot radius and dim light for an
+  additional 30 feet. The wielder can extinguish the light as a bonus
+  action.
+
+  The weapon has 4 charges. As a reaction immediately after being hit by
+  an attack, the wielder can expend 1 charge and cause the attacker to be
+  blinded until the end of the attacker's next turn, unless the attacker
+  succeeds on a Constitution saving throw against your spell save DC. The
+  weapon regains 1d4 expended charges daily at dawn.
+
+  x
+
+- Repulsion Shield ::
+  A creature gains a +1 bonus to Armor Class while wielding this shield.
+  
+  The shield has 4 charges. While holding it, the wielder can use a
+  reaction immediately after being hit by a melee attack to expend 1 of
+  the shield's charges and push the attacker up to 15 feet away. The
+  shield regains 1d4 expended charges daily at dawn.
+  
