@@ -29,6 +29,7 @@ as a certain kind of apparel, jewelry, furniture, tool, or weapon.
 
 This spell can’t locate an object if any thickness of lead, even a thin sheet, blocks a direct path
 between you and the object.
+
 *** Speak with Dead
 Casting Time: 1 action
 Range: 10 feet

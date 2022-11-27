@@ -1,4 +1,8 @@
-#+TILE: Baddah Bing - Character Sheet
+#+LATEX_CLASS: dnd
+#+STARTUP: content showstars indent
+#+OPTIONS: tags:nil
+#+TITLE: Baddah Bing's Character Sheet
+#+FILETAGS: baddah bing character sheet
 
 * Constants
   #+NAME: define-constants-with-src-block
@@ -6,62 +10,62 @@
     (dnd-output-ability-constants table)
   #+END_SRC
 
-  #+RESULTS[d2bead2789e3d7d9b2c9461b026bf7a0c8bf2cea]: define-constants-with-src-block
+  #+RESULTS[bc8d9ab5f75e404ba1858894795db28bc6306515]: define-constants-with-src-block
   :results:
   #+CONSTANTS: STR=20
-  #+CONSTANTS: DEX=14
-  #+CONSTANTS: CON=14
+  #+CONSTANTS: DEX=8
+  #+CONSTANTS: CON=16
   #+CONSTANTS: INT=8
-  #+CONSTANTS: WIS=10
-  #+CONSTANTS: CHA=12
+  #+CONSTANTS: WIS=15
+  #+CONSTANTS: CHA=8
   #+CONSTANTS: PROF=3
   :end:
   
 * Traits
   | Level | Race  | Subrace    | Class   | Subclass | Age | Alignment    | Size        | Weight |
   |-------+-------+------------+---------+----------+-----+--------------+-------------+--------|
-  |     6 | Gnome | Rock Gnome | Fighter | Brute    |  20 | Chaotic Good | Small (3ft) | 34lb   |
+  |     8 | Gnome | Rock Gnome | Fighter | Cavalier |  20 | Chaotic Good | Small (3ft) | 34lb   |
 
 * Stats  
-  | Speed | Hit Points | AC | Death Saves | Inspiration |
-  |-------+------------+----+-------------+-------------|
-  | 25 ft | 48/50      | 18 |             |             |
+  | Speed | Hit Points  | AC | Saves | Inspo | Hit dice | Exhaustion |
+  |-------+-------------+----+-------+-------+----------+------------|
+  | 25 ft | 99/76 (d10)  | 22 |       | x     |        8 |            |
 
 * Abilities and Skills
   #+name: stats
-  | Ability | Score | Mod | PB | Roll      | Skill           |
-  |---------+-------+-----+----+-----------+-----------------|
-  | STR     |    20 |   5 | X  | 1d20 + 8  | Saving Throw    |
-  |         |       |     |    | 1d20 + 5  | Athletics       |
-  |---------+-------+-----+----+-----------+-----------------|
-  | DEX     |    14 |   2 |    | 1d20 + 2  | Saving Throw    |
-  |         |       |     |    | 1d20 + 2  | Acrobatics      |
-  |         |       |     | X  | 1d20 + 5  | Sleight of Hand |
-  |         |       |     |    | 1d20 + 2  | Stealth         |
-  |---------+-------+-----+----+-----------+-----------------|
-  | CON     |    14 |   2 | X  | 1d20 + 5  | Saving Throw    |
-  |---------+-------+-----+----+-----------+-----------------|
-  | INT     |     8 |  -1 |    | 1d20 + -1 | Saving Throw    |
-  |         |       |     |    | 1d20 + -1 | Arcana          |
-  |         |       |     |    | 1d20 + -1 | History         |
-  |         |       |     |    | 1d20 + -1 | Investigation   |
-  |         |       |     |    | 1d20 + -1 | Nature          |
-  |         |       |     |    | 1d20 + -1 | Religion        |
-  |---------+-------+-----+----+-----------+-----------------|
-  | WIS     |    10 |   0 |    | 1d20 + 0  | Saving Throw    |
-  |         |       |     |    | 1d20 + 0  | Animal Handling |
-  |         |       |     | X  | 1d20 + 3  | Insight         |
-  |         |       |     |    | 1d20 + 0  | Medicine        |
-  |         |       |     |    | 1d20 + 0  | Perception      |
-  |         |       |     |    | 1d20 + 0  | Survival        |
-  |---------+-------+-----+----+-----------+-----------------|
-  | CHA     |    12 |   1 |    | 1d20 + 1  | Saving Throw    |
-  |         |       |     | X  | 1d20 + 4  | Deception       |
-  |         |       |     | X  | 1d20 + 4  | Intimidation    |
-  |         |       |     |    | 1d20 + 1  | Performance     |
-  |         |       |     |    | 1d20 + 1  | Persuasion      |
-  |---------+-------+-----+----+-----------+-----------------|
-  | PROF    |     3 |     |    |           |                 |
+  | Ability | Score | Mod | PB | Roll      | Skill           | Advantage |
+  |---------+-------+-----+----+-----------+-----------------+-----------|
+  | STR     |    20 |   5 | X  | 1d20 + 8  | Saving Throw    |           |
+  |         |       |     |    | 1d20 + 5  | Athletics       |           |
+  |---------+-------+-----+----+-----------+-----------------+-----------|
+  | DEX     |     8 |  -1 |    | 1d20 + -1 | Saving Throw    |           |
+  |         |       |     |    | 1d20 + -1 | Acrobatics      |           |
+  |         |       |     | X  | 1d20 + 2  | Sleight of Hand |           |
+  |         |       |     |    | 1d20 + -1 | Stealth         |           |
+  |---------+-------+-----+----+-----------+-----------------+-----------|
+  | CON     |    16 |   3 | X  | 1d20 + 6  | Saving Throw    |           |
+  |---------+-------+-----+----+-----------+-----------------+-----------|
+  | INT     |     8 |  -1 |    | 1d20 + -1 | Saving Throw    | x MAG     |
+  |         |       |     |    | 1d20 + -1 | Arcana          |           |
+  |         |       |     | XX | 1d20 + 5  | History         |           |
+  |         |       |     |    | 1d20 + -1 | Investigation   |           |
+  |         |       |     |    | 1d20 + -1 | Nature          |           |
+  |         |       |     |    | 1d20 + -1 | Religion        |           |
+  |---------+-------+-----+----+-----------+-----------------+-----------|
+  | WIS     |    15 |   2 |    | 1d20 + 2  | Saving Throw    | x MAG     |
+  |         |       |     |    | 1d20 + 2  | Animal Handling |           |
+  |         |       |     | X  | 1d20 + 5  | Insight         |           |
+  |         |       |     |    | 1d20 + 2  | Medicine        |           |
+  |         |       |     |    | 1d20 + 2  | Perception      |           |
+  |         |       |     |    | 1d20 + 2  | Survival        |           |
+  |---------+-------+-----+----+-----------+-----------------+-----------|
+  | CHA     |     8 |  -1 |    | 1d20 + -1 | Saving Throw    | x MAG     |
+  |         |       |     | X  | 1d20 + 2  | Deception       |           |
+  |         |       |     | X  | 1d20 + 2  | Intimidation    |           |
+  |         |       |     |    | 1d20 + -1 | Performance     |           |
+  |         |       |     |    | 1d20 + -1 | Persuasion      |           |
+  |---------+-------+-----+----+-----------+-----------------+-----------|
+  | PROF    |     3 |     |    |           |                 |           |
   #+TBLFM: @2$3='(calc-dnd-mod (string-to-number (org-table-get-constant $1)))
   #+TBLFM: @4$3='(calc-dnd-mod (string-to-number (org-table-get-constant $1)))
   #+TBLFM: @8$3='(calc-dnd-mod (string-to-number (org-table-get-constant $1)))
@@ -75,43 +79,16 @@
   #+TBLFM: @15$5..@20$5='(concat "1d20 + " (number-to-string (+ (if (string= $4 "X") $PROF 0) (calc-dnd-mod (string-to-number (org-table-get-constant @15$1))))))
   #+TBLFM: @21$5..@25$5='(concat "1d20 + " (number-to-string (+ (if (string= $4 "X") $PROF 0) (calc-dnd-mod (string-to-number (org-table-get-constant @21$1))))))
 
-** Abilities
-*** Second Wind
-    You have a limited well of stamina that you can draw on to protect yourself
-    from harm. On your turn, you can use a bonus action to regain hit points equal
-    to 1d10 + your fighter level.
-
-    Once you use this feature, you must finish a short or long rest before you can use it again.
-
-*** Action Surge
-    You can push yourself beyond your normal limits for a moment.
-    On your turn, you can take one additional action.
-
-    Once you use this feature, you must finish a short or long rest before you can use it again.
-    Starting at 17th level, you can use it twice before a rest, but only once on the same turn.
-
-*** Brute Force
-    Whenever you hit with a weapon that you’re proficient with and deal damage,
-    the weapon’s damage increases by an amount based on your level in this class
-
-| Lvl | Damage |
-|-----+--------|
-|   3 |    1d4 |
-|  10 |    1d6 |
-|  16 |    1d8 |
-|  20 |   1d10 |
-
-** Feats
-
 * Attacks
   #+NAME: attacks
-  | Weapon           | Ability | Prof | Type        | Die | Mod To Hit | Roll    |
-  |------------------+---------+------+-------------+-----+------------+---------|
-  | Shortsword       | DEX     | X    | Piercing    | 1d6 |          5 | 1d6 + 2 |
-  | Shortsword       | STR     | X    | Piercing    | 1d6 |          8 | 1d6 + 5 |
-  | Boom's Guantlets | STR     | X    | Bludgeoning | 1d4 |          8 | 1d4 + 5 |
-  #+TBLFM: $6='(+ (if (string= $3 "X") $PROF 0) (calc-dnd-mod (string-to-number (org-table-get-constant $2))))
-  #+TBLFM: $7='(concat $5 " + " (number-to-string (calc-dnd-mod (string-to-number (org-table-get-constant $2)))))
+  | Weapon        | Ability | Prof | Type       | SubType | Die | Mod To Hit | Roll    | Roll |
+  |---------------+---------+------+------------+---------+-----+------------+---------+------|
+  | War Hammer +1 | STR     | X    | Bludeoning |         | 1d6 |          9 | 1d8 + 8 |      |
+  | Fist          | STR     |      | Bludeoning |         |   1 |          8 | 1 + 7   |      |
+  | Club          | STR     | X    | Bludeoning |         | 1d4 |          8 | 1d4 + 7 |      |
+  | Sun Blade +2  | STR     | X    | Radiant    | Psychic | 1d8 |         10 | 1d8 + 9 |  1d8 |
+  #+TBLFM: $7='(+ (if (string= $3 "X") $PROF 0) (calc-dnd-mod (string-to-number (org-table-get-constant $2))))
+  #+TBLFM: $8='(concat $6 " + " (number-to-string (calc-dnd-mod (string-to-number (org-table-get-constant $2)))))
  
 * Proficiencies
   | Languages | Tools          | Armor   | Weapons |
@@ -133,16 +110,19 @@
   | Thieves Tools  |        1 |        25 |            1 |                  1 |              25 |
   | Tinker Tools   |        1 |        50 |           10 |                 10 |              50 |
   | Saddle Bags    |        2 |         4 |            8 |                 16 |               8 |
-  | Rations        |        4 |        .5 |            2 |                  8 |              2. |
+  | Rations        |        7 |        .5 |            2 |                 14 |             3.5 |
   | Fine clothes   |        2 |        15 |            3 |                  6 |              30 |
   | Bed Roll       |        1 |         1 |            7 |                  7 |               1 |
+  | War Hammer     |        1 |        10 |            2 |                  2 |              10 |
+  | Shield         |        1 |        25 |            6 |                  6 |              25 |
+  | Marble Dice    |        1 |         0 |            0 |                    |                 |
   |----------------+----------+-----------+--------------+--------------------+-----------------|
-  | Carry Capacity |      200 |           |              |                71. |            210. |
+  | Carry Capacity |      200 |           |              |                85. |            210. |
   #+TBLFM: $5=($2 * $4)
   #+TBLFM: $6=($2 * $3)
-  #+TBLFM: @14$5=vsum(@2$5..@14$5)
-  #+TBLFM: @14$6=vsum(@2$6..@10$6)
-  #+TBLFM: @14$2=($STR * 10)
+  #+TBLFM: @17$5=vsum(@2$5..@17$5)
+  #+TBLFM: @17$6=vsum(@2$6..@10$6)
+  #+TBLFM: @17$2=($STR * 10)
 
 ** Money
    | Copper | Silver | Electrum | Gold | Platinum | Total (Gold) |
