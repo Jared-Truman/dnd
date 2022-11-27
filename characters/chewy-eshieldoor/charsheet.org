@@ -1,3 +1,4 @@
+
 #+STARTUP: content showstars indent
 #+FILETAGS: dnd charsheet Chewy Eshieldoor
 #+TITLE: Chewy - Charsheet
@@ -27,7 +28,7 @@
 * Stats  
   | Speed | Hit Points       | AC             | Throws      | Inspo | Hit dice | Exhaustion |
   |-------+------------------+----------------+-------------+-------+----------+------------|
-  | 40 ft | 60/95 (d12 or 7) | 18 +1 (shield) | Save: Fail: |       |        7 |            |
+  | 40 ft | 95/95 (d12 or 7) | 18 +2 (shield) | Save: Fail: |     x |        9 |            |
 
 * Skills
   #+name: stats
@@ -43,7 +44,7 @@
   |---------+-------+-----+----+-----------+-----------------|
   | CON     |    16 |   3 | X  | 1d20 + 7  | Saving Throw    |
   |---------+-------+-----+----+-----------+-----------------|
-  | INT     |     8 |  -1 |    | 1d20 + -1 | Saving Throw    |
+hh | INT     |     8 |  -1 |    | 1d20 + -1 | Saving Throw    |
   |         |       |     |    | 1d20 + -1 | Arcana          |
   |         |       |     |    | 1d20 + -1 | History         |
   |         |       |     |    | 1d20 + -1 | Investigation   |
@@ -79,13 +80,13 @@
  
 * Attacks
   #+NAME: attacks
-  | Weapon        | Ability | Prof | Type        | Die | Mod To Hit | Roll    |
-  |---------------+---------+------+-------------+-----+------------+---------|
-  | MourningSteel | STR     | X    | Bludgeoning | 1d4 |          8 | 0d2 + 4 |
-  | Shield +1     | STR     | X    | Bludgeoning | 1d4 |          8 | 1d4 + 4 |
-  | Javelin       | STR     | X    | Piercing    | 1d6 |          8 | 1d6 + 4 |
-  | Hand Ax       | STR     | X    | Slashing    | 1d6 |          8 | 1d6 + 4 |
-  | Whip          | STR     | X    | Slashing    | 1d4 |          8 | 1d4 + 4 |
+  | Weapon    | Ability | Prof | Type        | Die | Mod To Hit | Roll    |
+  |-----------+---------+------+-------------+-----+------------+---------|
+  | Erebor +2 | STR     | X    | Bludgeoning | 1d6 |         10 | 1d6 + 6 |
+  | Shield +1 | STR     | X    | Bludgeoning | 1d4 |          8 | 1d4 + 4 |
+  | Javelin   | STR     | X    | Piercing    | 1d6 |          8 | 1d6 + 4 |
+  | Hand Ax   | STR     | X    | Slashing    | 1d6 |          8 | 1d6 + 4 |
+  | Whip      | STR     | X    | Slashing    | 1d4 |          8 | 1d4 + 4 |
   #+TBLFM: $6='(+ (if (string= $3 "X") $PROF 0) (calc-dnd-mod (string-to-number (org-table-get-constant $2))))
   #+TBLFM: $7='(concat $5 " + " (number-to-string (calc-dnd-mod (string-to-number (org-table-get-constant $2)))))
  
@@ -97,29 +98,30 @@
   | Draconic  |             |       | Shields |         |
 
 * Equipment
-  | Name                              | Quantity | Cost (gp) | Weight (lbs) | Total Weight (lbs) | Total Cost (gp) |
-  |-----------------------------------+----------+-----------+--------------+--------------------+-----------------|
-  | Bear Onesy                        |        1 |         0 |              |                  0 |               0 |
-  | Breast plat(AC 14)                |        1 |       400 |              |                  0 |             400 |
-  | Explorer Pack                     |        1 |         0 |            0 |                  0 |               0 |
-  | Greater Healing Potions (4d4 + 4) |        1 |         0 |              |                  0 |               0 |
-  | Gold Band from Kerry Red Spear    |        1 |         0 |              |                  0 |               0 |
-  | Hand Ax                           |        2 |         0 |              |                  0 |               0 |
-  | Hunter Trap                       |        1 |         0 |              |                  0 |               0 |
-  | Map                               |        1 |       .05 |            0 |                  0 |            0.05 |
-  | Javelins                          |        6 |         0 |            0 |                  0 |               0 |
-  | Rock Hammer                       |        1 |         0 |              |                  0 |               0 |
-  | Shield +1 (6ft tall)              |        2 |         0 |              |                  0 |               0 |
-  | Shield (Mourningsteel)            |        1 |         0 |            0 |                  0 |               0 |
-  | Traveler's Clothes                |        1 |         0 |              |                  0 |               0 |
-  | 6 FT spear with silver spear tip  |        1 |         0 |              |                  0 |               0 |
-  |-----------------------------------+----------+-----------+--------------+--------------------+-----------------|
-  | Carry Capacity                    |      170 |           |              |                  0 |               0 |
+  | Name                                 | Quantity | Cost (gp) | Weight (lbs) | Total Weight (lbs) | Total Cost (gp) |
+  |--------------------------------------+----------+-----------+--------------+--------------------+-----------------|
+  | Bear Onesy                           |        1 |         0 |              |                  0 |               0 |
+  | Breast plat(AC 14)                   |        1 |       400 |              |                  0 |             400 |
+  | Explorer Pack                        |        1 |         0 |            0 |                  0 |               0 |
+  | Greater Healing Potions (4d4 + 4)    |        1 |         0 |              |                  0 |               0 |
+  | Gold Band from Kerry Red Spear       |        1 |         0 |              |                  0 |               0 |
+  | Hand Ax                              |        2 |         0 |              |                  0 |               0 |
+  | Hunter Trap                          |        1 |         0 |              |                  0 |               0 |
+  | Map                                  |        1 |       .05 |            0 |                  0 |            0.05 |
+  | Javelins                             |        6 |         0 |            0 |                  0 |               0 |
+  | Rock Hammer                          |        1 |         0 |              |                  0 |               0 |
+  | Rations                              |        2 |         0 |              |                  0 |               0 |
+  | Shield +1 (6ft tall)                 |        1 |         0 |            0 |                  0 |               0 |
+  | Erebor (Mourningsteel) +2 (6ft tall) |        1 |         0 |              |                  0 |               0 |
+  | Traveler's Clothes                   |        1 |         0 |              |                  0 |               0 |
+  | 6 FT spear with silver spear tip     |        5 |         0 |            0 |                  0 |               0 |
+  |--------------------------------------+----------+-----------+--------------+--------------------+-----------------|
+  | Carry Capacity                       |      170 |           |              |                  0 |               0 |
   #+TBLFM: $5=($2 * $4)
   #+TBLFM: $6=($2 * $3)
-  #+TBLFM: @29$5=vsum(@4$5..@29$5)
-  #+TBLFM: @29$6=vsum(@4$6..@28$6)
-  #+TBLFM: @29$2=($STR * 10)
+  #+TBLFM: @30$5=vsum(@4$5..@30$5)
+  #+TBLFM: @30$6=vsum(@4$6..@29$6)
+  #+TBLFM: @30$2=($STR * 10)
  
 ** Money
 | Copper | Silver | Electrum | Gold | Platinum | Total (Gold) |
@@ -128,9 +130,10 @@
 #+TBLFM: $6=(($1 / 100) + ($2 / 10) + ($3 / 2) + $4 + ($5 * 10))
 
 ** Attunements
-Mourningsteel Barricade
+Erebor - Mourningsteel Barricade
 
 * Kill Tracking
 1 kill is a point .5 is an assist. Keep Tracking!
 
-29.5
+30.5
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVvvvV nnj h
