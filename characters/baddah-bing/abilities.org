@@ -1,0 +1,177 @@
+#+LATEX_CLASS: dnd
+#+STARTUP: content showstars indent
+#+OPTIONS: tags:nil
+#+TITLE: Baddah Bing's Abilities
+#+FILETAGS: baddah bing abilities
+
+* Class (Fighter)
+** Fighting Style
+*** Dueling
+When you are wielding a melee weapon in one hand and no other weapons, you gain
++2 bonus to damage rolls with that weapon.
+
+*** Protection
+When a creature you can see attacks a target other than you that is within 5
+feet of you, you can use your reaction to impose disadvantage on the attack
+roll. You must be wielding a shield.
+
+** Second Wind                                                       :lvl_1:
+You have a limited well of stamina that you can draw on to protect yourself
+from harm. On your turn, you can use a bonus action to regain hit points equal
+to 1d10 + your fighter level.
+
+Once you use this feature, you must finish a short or long rest before you can
+use it again.
+
+|------+---|
+| Used | x |
+|------+---|
+
+** Action Surge                                               :lvl_2:lvl_17:
+You can push yourself beyond your normal limits for a moment.
+On your turn, you can take one additional action.
+
+Once you use this feature, you must finish a short or long rest before you can
+use it again. Starting at 17th level, you can use it twice before a rest, but
+only once on the same turn.
+
+|------+---+---|
+| Used | x | ~ |
+|------+---+---|
+
+** Ability Score Improvement :lvl_4:lvl_6:lvl_8:lvl_12:lvl_14:lvl_16:lvl_19:
+When you reach 4th level, and again at 6th, 8th, 12th, 14th, 16th, and 19th
+level, you can increase one ability score of your choice by 2, or you can
+increase two ability scores of your choice by 1. As normal, you can’t increase
+an ability score above 20 using this feature.
+
+Using the optional feats rule, you can forgo taking this feature to take a feat
+of your choice instead.
+
+| Level | Type | Value         |
+|-------+------+---------------|
+|     4 | ASI  | +2 STR        |
+|     6 | ASI  | +1 STR +1 CON |
+|     8 | FEAT | Sentinel      |
+|    12 |      |               |
+|    14 |      |               |
+|    16 |      |               |
+|    19 |      |               |
+
+** Extra Attack                                        :lvl_5:lvl_11:lvl_20:
+Beginning at 5th level, you can attack twice, instead of once, whenever you take
+the Attack action on your turn.
+
+The number of attacks increases to three when you reach 11th level in this class
+and to four when you reach 20th level in this class.
+
+** Indomitable                                         :lvl_9:lvl_13:lvl_17:
+Beginning at 9th level, you can reroll a saving throw that you fail. If you do
+so, you must use the new roll, and you can’t use this feature again until you
+finish a long rest.
+
+You can use this feature twice between long rests starting at 13th level and
+three times between long rests starting at 17th level.
+
+|------+---+---+---+---|
+| Used | x |   | ~ | ~ |
+|------+---+---+---+---|
+  
+* Subclass (Cavalier)
+** Born to the Saddle                                                :lvl_3:
+Starting at 3rd level, your mastery as a rider becomes apparent. You have
+advantage on saving throws made to avoid falling off your mount. If you
+fall off your mount and descend no more than 10 feet, you can land on your
+feet if you’re not incapacitated.
+
+Finally, mounting or dismounting a creature costs you only 5 feet of movement,
+rather than half your speed.
+
+** Unwavering Mark                                                   :lvl_3:
+Starting at 3rd level, you can menace your foes, foiling their attacks and
+punishing them for harming others. When you hit a creature with a melee weapon
+attack, you can mark the creature until the end of your next turn. This effect
+ends early if you are incapacitated or you die, or if someone else marks the
+creature.
+
+While it is within 5 feet of you, a creature marked by you has disadvantage on
+any attack roll that doesn’t target you.
+
+In addition, if a creature marked by you deals damage to anyone other than you,
+you can make a special melee weapon attack against the marked creature as a
+bonus action on your next turn. You have advantage on the attack roll, and if
+it hits, the attack’s weapon deals extra damage to the target equal to half
+your fighter level.
+
+Regardless of the number of creatures you mark, you can make this special attack
+a number of times equal to your Strength modifier (minimum of once), and you
+regain all expended uses of it when you finish a long rest.
+
+|----------+---+---+---+---+---|
+| Used     |   |   |   | ~ | ~ |
+|----------+---+---+---+---+---|
+
+** Hold the Line                                                    :lvl_10:
+At 10th level, you become a master of locking down your enemies. Creatures
+provoke an opportunity attack from you when they move 5 feet or more while
+within your reach, and if you hit a creature with an opportunity attack, the
+target’s speed is reduced to 0 until the end of the current turn.
+
+** Ferocious Charger                                                :lvl_15:
+Starting at 15th level, you can run down your foes, whether you’re mounted or
+not. If you move at least 10 feet in a straight line right before attacking a
+creature and you hit it with the attack, that target must succeed on a Strength
+saving throw (DC 8 + your proficiency bonus + your Strength modifier) or be
+knocked prone. You can use this feature only once on each of your turns.
+
+** Vigilant Defender                                                :lvl_18:
+Starting at 18th level, you respond to danger with extraordinary vigilance. In
+combat, you get a special reaction that you can take once on every creature’s
+turn, except your turn. You can use this special reaction only to make an
+opportunity attack, and you can’t use it on the same turn that you take your
+normal reaction.
+
+* Feats
+** Sentinel
+You have mastered techniques to take advantage of every drop in any enemy's
+guard, gaining the following benefits.
+
+When you hit a creature with an opportunity attack, the creature's speed
+becomes 0 for the rest of the turn.
+
+Creatures provoke opportunity attacks from you even if they take the Disengage
+action before leaving your reach. When a creature makes an attack against a
+target other than you (and that target doesn't have this feat), you can use
+your reaction to make a melee weapon attack against the attacking creature.
+
+* Racial
+
+** Gnome Cunning
+You have advantage on all Intelligence, Wisdom, and Charisma saving throws
+against magic.
+
+* Boom Infusions
+
+- Radiant Weapon ::
+  This magic weapon grants a +1 bonus to attack and damage rolls made
+  with it. While holding it, the wielder can take a bonus action to cause
+  it to shed bright light in a 30-foot radius and dim light for an
+  additional 30 feet. The wielder can extinguish the light as a bonus
+  action.
+
+  The weapon has 4 charges. As a reaction immediately after being hit by
+  an attack, the wielder can expend 1 charge and cause the attacker to be
+  blinded until the end of the attacker's next turn, unless the attacker
+  succeeds on a Constitution saving throw against your spell save DC. The
+  weapon regains 1d4 expended charges daily at dawn.
+
+  x
+
+- Repulsion Shield ::
+  A creature gains a +1 bonus to Armor Class while wielding this shield.
+  
+  The shield has 4 charges. While holding it, the wielder can use a
+  reaction immediately after being hit by a melee attack to expend 1 of
+  the shield's charges and push the attacker up to 15 feet away. The
+  shield regains 1d4 expended charges daily at dawn.
+  

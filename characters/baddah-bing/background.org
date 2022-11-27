@@ -1,6 +1,10 @@
+#+LATEX_CLASS: dnd
 #+STARTUP: content showstars indent
-#+FILETAGS: dnd background baddah_bing
-* Charlatan
+#+OPTIONS: tags:nil
+#+TITLE: Baddah Bing's Background Sheet
+#+FILETAGS: baddah bing background sheet
+
+* Charlatan                      :deception:sleight_of_hand:disguise:forgery:
 Kill Proficiencies: Deception, Sleight of Hand
 Tool Proficiencies: Disguise kit, Forgery kit
 Equipment:
@@ -12,16 +16,28 @@ Equipment:
     - deck of marked cards
     - signet ring of an imaginary duke
 - Pouch containing 15 gp
+
 * Favorite Scheme
 5 - I put on new identities like clothes
 
 Feature: False Identity
-You have created a second identity that includes documentation, established acquaintances,
-and disguises that allow you to assume that persona. Additionally, you can forge documents
-including official papers and personal letters, as long as you have seen an example of the
-kind of document or the handwriting you are trying to copy.
+You have created a second identity that includes documentation, established
+acquaintances, and disguises that allow you to assume that persona.
+Additionally, you can forge documents including official papers and personal
+letters, as long as you have seen an example of the kind of document or the
+handwriting you are trying to copy.
+
 * Personality Trait
+Flattery is my preferred trick for getting what I want.
+
 * Ideal
+Aspiration. I’m determined to make something of myself. (Any)
+
 * Bond
+Is to my brother and to our creation of Iron Fist
+
 * Flaw
+I can’t resist swindling people who are more powerful than me.
+
+ 
 

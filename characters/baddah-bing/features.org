@@ -1,63 +1,83 @@
-#+TILE: Baddah Boom - Features
+#+LATEX_CLASS: dnd
+#+STARTUP: content showstars indent
+#+OPTIONS: tags:nil
+#+TITLE: Baddah Bing's Features Sheet
+#+FILETAGS: baddah bing features racial sheet
 
-* Racial
-  - Darkvision ::
-    Accustomed to life underground, you have superior vision in dark and dim conditions. You can see in dim light
-    within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color
-    in darkness, only shades of gray.
+* Starting Stats
+| Ability | Score |
+|---------+-------|
+| STR     |    15 |
+| DEX     |     8 |
+| CON     |    15 |
+| INT     |     8 |
+| WIS     |    15 |
+| CHA     |     8 |
+
+* Racial (Gnome)
+** Ability Score Increase                                          :ASI:INT:
+Your Intelligence score increases by 2.
+
+** Age                                                                 :age:
+Gnomes mature at the same rate as humans, and most are expected to settle into
+adult life around the age of 40. They can live to 350 years on average, but
+it's not too uncommon for them to reach 500 years of age.
+
+** Size                                                               :size:
+Gnomes are between 3 and 4 feet tall and weigh around 40 pounds. Your size is
+Small.
+
+** Speed.                                                            :speed:
+Your base walking speed is 25 feet.
+
+** Darkvision                                                       :senses:
+Accustomed to life underground, you have superior vision in dark and dim
+conditions. You can see in dim light within 60 feet of you as if it were
+bright light, and in darkness as if it were dim light. You can't discern
+color in darkness, only shades of gray.
      
-  - Gnome Cunning ::
-    You have advantage on all Intelligence, Wisdom, and Charisma saving throws against magic.
+** Gnome Cunning                                                 :advantage:
+You have advantage on all Intelligence, Wisdom, and Charisma saving throws
+against magic.
 
-  - Artificer’s Lore ::
-  Whenever you make an Intelligence (History) check related to magic items, alchemical objects,
-  or technological devices, you can add twice your proficiency bonus, instead of any proficiency
-  bonus you normally apply.
+** Languages                                                      :language:
+You can read, speak, and write Common and Gnomish.
 
-  - Tinker ::
-  You have proficiency with artisan’s tools (tinker’s tools).
-  Using those tools, you can spend 1 hour and 10 gp worth of
-  materials to construct a Tiny clockwork device (AC 5, 1 hp).
-  The device ceases to function after 24 hours (unless you spend
-  1 hour repairing it to keep the device functioning), or when you
-  use your action to dismantle it; at that time, you can reclaim
-  the materials used to create it. You can have up to three such devices active at a time.
-  
-  When you create a device, choose one of the following options:
-  - Clockwork Toy ::
-    This toy is a clockwork animal, monster, or person,
-    such as a frog, mouse, bird, dragon, or soldier.
-    When placed on the ground, the toy moves 5 feet across
-    the ground on each of your turns in a random direction.
-    It makes noises as appropriate to the creature it represents.
+| Type | Value  | Reason                                                   |
+|------+--------+----------------------------------------------------------|
+| ASI  | +2 STR | I was the muscles and my brother was the brains (Tashas) |
 
-  - Fire Starter ::
-    The device produces a miniature flame, which you can use to light a candle,
-    torch, or campfire. Using the device requires your action.
+* Racial (Rock Gnome)
+** Ability Score Increase                                          :ASI:CON:
+Your Constitution score increases by 1.
 
-  - Music Box ::
-    When opened, this music box plays a single song at a moderate volume.
-    The box stops playing when it reaches the song’s end or when it is closed.  
-* Class
+** Artificer’s Lore
+Whenever you make an Intelligence (History) check related to magic items,
+alchemical objects, or technological devices, you can add twice your
+proficiency bonus, instead of any proficiency bonus you normally apply.
 
-** Two-Weapon Fighting. (Fighter)
-   When you engage in two-weapon fighting,
-   you can add your ability modifier to the damage of the second
+** Tinker                                                 :Proficiency_Tool:
+You have proficiency with artisan’s tools (tinker’s tools). Using those tools,
+you can spend 1 hour and 10 gp worth of  materials to construct a Tiny
+clockwork device (AC 5, 1 hp). The device ceases to function after 24 hours
+(unless you spend 1 hour repairing it to keep the device functioning), or when
+you use your action to dismantle it; at that time, you can reclaim the
+materials used to create it. You can have up to three such devices active at a
+time.
 
-   - Two Weapon Fighting (Normal people) ::
-   When you take the Attack action and attack with a light
-   melee weapon that you’re holding in one hand, you can
-   use a bonus action to attack with a different light melee
-   weapon that you’re holding in the other hand. You don't
-   add your ability m odifier to the damage of the bonus
-   attack, unless that modifier is negative.
-   If either weapon has the thrown property, you
-   can throw the weapon, instead of making a melee
-   attack with it.
+When you create a device, choose one of the following options:
 
-
-* Background
-  - False Identity ::
-    You have created a second identity that includes documentation, established acquaintances, and disguises that allow
-    you to assume that persona. Additionally, you can forge documents including official papers and personal letters,
-    as long as you have seen an example of the kind of document or the handwriting you are trying to copy.
+- Clockwork Toy ::
+  This toy is a clockwork animal, monster, or person,
+  such as a frog, mouse, bird, dragon, or soldier.
+  When placed on the ground, the toy moves 5 feet across
+  the ground on each of your turns in a random direction.
+  It makes noises as appropriate to the creature it represents.
+    
+- Fire Starter ::
+  The device produces a miniature flame, which you can use to light a candle,
+  torch, or campfire. Using the device requires your action.
+    
+- Music Box ::
+  When opened, this music box plays a single song at a moderate volume.
+  The box stops playing when it reaches the song’s end or when it is closed.  
