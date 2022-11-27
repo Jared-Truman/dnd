@@ -1,7 +1,7 @@
 #+LATEX_CLASS: dnd
 #+STARTUP: content showstars indent
 #+OPTIONS: tags:nil
-#+TITLE: Baddah Bing's Background Sheet
+#+TITLE: Bo Grimespine's Background Sheet
 #+FILETAGS: baddah bing background sheet
 
 * Soldier                        :background:athletics:intimidation:vehicles:
