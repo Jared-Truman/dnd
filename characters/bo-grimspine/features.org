@@ -1,4 +1,4 @@
-#+LATEX_CLASS: dnd
+b#+LATEX_CLASS: dnd
 #+STARTUP: content showstars indent
 #+OPTIONS: tags:nil
 #+TITLE: Bo Grimspine's Features Sheet

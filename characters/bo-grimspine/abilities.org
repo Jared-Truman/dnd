@@ -59,7 +59,6 @@ finish a short or long rest, you regain your expended uses.
 | Used |   | ` | ` |
 |------+---+---+---|
 
-
 ** Channel Divinity: Turn Undead
 As an action, you present your holy symbol and speak a prayer censuring the
 undead. Each undead that can see or hear you within 30 feet of you must make a
@@ -188,16 +187,12 @@ At 17th level, your blessed affinity with fire and metal becomes more powerful:
   slashing damage from nonmagical attacks.
 
 * Feats
-** Squat Nimbleness :xanathars_guide_to_everything:asi:str:dex:athletics:acrobatics:
-Prerequisite: Dwarf or a Small race
-
-You are uncommonly nimble for your race. You gain the following benefits:
-
-- Increase your Strength or Dexterity score by 1, to a maximum of 20.
-- Increase your walking speed by 5 feet.
-- You gain proficiency in the Acrobatics or Athletics skill (your choice).
-- You have advantage on any Strength (Athletics) or Dexterity (Acrobatics) check
-  you make to escape from being grappled.
+** [[file:~/.emacs.d/ignore/org-dnd/16.feats.org::Squat Nimbleness][Squat Nimbleness]] 
+| Type  | Value       |
+|-------+-------------|
+| ASI   | STR +1      |
+| SKILL | Acrobatics  |
+| ADV   | STR Grapple |
 
 * Racial
 
