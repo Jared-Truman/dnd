@@ -6,7 +6,7 @@
 
 * Cantrips
 
-** Spare the Dying                                             :phb:cantrip:
+** Spare the Dying                            :artificer:cleric:cantrip:pbh:
 Necromancy cantrip
 
 Casting Time: 1 action
