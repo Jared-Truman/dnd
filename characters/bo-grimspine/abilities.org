@@ -56,7 +56,7 @@ and beginning at 18th level, you can use it three times between rests. When you
 finish a short or long rest, you regain your expended uses.
 
 |------+---+---+---|
-| Used |   | ` | ` |
+| Used | x | ` | ` |
 |------+---+---+---|
 
 ** Channel Divinity: Turn Undead
