@@ -5,7 +5,6 @@
 #+FILETAGS: avadra gahdouh abilities
 
 * Class ([[file:~/.emacs.d/ignore/org-dnd/02.classes.org::Ranger][Ranger]])                                                        :pbh:
-
 ** [[file:~/.emacs.d/ignore/org-dnd/02.classes.org::Favored Foe][Favored Foe]]                              :lvl_1:lvl_6:lvl_14:alt_feature:
 - Description ::
   Hit an attack you can mark the enemy.
@@ -30,7 +29,7 @@
 | Terrain | Swamp | ` | ` |
 |---------+-------+---+---|
 
-** [[file:~/.emacs.d/ignore/org-dnd/02.classes.org::Primeval Awareness][Primeval Awareness]]
+** [[file:~/.emacs.d/ignore/org-dnd/02.classes.org::Primeval Awareness][Primeval Awareness]]                                                :lvl_3:
 
 ** Ability Score Improvement
 

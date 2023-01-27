@@ -1,8 +1,8 @@
 #+LATEX_CLASS: dnd
 #+STARTUP: content showstars indent
 #+OPTIONS: tags:nil
-#+TITLE: Bo Grimspine's Character Sheet
-#+FILETAGS: bo grimespine character sheet
+#+TITLE: Avadra Gahdouh's Sheet
+#+FILETAGS: avadra gahdouh character sheet
 
 * Constants
   #+NAME: define-constants-with-src-block
@@ -35,41 +35,41 @@
 
 * Abilities and Skills
 #+name: stats
-| Ability | Score | Mod | PB | Roll           | Skill                      | Expert |
-|---------+-------+-----+----+----------------+----------------------------+--------|
-| STR     |    15 |   2 |    | 1d20 + 2       | Saving Throw *(A) Grapple* |        |
-|         |       |     |    | 1d20 + 2       | Athletics                  |        |
-|---------+-------+-----+----+----------------+----------------------------+--------|
-| DEX     |    10 |   0 |    | 1d20 + 0       | Saving Throw *(A) Grapple* |        |
-|         |       |     | X  | 1d20 + 2       | Acrobatics                 |        |
-|         |       |     |    | 1d20 + 0       | Sleight of Hand            |        |
-|         |       |     |    | 1d20 + 0       | Stealth *(D) Heavy Armor*  |        |
-|---------+-------+-----+----+----------------+----------------------------+--------|
-| CON     |    15 |   2 |    | 1d20 + 2       | Saving Throw               |        |
-|---------+-------+-----+----+----------------+----------------------------+--------|
-| INT     |     8 |  -1 |    | 1d20 + -1      | Saving Throw               |        |
-|         |       |     |    | 1d20 + -1      | Arcana                     |        |
-|         |       |     | X  | 1d20 + 1       | History                    | Stone  |
-|         |       |     |    | 1d20 + -1      | Investigation              |        |
-|         |       |     |    | 1d20 + -1      | Nature                     |        |
-|         |       |     |    | 1d20 + -1      | Religion                   |        |
-|---------+-------+-----+----+----------------+----------------------------+--------|
-| WIS     |    16 |   3 | X  | 1d20 + 5       | Saving Throw               |        |
-|         |       |     |    | 1d20 + 3       | Animal Handling            |        |
-|         |       |     |    | 1d20 + 3       | Insight                    |        |
-|         |       |     | X  | 1d20 + 5       | Medicine                   |        |
-|         |       |     |    | 1d20 + 3       | Perception                 |        |
-|         |       |     |    | 1d20 + 3       | Survival                   |        |
-|---------+-------+-----+----+----------------+----------------------------+--------|
-| CHA     |    12 |   1 | X  | 1d20 + 3       | Saving Throw               |        |
-|         |       |     |    | 1d20 + 1       | Deception                  |        |
-|         |       |     |    | 1d20 + 1       | Intimidation               |        |
-|         |       |     |    | 1d20 + 1       | Performance                |        |
-|         |       |     |    | 1d20 + 1       | Persuasion                 |        |
-|---------+-------+-----+----+----------------+----------------------------+--------|
-| PROF    |     2 |     |    |                |                            |        |
-| SCA     |       |     |    | 8 + PROF + WIS | SPELL CASTING ABILITY      |        |
-| SAM     |       |     |    | PROF + WIS     | SPELL ATT MOD              |        |
+| Ability | Score | Mod | PB | Roll           | Skill                      |
+|---------+-------+-----+----+----------------+----------------------------|
+| STR     |    15 |   2 |    | 1d20 + 2       | Saving Throw *(A) Grapple* |
+|         |       |     |    | 1d20 + 2       | Athletics                  |
+|---------+-------+-----+----+----------------+----------------------------|
+| DEX     |    10 |   0 |    | 1d20 + 0       | Saving Throw *(A) Grapple* |
+|         |       |     | X  | 1d20 + 2       | Acrobatics                 |
+|         |       |     |    | 1d20 + 0       | Sleight of Hand            |
+|         |       |     |    | 1d20 + 0       | Stealth *(D) Heavy Armor*  |
+|---------+-------+-----+----+----------------+----------------------------|
+| CON     |    15 |   2 |    | 1d20 + 2       | Saving Throw               |
+|---------+-------+-----+----+----------------+----------------------------|
+| INT     |     8 |  -1 |    | 1d20 + -1      | Saving Throw               |
+|         |       |     |    | 1d20 + -1      | Arcana                     |
+|         |       |     | X  | 1d20 + 1       | History                    |
+|         |       |     |    | 1d20 + -1      | Investigation              |
+|         |       |     |    | 1d20 + -1      | Nature                     |
+|         |       |     |    | 1d20 + -1      | Religion                   |
+|---------+-------+-----+----+----------------+----------------------------|
+| WIS     |    16 |   3 | X  | 1d20 + 5       | Saving Throw               |
+|         |       |     |    | 1d20 + 3       | Animal Handling            |
+|         |       |     |    | 1d20 + 3       | Insight                    |
+|         |       |     | X  | 1d20 + 5       | Medicine                   |
+|         |       |     |    | 1d20 + 3       | Perception                 |
+|         |       |     |    | 1d20 + 3       | Survival                   |
+|---------+-------+-----+----+----------------+----------------------------|
+| CHA     |    12 |   1 | X  | 1d20 + 3       | Saving Throw               |
+|         |       |     |    | 1d20 + 1       | Deception                  |
+|         |       |     |    | 1d20 + 1       | Intimidation               |
+|         |       |     |    | 1d20 + 1       | Performance                |
+|         |       |     |    | 1d20 + 1       | Persuasion                 |
+|---------+-------+-----+----+----------------+----------------------------|
+| PROF    |     2 |     |    |                |                            |
+| SCA     |       |     |    | 8 + PROF + WIS | SPELL CASTING ABILITY      |
+| SAM     |       |     |    | PROF + WIS     | SPELL ATT MOD              |
 #+TBLFM: @2$3='(calc-dnd-mod (string-to-number (org-table-get-constant $1)))
 #+TBLFM: @4$3='(calc-dnd-mod (string-to-number (org-table-get-constant $1)))
 #+TBLFM: @8$3='(calc-dnd-mod (string-to-number (org-table-get-constant $1)))
