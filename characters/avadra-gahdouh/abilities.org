@@ -78,7 +78,7 @@
   Grant advantage on initiative as an action.
   
 * Class ([[file:~/.emacs.d/ignore/org-dnd/02.classes.org::Monk][Monk]])                                                          :phb:
-** [[file:~/.emacs.d/ignore/org-dnd/02.classes.org::Martial Arts][Martial Arts]] :lvl_1:
+** [[file:~/.emacs.d/ignore/org-dnd/02.classes.org::Martial Arts][Martial Arts]]                                                      :lvl_1:
 - Description ::
    - DEX MOD on monk weapons.
 
@@ -104,12 +104,25 @@
 
     - Step of the Wind
       Disengage or Dash action, jump distance is doubled for the turn.
+
+|------+---+---+---+---+---|
+| Used |   |   |   |   |   |
+|------+---+---+---+---+---|
       
-** [[file:~/.emacs.d/ignore/org-dnd/02.classes.org::Unarmored Movement][Unarmored Movement]] :lvl_2:lvl_9:
+** [[file:~/.emacs.d/ignore/org-dnd/02.classes.org::Unarmored Movement][Unarmored Movement]]                                          :lvl_2:lvl_9:
 - Description ::
   Increase speed {based on level} without armor or shield.
 
   Level 9 run on vertical surfaces and water
+
+  
+** [[file:~/.emacs.d/ignore/org-dnd/02.classes.org::Deflect Missiles][Deflect Missiles]] :lvl_3:
+- Description ::
+  Decrease hit ranged attack 1d10 + DEX MOD + Monk level (10).
+
+  Projectile is caught when the damage is reduced to 0.
+
+  1 ki point to throw the caught projectile. Range 20/60
 
 ** Monastic Tradition ([[file:~/.emacs.d/ignore/org-dnd/02.classes.org::Way of the Shadow][Way of the Shadow)]]                              :phb:
 *** [[file:~/.emacs.d/ignore/org-dnd/02.classes.org::Shadow Arts][Shadow Arts]]                                                     :lvl_3:
@@ -122,5 +135,22 @@
   | Darkvision         |
   | Pass without trace |
   | Silence            |
-  
-  
+
+** ASI :lvl_4:
+| level | type | value  |
+|-------+------+--------|
+|     4 | asi  | +2 dex |
+
+** [[file:~/.emacs.d/ignore/org-dnd/02.classes.org::Quickened Healing][Quickened Healing (Optional)]] :lvl_4:
+- Description ::
+  2 Ki points - Martial Arts Die + Proficiency
+
+** [[file:~/.emacs.d/ignore/org-dnd/02.classes.org::Slow Fall][Slow Fall]] :lvl_4:
+- Description ::
+  Reduce fall damage 5 * MONK LEVEL  
+
+** [[file:~/.emacs.d/ignore/org-dnd/02.classes.org::Stunning Strike][Stunning Strike]] :lvl_5:
+- Description ::
+  On successful hit, 1 Ki point to stun the enemy.
+
+  - Saving throw :: CON (KI saving throw)
