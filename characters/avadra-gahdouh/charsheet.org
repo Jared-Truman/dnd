@@ -1,7 +1,11 @@
 #+LATEX_CLASS: dnd
 #+STARTUP: content showstars indent
 #+OPTIONS: tags:nil
+<<<<<<< Updated upstream
 #+TITLE: Avadra Gahdouh's Sheet
+=======
+#+TITLE: Avadra Gahdouh's Character Sheet
+>>>>>>> Stashed changes
 #+FILETAGS: avadra gahdouh character sheet
 
 * Constants
@@ -10,31 +14,38 @@
     (dnd-output-ability-constants table)
   #+END_SRC
 
-  #+RESULTS[1d31cbe5ecc6d9782632d38028643469293a1ef4]: define-constants-with-src-block
+  #+RESULTS[822a7363634b58f68a26b0f563f01b7a5050a1d0]: define-constants-with-src-block
   :results:
-  #+CONSTANTS: STR=15
-  #+CONSTANTS: DEX=10
-  #+CONSTANTS: CON=15
-  #+CONSTANTS: INT=8
+  #+CONSTANTS: STR=8
+  #+CONSTANTS: DEX=20
+  #+CONSTANTS: CON=13
+  #+CONSTANTS: INT=12
   #+CONSTANTS: WIS=16
-  #+CONSTANTS: CHA=12
-  #+CONSTANTS: PROF=2
+  #+CONSTANTS: CHA=10
+  #+CONSTANTS: PROF=4
   #+CONSTANTS: SCA=
   #+CONSTANTS: SAM=
   :end:
   
 * Traits
-| Level | Race  | Subrace | Class  | Subclass     | Alignment      | Size   |
-|-------+-------+---------+--------+--------------+----------------+--------|
-|     4 | Dwarf | Hill    | Cleric | Forge Domain | Lawful Neutral | Medium |
+| Level | Race       | Subrace | Class  | Subclass      | Alignment      | Size   |
+|-------+------------+---------+--------+---------------+----------------+--------|
+|     4 | Shadar-Kai |         | Ranger | Gloomstalker  | Lawful Neutral | Medium |
+|     1 |            |         | Cleric | Twilight      |                |        |
+|     5 |            |         | Monk   | Way of Shadow |                |        |
+|    10 |            |         |        |               |                |        |
 
 * Stats  
-| Speed | Hit Points | AC | Saves | Inspo | Hit dice | Exhaustion |
-|-------+------------+----+-------+-------+----------+------------|
-| 30 ft | 35/35 (d8) | 20 |       |       |        4 |            |
+| Speed      | Hit Points   | AC | Saves | Inspo | Hit dice | Exhaustion |
+|------------+--------------+----+-------+-------+----------+------------|
+| 40 ft Walk | Ranger (d10) | 18 |       |       |        4 |            |
+| 30 ft Swim | Cleric (d8)  |    |       |       |        1 |            |
+|            | Monk (d8)    |    |       |       |        5 |            |
+| Total:     | 68/68        |    |       |       |          |            |
 
 * Abilities and Skills
 #+name: stats
+<<<<<<< Updated upstream
 | Ability | Score | Mod | PB | Roll           | Skill                      |
 |---------+-------+-----+----+----------------+----------------------------|
 | STR     |    15 |   2 |    | 1d20 + 2       | Saving Throw *(A) Grapple* |
@@ -70,6 +81,43 @@
 | PROF    |     2 |     |    |                |                            |
 | SCA     |       |     |    | 8 + PROF + WIS | SPELL CASTING ABILITY      |
 | SAM     |       |     |    | PROF + WIS     | SPELL ATT MOD              |
+=======
+| Ability | Score | Mod | PB | Roll           | Skill                 | Expert |
+|---------+-------+-----+----+----------------+-----------------------+--------|
+| STR     |     8 |   2 | X  | 1d20 + 2       | Saving Throw          |        |
+|         |       |     |    | 1d20 + 2       | Athletics             |        |
+|---------+-------+-----+----+----------------+-----------------------+--------|
+| DEX     |    20 |   0 | X  | 1d20 + 0       | Saving Throw          |        |
+|         |       |     |    | 1d20 + 2       | Acrobatics            |        |
+|         |       |     |    | 1d20 + 0       | Sleight of Hand       |        |
+|         |       |     | X  | 1d20 + 0       | Stealth               |        |
+|---------+-------+-----+----+----------------+-----------------------+--------|
+| CON     |    13 |   2 |    | 1d20 + 2       | Saving Throw          |        |
+|---------+-------+-----+----+----------------+-----------------------+--------|
+| INT     |    12 |  -1 |    | 1d20 + -1      | Saving Throw          |        |
+|         |       |     |    | 1d20 + -1      | Arcana                |        |
+|         |       |     |    | 1d20 + 1       | History               | Stone  |
+|         |       |     | X  | 1d20 + -1      | Investigation         |        |
+|         |       |     |    | 1d20 + -1      | Nature                |        |
+|         |       |     |    | 1d20 + -1      | Religion              |        |
+|---------+-------+-----+----+----------------+-----------------------+--------|
+| WIS     |    16 |   3 |    | 1d20 + 5       | Saving Throw          |        |
+|         |       |     | X  | 1d20 + 3       | Animal Handling       |        |
+|         |       |     | X  | 1d20 + 3       | Insight               |        |
+|         |       |     |    | 1d20 + 5       | Medicine              |        |
+|         |       |     | X  | 1d20 + 3       | Perception            |        |
+|         |       |     | X  | 1d20 + 3       | Survival              |        |
+|---------+-------+-----+----+----------------+-----------------------+--------|
+| CHA     |    10 |   1 |    | 1d20 + 3       | Saving Throw          |        |
+|         |       |     |    | 1d20 + 1       | Deception             |        |
+|         |       |     |    | 1d20 + 1       | Intimidation          |        |
+|         |       |     |    | 1d20 + 1       | Performance           |        |
+|         |       |     |    | 1d20 + 1       | Persuasion            |        |
+|---------+-------+-----+----+----------------+-----------------------+--------|
+| PROF    |     4 |     |    |                |                       |        |
+| SCA     |       |     |    | 8 + PROF + WIS | SPELL CASTING ABILITY |        |
+| SAM     |       |     |    | PROF + WIS     | SPELL ATT MOD         |        |
+>>>>>>> Stashed changes
 #+TBLFM: @2$3='(calc-dnd-mod (string-to-number (org-table-get-constant $1)))
 #+TBLFM: @4$3='(calc-dnd-mod (string-to-number (org-table-get-constant $1)))
 #+TBLFM: @8$3='(calc-dnd-mod (string-to-number (org-table-get-constant $1)))
@@ -85,69 +133,58 @@
 
 * Resistances
 
-- Poison ::
+- Necrotic ::
 
-** Conditions
+* Immunities
+
+- Magical Sleep ::
 
 * Attacks
 #+NAME: attacks
-| Weapon        | Ability | Prof | Type       | SubType | Die | Mod To Hit | Roll    | Roll |
-|---------------+---------+------+------------+---------+-----+------------+---------+------|
-| War Hammer +1 | STR     | X    | Bludeoning |         | 1d6 |          4 | 1d6 + 2 |      |
+| Weapon     | Ability | Prof | Type     | SubType | Die | Mod To Hit | Roll    |
+|------------+---------+------+----------+---------+-----+------------+---------|
+| ShortSword | DEX     | X    | Slashing |         | 1d6 |          4 | 1d6 + 2 |
 #+TBLFM: $7='(+ (if (string= $3 "X") $PROF 0) (calc-dnd-mod (string-to-number (org-table-get-constant $2))))
 #+TBLFM: $8='(concat $6 " + " (number-to-string (calc-dnd-mod (string-to-number (org-table-get-constant $2)))))
 
 * Proficiencies
-| Languages | Tools          | Armor   | Weapons      |
-|-----------+----------------+---------+--------------|
-| Common    | Brewer's Tools | Light   | Simple       |
-| Dwarfish  | Smith's Tools  | Medium  | Battleaxe    |
-|           |                | Heavy   | Handaxe      |
-|           |                | Shields | Light Hammer |
-|           |                |         | Warhammer    |
+| Languages | Tools          | Armor   | Weapons |
+|-----------+----------------+---------+---------|
+| Common    | Brewer's Tools | Light   | Simple  |
+| Draconic  | Playing Cards  | Medium  | Martial |
+| Elvish    |                | Heavy   |         |
+|           |                | Shields |         |
+|           |                |         |         |
 
 * Equipment
-| Name                                 | Quantity | Cost (gp) | Weight (lbs) | Capacity | Total Weight (lbs) | Total Cost (gp) |
-|--------------------------------------+----------+-----------+--------------+----------+--------------------+-----------------|
-| Potion of Vitality                   |        1 |         0 |            0 |          |                  0 |               0 |
-| [[file:equipment.org::Jewel of Three Prayers (Dormant)][Jewel Of Three Prayers]]               |        1 |         0 |            0 |          |                  0 |               0 |
-| Warhammer (+1 Blessing of the Forge) |        1 |         0 |            2 |          |                  2 |               0 |
-| Amulet (Holy Symbol)                 |        1 |         5 |            1 |          |                  1 |               5 |
-| Backpack                             |        1 |         2 |            5 |       30 |                  5 |               2 |
-| Bedroll                              |        1 |         1 |            7 |          |                  7 |               1 |
-| Blanket                              |        1 |        .5 |            3 |          |                  3 |             0.5 |
-| Chain mail                           |        1 |        75 |           55 |          |                 55 |              75 |
-| Clothes (Common)                     |        1 |        .5 |            3 |          |                  3 |             0.5 |
-| Ink (1 oz)                           |        1 |        10 |            0 |          |                  0 |              10 |
-| Mess Kit                             |        1 |        .2 |            1 |          |                  1 |             0.2 |
-| Parchment (one sheet)                |        3 |        .3 |            0 |          |                  0 |             0.9 |
-| Playing Card Set                     |        1 |        .5 |            0 |          |                  0 |             0.5 |
-| Rations (1 Day)                      |        9 |        .5 |            2 |          |                 18 |             4.5 |
-| Rope, Hempen (50 feet)               |        1 |         1 |           10 |          |                 10 |               1 |
-| Shield                               |        1 |        10 |            6 |          |                  6 |              10 |
-| Shortbow                             |        1 |        25 |            2 |          |                  2 |              25 |
-| Tinderbox                            |        1 |        .5 |            1 |          |                  1 |             0.5 |
-| Torch                                |       10 |        .1 |            1 |          |                 10 |              1. |
-| Waterskin                            |        1 |        .2 |            5 |          |                  5 |             0.2 |
-|--------------------------------------+----------+-----------+--------------+----------+--------------------+-----------------|
-| Carry Capacity                       |      200 |           |              |          |                  0 |               0 |
-#+TBLFM: $6=($2 * $4)
+| Name           | Quantity | Cost (gp) | Weight (lbs) | Capacity | Total Weight (lbs) | Total Cost (gp) |
+|----------------+----------+-----------+--------------+----------+--------------------+-----------------|
+| Emerald Pen    |        1 |           |              |          |                    |                 |
+| Blanket        |        1 |           |              |          |                    |                 |
+| Dagger         |        1 |           |              |          |                    |                 |
+| Mess kit       |        1 |           |              |          |                    |                 |
+| Parchment      |        5 |           |              |          |                    |                 |
+| Rations        |        4 |           |              |          |                    |                 |
+| Robes          |        1 |           |              |          |                    |                 |
+| Short Sword    |        1 |           |              |          |                    |                 |
+| Waterskin      |        1 |        .2 |            5 |          |                  5 |             0.2 |
+|----------------+----------+-----------+--------------+----------+--------------------+-----------------|
+| Carry Capacity |      200 |           |              |          |                  0 |               0 |
+|                |          |           |              |          |                    |                 |
+#+TBLFM: $6=($ * $4)
 #+TBLFM: $7=($2 * $3)
-#+TBLFM: @24$6=vsum(@3$6..@36$6)
-#+TBLFM: @24$7=vsum(@3$7..@29$7)
-#+TBLFM: @24$2=($STR * 10)
+#+TBLFM: @14$6=vsum(@INVALID$6..@26$6)
+#+TBLFM: @14$7=vsum(@INVALID$7..@19$7)
+#+TBLFM: @14$2=($STR * 10)
 
-** Attunement
+** Attunements
 
-- Jewel of Three Prayers ::
-|------+---+---+---|
-| Used |   |   |   |
-|------+---+---+---|
+
 
 ** Money
 | Copper | Silver | Electrum | Gold | Platinum | Total (Gold) |
 |--------+--------+----------+------+----------+--------------|
-|      0 |      0 |        0 |    0 |        0 |            0 |
+|      0 |      0 |        0 |   25 |        0 |            0 |
 #+TBLFM: $6=(($1 / 100) + ($2 / 10) + ($3 / 2) + $4 + ($5 * 10))
    
 
