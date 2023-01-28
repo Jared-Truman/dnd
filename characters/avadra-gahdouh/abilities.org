@@ -57,4 +57,70 @@
 
   Invisible to creatures relying on dark vision to see you in the dark.
 
+* Class ([[file:~/.emacs.d/ignore/org-dnd/02.classes.org::Cleric][Cleric]])                                                       :tcoe:
+** Domain
+|--------+----------|
+| Domain | Twilight |
+|--------+----------|
 
+*** [[file:~/.emacs.d/ignore/org-dnd/02.classes.org::Eyes of Night][Eyes of Night]]                                                   :lvl_1:
+- Description ::
+  - 300ft darkvision. Grant to WIS MOD of creatures.
+  - Lasts 1 hour.
+  - Long rest to reset.
+
+  |------+---|
+  | Uses |   |
+  |------+---|
+
+*** [[file:~/.emacs.d/ignore/org-dnd/02.classes.org::Vigilant Blessing][Vigilant Blessing]]                                               :lvl_1:
+- Description ::
+  Grant advantage on initiative as an action.
+  
+* Class ([[file:~/.emacs.d/ignore/org-dnd/02.classes.org::Monk][Monk]])                                                          :phb:
+** [[file:~/.emacs.d/ignore/org-dnd/02.classes.org::Martial Arts][Martial Arts]] :lvl_1:
+- Description ::
+   - DEX MOD on monk weapons.
+
+   - With Monk Weapon or Unarmed strikes
+     - Martial Arts Die (1d6 currently)
+     - Attack action, use bonus action to make an unarmed strike.
+
+** [[file:~/.emacs.d/ignore/org-dnd/02.classes.org::Unarmored Defense][Unarmored Defense]]                                                 :lvl_1:
+- Description ::
+  No armor or shield. AC equals 10 + DEX MOD + WIS MOD
+
+** [[file:~/.emacs.d/ignore/org-dnd/02.classes.org::Ki][Ki]]                                                                :lvl_2:
+- Description ::
+  - Reset :: long or short rest to gain all back.
+  - Ki save DC :: 8 + PB + WIS MOD
+    
+  - 1 Ki point for a bonus action on your turn
+    - Flurry of Blows
+      Make two unarmed strikes after attack action.
+
+    - Patient Defense
+      Dodge action.
+
+    - Step of the Wind
+      Disengage or Dash action, jump distance is doubled for the turn.
+      
+** [[file:~/.emacs.d/ignore/org-dnd/02.classes.org::Unarmored Movement][Unarmored Movement]] :lvl_2:lvl_9:
+- Description ::
+  Increase speed {based on level} without armor or shield.
+
+  Level 9 run on vertical surfaces and water
+
+** Monastic Tradition ([[file:~/.emacs.d/ignore/org-dnd/02.classes.org::Way of the Shadow][Way of the Shadow)]]                              :phb:
+*** [[file:~/.emacs.d/ignore/org-dnd/02.classes.org::Shadow Arts][Shadow Arts]]                                                     :lvl_3:
+- Description ::
+  2 ki points to cast from table. Minor Illusion cantrip.
+
+  | Spells             |
+  |--------------------|
+  | Darkness           |
+  | Darkvision         |
+  | Pass without trace |
+  | Silence            |
+  
+  
