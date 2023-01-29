@@ -1,0 +1,119 @@
+
+#+LATEX_CLASS: dnd
+#+STARTUP: content showstars indent
+#+OPTIONS: tags:nil
+#+TITLE: Avadra Gahdouh's Background Sheet
+#+FILETAGS: avadra gahdouh background sheet
+
+* Back story
+Knowing not of his heritage Avadra thought it was strange that he didn't have to
+sleep as much as everyone else in the village. Before the sun was up in the dead
+of the night Avadra would venture out into the swampy land on the hunt for frogs.
+The game was quite enjoyable and left him with abilities of enhanced sight at
+night. No one would believe it, that is if he told them what he could do.
+
+If he was to get back before the baking had started he would head out too the
+mill to toughen my hands up. I would punch into the bags of grain till the husk
+was off of the germs. This only made my job easier when milling. It created such
+a fine powder.
+
+His father, Throstin, if you could even call him his father, was a baker. He was
+all the family Avadra had though so he went along with it. Avadra grew up for
+years to the smell of fresh bread and cooked his fair share. Throstin after
+baking since the sun came up would take the freshly baked bread to town for
+sale. We liked to stop by the shamans hut to tend to the sick or injured.
+It felt good to help people as often as we could. Nothing major ever
+happened but i learned how to stitch up a wound with the nimblest of hands.
+On our way back from town Throstin would test me on how to track, by day
+and by night. I grew in skill and so did my prey. I didn't ever hurt the
+creatures, till they tried to hurt me. Eventually this stopped since they
+couldn't sense or see me in the dark. I had honed my abilities to a razors edge.
+
+Life was full of hard work, and this made him tough.. he didn't know how tough
+he would have to be until.. war broke out in his country of Oceana in his
+village of {insert name from Jai's world}. The Fires could be seen from the swamp
+as I used my craft as normal to catch up to my wilderness friends. Sprinting home
+he saw his father Throstin caring his hunting bow and a dusty sword with a ornate
+skull fixed with ruby eyes in the pommel. The urge to grasp it was strong.
+Throstin thrust the sword in his hands and said Take it, it is your birth right
+Your parents wanted you to have it when the time was right. I had hoped the time
+would never be right. Its name is `whisper` and its that blade of your clan.
+Quickly lets get to town and help.
+
+What are you saying? said Avadra. Just listen boy i told you i was a hunter.. yes
+I told you that you were special.. yes.. That is all true, what I didn't tell
+you was where i hunted and tracked.. It was in the shadowfell where the game
+was dangerous. I befriended some warriors there sworn to the Queen Raven's guard.
+They were dealers in shadows and fists. Truly terrors of the night. After many
+years of poaching the Queen Raven found out and decided to punish your parents.
+
+Before she could whisk you away, they brought you to me. For they had feared the
+worst was to come and didn't want you to be caught in the chaos. I swore to them
+that i would look after you as if you were my own and give you the skills that
+i possessed without you knowing why...
+
+As the buildings lay in smoldering heaps and the Cold Shore soldiers driven off
+into the night. I called out for Throstin.. Throstin.. Throstin... I found him
+laying dead leaning up against the remains of our market stall.. Cold calmness
+overtook me as all emotions drained from my blazing body. Those men would pay,
+they would pay with every drop of blood coursing through their wretched bodies
+as my friend, darkness embraced me and ferried me to there camp.
+
+The next day i sought out the army to end the strife between the nations.
+Whether it by word.. or by whisper.
+
+* Alignment
+Neutral
+
+* Physical Characteristics
+** Hair
+White
+
+** Skin
+Gray
+
+** Eyes
+Gray
+
+** Height
+5'10"
+
+** Weight
+132
+
+** Age (Years)
+32
+
+** Gender
+Male
+
+* Requirements
+- Name :: Avadra Gahdouh
+- Lvl 10 :: Ranger - Gloomstalker (4), Cleric - Twilight (1), Monk - Shadow (5)
+- Magic Item :: Emerald Pen
+- Ancestral weapon :: Whisper (Oxtail with ornate oni skull on the pommel with deep ruby eyes)
+  - Keen
+  - Blood Drinker
+  - Duelist
+  - Death ward
+- Ancentral Weapon 2 :: Tolerant Torture (Brass knuckles)
+  - Gripped - 1
+  - Quick - 1
+  - Bully - 1
+  - Enhanced Weapon 1 & 2 - 9
+- Country :: Oceana
+- Occupation :: Baker
+- Army :: Scout code name Night Terror
+- Why Fight :: To help end the strife that over took his village and killed his 
+  Father.
+- Why do i want it to stop :: All of the violence has just led to more blood 
+  shed. My name, Night Terror, has become a symbol of silence.. of fear... I 
+  just want the violence to stop but no matter how hard I try it just never feels
+  like enough. The sinking feeling in my stomach that just wont leave after that
+  night where I blacked out scouting enemy terrain and woke up in a hut buzzing 
+  with noise. The air rancid with the smell of decay. In the darkness etched out
+  leathers and furs covered in hot sticky blood were limply hanging from the 
+  ceiling. Tore and tattered as the still air was heavy. Limbs of bodies lay 
+  strewn upon the floor and in the corn a pile of heads.. the horror welled up 
+  as the breath whooped out of me. Next thing i knew was, still covered in blood,
+  i was outside and tearing away through the warm embrace of the darkness.

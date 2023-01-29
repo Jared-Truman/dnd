@@ -1,0 +1,155 @@
+\#+LATEX_CLASS: dnd
+#+STARTUP: content showstars indent
+#+OPTIONS: tags:nil
+#+TITLE: Avadra Gahdouhs's Abilities
+#+FILETAGS: avadra gahdouh abilities
+
+* Class ([[file:~/.emacs.d/ignore/org-dnd/02.classes.org::Ranger][Ranger]])                                                        :pbh:
+** [[file:~/.emacs.d/ignore/org-dnd/02.classes.org::Favored Foe][Favored Foe]]                              :lvl_1:lvl_6:lvl_14:alt_feature:
+- Description ::
+  Hit an attack you can mark the enemy.
+
+- Damage ::
+  1d4 (1d6, 1d8)
+
+- Duration ::
+  1 Minute
+
+- Proficiency Usages ::  
+|------+---+---+---+---|
+| Used |   |   |   |   |
+|------+---+---+---+---|
+
+** [[file:~/.emacs.d/ignore/org-dnd/02.classes.org::Natural Explorer][Natural Explorer]]                                     :lvl_1:lvl_6:lvl_10:
+- Description ::
+  Proficient INT or WIS checks related to favored terrain.
+  Expertise if proficient
+
+|---------+-------+---+---|
+| Terrain | Swamp | ` | ` |
+|---------+-------+---+---|
+
+** [[file:~/.emacs.d/ignore/org-dnd/02.classes.org::Primeval Awareness][Primeval Awareness]]                                                :lvl_3:
+
+** Ability Score Improvement
+
+| Level | Type | Value  |
+|-------+------+--------|
+|     4 | ASI  | +2 DEX |
+
+** Archetype (Gloom stalker)                            :xgte:gloom_stalker:
+
+| Ranger Level | Spells        |
+|--------------+---------------|
+| 3rd          | [[file:~/.emacs.d/ignore/org-dnd/10.spells.org::Disguise Self][Disguise Self]] |
+
+*** [[file:~/.emacs.d/ignore/org-dnd/02.classes.org::Dread Ambusher][Dread Ambusher]]                                                  :lvl_3:
+- Descripton ::
+  Initiative +WIS MOD
+
+  1st turn of combat
+  - +10ft movement.
+  - 1d8 on attack action
+
+*** [[file:~/.emacs.d/ignore/org-dnd/02.classes.org::Umbral Sight][Umbral Sight]]                                         :lvl_3:darkvision:
+- Descripton ::
+  Darkvision 60ft. +30ft if you have darkvision
+
+  Invisible to creatures relying on dark vision to see you in the dark.
+
+* Class ([[file:~/.emacs.d/ignore/org-dnd/02.classes.org::Cleric][Cleric]])                                                       :tcoe:
+** Domain
+|--------+----------|
+| Domain | Twilight |
+|--------+----------|
+
+*** [[file:~/.emacs.d/ignore/org-dnd/02.classes.org::Eyes of Night][Eyes of Night]]                                                   :lvl_1:
+- Description ::
+  - 300ft darkvision. Grant to WIS MOD of creatures.
+  - Lasts 1 hour.
+  - Long rest to reset.
+
+  |------+---|
+  | Uses |   |
+  |------+---|
+
+*** [[file:~/.emacs.d/ignore/org-dnd/02.classes.org::Vigilant Blessing][Vigilant Blessing]]                                               :lvl_1:
+- Description ::
+  Grant advantage on initiative as an action.
+  
+* Class ([[file:~/.emacs.d/ignore/org-dnd/02.classes.org::Monk][Monk]])                                                          :phb:
+** [[file:~/.emacs.d/ignore/org-dnd/02.classes.org::Martial Arts][Martial Arts]]                                                      :lvl_1:
+- Description ::
+   - DEX MOD on monk weapons.
+
+   - With Monk Weapon or Unarmed strikes
+     - Martial Arts Die (1d6 currently)
+     - Attack action, use bonus action to make an unarmed strike.
+
+** [[file:~/.emacs.d/ignore/org-dnd/02.classes.org::Unarmored Defense][Unarmored Defense]]                                                 :lvl_1:
+- Description ::
+  No armor or shield. AC equals 10 + DEX MOD + WIS MOD
+
+** [[file:~/.emacs.d/ignore/org-dnd/02.classes.org::Ki][Ki]]                                                                :lvl_2:
+- Description ::
+  - Reset :: long or short rest to gain all back.
+  - Ki save DC :: 8 + PB + WIS MOD
+    
+  - 1 Ki point for a bonus action on your turn
+    - Flurry of Blows
+      Make two unarmed strikes after attack action.
+
+    - Patient Defense
+      Dodge action.
+
+    - Step of the Wind
+      Disengage or Dash action, jump distance is doubled for the turn.
+
+|------+---+---+---+---+---|
+| Used |    |   |   |   |   |
+|------+---+---+---+---+---|
+      
+** [[file:~/.emacs.d/ignore/org-dnd/02.classes.org::Unarmored Movement][Unarmored Movement]]                                          :lvl_2:lvl_9:
+- Description ::
+  Increase speed {based on level} without armor or shield.
+
+  Level 9 run on vertical surfaces and water.
+  
+** [[file:~/.emacs.d/ignore/org-dnd/02.classes.org::Deflect Missiles][Deflect Missiles]] :lvl_3:
+- Description ::
+  Decrease hit ranged attack 1d10 + DEX MOD + Monk level (10).
+
+  Projectile is caught when the damage is reduced to 0.
+
+  1 ki point to throw the caught projectile. Range 20/60
+
+** Monastic Tradition ([[file:~/.emacs.d/ignore/org-dnd/02.classes.org::Way of the Shadow][Way of the Shadow)]]                              :phb:
+*** [[file:~/.emacs.d/ignore/org-dnd/02.classes.org::Shadow Arts][Shadow Arts]]                                                     :lvl_3:
+- Description ::
+  2 ki points to cast from table. Minor Illusion cantrip.
+
+  | Spells             |
+  |--------------------|
+  | Darkness           |
+  | Darkvision         |
+  | Pass without trace |
+  | Silence            |
+
+** ASI :lvl_4:
+| level | type | value  |
+|-------+------+--------|
+|     4 | asi  | +2 dex |
+
+** [[file:~/.emacs.d/ignore/org-dnd/02.classes.org::Quickened Healing][Quickened Healing (Optional)]] :lvl_4:
+- Description ::
+  2 Ki points - Martial Arts Die + Proficiency
+
+** [[file:~/.emacs.d/ignore/org-dnd/02.classes.org::Slow Fall][Slow Fall]] :lvl_4:
+- Description ::
+  Reduce fall damage 5 * MONK LEVEL  
+
+** [[file:~/.emacs.d/ignore/org-dnd/02.classes.org::Stunning Strike][Stunning Strike]] :lvl_5:
+- Description ::
+  On successful hit, 1 Ki point to stun the enemy.
+
+  - Saving throw :: CON (KI saving throw)
