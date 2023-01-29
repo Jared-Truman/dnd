@@ -127,16 +127,14 @@
 | Parchment      |        5 |           |              |          | #ERROR             |               0 |
 | Rations        |        4 |           |              |          | #ERROR             |               0 |
 | Robes          |        1 |           |              |          | #ERROR             |               0 |
-| Short Sword    |        1 |           |              |          | #ERROR             |               0 |
 | Waterskin      |        1 |        .2 |            5 |          | #ERROR             |             0.2 |
 |----------------+----------+-----------+--------------+----------+--------------------+-----------------|
 | Carry Capacity |      200 |           |              |          | #ERROR             |               0 |
-|                |          |           |              |          | #ERROR             |               0 |
 #+TBLFM: $6=($ * $4)
 #+TBLFM: $7=($2 * $3)
-#+TBLFM: @14$6=vsum(@INVALID$6..@26$6)
-#+TBLFM: @14$7=vsum(@INVALID$7..@19$7)
-#+TBLFM: @14$2=($STR * 10)
+#+TBLFM: @12$6=vsum(@INVALID$6..@24$6)
+#+TBLFM: @12$7=vsum(@INVALID$7..@17$7)
+#+TBLFM: @12$2=($STR * 10)
 
 ** Attunements
 
