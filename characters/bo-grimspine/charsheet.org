@@ -31,7 +31,7 @@
 * Stats  
 | Speed | Hit Points | AC | Saves | Inspo | Hit dice | Exhaustion |
 |-------+------------+----+-------+-------+----------+------------|
-| 30 ft | 35/35 (d8) | 20 |       |       |        4 |            |
+| 30 ft | 27/35 (d8) | 20 |       |       |        4 |            |
 
 * Abilities and Skills
 #+name: stats
