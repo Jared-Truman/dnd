@@ -45,7 +45,9 @@ be your voice, someone else’s voice, a lion’s roar, a beating of drums, or a
 other sound you choose. The sound continues unabated throughout the duration, or
 you can make discrete sounds at different times before the spell ends.
 
-If you create an image of an object—such as a chair, muddy footprints, or a
+If you create an
+
+image of an object—such as a chair, muddy footprints, or a
 small chest—it must be no larger than a 5-foot cube. The image can’t create
 sound, light, smell, or any other sensory effect. Physical interaction with the
 image reveals it to be an illusion, because things can pass through it.
@@ -86,7 +88,7 @@ effects active at a time, and you can dismiss such an effect as an action.
 * 1st Level
 
 |------+---+---+---+---|
-| Used |   |   |   |   |
+| Used | x |   |   |   |
 |------+---+---+---+---|
 
 ** Alarm                                 :artificer:ranger:wizard:lvl_1:pbh:
@@ -107,7 +109,7 @@ A mental alarm alerts you with a ping in your mind if you are within 1 mile of
 the warded area. This ping awakens you if you are sleeping. An audible alarm
 produces the sound of a hand bell for 10 seconds within 60 feet.
 
-** Detect Evil and Good :cleric:paladin:lvl_1:pbh:
+** Detect Evil and Good                           :cleric:paladin:lvl_1:pbh:
 1st-level divination
 
 Casting Time: 1 action
@@ -201,7 +203,7 @@ A creature of your choice that you can see within range regains hit points equal
 
 At Higher Levels. When you cast this spell using a spell slot of 2nd level or higher, the healing increases by 1d4 for each slot level above 1st.
 
-** Hunter's Mark :ranger:lvl_1:pbh:
+** Hunter's Mark                                          :ranger:lvl_1:pbh:
 1st-level divination
 
 Casting Time: 1 bonus action
@@ -215,7 +217,7 @@ If the target drops to 0 hit points before this spell ends, you can use a bonus 
 
 At Higher Levels. When you cast this spell using a spell slot of 3rd or 4th level, you can maintain your concentration on the spell for up to 8 hours. When you use a spell slot of 5th level or higher, you can maintain your concentration on the spell for up to 24 hours.
 
-** Shield of Faith :cleric:paladin:lvl_1:pbh:
+** Shield of Faith                                :cleric:paladin:lvl_1:pbh:
 1st-level abjuration
 
 Casting Time: 1 bonus action
@@ -225,7 +227,7 @@ Duration: Concentration, up to 10 minutes
 
 A shimmering field appears and surrounds a creature of your choice within range, granting it a +2 bonus to AC for the duration.
 
-** Sleep :bard:sorcerer:wizard:lvl_1:pbh:
+** Sleep                                    :bard:sorcerer:wizard:lvl_1:pbh:
 1st-level enchantment
 
 Casting Time: 1 action
@@ -245,19 +247,22 @@ At Higher Levels. When you cast this spell using a spell slot of 2nd level or hi
 | Used |   |   |
 |------+---+---|
 
-** Darkness :sorcerer:warlock:warlock:lvl_2:pbh:
+** Darkness                             :sorcerer:warlock:warlock:lvl_2:pbh:
 Casting Time: 1 action
 Range: 60 feet
 Components: V, M (bat fur and a drop of pitch or piece of coal)
 Duration: Concentration, up to 10 minutes
 
-Magical darkness spreads from a point you choose within range to fill a 15-foot radius sphere for the duration. The darkness spreads around corners. A creature with darkvision can’t see through this darkness, and nonmagical light can’t illuminate it.
+Magical darkness spreads from a point you choose within range to fill a 15-foot
+radius sphere for the duration. The darkness spreads around corners. A creature
+with darkvision can’t see through this darkness, and nonmagical light can’t
+illuminate it.
 
 If the point you choose is on an object you are holding or one that isn’t being worn or carried, the darkness emanates from the object and moves with it. Completely covering the source of the darkness with an opaque object, such as a bowl or a helm, blocks the darkness.
 
 If any of this spell’s area overlaps with an area of light created by a spell of 2nd level or lower, the spell that created the light is dispelled.
 
-** Darkvision :artificer:druid:ranger:sorcerer:wizard:lvl_2:pbh:
+** Darkvision             :artificer:druid:ranger:sorcerer:wizard:lvl_2:pbh:
 2nd-level transmutation
 
 Casting Time: 1 action
@@ -267,7 +272,7 @@ Duration: 8 hours
 
 You touch a willing creature to grant it the ability to see in the dark. For the duration, that creature has darkvision out to a range of 60 feet.
 
-** Pass without Trace :druid:ranger:lvl_2:pbh:
+** Pass without Trace                               :druid:ranger:lvl_2:pbh:
 2nd-level abjuration
 
 Casting Time: 1 action
@@ -277,7 +282,7 @@ Duration: Concentration, up to 1 hour
 
 A veil of shadows and silence radiates from you, masking you and your companions from detection. For the duration, each creature you choose within 30 feet of you (including you) has a +10 bonus to Dexterity (Stealth) checks and can’t be tracked except by magical means. A creature that receives this bonus leaves behind no tracks or other traces of its passage.
 
-** Silence :bard:cleric:ranger:lvl_2:pbh:
+** Silence                                    :bard:cleric:ranger:lvl_2:pbh:
 2nd-level illusion (ritual)
 
 Casting Time: 1 action

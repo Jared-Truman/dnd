@@ -1,4 +1,4 @@
-#+LATEX_CLASS: dnd
+\#+LATEX_CLASS: dnd
 #+STARTUP: content showstars indent
 #+OPTIONS: tags:nil
 #+TITLE: Avadra Gahdouhs's Abilities
@@ -47,7 +47,7 @@
 - Descripton ::
   Initiative +WIS MOD
 
-  1st turn of combact
+  1st turn of combat
   - +10ft movement.
   - 1d8 on attack action
 
@@ -106,15 +106,14 @@
       Disengage or Dash action, jump distance is doubled for the turn.
 
 |------+---+---+---+---+---|
-| Used |   |   |   |   |   |
+| Used |    |   |   |   |   |
 |------+---+---+---+---+---|
       
 ** [[file:~/.emacs.d/ignore/org-dnd/02.classes.org::Unarmored Movement][Unarmored Movement]]                                          :lvl_2:lvl_9:
 - Description ::
   Increase speed {based on level} without armor or shield.
 
-  Level 9 run on vertical surfaces and water
-
+  Level 9 run on vertical surfaces and water.
   
 ** [[file:~/.emacs.d/ignore/org-dnd/02.classes.org::Deflect Missiles][Deflect Missiles]] :lvl_3:
 - Description ::
