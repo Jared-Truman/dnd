@@ -26,12 +26,12 @@
 * Traits
 | Level | Race  | Subrace | Class  | Subclass     | Alignment      | Size   |
 |-------+-------+---------+--------+--------------+----------------+--------|
-|     4 | Dwarf | Hill    | Cleric | Forge Domain | Lawful Neutral | Medium |
+|     5 | Dwarf | Hill    | Cleric | Forge Domain | Lawful Neutral | Medium |
 
 * Stats  
 | Speed | Hit Points | AC | Saves | Inspo | Hit dice | Exhaustion |
 |-------+------------+----+-------+-------+----------+------------|
-| 30 ft | 27/35 (d8) | 20 |       |       |        4 |            |
+| 30 ft | 27/38 (d8) | 20 |       |       |        5 |            |
 
 * Abilities and Skills
 #+name: stats
@@ -84,10 +84,7 @@
 #+TBLFM: @21$5..@25$5='(concat "1d20 + " (number-to-string (+ (if (string= $4 "X") $PROF 0) (calc-dnd-mod (string-to-number (org-table-get-constant @21$1))))))
 
 * Resistances
-
 - Poison ::
-
-** Conditions
 
 * Attacks
 #+NAME: attacks

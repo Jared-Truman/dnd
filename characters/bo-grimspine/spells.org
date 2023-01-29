@@ -4,27 +4,292 @@
 #+TITLE: Bo Grimspine's Spells
 #+FILETAGS: bo grimespine spells
 
-* Cantrips
+* Cantrips                                                          :cantrip:
+** [[file:~/.emacs.d/ignore/org-dnd/10.spells.org::Guidance (C)][Guidance (C)]]                                 :artificer:cleric:druid:phb:
+- Casting Time :: 1 action
+- Range :: Touch
+- Components :: V, S
+- Duration :: Concentration, up to 1 minute
 
-** Spare the Dying                            :artificer:cleric:cantrip:pbh:
-Necromancy cantrip
+You touch one willing creature. Once before the spell ends, the target can roll
+a d4 and add the number rolled to one ability check of its choice. It can roll
+the die before or after making the ability check. The spell then ends
 
-Casting Time: 1 action
-Range: Touch
-Components: V, S
-Duration: Instantaneous
+** [[file:~/.emacs.d/ignore/org-dnd/10.spells.org::Spare the Dying][Spare the Dying]]                                    :artificer:cleric:phb:
+- Casting Time :: 1 action
+- Range :: Touch
+- Components :: V, S
+- Duration :: Instantaneous
 
 You touch a living creature that has 0 hit points. The creature becomes stable.
-This spell has no effect on undead or constructs.   
+This spell has no effect on undead or constructs.
 
-** Toll the Dead                             :xanathars_guide_to_everything:
-Necromancy cantrip
+** [[file:~/.emacs.d/ignore/org-dnd/10.spells.org::Toll the Dead][Toll the Dead]]                                :xgte:cleric:warlock:wizard:
+- Casting Time :: 1 action
+- Range :: 60 feet
+- Components :: V, S
+- Duration :: Instantaneous
 
-Casting Time: 1 action
-Range: 60 feet
-Components: V, S
-Duration: Instantaneous
+You point at one creature you can see within range, and the sound of a dolorous
+bell fills the air around it for a moment. The target must succeed on a Wisdom
+saving throw or take 1d8 necrotic damage. If the target is missing any of its
+hit points, it instead takes 1d12 necrotic damage.
 
-You point at one creature you can see within range, and the sound of a dolorous bell fills the air around it for a moment. The target must succeed on a Wisdom saving throw or take 1d8 necrotic damage. If the target is missing any of its hit points, it instead takes 1d12 necrotic damage.
+- At Higher Levels ::
+  The spell’s damage increases by one die when you reach 5th level (2d8 or 2d12),
+  11th level (3d8 or 3d12), and 17th level (4d8 or 4d12).
 
-At Higher Levels. The spell’s damage increases by one die when you reach 5th level (2d8 or 2d12), 11th level (3d8 or 3d12), and 17th level (4d8 or 4d12).
+** [[file:~/.emacs.d/ignore/org-dnd/10.spells.org::Thaumaturgy][Thaumaturgy]]                                                  :cleric:phb:
+- Casting Time :: 1 action
+- Range :: 30 feet
+- Components :: V
+- Duration :: Up to 1 minute
+
+You manifest a minor wonder, a sign of supernatural power, within range. You
+create one of the following magical effects within Range:
+
+- Your voice booms up to three times as loud as normal for 1 minute.
+  
+- You cause flames to flicker, brighten, dim, or change color for 1 minute.
+  
+- You cause harmless tremors in the ground for 1 minute.
+  
+- You create an instantaneous sound that originates from a point of your choice
+  within range, such as a rumble of thunder, the cry of a raven, or ominous
+  whispers.
+  
+- You instantaneously cause an unlocked door or window to fly open or slam shut.
+  
+- You alter the appearance of your eyes for 1 minute.
+
+If you cast this spell multiple times, you can have up to three of its 1-minute
+effects active at a time, and you can dismiss such an effect as an action.
+
+* Level 1                                                             :lvl_1:
+|------+---+---+---+---|
+| Used |   |   |   |   |
+|------+---+---+---+---|
+ 
+** [[file:~/.emacs.d/ignore/org-dnd/10.spells.org::Bless (C)][Bless (C)]]                                                :cleric:paladin:
+- Casting Time :: 1 action
+- Range :: 30 feet
+- Components :: V, S, M (a sprinkling of holy water)
+- Duration :: Concentration, up to 1 minute
+
+You bless up to three creatures of your choice within range. Whenever a target
+makes an attack roll or a saving throw before the spell ends, the target can
+roll a d4 and add the number rolled to the attack roll or saving throw.
+
+- At Higher Levels ::
+  When you cast this spell using a spell slot of 2nd level or higher, you can
+  target one additional creature for each slot level above 1st.
+
+** [[file:~/.emacs.d/ignore/org-dnd/10.spells.org::Detect Magic (C)(R)][Detect Magic (C)(R)]] :artificer:bard:cleric:druid:paladin:ranger:sorcerer:wizard:phb:
+- Casting Time :: 1 action or ritual
+- Range :: Self
+- Components :: V, S
+- Duration :: Concentration, up to 10 minutes
+
+For the duration, you sense the presence of magic within 30 feet of you. If you
+sense magic in this way, you can use your action to see a faint aura around any
+visible creature or object in the area that bears magic, and you learn its
+school of magic, if any.
+
+The spell can penetrate most barriers, but is blocked by 1 foot of stone, 1 inch
+of common metal, a thin sheet of lead, or 3 feet of wood or dirt.
+
+** [[file:~/.emacs.d/ignore/org-dnd/10.spells.org::Healing Word][Healing Word]]                                      :bard:cleric:druid:phb:
+- Casting Time :: 1 bonus action
+- Range :: 60 feet
+- Components :: V
+- Duration :: Instantaneous
+
+A creature of your choice that you can see within range regains hit points equal
+to 1d4 + your spellcasting ability modifier. This spell has no effect on undead
+or constructs.
+
+- At Higher Levels :: 
+  When you cast this spell using a spell slot of 2nd level or higher, the healing
+  increases by 1d4 for each slot level above 1st.
+
+** [[file:~/.emacs.d/ignore/org-dnd/10.spells.org::Shield of Faith (C)][Shield of Faith (C)]]                                  :cleric:paladin:phb:
+- Casting Time :: 1 bonus action
+- Range :: 60 feet
+- Components :: V, S, M (a small parchment with a bit of holy text written on it)
+- Duration :: Concentration, up to 10 minutes
+
+A shimmering field appears and surrounds a creature of your choice within range,
+granting it a +2 bonus to AC for the duration.
+
+** [[file:~/.emacs.d/ignore/org-dnd/10.spells.org::Identify][Identify]]                                      :artificer:bard:wizard:phb:
+- Casting Time :: 1 minute
+- Range :: Touch
+- Components :: V, S, M (a pearl worth at least 100 gp and an owl feather)
+- Duration :: Instantaneous
+
+You choose one object that you must touch throughout the casting of the spell.
+If it is a magic item or some other magic-imbued object, you learn its
+properties and how to use them, whether it requires attunement to use, and how
+many charges it has, if any. You learn whether any spells are affecting the item
+and what they are. If the item was created by a spell, you learn which spell
+created it.
+
+If you instead touch a creature throughout the casting, you learn what spells,
+if any, are currently affecting it.
+
+** [[file:~/.emacs.d/ignore/org-dnd/10.spells.org::Searing Smite (C)][Searing Smite (C)]]                                                     :paladin:ranger:phb:
+Casting Time: 1 bonus action
+Range: Self
+Components: V
+Duration: Concentration, up to 1 minute
+
+The next time you hit a creature with a melee weapon attack during the spell’s
+duration, your weapon flares with white-hot intensity, and the attack deals an
+extra 1d6 fire damage to the target and causes the target to ignite in flames.
+
+At the start of each of its turns until the spell ends, the target must make a
+Constitution saving throw. On a failed save, it takes 1d6 fire damage. On a
+successful save, the spells ends. If the target or a creature within 5 feet of
+it uses an action to put out the flames, or if some other effect douses the
+flames (such as the target being submerged in water), the spell ends.
+
+- At Higher Levels ::
+  When you cast this spell using a spell slot of 2nd level or higher, the
+  initial extra damage dealt by the attack increases by 1d6 for each slot.
+
+* Level 2                                                             :lvl_2:
+|------+---+---+---|
+| Used |   |   |   |
+|------+---+---+---|
+
+** [[file:~/.emacs.d/ignore/org-dnd/10.spells.org::Aid][Aid]]                                                  :cleric:paladin:phb:
+- Casting Time :: 1 action
+- Range :: 30 feet
+- Components :: V, S, M (a tiny strip of white cloth)
+- Duration :: 8 hours
+
+Your spell bolsters your allies with toughness and resolve. Choose up to three
+creatures within range. Each target's hit point maximum and current hit points
+increase by 5 for the duration.
+
+- At Higher Levels ::
+  When you cast this spell using a spell slot of 3rd level or higher, a target's
+  hit points increase by an additional 5 for each slot level above 2nd.
+
+** [[file:~/.emacs.d/ignore/org-dnd/10.spells.org::Silence (C)][Silence (C)]]                                      :bard:cleric:ranger:phb:
+- Casting Time :: 1 action or ritual
+- Range :: 120 feet
+- Components :: V, S
+- Duration :: Concentration, up to 10 minutes
+
+For the duration, no sound can be created within or pass through a 20ft radius
+sphere centered on a point you choose within range. Any creature or object
+entirely inside the sphere is immune to thunder damage, and creatures are
+deafened while entirely inside it. Casting a spell that includes a verbal
+component is impossible there.
+
+** [[file:~/.emacs.d/ignore/org-dnd/10.spells.org::Lesser Restoration][Lesser Restoration]]                 :bard:cleric:druid:paladin:ranger:phb:
+- Casting Time :: 1 action
+- Range :: Touch
+- Components :: V, S
+- Duration :: Instantaneous
+
+You touch a creature and can end either one disease or one condition afflicting
+it. The condition can be blinded, deafened, paralyzed, or poisoned.
+
+** [[file:~/.emacs.d/ignore/org-dnd/10.spells.org::*Heat Metal (C)][Heat Metal (C)]]                             :artificer:bard:druid:phb:
+- Casting Time :: 1 action
+- Range :: 60 feet
+- Components :: V, S, M (a piece of iron and a flame)
+- Duration :: Concentration, up to 1 minute
+
+Choose a manufactured metal object, such as a metal weapon or a suit of
+heavy or medium metal armor, that you can see within range. You cause
+the object to glow red-hot. Any creature in physical contact with the
+object takes 2d8 fire damage when you cast the spell. Until the spell
+ends, you can use a bonus action on each of your subsequent turns to
+cause this damage again.
+
+If a creature is holding or wearing the object and takes the damage from
+it, the creature must succeed on a Constitution saving throw or drop the
+object if it can. If it doesn't drop the object, it has disadvantage on
+attack rolls and ability checks until the start of your next turn.
+
+- At Higher Levels ::
+  When you cast this spell using a spell slot of 3rd
+  level or higher, the damage increases by 1d8 for each slot level above
+  2nd.
+
+** [[file:~/.emacs.d/ignore/org-dnd/10.spells.org::*Magic Weapon (C)][Magic Weapon (C)]]           :artificer:paladin:ranger:sorcerer:wizard:phb:
+- Casting Time :: 1 bonus action
+- Range :: Touch
+- Components :: V, S
+- Duration :: Concentration, up to 1 hour
+
+You touch a nonmagical weapon. Until the spell ends, that weapon becomes
+a magic weapon with a +1 bonus to attack rolls and damage rolls.
+
+- At Higher Levels ::
+  When you cast this spell using a spell slot of 4th
+  level or higher, the bonus increases to +2. When you use a spell slot of
+  6th level or higher, the bonus increases to +3.
+  
+* Level 3                                                             :lvl_3:
+|------+---+---|
+| Used |   |   |
+|------+---+---|
+
+** [[file:~/.emacs.d/ignore/org-dnd/10.spells.org::Dispel Magic][Dispel Magic]] :artificer:bard:cleric:druid:paladin:sorcerer:warlock:wizard:phb:
+- Casting Time :: 1 action
+- Range :: 120 feet
+- Components :: V, S
+- Duration :: Instantaneous
+
+Choose one creature, object, or magical effect within range. Any spell
+of 3rd level or lower on the target ends. For each spell of 4th level or
+higher on the target, make an ability check using your spellcasting
+ability. The DC equals 10 + the spell's level. On a successful check,
+the spell ends.
+
+- At Higher Levels ::
+  When you cast this spell using a spell slot of 4th
+  level or higher, you automatically end the effects of a spell on the
+  target if the spell's level is equal to or less than the level of the
+  spell slot you used.
+
+** [[file:~/.emacs.d/ignore/org-dnd/10.spells.org::Revivify][Revivify]]                      :artificer:cleric:druid:paladin:ranger:phb:
+- Casting Time :: 1 action
+- Range :: Touch
+- Components :: V, S, M (diamonds worth 300 gp, which the spell consumes)
+- Duration :: Instantaneous
+
+You touch a creature that has died within the last minute. That creature
+returns to life with 1 hit point. This spell can't return to life a
+creature that has died of old age, nor can it restore any missing body
+parts.
+
+** [[file:~/.emacs.d/ignore/org-dnd/10.spells.org::*Elemental Weapon (C)][Elemental Weapon (C)]]             :artificer:druid:paladin:ranger:phb:
+- Casting Time :: 1 action
+- Range :: Touch
+- Components :: V, S
+- Duration :: Concentration, up to 1 hour
+
+A nonmagical weapon you touch becomes a magic weapon. Choose one of the
+following damage types: acid, cold, fire, lightning, or thunder. For the
+duration, the weapon has a +1 bonus to attack rolls and deals an extra 1d4
+damage of the chosen type when it hits.
+
+- At Higher Levels ::
+  When you cast this spell using a spell slot of 5th or 6th level, the bonus to
+  attack rolls increases to +2 and the extra damage increases to 2d4. When you
+  use a spell slot of 7th level or higher, the bonus increases to +3 and the
+  extra damage increases to 3d4.
+
+** [[file:~/.emacs.d/ignore/org-dnd/10.spells.org::*Protection from Energy (C)][Protection from Energy (C)]] :artificer:cleric:druid:ranger:sorcerer:wizard:phb:
+- Casting Time :: 1 action
+- Range :: Touch
+- Components :: V, S
+- Duration :: Concentration, up to 1 hour
+
+For the duration, the willing creature you touch has resistance to one
+damage type of your choice: acid, cold, fire, lightning, or thunder.
