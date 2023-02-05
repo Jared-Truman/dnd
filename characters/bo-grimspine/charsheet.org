@@ -31,7 +31,7 @@
 * Stats  
 | Speed | Hit Points | AC | Saves | Inspo | Hit dice | Exhaustion |
 |-------+------------+----+-------+-------+----------+------------|
-| 30 ft | 27/38 (d8) | 20 |       |       |        5 |            |
+| 30 ft | 16/38 (d8) | 21 |       | Yes   |        5 |            |
 
 * Abilities and Skills
 #+name: stats
@@ -88,9 +88,11 @@
 
 * Attacks
 #+NAME: attacks
-| Weapon        | Ability | Prof | Type       | SubType | Die | Mod To Hit | Roll    | Roll |
-|---------------+---------+------+------------+---------+-----+------------+---------+------|
-| War Hammer +1 | STR     | X    | Bludeoning |         | 1d6 |          4 | 1d6 + 2 |      |
+| Weapon                 | Ability | Prof | Type       | SubType | Die | Mod To Hit | Roll          | Roll |
+|------------------------+---------+------+------------+---------+-----+------------+---------------+------|
+| War Hammer +1          | STR     | X    | Bludeoning |         | 1d6 |          5 | 1d6 + 3       |      |
+| War Hammer             | STR     | X    | Bludeoning |         | 1d6 |          4 | 1d6 + 2       |      |
+| War Hammer (elemental) | STR     | X    | Bludeoning |         | 1d6 |          5 | 1d6 + 1d4 + 3 |      |
 #+TBLFM: $7='(+ (if (string= $3 "X") $PROF 0) (calc-dnd-mod (string-to-number (org-table-get-constant $2))))
 #+TBLFM: $8='(concat $6 " + " (number-to-string (calc-dnd-mod (string-to-number (org-table-get-constant $2)))))
 
