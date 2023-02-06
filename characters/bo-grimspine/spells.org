@@ -1,4 +1,4 @@
-#+LATEX_CLASS: dnd
+\#+LATEX_CLASS: dnd
 #+STARTUP: content showstars indent
 #+OPTIONS: tags:nil
 #+TITLE: Bo Grimspine's Spells
@@ -66,9 +66,9 @@ If you cast this spell multiple times, you can have up to three of its 1-minute
 effects active at a time, and you can dismiss such an effect as an action.
 
 * Level 1                                                             :lvl_1:
-|------+---+---+---+---|
-| Used | 2 | 4 |   |   |
-|------+---+---+---+---|
+|------+---+---|
+| Left | 0 | 4 |
+|------+---+---|
  
 ** [[file:~/.emacs.d/ignore/org-dnd/10.spells.org::Bless (C)][Bless (C)]]                                                :cleric:paladin:
 - Casting Time :: 1 action
@@ -158,9 +158,9 @@ flames (such as the target being submerged in water), the spell ends.
   initial extra damage dealt by the attack increases by 1d6 for each slot.
 
 * Level 2                                                             :lvl_2:
-|------+---+---+---|
-  | Used | 0 | 3 |   |
-|------+---+---+---|
+|------+---+---|
+| Left | 0 | 3 |
+|------+---+---|
 
 ** [[file:~/.emacs.d/ignore/org-dnd/10.spells.org::Aid][Aid]]                                                  :cleric:paladin:phb:
 - Casting Time :: 1 action
@@ -236,7 +236,7 @@ a magic weapon with a +1 bonus to attack rolls and damage rolls.
   
 * Level 3                                                             :lvl_3:
 |------+---+---|
-| Used | 0 | 2 |
+| Left | 0 | 2 |
 |------+---+---|
 
 ** [[file:~/.emacs.d/ignore/org-dnd/10.spells.org::Dispel Magic][Dispel Magic]] :artificer:bard:cleric:druid:paladin:sorcerer:warlock:wizard:phb:
