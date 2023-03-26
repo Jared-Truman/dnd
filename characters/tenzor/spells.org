@@ -1,141 +1,108 @@
-#+TILE: Tenzor - Spells
+#+LATEX_CLASS: dnd
+#+STARTUP: content showstars indent
+#+OPTIONS: tags:nil
+#+TITLE: Tenzor's Spells
+#+FILETAGS: tenzor spells
 
-* Default Prepared
-** Cantrips
-*** Mage Hand
-**** Requirements
-    Casting Time: 1 action
-    Range: 30 feet
-    Components: V, S
-    Duration: 1 minute
-**** Description
-    A spectral, floating hand appears at a point you choose within range.
-    The hand lasts for the duration or until you dismiss it as an action.
-    The hand vanishes if it is ever more than 30 feet away from you or if you cast this spell again.
-    
-    You can use your action to control the hand. You can use the hand to manipulate an object,
-    open an unlocked door or container, stow or retrieve an item from an open container,
-    or pour the contents out of a vial. You can move the hand up to 30 feet each time you use it.
-    
-    The hand can’t attack, activate magical items, or carry more than 10 pounds.
-*** Vicious Mockery
-**** Requirements
-    Casting Time: 1 action
-    Range: 60 feet
-    Components: V
-    Duration: Instantaneous
-**** Description    
-    You unleash a string of insults laced with subtle enchantments at a creature you can see within range.
-    If the target can hear you (though it need not understand you), it must succeed on a Wisdom saving throw
-    or take 1d4 psychic damage and have disadvantage on the next attack roll it makes before the end of its next turn.
-    
-    At Higher Levels. This spell’s damage increases by 1d4 when you reach 5th level (2d4),
-    11th level (3d4), and 17th level (4d4).
-** Level 1 (4/4)
-*** Dissonant Whispers
-**** Requirements
-    Casting Time: 1 action
-    Range: 60 feet
-    Components: V
-    Duration: Instantaneous
-**** Description    
-    You whisper a discordant melody that only one creature of your choice within range can hear,
-    wracking it with terrible pain. The target must make a Wisdom saving throw. On a failed save,
-    it takes 3d6 psychic damage and must immediately use its reaction, if available, to move as far
-    as its speed allows away from you. The creature doesn’t move into obviously dangerous ground,
-    such as a fire or a pit. On a successful save, the target takes half as much damage and doesn’t have to move away.
-    A deafened creature automatically succeeds on the save.
-    
-    At Higher Levels. When you cast this spell using a spell slot of 2nd level or higher,
-    the damage increases by 1d6 for each slot level above 1st.
-*** Healing Word
-**** Requirements
-    Casting Time: 1 bonus action
-    Range: 60 feet
-    Components: V
-    Duration: Instantaneous
-**** Description    
-    A creature of your choice that you can see within range regains hit points equal to 1d4 + your spellcasting ability modifier. This spell has no effect on undead or constructs.
-    
-    At Higher Levels. When you cast this spell using a spell slot of 2nd level or higher, the healing increases by 1d4 for each slot level above 1st.
-*** Sleep
-**** Requirements
-    Casting Time: 1 action
-    Range: 90 feet
-    Components: V, S, M (a pinch of fine sand, rose petals, or a cricket)
-    Duration: 1 minute
-**** Description    
-    This spell sends creatures into a magical slumber. Roll 5d8, the total is how many hit points of creatures this spell can affect. Creatures within 20 feet of a point you choose within range are affected in ascending order of their current hit points (ignoring unconscious creatures).
-    
-    Starting with the creature that has the lowest current hit points, each creature affected by this spell falls unconscious until the spell ends, the sleeper takes damage, or someone uses an action to shake or slap the sleeper awake. Subtract each creature’s hit points from the total before moving on to the creature with the next lowest hit points. A creature’s hit points must be equal to or less than the remaining total for that creature to be affected. Undead and creatures immune to being charmed aren’t affected by this spell.
-    
-    At Higher Levels. When you cast this spell using a spell slot of 2nd level or higher, roll an additional 2d8 for each slot level above 1st.
-*** Thunderwave
-**** Requirements
-    Casting Time: 1 action
-    Range: Self (15-foot cube)
-    Components: V, S
-    Duration: Instantaneous
-**** Description    
-    A wave of thunderous force sweeps out from you. Each creature in a 15-foot cube originating from you must make a Constitution saving throw. On a failed save, a creature takes 2d8 thunder damage and is pushed 10 feet away from you. On a successful save, the creature takes half as much damage and isn’t pushed.
-    
-    In addition, unsecured objects that are completely within the area of effect are automatically pushed 10 feet away from you by the spell’s effect, and the spell emits a thunderous boom audible out to 300 feet.
-    
-    At Higher Levels. When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d8 for each slot level above 1st.
-** Level 2 (2/3)
-*** Silence
-**** Requirements
-    Casting Time: 1 action
-    Range: 120 feet
-    Components: V, S
-    Duration: Concentration, up to 10 minutes
-**** Description    
-    For the duration, no sound can be created within or pass through a 20-foot-radius sphere centered on a point you choose within range. Any creature or object entirely inside the sphere is immune to thunder damage, and creatures are deafened while entirely inside it. Casting a spell that includes a verbal component is impossible there.
-*** Invisibility
-**** Requirements
-     Casting Time: 1 action
-     Range: Touch
-     Components: V, S, M (an eyelash encased in gum arabic)
-     Duration: Concentration, up to 1 hour
-**** Description    
-     A creature you touch becomes invisible until the spell ends. Anything the target is wearing or carrying is
-     invisible as long as it is on the target’s person. The spell ends for a target that attacks or casts a spell.
+* Cantrips
+** [[file:~/.emacs.d/ignore/org-dnd/10.spells.org::*Mage Hand][Mage Hand]]
+- Casting Time :: 1 action
+- Range :: 30 feet
+- Components :: V, S
+- Duration :: 1 minute
 
-     At Higher Levels. When you cast this spell using a spell slot of 3rd level or higher, you can target one
-     additional creature for each slot level above 2nd.
-*** Shatter
-**** Requirements
-    Casting Time: 1 action
-    Range: 60 feet
-    Components: V, S, M (a chip of mica)
-    Duration: Instantaneous
-**** Description    
-    A sudden loud ringing noise, painfully intense, erupts from a point of your choice within range.
-    Each creature in a 10-foot-radius sphere centered on that point must make a Constitution saving throw.
-    A creature takes 3d8 thunder damage on a failed save, or half as much damage on a successful one.
-    A creature made of inorganic material such as stone, crystal, or metal has disadvantage on this saving throw.
-    
-    A nonmagical object that isn’t being worn or carried also takes the damage if it’s in the spell’s area.
-    
-    At Higher Levels. When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d8 for each slot level above 2nd.
-    
-** Level 3 (0/2)
-*** Dispel Magic
-**** Requirements
-    Casting Time: 1 action
-    Range: 120 feet
-    Components: V, S
-    Duration: Instantaneous
-**** Description    
-    Choose any creature, object, or magical effect within range. Any spell of 3rd level or lower on the target ends. For each spell of 4th level or higher on the target, make an ability check using your spellcasting ability. The DC equals 10 + the spell’s level. On a successful check, the spell ends.
-    
-    At Higher Levels. When you cast this spell using a spell slot of 4th level or higher, you automatically end the effects of a spell on the target if the spell’s level is equal to or less than the level of the spell slot you used.
-*** Tongues
-**** Requirements
-    Casting Time: 1 action
-    Range: Touch
-    Components: V, M (a small clay model of a ziggurat)
-    Duration: 1 hour
-**** Description    
-    This spell grants the creature you touch the ability to understand any spoken language it hears. Moreover, when the target speaks, any creature that knows at least one language and can hear the target understands what it says.
-    
+A spectral, floating hand appears at a point you choose within range. The hand
+lasts for the duration or until you dismiss it as an action. The hand vanishes
+if it is ever more than 30 feet away from you or if you cast this spell again.
+
+You can use your action to control the hand. You can use the hand to manipulate
+an object, open an unlocked door or container, stow or retrieve an item from an
+open container, or pour the contents out of a vial. You can move the hand up
+to 30 feet each time you use it.
+
+The hand can't attack, activate magic items, or carry more than 10 pounds.
+
+** [[file:~/.emacs.d/ignore/org-dnd/10.spells.org::*Vicious Mockery][Vicious Mockery]]
+- Casting Time :: 1 action
+- Range :: 60 feet
+- Components :: V
+- Duration :: Instantaneous
+
+Damage 1d4 + disadvantage on next attack roll before the end of its next turn.
+WIS saving throw
+
+* Level 1 (4/4)
+** [[file:~/.emacs.d/ignore/org-dnd/10.spells.org::*Dissonant Whispers][Dissonant Whispers]]
+- Casting Time :: 1 action
+- Range :: 60 feet
+- Components :: V
+- Duration :: Instantaneous
+
+Damage: 3d6
+
+WIS saving throw.
+
+On save: 1/2 damage
+- Deaf creatures automatically save.
+
+On fail: damage + uses reaction to move away from caster
+
+- At Higher Levels ::
+  When you cast this spell using a spell slot of 2nd level or higher, the damage
+  increases by 1d6 for each slot level above 1st.
+  
+** [[file:~/.emacs.d/ignore/org-dnd/10.spells.org::*Healing Word][Healing Word]]
+- Casting Time :: 1 bonus action
+- Range :: 60 feet
+- Components :: V
+- Duration :: Instantaneous
+
+A creature of your choice that you can see within range regains hit points equal
+to 1d4 + your spellcasting ability modifier. This spell has no effect on undead
+or constructs.
+
+- At Higher Levels :: 
+  When you cast this spell using a spell slot of 2nd level or higher, the healing
+  increases by 1d4 for each slot level above 1st.
+  
+** [[file:~/.emacs.d/ignore/org-dnd/10.spells.org::Sleep][Sleep]]
+- Casting Time :: 1 action
+- Range :: 90 feet
+- Components :: V, S, M (a pinch of fine sand, rose petals, or a cricket)
+- Duration :: 1 minute
+
+This spell sends creatures into a magical slumber. Roll 5d8, the total is how
+many hit points of creatures this spell can affect. Creatures within 20 feet of
+a point you choose within range are affected in ascending order of their current
+hit points (ignoring unconscious creatures).
+
+Starting with the creature that has the lowest current hit points, each creature
+affected by this spell falls unconscious until the spell ends, the sleeper takes
+damage, or someone uses an action to shake or slap the sleeper awake. Subtract
+each creature’s hit points from the total before moving on to the creature with
+the next lowest hit points. A creature’s hit points must be equal to or less
+than the remaining total for that creature to be affected. Undead and creatures
+immune to being charmed aren’t affected by this spell.
+
+- At Higher Levels ::
+  When you cast this spell using a spell slot of 2nd level or higher, roll an
+  additional 2d8 for each slot level above 1st.
+  
+** [[file:~/.emacs.d/ignore/org-dnd/10.spells.org::*Thunderwave][Thunderwave]]
+- Casting Time :: 1 action
+- Range :: Self (15-foot cube)
+- Components :: V, S
+- Duration :: Instantaneous
+
+A wave of thunderous force sweeps out from you. Each creature in a 15-foot cube
+originating from you must make a Constitution saving throw. On a failed save, a
+creature takes 2d8 thunder damage and is pushed 10 feet away from you. On a
+successful save, the creature takes half as much damage and isn't pushed.
+
+In addition, unsecured objects that are completely within the area of effect are
+automatically pushed 10 feet away from you by the spell's effect, and the spell
+emits a thunderous boom audible out to 300 feet.
+
+- At Higher Levels ::
+  When you cast this spell using a spell slot of 2nd level or higher, the damage
+  increases by 1d8 for each slot level above 1st.
