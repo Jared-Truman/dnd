@@ -6,74 +6,66 @@
     (dnd-output-ability-constants table)
   #+END_SRC
 
-  #+RESULTS[ecd393cd661f5ebcf055cbcc6943937b75e46be4]: define-constants-with-src-block
+  #+RESULTS[5cc2a6a241cd10eefa4c332c073b9b5edfdc3cd6]: define-constants-with-src-block
   :results:
-  #+CONSTANTS: STR=11
-  #+CONSTANTS: DEX=18
-  #+CONSTANTS: CON=17
-  #+CONSTANTS: INT=13
+  #+CONSTANTS: STR=10
+  #+CONSTANTS: DEX=14
+  #+CONSTANTS: CON=14
+  #+CONSTANTS: INT=12
   #+CONSTANTS: WIS=8
-  #+CONSTANTS: CHA=20
-  #+CONSTANTS: PROF=3
-  #+CONSTANTS: SCA=
-  #+CONSTANTS: SAM=
+  #+CONSTANTS: CHA=17
+  #+CONSTANTS: PROF=2
+  #+CONSTANTS: SCA=13
+  #+CONSTANTS: SAM=5
   :end:
-
-15
-11
-14
   
 * Traits
-  | Level | Race       | Subrace | Class | Subclass            | Age | Alignment    | Size             |
-  |-------+------------+---------+-------+---------------------+-----+--------------+------------------|
-  |     5 | Changeling |         | Bard  | College of Whispers |  37 | Chaotic Good | Medium(155) 5'9" |
+  | Level | Race       | Subrace | Class | Subclass | Age | Alignment    | Size             |
+  |-------+------------+---------+-------+----------+-----+--------------+------------------|
+  |     2 | Changeling |         | Bard  |          |  37 | Chaotic Good | Medium(155) 5'9" |
 
 * Stats  
-  | Speed | Hit Points     | AC | Death Saves | Inspiration | Hit Dice | Bardic Inspiration |
-  |-------+----------------+----+-------------+-------------+----------+--------------------|
-  |    30 | 17/45          | 17 |             |             | (1d8) 5  | 2/3                |
+  | Speed | Hit Points | AC | Death Saves | Inspiration | Hit Dice |
+  |-------+------------+----+-------------+-------------+----------|
+  |    30 | 17/17      | 15 |             |             | (1d8) 5  |
   
-** Features
-Hit Points at 1st Level: 8 + your Constitution modifier
-Hit Points at Higher Levels: 1d8 (or 5) + your Constitution modifier per bard level after 1st
-
 * Abilities and Skills
   #+name: stats
   | Ability | Score | Mod | PB | Roll           | Skill                 |
   |---------+-------+-----+----+----------------+-----------------------|
-  | STR     |    11 |   0 |    | 1d20 + 0       | Saving Throw          |
+  | STR     |    10 |   0 |    | 1d20 + 0       | Saving Throw          |
   |         |       |     |    | 1d20 + 0       | Athletics             |
   |---------+-------+-----+----+----------------+-----------------------|
-  | DEX     |    18 |   4 | X  | 1d20 + 7       | Saving Throw          |
-  |         |       |     |    | 1d20 + 4       | Acrobatics            |
-  |         |       |     | X  | 1d20 + 7       | Sleight of Hand       |
-  |         |       |     |    | 1d20 + 4       | Stealth               |
+  | DEX     |    14 |   2 | X  | 1d20 + 4       | Saving Throw          |
+  |         |       |     |    | 1d20 + 2       | Acrobatics            |
+  |         |       |     |    | 1d20 + 2       | Sleight of Hand       |
+  |         |       |     | X  | 1d20 + 4       | Stealth               |
   |---------+-------+-----+----+----------------+-----------------------|
-  | CON     |    17 |   3 |    | 1d20 + 3       | Saving Throw          |
+  | CON     |    14 |   2 |    | 1d20 + 2       | Saving Throw          |
   |---------+-------+-----+----+----------------+-----------------------|
-  | INT     |    13 |   1 |    | 1d20 + 1       | Saving Throw          |
+  | INT     |    12 |   1 |    | 1d20 + 1       | Saving Throw          |
   |         |       |     |    | 1d20 + 1       | Arcana                |
   |         |       |     |    | 1d20 + 1       | History               |
-  |         |       |     | X  | 1d20 + 4       | Investigation         |
+  |         |       |     | X  | 1d20 + 3       | Investigation         |
   |         |       |     |    | 1d20 + 1       | Nature                |
   |         |       |     |    | 1d20 + 1       | Religion              |
   |---------+-------+-----+----+----------------+-----------------------|
   | WIS     |     8 |  -1 |    | 1d20 + -1      | Saving Throw          |
   |         |       |     |    | 1d20 + -1      | Animal Handling       |
-  |         |       |     | X  | 1d20 + 2       | Insight               |
+  |         |       |     | X  | 1d20 + 1       | Insight               |
   |         |       |     |    | 1d20 + -1      | Medicine              |
-  |         |       |     | XX | 1d20 + -1      | Perception            |
+  |         |       |     | X  | 1d20 + 1       | Perception            |
   |         |       |     |    | 1d20 + -1      | Survival              |
   |---------+-------+-----+----+----------------+-----------------------|
-  | CHA     |    20 |   5 | X  | 1d20 + 8       | Saving Throw          |
-  |         |       |     | XX | 1d20 + 5       | Deception             |
-  |         |       |     |    | 1d20 + 5       | Intimidation          |
-  |         |       |     |    | 1d20 + 5       | Performance           |
-  |         |       |     | XX | 1d20 + 5       | Persuasion            |
+  | CHA     |    17 |   3 | X  | 1d20 + 5       | Saving Throw          |
+  |         |       |     | X  | 1d20 + 5       | Deception             |
+  |         |       |     |    | 1d20 + 3       | Intimidation          |
+  |         |       |     |    | 1d20 + 3       | Performance           |
+  |         |       |     | X  | 1d20 + 5       | Persuasion            |
   |---------+-------+-----+----+----------------+-----------------------|
-  | PROF    |     3 |     |    |                |                       |
-  | SCA     |    16 |     |    | 8 + PROF + CHA | SPELL CASTING ABILITY |
-  | SAM     |     8 |     |    | PROF + CHA     | SPELL ATT MOD         |
+  | PROF    |     2 |     |    |                |                       |
+  | SCA     |    13 |     |    | 8 + PROF + CHA | SPELL CASTING ABILITY |
+  | SAM     |     5 |     |    | PROF + CHA     | SPELL ATT MOD         |
   #+TBLFM: @2$3='(calc-dnd-mod (string-to-number (org-table-get-constant $1)))
   #+TBLFM: @4$3='(calc-dnd-mod (string-to-number (org-table-get-constant $1)))
   #+TBLFM: @8$3='(calc-dnd-mod (string-to-number (org-table-get-constant $1)))
@@ -91,8 +83,8 @@ Hit Points at Higher Levels: 1d8 (or 5) + your Constitution modifier per bard le
   #+NAME: attacks
   | Weapon       | Ability | Prof | Type        | Die | Mod To Hit | Roll    |
   |--------------+---------+------+-------------+-----+------------+---------|
-  | Light Hammer | STR     | X    | Bludgeoning | 1d4 |          3 | 1d4 + 0 |
-  | Dagger       | DEX     | X    | Piercing    | 1d4 |          7 | 1d4 + 4 |
+  | Light Hammer | STR     | X    | Bludgeoning | 1d4 |          2 | 1d4 + 0 |
+  | Dagger       | DEX     | X    | Piercing    | 1d4 |          4 | 1d4 + 2 |
   #+TBLFM: $6='(+ (if (string= $3 "X") $PROF 0) (calc-dnd-mod (string-to-number (org-table-get-constant $2))))
   #+TBLFM: $7='(concat $5 " + " (number-to-string (calc-dnd-mod (string-to-number (org-table-get-constant $2)))))
  
@@ -138,5 +130,5 @@ Hit Points at Higher Levels: 1d8 (or 5) + your Constitution modifier per bard le
 ** Money
    | Copper | Silver | Electrum | Gold | Platinum | Total (Gold) |
    |--------+--------+----------+------+----------+--------------|
-   |      0 |      0 |        0 |  317 |        0 |            0 |
+   |      0 |      0 |        0 |   25 |        0 |            0 |
    #+TBLFM: $6=(($1 / 100) + ($2 / 10) + ($3 / 2) + $4 + ($5 * 10)) 

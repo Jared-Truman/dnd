@@ -1,14 +1,47 @@
-
+#+LATEX_CLASS: dnd
 #+STARTUP: content showstars indent
-#+FILETAGS: dnd background tenzor
+#+OPTIONS: tags:nil
+#+TITLE: Tenzor's Background
+#+FILETAGS: tenzor background
+
+* Starting Stats
+| Ability | Score |
+|---------+-------|
+| STR     |    10 |
+| DEX     |    14 |
+| CON     |    13 |
+| INT     |    12 |
+| WIS     |     8 |
+| CHA     |    15 |
+
+| Starting Skills |
+|-----------------|
+| Perception      |
+| Stealth         |
+| Investigation   |
+
+| Changeling Skills |
+|-------------------|
+| Persuasion        |
+| Insight           |
+
+| Background Skills |
+|-------------------|
+| Deception         |
+| Sleight of Hand   |
+
 * Features                                                          :feature:
 ** Chalaton
+
 * Personality Trait
 I keep multiple holy symbols on me and invoke whatever deity might come in useful at any given moment.
+
 * Ideal
 Charity. I distribute the money I acquire to the people who really need it. (Good)
+
 * Bond
-	A powerful person killed someone I love. Some day soon, I'll have my revenge.
+A powerful person killed someone I love. Some day soon, I'll have my revenge.
+    
 * Flaw
 I'm too greedy for my own good. I can't resist taking a risk if there's money involved.
 
