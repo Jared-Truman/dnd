@@ -4,16 +4,6 @@ b#+LATEX_CLASS: dnd
 #+TITLE: Avadra Gahdouh Features Sheet
 #+FILETAGS: avadra gahdouh features feature sheet
 
-* Starting Stats
-| Ability | Score |
-|---------+-------|
-| STR     |     8 |
-| DEX     |    15 |
-| CON     |    13 |
-| INT     |    12 |
-| WIS     |    14 |
-| CHA     |    10 |
-
 * Racial (Shadar-Kai)                                                  :race:
 Shadar-kai are the elves of the Shadowfell, originally drawn to that dread realm
 by the Raven Queen. Over the centuries, some of them have continued to serve
