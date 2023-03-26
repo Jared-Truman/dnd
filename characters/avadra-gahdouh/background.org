@@ -5,6 +5,16 @@
 #+TITLE: Avadra Gahdouh's Background Sheet
 #+FILETAGS: avadra gahdouh background sheet
 
+* Starting Stats
+| Ability | Score |
+|---------+-------|
+| STR     |     8 |
+| DEX     |    15 |
+| CON     |    13 |
+| INT     |    12 |
+| WIS     |    14 |
+| CHA     |    10 |
+
 * Back story
 Knowing not of his heritage Avadra thought it was strange that he didn't have to
 sleep as much as everyone else in the village. Before the sun was up in the dead
