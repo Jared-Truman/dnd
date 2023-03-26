@@ -29,9 +29,9 @@
 |     5 | Dwarf | Hill    | Cleric | Forge Domain | Lawful Neutral | Medium |
 
 * Stats  
-| Speed | Hit Points | AC | Saves | Inspo | Hit dice | Exhaustion |
-|-------+------------+----+-------+-------+----------+------------|
-| 30 ft | 16/38 (d8) | 21 |       | Yes   |        5 |            |
+| Speed | Hit Points | AC     | Saves | Inspo | Hit dice | Exhaustion |
+|-------+------------+--------+-------+-------+----------+------------|
+| 30 ft | 23/38 (d8) | 21 + 2 |       | Yes   |        0 |            |
 
 * Abilities and Skills
 #+name: stats
