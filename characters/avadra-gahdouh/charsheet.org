@@ -118,31 +118,33 @@
 |           |                |         |         |
 
 * Equipment
-| Name           | Quantity | Cost (gp) | Weight (lbs) | Capacity | Total Weight (lbs) | Total Cost (gp) |
-|----------------+----------+-----------+--------------+----------+--------------------+-----------------|
-| Emerald Pen    |        1 |           |              |          | #ERROR             |               0 |
-| Blanket        |        1 |           |              |          | #ERROR             |               0 |
-| Dagger         |        1 |           |              |          | #ERROR             |               0 |
-| Mess kit       |        1 |           |              |          | #ERROR             |               0 |
-| Parchment      |        5 |           |              |          | #ERROR             |               0 |
-| Rations        |        4 |           |              |          | #ERROR             |               0 |
-| Robes          |        1 |           |              |          | #ERROR             |               0 |
-| Waterskin      |        1 |        .2 |            5 |          | #ERROR             |             0.2 |
-|----------------+----------+-----------+--------------+----------+--------------------+-----------------|
-| Carry Capacity |      200 |           |              |          | #ERROR             |               0 |
+| Name             | Quantity | Cost (gp) | Weight (lbs) | Capacity | Total Weight (lbs) | Total Cost (gp) |
+|------------------+----------+-----------+--------------+----------+--------------------+-----------------|
+| Emerald Pen      |        1 |           |              |          | #ERROR             |               0 |
+| Blanket          |        1 |           |              |          | #ERROR             |               0 |
+| Dagger           |        1 |           |              |          | #ERROR             |               0 |
+| Mess kit         |        1 |           |              |          | #ERROR             |               0 |
+| Parchment        |        5 |           |              |          | #ERROR             |               0 |
+| Rations          |        4 |           |              |          | #ERROR             |               0 |
+| Robes            |        1 |           |              |          | #ERROR             |               0 |
+| Waterskin        |        1 |        .2 |            5 |          | #ERROR             |             0.2 |
+| Bag of Holding   |        1 |           |              |          |                    |                 |
+| Rope of climbing |        1 |           |              |          |                    |                 |
+|------------------+----------+-----------+--------------+----------+--------------------+-----------------|
+| Carry Capacity   |      200 |           |              |          | #ERROR             |               0 |
 #+TBLFM: $6=($ * $4)
 #+TBLFM: $7=($2 * $3)
-#+TBLFM: @12$6=vsum(@INVALID$6..@24$6)
-#+TBLFM: @12$7=vsum(@INVALID$7..@17$7)
-#+TBLFM: @12$2=($STR * 10)
+#+TBLFM: @14$6=vsum(@INVALID$6..@26$6)
+#+TBLFM: @14$7=vsum(@INVALID$7..@19$7)
+#+TBLFM: @14$2=($STR * 10)
 
 ** Attunements
 
 
 
 ** Money
-| Copper | Silver | Electrum |  Gold | Platinum | Total (Gold) |
-|--------+--------+----------+-------+----------+--------------|
-|      0 |      0 |        0 | 10441 |        0 |            0 |
+| Copper | Silver | Electrum | Gold | Platinum | Total (Gold) |
+|--------+--------+----------+------+----------+--------------|
+|      0 |      0 |        0 | 8641 |        0 |            0 |
 #+TBLFM: $6=(($1 / 100) + ($2 / 10) + ($3 / 2) + $4 + ($5 * 10))
    
