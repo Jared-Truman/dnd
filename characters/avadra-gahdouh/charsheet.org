@@ -38,7 +38,7 @@
 | 40 ft Walk | 18 | Ranger (d10) |       |       |        4 |            |
 | 30 ft Swim |    | Cleric (d8)  |       |       |        1 |            |
 |            |    | Monk (d8)    |       |       |        5 |            |
-| Total:     |    | 68/68        |       | xx    |          |            |
+| Total:     |    | 10/68        |       | xx    |          |            |
 
 * Abilities and Skills
 #+name: stats
@@ -118,25 +118,26 @@
 |           |                |         |         |
 
 * Equipment
-| Name             | Quantity | Cost (gp) | Weight (lbs) | Capacity | Total Weight (lbs) | Total Cost (gp) |
-|------------------+----------+-----------+--------------+----------+--------------------+-----------------|
-| Emerald Pen      |        1 |           |              |          | #ERROR             |               0 |
-| Blanket          |        1 |           |              |          | #ERROR             |               0 |
-| Dagger           |        1 |           |              |          | #ERROR             |               0 |
-| Mess kit         |        1 |           |              |          | #ERROR             |               0 |
-| Parchment        |        5 |           |              |          | #ERROR             |               0 |
-| Rations          |        4 |           |              |          | #ERROR             |               0 |
-| Robes            |        1 |           |              |          | #ERROR             |               0 |
-| Waterskin        |        1 |        .2 |            5 |          | #ERROR             |             0.2 |
-| Bag of Holding   |        1 |           |              |          |                    |                 |
-| Rope of climbing |        1 |           |              |          |                    |                 |
-|------------------+----------+-----------+--------------+----------+--------------------+-----------------|
-| Carry Capacity   |      200 |           |              |          | #ERROR             |               0 |
+| Name                    | Quantity | Cost (gp) | Weight (lbs) | Capacity | Total Weight (lbs) | Total Cost (gp) |
+|-------------------------+----------+-----------+--------------+----------+--------------------+-----------------|
+| Emerald Pen             |        1 |           |              |          | #ERROR             |               0 |
+| Blanket                 |        1 |           |              |          | #ERROR             |               0 |
+| Dagger                  |        1 |           |              |          | #ERROR             |               0 |
+| Mess kit                |        1 |           |              |          | #ERROR             |               0 |
+| Parchment               |        5 |           |              |          | #ERROR             |               0 |
+| Rations                 |        4 |           |              |          | #ERROR             |               0 |
+| Robes                   |        1 |           |              |          | #ERROR             |               0 |
+| Waterskin               |        1 |        .2 |            5 |          | #ERROR             |             0.2 |
+| Bag of Holding          |        1 |           |              |          |                    |                 |
+| Rope of climbing        |        1 |           |              |          |                    |                 |
+| Vials of unknown liquid |        2 |           |              |          |                    |                 |
+|-------------------------+----------+-----------+--------------+----------+--------------------+-----------------|
+| Carry Capacity          |      200 |           |              |          | #ERROR             |               0 |
 #+TBLFM: $6=($ * $4)
 #+TBLFM: $7=($2 * $3)
-#+TBLFM: @14$6=vsum(@INVALID$6..@26$6)
-#+TBLFM: @14$7=vsum(@INVALID$7..@19$7)
-#+TBLFM: @14$2=($STR * 10)
+#+TBLFM: @15$6=vsum(@INVALID$6..@27$6)
+#+TBLFM: @15$7=vsum(@INVALID$7..@20$7)
+#+TBLFM: @15$2=($STR * 10)
 
 ** Attunements
 
@@ -145,6 +146,6 @@
 ** Money
 | Copper | Silver | Electrum | Gold | Platinum | Total (Gold) |
 |--------+--------+----------+------+----------+--------------|
-|      0 |      0 |        0 | 8641 |        0 |            0 |
+|      0 |      0 |        0 | 8636 |        0 |            0 |
 #+TBLFM: $6=(($1 / 100) + ($2 / 10) + ($3 / 2) + $4 + ($5 * 10))
    

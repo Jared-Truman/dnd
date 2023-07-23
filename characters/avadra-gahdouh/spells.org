@@ -82,7 +82,7 @@ effects active at a time, and you can dismiss such an effect as an action.
 * 1st Level                                                           :lvl_1:
 
 |------+---+---|
-| Used | 1 | 4 |
+| Used | 3 | 4 |
 |------+---+---|
 
 ** Alarm                                       :artificer:ranger:wizard:phb:
