@@ -53,9 +53,9 @@ Quickly lets get to town and help.
 What are you saying? said Avadra. Just listen boy i told you i was a hunter.. yes
 I told you that you were special.. yes.. That is all true, what I didn't tell
 you was where i hunted and tracked.. It was in the shadowfell where the game
-was dangerous. I befriended some warriors there sworn to the Queen Raven's guard.
+was dangerous. I befriended some warriors there sworn to the Banished One's guard.
 They were dealers in shadows and fists. Truly terrors of the night. After many
-years of poaching the Queen Raven found out and decided to punish your parents.
+years of poaching the Banished One found out and decided to punish your parents.
 
 Before she could whisk you away, they brought you to me. For they had feared the
 worst was to come and didn't want you to be caught in the chaos. I swore to them
@@ -96,6 +96,9 @@ Gray
 
 ** Gender
 Male
+
+** Deity
+The banished one
 
 * Requirements
 - Name :: Avadra Gahdouh

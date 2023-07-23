@@ -81,9 +81,9 @@ effects active at a time, and you can dismiss such an effect as an action.
 
 * 1st Level                                                           :lvl_1:
 
-|------+---+---+---+---|
-| Used |   |   |   |   |
-|------+---+---+---+---|
+|------+---+---|
+| Used | 3 | 4 |
+|------+---+---|
 
 ** Alarm                                       :artificer:ranger:wizard:phb:
 - Casting Time :: 1 minute
@@ -254,7 +254,7 @@ immune to being charmed aren’t affected by this spell.
 * 2nd Level                                                           :lvl_2:
 
 |------+---+---|
-| Used |   |   |
+| Used | 0 | 2 |
 |------+---+---|
 
 ** Darkness (C)                               :sorcerer:warlock:warlock:phb:
