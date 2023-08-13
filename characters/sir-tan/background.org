@@ -1,0 +1,77 @@
+
+#+LATEX_CLASS: dnd
+#+STARTUP: content showstars indent
+#+OPTIONS: tags:nil
+#+TITLE: Avadra Gahdouh's Background Sheet
+#+FILETAGS: avadra gahdouh background sheet
+
+* Starting Stats
+| Ability | Score |
+|---------+-------|
+| STR     |     8 |
+| DEX     |    15 |
+| CON     |    13 |
+| INT     |    12 |
+| WIS     |    14 |
+| CHA     |    10 |
+
+* Back story
+
+* Alignment
+Neutral
+
+* Physical Characteristics
+** Hair
+White
+
+** Skin
+Gray
+
+** Eyes
+Gray
+
+** Height
+5'10"
+
+** Weight
+132
+
+** Age (Years)
+32
+
+** Gender
+Male
+
+** Deity
+The banished one
+
+* Requirements
+- Name :: Avadra Gahdouh
+- Lvl 10 :: Ranger - Gloomstalker (4), Cleric - Twilight (1), Monk - Shadow (5)
+- Magic Item :: Emerald Pen
+- Ancestral weapon :: Whisper (Oxtail with ornate oni skull on the pommel with deep ruby eyes)
+  - Keen
+  - Blood Drinker
+  - Duelist
+  - Death ward
+- Ancentral Weapon 2 :: Tolerant Torture (Brass knuckles)
+  - Gripped - 1
+  - Quick - 1
+  - Bully - 1
+  - Enhanced Weapon 1 & 2 - 9
+- Country :: Oceana
+- Occupation :: Baker
+- Army :: Scout code name Night Terror
+- Why Fight :: To help end the strife that over took his village and killed his 
+  Father.
+- Why do i want it to stop :: All of the violence has just led to more blood 
+  shed. My name, Night Terror, has become a symbol of silence.. of fear... I 
+  just want the violence to stop but no matter how hard I try it just never feels
+  like enough. The sinking feeling in my stomach that just wont leave after that
+  night where I blacked out scouting enemy terrain and woke up in a hut buzzing 
+  with noise. The air rancid with the smell of decay. In the darkness etched out
+  leathers and furs covered in hot sticky blood were limply hanging from the 
+  ceiling. Tore and tattered as the still air was heavy. Limbs of bodies lay 
+  strewn upon the floor and in the corn a pile of heads.. the horror welled up 
+  as the breath whooped out of me. Next thing i knew was, still covered in blood,
+  i was outside and tearing away through the warm embrace of the darkness.

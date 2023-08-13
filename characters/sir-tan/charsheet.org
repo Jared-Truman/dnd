@@ -1,0 +1,136 @@
+#+LATEX_CLASS: dnd
+#+STARTUP: content showstars indent
+#+OPTIONS: tags:nil
+#+TITLE: Sir Tan's Character Sheet
+#+FILETAGS: avadra gahdouh character sheet
+
+* Constants
+  #+NAME: define-constants-with-src-block
+  #+BEGIN_SRC elisp :var table=stats :colnames yes :results output drawer :cache yes :lang elisp
+    (dnd-output-ability-constants table)
+  #+END_SRC
+
+  #+RESULTS[f48cb23934cbfa1162016d0d7d5e5a5f8a0e7baf]: define-constants-with-src-block
+  :results:
+  #+CONSTANTS: STR=16
+  #+CONSTANTS: DEX=11
+  #+CONSTANTS: CON=14
+  #+CONSTANTS: INT=10
+  #+CONSTANTS: WIS=10
+  #+CONSTANTS: CHA=14
+  #+CONSTANTS: PROF=2
+  #+CONSTANTS: SCA=15
+  #+CONSTANTS: SAM=7
+  #+CONSTANTS: KIST=15
+  :end:
+  
+* Traits
+| Level | Race    | Subrace | Class   | Subclass | Alignment       | Size   |
+|-------+---------+---------+---------+----------+-----------------+--------|
+|     2 | Centaur |         | Paladin |          | Chaotic Neutral | Medium |
+
+* Stats  
+| Speed      | AC | Hit Points    | Saves | Inspo | Hit dice | Exhaustion |
+|------------+----+---------------+-------+-------+----------+------------|
+| 40 ft Walk | 18 | Paladin (d10) |       |       |          |            |
+| Total:     |    | 20/20         |       |       |          |            |
+
+* Abilities and Skills
+#+name: stats
+| Ability | Score | Mod | PB | Roll           | Skill                 |
+|---------+-------+-----+----+----------------+-----------------------|
+| STR     |    16 |   3 |    | 1d20 + 3       | Saving Throw          |
+|         |       |     | X  | 1d20 + 5       | Athletics             |
+|---------+-------+-----+----+----------------+-----------------------|
+| DEX     |    11 |   0 |    | 1d20 + 0       | Saving Throw          |
+|         |       |     |    | 1d20 + 0       | Acrobatics            |
+|         |       |     |    | 1d20 + 0       | Sleight of Hand       |
+|         |       |     |    | 1d20 + 0       | Stealth               |
+|---------+-------+-----+----+----------------+-----------------------|
+| CON     |    14 |   2 |    | 1d20 + 2       | Saving Throw          |
+|---------+-------+-----+----+----------------+-----------------------|
+| INT     |    10 |   0 |    | 1d20 + 0       | Saving Throw          |
+|         |       |     |    | 1d20 + 0       | Arcana                |
+|         |       |     |    | 1d20 + 0       | History               |
+|         |       |     |    | 1d20 + 0       | Investigation         |
+|         |       |     |    | 1d20 + 0       | Nature                |
+|         |       |     |    | 1d20 + 0       | Religion              |
+|---------+-------+-----+----+----------------+-----------------------|
+| WIS     |    10 |   0 | X  | 1d20 + 2       | Saving Throw          |
+|         |       |     |    | 1d20 + 0       | Animal Handling       |
+|         |       |     |    | 1d20 + 0       | Insight               |
+|         |       |     |    | 1d20 + 0       | Medicine              |
+|         |       |     |    | 1d20 + 0       | Perception            |
+|         |       |     |    | 1d20 + 0       | Survival              |
+|---------+-------+-----+----+----------------+-----------------------|
+| CHA     |    14 |   2 | X  | 1d20 + 4       | Saving Throw          |
+|         |       |     |    | 1d20 + 2       | Deception             |
+|         |       |     |    | 1d20 + 2       | Intimidation          |
+|         |       |     |    | 1d20 + 2       | Performance           |
+|         |       |     | X  | 1d20 + 4       | Persuasion            |
+|---------+-------+-----+----+----------------+-----------------------|
+| PROF    |     2 |     |    |                |                       |
+| SCA     |    15 |     |    | 8 + PROF + WIS | SPELL CASTING ABILITY |
+| SAM     |     7 |     |    | PROF + WIS     | SPELL ATT MOD         |
+| KIST    |    15 |     |    | 8 + PB + WIS   | KI SAVING THROW       |
+#+TBLFM: @2$3='(calc-dnd-mod (string-to-number (org-table-get-constant $1)))
+#+TBLFM: @4$3='(calc-dnd-mod (string-to-number (org-table-get-constant $1)))
+#+TBLFM: @8$3='(calc-dnd-mod (string-to-number (org-table-get-constant $1)))
+#+TBLFM: @9$3='(calc-dnd-mod (string-to-number (org-table-get-constant $1)))
+#+TBLFM: @15$3='(calc-dnd-mod (string-to-number (org-table-get-constant $1)))
+#+TBLFM: @21$3='(calc-dnd-mod (string-to-number (org-table-get-constant $1)))
+#+TBLFM: @2$5..@3$5='(concat "1d20 + " (number-to-string (+ (if (string= $4 "X") $PROF 0) (calc-dnd-mod (string-to-number (org-table-get-constant @2$1))))))
+#+TBLFM: @4$5..@7$5='(concat "1d20 + " (number-to-string (+ (if (string= $4 "X") $PROF 0) (calc-dnd-mod (string-to-number (org-table-get-constant @4$1))))))
+#+TBLFM: @8$5..@8$5='(concat "1d20 + " (number-to-string (+ (if (string= $4 "X") $PROF 0) (calc-dnd-mod (string-to-number (org-table-get-constant @8$1))))))
+#+TBLFM: @9$5..@14$5='(concat "1d20 + " (number-to-string (+ (if (string= $4 "X") $PROF 0) (calc-dnd-mod (string-to-number (org-table-get-constant @9$1))))))
+#+TBLFM: @15$5..@20$5='(concat "1d20 + " (number-to-string (+ (if (string= $4 "X") $PROF 0) (calc-dnd-mod (string-to-number (org-table-get-constant @15$1))))))
+#+TBLFM: @21$5..@25$5='(concat "1d20 + " (number-to-string (+ (if (string= $4 "X") $PROF 0) (calc-dnd-mod (string-to-number (org-table-get-constant @21$1))))))
+
+* Resistances
+
+
+* Immunities
+
+
+* Attacks
+#+NAME: attacks
+| Weapon           | Ability | Prof | Type        |  Die | Mod To Hit | Roll     |
+|------------------+---------+------+-------------+------+------------+----------|
+| Glaive           | STR     | X    | Slashing    | 1d10 |          5 | 1d10 + 3 |
+| Backside of Pole | STR     | X    | Bludgeoning |  1d4 |          5 | 1d4 + 3  |
+#+TBLFM: $6='(+ (if (string= $3 "X") $PROF 0) (calc-dnd-mod (string-to-number (org-table-get-constant $2))))
+#+TBLFM: $7='(concat $5 " + " (number-to-string (calc-dnd-mod (string-to-number (org-table-get-constant $2)))))
+
+* Proficiencies
+| Languages | Tools | Armor   | Weapons |
+|-----------+-------+---------+---------|
+| Common    |       | Light   | Simple  |
+| Sylvan    |       | Medium  | Martial |
+|           |       | Heavy   |         |
+|           |       | Shields |         |
+|           |       |         |         |
+
+* Equipment
+| Name           | Quantity | Cost (gp) | Weight (lbs) | Total Weight (lbs) | Total Cost (gp) |
+|----------------+----------+-----------+--------------+--------------------+-----------------|
+| Glaive         |        1 |        20 |            6 | #ERROR             |              20 |
+| Spear          |        4 |         1 |            3 | #ERROR             |               0 |
+| Chainmail      |        1 |        75 |           55 | #ERROR             |               0 |
+|----------------+----------+-----------+--------------+--------------------+-----------------|
+| Carry Capacity |      200 |           |              | #ERROR             |               0 |
+#+TBLFM: $5=($ * $4)
+#+TBLFM: $6=($2 * $3)
+#+TBLFM: @17$5=vsum(@INVALID$5..@29$5)
+#+TBLFM: @17$6=vsum(@INVALID$6..@22$6)
+#+TBLFM: @17$2=($STR * 10)
+
+** Attunements
+
+
+
+** Money
+| Copper | Silver | Electrum | Gold | Platinum | Total (Gold) |
+|--------+--------+----------+------+----------+--------------|
+|      0 |      0 |        0 | 8636 |        0 |            0 |
+#+TBLFM: $6=(($1 / 100) + ($2 / 10) + ($3 / 2) + $4 + ($5 * 10))
+   
