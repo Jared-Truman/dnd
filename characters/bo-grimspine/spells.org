@@ -159,7 +159,7 @@ flames (such as the target being submerged in water), the spell ends.
 
 * Level 2                                                             :lvl_2:
 |------+---+---|
-| Left | 0 | 3 |
+| Left | 2 | 3 |
 |------+---+---|
 
 ** [[file:~/.emacs.d/ignore/org-dnd/10.spells.org::Aid][Aid]]                                                  :cleric:paladin:phb:
@@ -236,7 +236,7 @@ a magic weapon with a +1 bonus to attack rolls and damage rolls.
   
 * Level 3                                                             :lvl_3:
 |------+---+---|
-| Left | 0 | 2 |
+| Left | 1 | 3 |
 |------+---+---|
 
 ** [[file:~/.emacs.d/ignore/org-dnd/10.spells.org::Dispel Magic][Dispel Magic]] :artificer:bard:cleric:druid:paladin:sorcerer:warlock:wizard:phb:
@@ -293,3 +293,14 @@ damage of the chosen type when it hits.
 
 For the duration, the willing creature you touch has resistance to one
 damage type of your choice: acid, cold, fire, lightning, or thunder.
+
+* Level 4
+|------+---+---|
+| Left | 1 | 1 |
+|------+---+---|
+
+** Wall of Fire
+
+** Fabricate
+
+** 

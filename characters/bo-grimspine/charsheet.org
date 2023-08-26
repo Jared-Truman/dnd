@@ -29,9 +29,9 @@
 |     5 | Dwarf | Hill    | Cleric | Forge Domain | Lawful Neutral | Medium |
 
 * Stats  
-| Speed | Hit Points | AC     | Saves | Inspo | Hit dice | Exhaustion |
-|-------+------------+--------+-------+-------+----------+------------|
-| 30 ft | 23/38 (d8) | 21 + 2 |       | Yes   |        0 |            |
+| Speed | Hit Points | AC | Saves | Inspo | Hit dice | Exhaustion |
+|-------+------------+----+-------+-------+----------+------------|
+| 30 ft | 38/38 (d8) | 21 | -     | No    |        0 |            |
 
 * Abilities and Skills
 #+name: stats
@@ -67,9 +67,9 @@
 |         |       |     |    | 1d20 + 1       | Performance                |        |
 |         |       |     |    | 1d20 + 1       | Persuasion                 |        |
 |---------+-------+-----+----+----------------+----------------------------+--------|
-| PROF    |     2 |     |    |                |                            |        |
-| SCA     |       |     |    | 8 + PROF + WIS | SPELL CASTING ABILITY      |        |
-| SAM     |       |     |    | PROF + WIS     | SPELL ATT MOD              |        |
+| PROF    |     3 |     |    |                |                            |        |
+| SCA     |    14 |     |    | 8 + PROF + WIS | SPELL CASTING ABILITY      |        |
+| SAM     |     6 |     |    | PROF + WIS     | SPELL ATT MOD              |        |
 #+TBLFM: @2$3='(calc-dnd-mod (string-to-number (org-table-get-constant $1)))
 #+TBLFM: @4$3='(calc-dnd-mod (string-to-number (org-table-get-constant $1)))
 #+TBLFM: @8$3='(calc-dnd-mod (string-to-number (org-table-get-constant $1)))
@@ -139,9 +139,9 @@
 ** Attunement
 
 - Jewel of Three Prayers ::
-|------+---+---+---|
-| Used |   |   |   |
-|------+---+---+---|
+|------+---+---|
+| Used | 5 | 5 |
+|------+---+---|
 
 ** Money
 | Copper | Silver | Electrum | Gold | Platinum | Total (Gold) |

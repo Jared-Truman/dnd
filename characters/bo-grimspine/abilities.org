@@ -23,7 +23,7 @@ and beginning at 18th level, you can use it three times between rests. When you
 finish a short or long rest, you regain your expended uses.
 
 |------+---+---|
-| Left | 1 | 1 |
+| Left | 2 | 2 |
 |------+---+---|
 
 *** Channel Divinity: Turn Undead
@@ -78,6 +78,7 @@ at or below a certain threshold, as shown in the Cleric table above.
 | 1st          | Identify, Searing Smite                  |
 | 3rd          | Heat Metal, Magic Weapon                 |
 | 5th          | Elemental Weapon, Protection from Energy |
+| 7th          | Fabricated, Wall of Fire                 |
 |--------------+------------------------------------------|
 
 ** [[file:~/.emacs.d/ignore/org-dnd/02.classes.org::Bonus Proficiencies][Bonus Proficiencies]]                          :lvl_1:pb:heavy_armor:smith:
