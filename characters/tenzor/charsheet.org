@@ -6,7 +6,7 @@
     (dnd-output-ability-constants table)
   #+END_SRC
 
-  #+RESULTS[5cc2a6a241cd10eefa4c332c073b9b5edfdc3cd6]: define-constants-with-src-block
+  #+RESULTS[9c27f200ccc7082ca981f8b7262c1ac0e62f6846]: define-constants-with-src-block
   :results:
   #+CONSTANTS: STR=10
   #+CONSTANTS: DEX=14
@@ -25,9 +25,9 @@
   |     2 | Changeling |         | Bard  |          |  37 | Chaotic Good | Medium(155) 5'9" |
 
 * Stats  
-  | Speed | Hit Points | AC | Death Saves | Inspiration | Hit Dice |
-  |-------+------------+----+-------------+-------------+----------|
-  |    30 | 17/17      | 15 |             |             | (1d8) 5  |
+  | Speed | Hit Points | AC | Saves | Inspiration | Hit Dice |
+  |-------+------------+----+-------+-------------+----------|
+  |    30 | 17/17      | 15 |       |             | (1d8) 5  |
   
 * Abilities and Skills
   #+name: stats
@@ -81,10 +81,11 @@
   
 * Attacks
   #+NAME: attacks
-  | Weapon       | Ability | Prof | Type        | Die | Mod To Hit | Roll    |
-  |--------------+---------+------+-------------+-----+------------+---------|
-  | Light Hammer | STR     | X    | Bludgeoning | 1d4 |          2 | 1d4 + 0 |
-  | Dagger       | DEX     | X    | Piercing    | 1d4 |          4 | 1d4 + 2 |
+  | Weapon      | Ability | Prof | Type     | Die | Mod To Hit | Roll    |
+  |-------------+---------+------+----------+-----+------------+---------|
+  | Short Sword | STR     | X    | Piercing | 1d6 |          2 | 1d6 + 0 |
+  | Short Sword | DEX     | X    | Piercing | 1d6 |          4 | 1d6 + 2 |
+  | Dagger      | DEX     | X    | Piercing | 1d4 |          4 | 1d4 + 2 |
   #+TBLFM: $6='(+ (if (string= $3 "X") $PROF 0) (calc-dnd-mod (string-to-number (org-table-get-constant $2))))
   #+TBLFM: $7='(concat $5 " + " (number-to-string (calc-dnd-mod (string-to-number (org-table-get-constant $2)))))
  
@@ -106,13 +107,14 @@
   | Fine Clothes                |        1 |         0 |              |                  0 |               0 |
   | Disguise                    |        1 |         0 |              |                  0 |               0 |
   | Signet Ring of a duke       |        1 |         0 |              |                  0 |               0 |
+  | Dagger                      |        1 |         5 |              |                  0 |               5 |
   |-----------------------------+----------+-----------+--------------+--------------------+-----------------|
   | Carry Capacity              |          |           |              |                  0 |               0 |
   #+TBLFM: $5=($2 * $4)
   #+TBLFM: $6=($2 * $3)
-  #+TBLFM: @21$5=vsum(@2$5..@21$5)
-  #+TBLFM: @21$6=vsum(@2$6..@20$6)
-  #+TBLFM: @21$2=($STR * 10)
+  #+TBLFM: @22$5=vsum(@2$5..@22$5)
+  #+TBLFM: @22$6=vsum(@2$6..@21$6)
+  #+TBLFM: @22$2=($STR * 10)
 
 ** Diplomats Pack
    - a chest

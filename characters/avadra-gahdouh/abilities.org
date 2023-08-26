@@ -16,9 +16,9 @@
   1 Minute
 
 - Proficiency Usages ::  
-|------+---+---+---+---|
-| Used |   |   |   |   |
-|------+---+---+---+---|
+|------+---+---|
+| Used | 0 | 4 |
+|------+---+---|
 
 ** [[file:~/.emacs.d/ignore/org-dnd/02.classes.org::Natural Explorer][Natural Explorer]]                                     :lvl_1:lvl_6:lvl_10:
 - Description ::
@@ -63,15 +63,18 @@
 | Domain | Twilight |
 |--------+----------|
 
+The banished one is my god and she poses as a fair skinned lady with
+twilight eyes and a fierce temper.
+
 *** [[file:~/.emacs.d/ignore/org-dnd/02.classes.org::Eyes of Night][Eyes of Night]]                                                   :lvl_1:
 - Description ::
-  - 300ft darkvision. Grant to WIS MOD of creatures.
+  - 300ft darkvision. Grant to WIS MOD # of creatures.
   - Lasts 1 hour.
   - Long rest to reset.
 
-  |------+---|
-  | Uses |   |
-  |------+---|
+  |------+---+---|
+  | Uses | 0 | 1 |
+  |------+---+---|
 
 *** [[file:~/.emacs.d/ignore/org-dnd/02.classes.org::Vigilant Blessing][Vigilant Blessing]]                                               :lvl_1:
 - Description ::
@@ -105,9 +108,9 @@
     - Step of the Wind
       Disengage or Dash action, jump distance is doubled for the turn.
 
-|------+---+---+---+---+---|
-| Used |    |   |   |   |   |
-|------+---+---+---+---+---|
+|------+---+---|
+| Used | 0 | 5 |
+|------+---+---|
       
 ** [[file:~/.emacs.d/ignore/org-dnd/02.classes.org::Unarmored Movement][Unarmored Movement]]                                          :lvl_2:lvl_9:
 - Description ::
@@ -165,6 +168,6 @@ proficiency bonus, and you regain all expended uses when you finish a long rest.
   resistance lasts until the start of your next turn. During that time, you
   appear ghostly and translucent.
 
-|------+---+---+---+---|
-| Used |   |   |   |   |
-|------+---+---+---+---|
+|------+---+---|
+| Used | 0 | 4 |
+|------+---+---|
