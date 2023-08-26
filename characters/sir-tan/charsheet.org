@@ -1,3 +1,4 @@
+
 #+LATEX_CLASS: dnd
 #+STARTUP: content showstars indent
 #+OPTIONS: tags:nil
@@ -10,13 +11,13 @@
     (dnd-output-ability-constants table)
   #+END_SRC
 
-  #+RESULTS[f48cb23934cbfa1162016d0d7d5e5a5f8a0e7baf]: define-constants-with-src-block
+  #+RESULTS[abb4a8484aea14019acf9cc1a559a575d95105fd]: define-constants-with-src-block
   :results:
   #+CONSTANTS: STR=16
-  #+CONSTANTS: DEX=11
+  #+CONSTANTS: DEX=10
   #+CONSTANTS: CON=14
   #+CONSTANTS: INT=10
-  #+CONSTANTS: WIS=10
+  #+CONSTANTS: WIS=11
   #+CONSTANTS: CHA=14
   #+CONSTANTS: PROF=2
   #+CONSTANTS: SCA=15
@@ -33,14 +34,14 @@
 | Speed      | AC | Hit Points    | Saves | Inspo | Hit dice | Exhaustion |
 |------------+----+---------------+-------+-------+----------+------------|
 | 40 ft Walk | 16 | Paladin (d10) |       |       |          |            |
-| Total:     |    | 20/20         |       |       |          |            |
+| Total:     |    | 13/20         |       |       |          |            |
 
 * Abilities and Skills
 #+name: stats
 | Ability | Score | Mod | PB | Roll           | Skill                 |
 |---------+-------+-----+----+----------------+-----------------------|
 | STR     |    16 |   3 |    | 1d20 + 3       | Saving Throw          |
-|         |       |     |    | 1d20 + 5       | Athletics             |
+|         |       |     |    | 1d20 + 3       | Athletics             |
 |---------+-------+-----+----+----------------+-----------------------|
 | DEX     |    10 |   0 |    | 1d20 + 0       | Saving Throw          |
 |         |       |     |    | 1d20 + 0       | Acrobatics            |
@@ -58,21 +59,20 @@
 |---------+-------+-----+----+----------------+-----------------------|
 | WIS     |    11 |   0 | X  | 1d20 + 2       | Saving Throw          |
 |         |       |     |    | 1d20 + 0       | Animal Handling       |
-|         |       |     | X  | 1d20 + 0       | Insight               |
+|         |       |     | X  | 1d20 + 2       | Insight               |
 |         |       |     |    | 1d20 + 0       | Medicine              |
 |         |       |     |    | 1d20 + 0       | Perception            |
-|         |       |     | X  | 1d20 + 0       | Survival              |
+|         |       |     | X  | 1d20 + 2       | Survival              |
 |---------+-------+-----+----+----------------+-----------------------|
 | CHA     |    14 |   2 | X  | 1d20 + 4       | Saving Throw          |
 |         |       |     |    | 1d20 + 2       | Deception             |
-|         |       |     | X  | 1d20 + 2       | Intimidation          |
+|         |       |     | X  | 1d20 + 4       | Intimidation          |
 |         |       |     |    | 1d20 + 2       | Performance           |
-|         |       |     |    | 1d20 + 4       | Persuasion            |
+|         |       |     |    | 1d20 + 2       | Persuasion            |
 |---------+-------+-----+----+----------------+-----------------------|
 | PROF    |     2 |     |    |                |                       |
-| SCA     |    15 |     |    | 8 + PROF + WIS | SPELL CASTING ABILITY |
-| SAM     |     7 |     |    | PROF + WIS     | SPELL ATT MOD         |
-| KIST    |    15 |     |    | 8 + PB + WIS   | KI SAVING THROW       |
+| SCA     |    12 |     |    | 8 + PROF + CHA | SPELL CASTING ABILITY |
+| SAM     |     4 |     |    | PROF + CHA     | SPELL ATT MOD         |
 #+TBLFM: @2$3='(calc-dnd-mod (string-to-number (org-table-get-constant $1)))
 #+TBLFM: @4$3='(calc-dnd-mod (string-to-number (org-table-get-constant $1)))
 #+TBLFM: @8$3='(calc-dnd-mod (string-to-number (org-table-get-constant $1)))
@@ -97,7 +97,7 @@
 | Weapon           | Ability | Prof | Type        |  Die | Mod To Hit | Roll     |
 |------------------+---------+------+-------------+------+------------+----------|
 | Glaive           | STR     | X    | Slashing    | 1d10 |          5 | 1d10 + 3 |
-| Spear (T,V)      | STR     | X    | Piercing    |  1d6 |          5 |          |
+| Spear (T,V)      | STR     | X    | Piercing    |  1d6 |          5 | 1d6 + 3  |
 | Backside of Pole | STR     | X    | Bludgeoning |  1d4 |          5 | 1d4 + 3  |
 #+TBLFM: $6='(+ (if (string= $3 "X") $PROF 0) (calc-dnd-mod (string-to-number (org-table-get-constant $2))))
 #+TBLFM: $7='(concat $5 " + " (number-to-string (calc-dnd-mod (string-to-number (org-table-get-constant $2)))))
@@ -115,17 +115,18 @@
 | Name                       | Quantity | Cost (gp) | Weight (lbs) | Total Weight (lbs) | Total Cost (gp) |
 |----------------------------+----------+-----------+--------------+--------------------+-----------------|
 | Glaive                     |        1 |        20 |            6 | #ERROR             |              20 |
-| Spear                      |        5 |         1 |            3 | #ERROR             |               0 |
-| Chainmail (AC 16)          |        1 |        75 |           55 | #ERROR             |               0 |
-| [[https://www.dndbeyond.com/equipment/explorers-pack][Explorer Pack]]              |        1 |           |              |                    |                 |
-| Holy Symbol (Black Clover) |        1 |           |              |                    |                 |
+| Spear                      |        5 |         1 |            3 | #ERROR             |               5 |
+| Chainmail (AC 16)          |        1 |        75 |           55 | #ERROR             |              75 |
+| [[https://www.dndbeyond.com/equipment/explorers-pack][Explorer Pack]]              |        1 |           |              | #ERROR             |               0 |
+| Holy Symbol (Black Clover) |        1 |           |              | #ERROR             |               0 |
+| Shield                     |        1 |           |              |                    |                 |
 |----------------------------+----------+-----------+--------------+--------------------+-----------------|
 | Carry Capacity             |      200 |           |              | #ERROR             |               0 |
 #+TBLFM: $5=($ * $4)
 #+TBLFM: $6=($2 * $3)
-#+TBLFM: @19$5=vsum(@INVALID$5..@31$5)
-#+TBLFM: @19$6=vsum(@INVALID$6..@24$6)
-#+TBLFM: @19$2=($STR * 10)
+#+TBLFM: @20$5=vsum(@INVALID$5..@32$5)
+#+TBLFM: @20$6=vsum(@INVALID$6..@25$6)
+#+TBLFM: @20$2=($STR * 10)
 
 ** Attunements
 
