@@ -82,7 +82,7 @@ effects active at a time, and you can dismiss such an effect as an action.
 * 1st Level                                                           :lvl_1:
 
 |------+---+---|
-| Used | 3 | 4 |
+| Used | 0 | 4 |
 |------+---+---|
 
 ** Alarm                                       :artificer:ranger:wizard:phb:
@@ -102,7 +102,6 @@ the warded area. This ping awakens you if you are sleeping. An audible alarm
 produces the sound of a hand bell for 10 seconds within 60 feet.
 
 ** Detect Evil and Good (C)                             :cleric:paladin:phb:
-
 - Casting Time :: 1 action
 - Range :: Self
 - Components :: V, S
