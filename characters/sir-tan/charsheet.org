@@ -28,13 +28,13 @@
 * Traits
 | Level | Race    | Subrace | Class   | Subclass | Alignment       | Size   |
 |-------+---------+---------+---------+----------+-----------------+--------|
-|     2 | Centaur |         | Paladin |          | Chaotic Neutral | Medium |
+|     3 | Centaur |         | Paladin |          | Chaotic Neutral | Medium |
 
 * Stats  
 | Speed      | AC | Hit Points    | Saves | Inspo | Hit dice | Exhaustion |
 |------------+----+---------------+-------+-------+----------+------------|
 | 40 ft Walk | 16 | Paladin (d10) |       |       |          |            |
-| Total:     |    | 13/20         |       |       |          |            |
+| Total:     |    | 19/26         |       |       |          |            |
 
 * Abilities and Skills
 #+name: stats
