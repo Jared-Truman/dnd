@@ -34,7 +34,7 @@
 | Speed      | AC | Hit Points    | Saves | Inspo | Hit dice | Exhaustion |
 |------------+----+---------------+-------+-------+----------+------------|
 | 40 ft Walk | 16 | Paladin (d10) |       |       |          |            |
-| Total:     |    | 19/26         |       |       |          |            |
+| Total:     |    | 22/26         |       |       |          |            |
 
 * Abilities and Skills
 #+name: stats
@@ -135,6 +135,6 @@
 ** Money
 | Copper | Silver | Electrum | Gold | Platinum | Total (Gold) |
 |--------+--------+----------+------+----------+--------------|
-|      0 |      0 |        0 | 8636 |        0 |            0 |
+|      0 |      0 |        0 |   35 |        0 |            0 |
 #+TBLFM: $6=(($1 / 100) + ($2 / 10) + ($3 / 2) + $4 + ($5 * 10))
    
