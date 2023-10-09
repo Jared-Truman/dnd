@@ -1,0 +1,43 @@
+b#+LATEX_CLASS: dnd
+#+STARTUP: content showstars indent
+#+OPTIONS: tags:nil
+#+TITLE: Avadra Gahdouh Features Sheet
+#+FILETAGS: avadra gahdouh features feature sheet
+
+* Starting Stats
+(Point buy)
+
+| Ability | Score |
+|---------+-------|
+| STR     |    10 |
+| DEX     |    15 |
+| CON     |    11 |
+| INT     |    12 |
+| WIS     |    10 |
+| CHA     |    17 |
+
+* Racial (Saytr) :race:guildmaster_guide_to_ravnica:mythic_odysseys_of_theros:
+
+
+* Class (Bard)
+
+** Proficiencies
+
+- Armor :: All armor, shields
+
+- Weapons :: Simple weapons, martial weapons
+
+- Tools :: None
+
+- Saving Throws :: Wisdom, Charisma
+
+- Skills :: Choose two from Athletics, Insight, Intimidation, Medicine,
+  Persuasion, and Religion
+
+|--------------|
+| Proficient   |
+|--------------|
+| Insight      |
+| Intimidation |
+|--------------|
+

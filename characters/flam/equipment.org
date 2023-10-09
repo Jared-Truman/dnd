@@ -1,0 +1,19 @@
+#+LATEX_CLASS: dnd
+#+STARTUP: content showstars indent
+#+OPTIONS: tags:nil
+#+TITLE: Avadra Gahdouh's Equipment Sheet
+#+FILETAGS: avadra gahdouh equipment sheet
+
+* Starting equipment
+| Equipment     | Quantity |
+|---------------+----------|
+| Emerald Pen   |        1 |
+| Blanket       |        1 |
+| Dagger        |        1 |
+| Mess kit      |        1 |
+| Parchment     |        5 |
+| Rations       |        4 |
+| Robes         |        1 |
+| Short Sword   |        1 |
+| Waterskin     |        1 |
+| Pouch of gold |    25 GP |
