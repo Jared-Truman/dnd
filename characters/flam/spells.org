@@ -1,0 +1,163 @@
+#+LATEX_CLASS: dnd
+#+STARTUP: content showstars indent
+#+OPTIONS: tags:nil
+#+TITLE: Avadra's Spells
+#+FILETAGS: avadra gahdouh spells
+
+* Cantrips                                                         :cantrips:
+** Vicious Mockery                                                    :bard:
+- Casting Time :: 1 action
+- Range :: 60 feet
+- Components :: V
+- Duration :: Instantaneous
+
+You unleash a string of insults laced with subtle enchantments at a creature you
+can see within range. If the target can hear you (though it need not understand
+you), it must succeed on a Wisdom saving throw or take 1d4 psychic damage and
+have disadvantage on the next attack roll it makes before the end of its next
+turn.
+
+This spell's damage increases by 1d4 when you reach 5th level (2d4), 11th level
+(3d4), and 17th level (4d4).
+
+** Prestidigitation                           :bard:sorcerer:warlock:wizard:
+- Casting Time :: 1 action
+- Range :: 10 feet
+- Components :: V, S
+- Duration :: Up to 1 hour
+
+This spell is a minor magical trick that novice spellcasters use for practice.
+You create one of the following magical effects within Range:
+
+- You create an instantaneous, harmless sensory effect, such as a shower of
+  sparks, a puff of wind, faint musical notes,
+  or an odd odor.
+  
+- You instantaneously light or snuff out a candle, a torch, or a small campfire.
+  
+- You instantaneously clean or soil an object no larger than 1 cubic foot.
+  
+- You chill, warm, or flavor up to 1 cubic foot of nonliving material for 1 hour.
+  
+- You make a color, a small mark, or a symbol appear on an object or a surface
+  for 1 hour.
+  
+- You create a nonmagical trinket or an illusory image that can fit in your hand
+  and that lasts until the end of your next turn.
+
+If you cast this spell multiple times, you can have up to three of its
+non-instantaneous effects active at a time, and you can dismiss such an effect
+as an action.
+
+* 1st Level                                                           :lvl_1:
+
+|------+---+---|
+| Used | 1 | 4 |
+|------+---+---|
+
+** Bane                                                        :bard:cleric:
+- Casting Time :: 1 action
+- Range :: 30 feet
+- Components :: V, S, M (a drop of blood)
+- Duration :: Concentration, up to 1 minute
+
+Up to three creatures of your choice that you can see within range must make
+Charisma saving throws. Whenever a target that fails this saving throw makes an
+attack roll or a saving throw before the spell ends, the target must roll a d4
+and subtract the number rolled from the attack roll or saving throw.
+
+- At Higher Levels ::
+  When you cast this spell using a spell slot of 2nd level or higher, you can
+  target one additional creature for each slot level above 1st.
+
+** Puppet
+- Casting Time :: 1 action
+- Range :: 120 feet
+- Components :: V
+- Duration :: Instantaneous
+
+Your gesture forces one humanoid you can see within range to make a Constitution
+saving throw. On a failed save, the target must move up to its speed in a
+direction you choose. In addition, you can cause the target to drop whatever it
+is holding. This spell has no effect on a humanoid that is immune to being
+charmed.
+
+** Identify                                      :artificer:bard:wizard:phb:
+- Casting Time :: 1 minute
+- Range :: Touch
+- Components :: V, S, M (a pearl worth at least 100 gp and an owl feather)
+- Duration :: Instantaneous
+
+You choose one object that you must touch throughout the casting of the spell.
+If it is a magic item or some other magic-imbued object, you learn its
+properties and how to use them, whether it requires attunement to use, and how
+many charges it has, if any. You learn whether any spells are affecting the item
+and what they are. If the item was created by a spell, you learn which spell
+created it.
+
+If you instead touch a creature throughout the casting, you learn what spells,
+if any, are currently affecting it.
+
+** Unseen Servant                                      :bard:warlock:wizard:
+- Casting Time :: 1 action
+- Range :: 60 feet
+- Components :: V, S, M (a piece of string and a bit of wood)
+- Duration :: 1 hour
+
+This spell creates an invisible, mindless, shapeless, Medium force that performs simple tasks at your command until the
+spell ends. The servant springs into existence in an unoccupied space on the ground within range. It has AC 10, 1 hit
+point, and a Strength of 2, and it can't attack. If it drops to 0 hit points, the spell ends.
+
+Once on each of your turns as a bonus action, you can mentally command the servant to move up to 15 feet and interact
+with an object. The servant can perform simple tasks that a human servant could do, such as fetching things, cleaning,
+mending, folding clothes, lighting fires, serving food, and pouring wine. Once you give the command, the servant
+performs the task to the best of its ability until it completes the task, then waits for your next command.
+
+If you command the servant to perform a task that would move it more than 60 feet away from you, the spell ends.
+
+** Healing Word                                      :bard:cleric:druid:phb:
+- Casting Time :: 1 bonus action
+- Range :: 60 feet
+- Components :: V
+- Duration :: Instantaneous
+
+A creature of your choice that you can see within range regains hit points equal
+to 1d4 + your spellcasting ability modifier. This spell has no effect on undead
+or constructs.
+
+- At Higher Levels :: 
+  When you cast this spell using a spell slot of 2nd level or higher, the healing
+  increases by 1d4 for each slot level above 1st.
+** Silvery Barbs                                      :bard:sorcerer:wizard:
+- Casting Time :: 1 reaction, which you take when a creature you can see within
+  60 feet of yourself succeeds on an attack roll, an ability check, or a saving
+  throw
+- Range :: 60 feet
+- Components :: V
+- Duration :: Instantaneous
+
+You magically distract the triggering creature and turn its momentary
+uncertainty into encouragement for another creature. The triggering
+creature must reroll the d20 and use the lower roll.
+
+You can then choose a different creature you can see within range (you can
+choose yourself). The chosen creature has advantage on the next attack roll,
+ability check, or saving throw it makes within 1 minute. A creature can be
+empowered by only one use of this spell at a time.
+
+* 2nd Level                                                           :lvl_2:
+|------+---+---|
+| Used | 1 | 2 |
+|------+---+---|
+
+** Silence (C)                                      :bard:cleric:ranger:phb:
+- Casting Time :: 1 action or ritual
+- Range :: 120 feet
+- Components :: V, S
+- Duration :: Concentration, up to 10 minutes
+
+For the duration, no sound can be created within or pass through a 20ft radius
+sphere centered on a point you choose within range. Any creature or object
+entirely inside the sphere is immune to thunder damage, and creatures are
+deafened while entirely inside it. Casting a spell that includes a verbal
+component is impossible there.

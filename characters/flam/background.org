@@ -1,0 +1,37 @@
+
+#+LATEX_CLASS: dnd
+#+STARTUP: content showstars indent
+#+OPTIONS: tags:nil
+#+TITLE: Sir Tan's Background Sheet
+#+FILETAGS: sir tan's background sheet
+
+* Back story
+
+* Alignment
+Neutral
+
+* Physical Characteristics
+** Hair
+White
+
+** Skin
+Gray
+
+** Eyes
+Gray
+
+** Height
+5'10"
+
+** Weight
+132
+
+** Age (Years)
+32
+
+** Gender
+Male
+
+** Deity
+The banished one
+
