@@ -1,4 +1,4 @@
-\#+LATEX_CLASS: dnd
+#+LATEX_CLASS: dnd
 #+STARTUP: content showstars indent
 #+OPTIONS: tags:nil
 #+TITLE: Avadra Gahdouhs's Abilities
@@ -28,6 +28,12 @@
 |---------+-------+---+---|
 | Terrain | Swamp | ` | ` |
 |---------+-------+---+---|
+
+** Fighting Style
+|---------|
+| Defense |
+|---------|
+
 
 ** [[file:~/.emacs.d/ignore/org-dnd/02.classes.org::Primeval Awareness][Primeval Awareness]]                                                :lvl_3:
 
@@ -109,7 +115,7 @@ twilight eyes and a fierce temper.
       Disengage or Dash action, jump distance is doubled for the turn.
 
 |------+---+---|
-| Used | 0 | 5 |
+| Used | 0 | 6 |
 |------+---+---|
       
 ** [[file:~/.emacs.d/ignore/org-dnd/02.classes.org::Unarmored Movement][Unarmored Movement]]                                          :lvl_2:lvl_9:
@@ -138,6 +144,13 @@ twilight eyes and a fierce temper.
   | Pass without trace |
   | Silence            |
 
+*** Shadow Step
+At 6th level, you gain the ability to step from one shadow into another. When
+you are in dim light or darkness, as a bonus action you can teleport up to 60
+feet to an unoccupied space you can see that is also in dim light or darkness.
+You then have advantage on the first melee attack you make before the end of
+the turn.
+
 ** ASI :lvl_4:
 | level | type | value  |
 |-------+------+--------|
@@ -156,6 +169,10 @@ twilight eyes and a fierce temper.
   On successful hit, 1 Ki point to stun the enemy.
 
   - Saving throw :: CON (KI saving throw)
+
+** Ki-Empowered Strikes
+Starting at 6th level, your unarmed strikes count as magical for the purpose of
+overcoming resistance and immunity to nonmagical attacks and damage.
 
 * Racial (Shadar-Kai)
 ** Blessing of the Raven Queen.
