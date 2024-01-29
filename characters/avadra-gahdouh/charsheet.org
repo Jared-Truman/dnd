@@ -29,16 +29,16 @@
 |-------+------------+---------+--------+---------------+-----------+--------|
 |     4 | Shadar-Kai |         | Ranger | Gloomstalker  | Neutral   | Medium |
 |     1 |            |         | Cleric | Twilight      |           |        |
-|     5 |            |         | Monk   | Way of Shadow |           |        |
+|     6 |            |         | Monk   | Way of Shadow |           |        |
 |    10 |            |         |        |               |           |        |
 
 * Stats  
 | Speed      | AC | Hit Points   | Saves | Inspo | Hit dice | Exhaustion |
 |------------+----+--------------+-------+-------+----------+------------|
-| 40 ft Walk | 18 | Ranger (d10) |       |       | 4/4      |            |
+| 45 ft Walk | 19 | Ranger (d10) |       |       | 4/4      |            |
 | 30 ft Swim |    | Cleric (d8)  |       |       | 1/1      |            |
-|            |    | Monk (d8)    |       |       | 5/5      |            |
-| Total:     |    | 68/68        |       | x     |          |            |
+|            |    | Monk (d8)    |       |       | 6/6      |            |
+| Total:     |    | 27/74        |       | x     |          |            |
 
 * Abilities and Skills
 #+name: stats

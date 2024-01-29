@@ -52,7 +52,7 @@ as an action.
 * 1st Level                                                           :lvl_1:
 
 |------+---+---|
-| Used | 1 | 4 |
+| Used | 3 | 4 |
 |------+---+---|
 
 ** Bane                                                        :bard:cleric:

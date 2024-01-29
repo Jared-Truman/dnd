@@ -34,7 +34,7 @@
 | Speed      | AC | Hit Points | Saves | Inspo | Hit dice | Exhaustion |
 |------------+----+------------+-------+-------+----------+------------|
 | 35 ft Walk | 15 | Bard (d8)  |       |       |          |            |
-| Total:     |    | 18/18      |       |       |          |            |
+| Total:     |    | 9/18       |       |       |          |            |
 
 * Abilities and Skills
 #+name: stats
