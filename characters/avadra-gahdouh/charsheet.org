@@ -35,10 +35,10 @@
 * Stats  
 | Speed      | AC | Hit Points   | Saves | Inspo | Hit dice | Exhaustion |
 |------------+----+--------------+-------+-------+----------+------------|
-| 45 ft Walk | 19 | Ranger (d10) |       |       | 0/4      |            |
-| 30 ft Swim |    | Cleric (d8)  |       |       | 0/1      |            |
-|            |    | Monk (d8)    |       |       | 5/6      |            |
-| Total:     |    | 66/74        |       | x     |          |            |
+| 45 ft Walk | 19 | Ranger (d10) |       |       | 4/4      |            |
+| 30 ft Swim |    | Cleric (d8)  |       |       | 1/1      |            |
+|            |    | Monk (d8)    |       |       | 6/6      |            |
+| Total:     |    | 27/74        |       | x     |          |            |
 
 * Abilities and Skills
 #+name: stats

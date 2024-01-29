@@ -188,3 +188,45 @@ proficiency bonus, and you regain all expended uses when you finish a long rest.
 |------+---+---|
 | Used | 0 | 4 |
 |------+---+---|
+
+* God mode
+** Temnota's Avatarl
+Once per day you can use an action to expend 1 use of your channel divinity and
+call upon the powers of the raven queen and cloak yourself within her darkness.
+When you do, for 1 minute your entire body becomes draped in shadow and has the
+following properties: 
+
+- Erased presence ::
+  When in darkness you are invisible and are able to erase your presence. Only a
+  creature with True sight is able to see you
+
+- Amorphus ::
+  You can move through a space as narrow as 1 inch wide without squeezing
+
+- Sunlight Weakness ::
+  While in sunlight, the shadow has disadvantage on attack rolls, ability checks,
+  and saving throws
+
+- Advantage against being frightened
+
+Eclipse: As an action you shroud an area you see within 60 feet of you in
+darkness (requires concentration), while maintaining concentration you can use
+your bonus action on subsequent turns to move the darkness to another point you
+can see in range
+
+- Shadow step ::
+As a bonus action you can teleport via the shadows choosing a
+point within 60 feet of you
+
+- Face of death ::
+When you reduce a creature to 0 hit points all other creature's within 30 feet
+of you must make a WIS save against your spell DC. On a failed save the creature
+is frightened, on a success the creature is immune to this effect until the next
+dawn. You gain a number of temp HP equal to your proficiency bonus+ the number
+of creatures frightened. Your Allies have ADV against this save and if your in
+darkness enemies have disadvantage. 
+
+Once the minute is up you must make a CON save DC 10 on a fail you gain 2 levels
+of exhaustion as your body is drained from overexhertion. On a success you
+aren't exhausted but the DC increases by 1 each time you succeed. The DC resets
+to 10 on a failed save.
