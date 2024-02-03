@@ -11,30 +11,30 @@
     (dnd-output-ability-constants table)
   #+END_SRC
 
-  #+RESULTS[6dc839e2ef3d5e26b19ae5b6cc14761561e62a17]: define-constants-with-src-block
+  #+RESULTS[c48ef2b37cfbf5a7e7cefe595cbf83b3f4f658c2]: define-constants-with-src-block
   :results:
   #+CONSTANTS: STR=10
   #+CONSTANTS: DEX=16
   #+CONSTANTS: CON=11
   #+CONSTANTS: INT=12
   #+CONSTANTS: WIS=10
-  #+CONSTANTS: CHA=17
+  #+CONSTANTS: CHA=19
   #+CONSTANTS: PROF=2
   #+CONSTANTS: PROF=2
-  #+CONSTANTS: SCA=12
-  #+CONSTANTS: SAM=4
+  #+CONSTANTS: SCA=13
+  #+CONSTANTS: SAM=5
   :end:
   
 * Traits
 | Level | Race  | Subrace | Class | Subclass  | Alignment | Size           |
 |-------+-------+---------+-------+-----------+-----------+----------------|
-|     3 | Saytr |         | Bard  | Eloquence | Neutral   | Medium (4 1/2) |
+|     4 | Saytr |         | Bard  | Eloquence | Neutral   | Medium (4 1/2) |
 
 * Stats  
-| Speed      | AC | Hit Points | Saves | Inspo | Hit dice | Exhaustion |
-|------------+----+------------+-------+-------+----------+------------|
-| 35 ft Walk | 15 | Bard (d8)  |       |       |          |            |
-| Total:     |    | 18/18      |       |       |          |            |
+| Speed      | AC    | Hit Points | Saves | Inspo | Hit dice | Exhaustion |
+|------------+-------+------------+-------+-------+----------+------------|
+| 35 ft Walk | 15    | Bard (d8)  |       |       |          |            |
+| Total:     | 11/23 |            |       |       |          |            |
 
 * Abilities and Skills
 #+name: stats
@@ -61,20 +61,19 @@
 |         |       |     |    | 1d20 + 0       | Animal Handling       |
 |         |       |     |    | 1d20 + 0       | Insight               |
 |         |       |     |    | 1d20 + 0       | Medicine              |
-|         |       |     |  X  | 1d20 + 0       | Perception            |
+|         |       |     | X  | 1d20 + 2       | Perception            |
 |         |       |     |    | 1d20 + 0       | Survival              |
 |---------+-------+-----+----+----------------+-----------------------|
-| CHA     |    17 |   3 | X  | 1d20 + 5       | Saving Throw          |
-|         |       |     | XX | 1d20 + 3       | Deception             |
-|         |       |     | X  | 1d20 + 5       | Intimidation          |
-|         |       |     | X  | 1d20 + 5       | Performance           |
-|         |       |     | XX | 1d20 + 5       | Persuasion            |
+| CHA     |    19 |   4 | X  | 1d20 + 6       | Saving Throw          |
+|         |       |     | XX | 1d20 + 4       | Deception             |
+|         |       |     | X  | 1d20 + 6       | Intimidation          |
+|         |       |     | X  | 1d20 + 6       | Performance           |
+|         |       |     | XX | 1d20 + 4       | Persuasion            |
 |---------+-------+-----+----+----------------+-----------------------|
 | PROF    |     2 |     |    |                |                       |
 |---------+-------+-----+----+----------------+-----------------------|
-
 | PROF    |     2 |     |    |                |                       |
-| SCA     |    13 |     |    | 8 + PROF + CHA | SPELL CASTING ABILITY |
+| SCA     |    13 |  -5 |    | 8 + PROF + CHA | SPELL CASTING ABILITY |
 | SAM     |     5 |     |    | PROF + CHA     | SPELL ATT MOD         |
 #+TBLFM: @2$3='(calc-dnd-mod (string-to-number (org-table-get-constant $1)))
 #+TBLFM: @4$3='(calc-dnd-mod (string-to-number (org-table-get-constant $1)))
@@ -96,46 +95,38 @@
 
 
 * Attacks
-#+NAME: attacks
-| Weapon | Ability | Prof | Type     |  Die | Mod To Hit | Roll     |
-|--------+---------+------+----------+------+------------+----------|
-| Glaive | STR     | X    | Slashing | 1d10 |          2 | 1d10 + 0 |
-#+TBLFM: $6='(+ (if (string= $3 "X") $PROF 0) (calc-dnd-mod (string-to-number (org-table-get-constant $2))))
-#+TBLFM: $7='(concat $5 " + " (number-to-string (calc-dnd-mod (string-to-number (org-table-get-constant $2)))))
+  #+NAME: attacks
+  | Weapon    | Ability | PB | Type        | Die | Mod To Hit | Roll    |
+  |-----------+---------+----+-------------+-----+------------+---------|
+  | Satyr Ram | STR     | X  | Bludgeoning | 1d4 |          5 | 1d8 + 3 |
+  | Rapier    | DEX     | X  | Piercing    | 1d6 |          5 | 1d8 + 3 |
+  #+TBLFM: $6='(+ (calc-dnd-pb $PROF $3) (calc-dnd-mod (string-to-number (org-table-get-constant $2))))
+  #+TBLFM: $7='(concat $5 " + " (number-to-string (calc-dnd-mod (string-to-number (org-table-get-constant $2)))))
 
 * Proficiencies
-| Languages | Tools | Armor   | Weapons |
-|-----------+-------+---------+---------|
-| Common    |       | Light   | Simple  |
-| Sylvan    |       | Medium  | Martial |
-|           |       | Heavy   |         |
-|           |       | Shields |         |
-|           |       |         |         |
+  | Languages | Tools             | Armor | Weapons       |
+  |-----------+-------------------+-------+---------------|
+  | Common    | Thieves' Tools    | Light | Simple        |
+  | Sylvan    | Tinker's Tools    |       | Hand Crossbow |
+  |           | Carpenter's Tools |       | Longsword     |
+  |           | Smith's Tools     |       | Rapier        |
+  |           | Disguise Kit      |       |               |
+  |           | Forgery Kit       |       |               |
 
 * Equipment
-| Name                       | Quantity | Cost (gp) | Weight (lbs) | Total Weight (lbs) | Total Cost (gp) |
-|----------------------------+----------+-----------+--------------+--------------------+-----------------|
-| Glaive                     |        1 |        20 |            6 | #ERROR             |              20 |
-| Spear                      |        5 |         1 |            3 | #ERROR             |               5 |
-| Chainmail (AC 16)          |        1 |        75 |           55 | #ERROR             |              75 |
-| [[https://www.dndbeyond.com/equipment/explorers-pack][Explorer Pack]]              |        1 |           |              | #ERROR             |               0 |
-| Holy Symbol (Black Clover) |        1 |           |              | #ERROR             |               0 |
-| Shield                     |        1 |           |              | #ERROR             |               0 |
-|----------------------------+----------+-----------+--------------+--------------------+-----------------|
-| Carry Capacity             |      200 |           |              | #ERROR             |               0 |
-#+TBLFM: $5=($ * $4)
-#+TBLFM: $6=($2 * $3)
-#+TBLFM: @20$5=vsum(@INVALID$5..@32$5)
-#+TBLFM: @20$6=vsum(@INVALID$6..@25$6)
-#+TBLFM: @20$2=($STR * 10)
-
-** Attunements
-
-
-
+  | Name           | Quantity | Cost (gp) | Weight (lbs) | Total Weight (lbs) | Total Cost (gp) |
+  |----------------+----------+-----------+--------------+--------------------+-----------------|
+  | Fine Clothes   |        1 |        15 |            6 |                  6 |              15 |
+  |----------------+----------+-----------+--------------+--------------------+-----------------|
+  | Carry Capacity |      100 |           |              |                 71 |            1515 |
+  #+TBLFM: $5=($2 * $4)
+  #+TBLFM: $6=($2 * $3)
+  #+TBLFM: @>$5=vsum(@2$5..@>>$5)
+  #+TBLFM: @>$6=vsum(@2$6..@>>$6)
+  #+TBLFM: @>$2=($STR * 10)
+    
 ** Money
 | Copper | Silver | Electrum | Gold | Platinum | Total (Gold) |
 |--------+--------+----------+------+----------+--------------|
-|      0 |      0 |        0 |   35 |        0 |            0 |
+|      0 |      0 |        0 |  30  |        0 |          224 |
 #+TBLFM: $6=(($1 / 100) + ($2 / 10) + ($3 / 2) + $4 + ($5 * 10))
-   

@@ -147,7 +147,7 @@ empowered by only one use of this spell at a time.
 
 * 2nd Level                                                           :lvl_2:
 |------+---+---|
-| Used | 1 | 2 |
+| Used | 0 | 3 |
 |------+---+---|
 
 ** Silence (C)                                      :bard:cleric:ranger:phb:
