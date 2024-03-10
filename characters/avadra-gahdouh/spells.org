@@ -82,7 +82,7 @@ effects active at a time, and you can dismiss such an effect as an action.
 * 1st Level                                                           :lvl_1:
 
 |------+---+---|
-| Used | 0 | 4 |
+| Used | 1 | 4 |
 |------+---+---|
 
 ** Alarm                                       :artificer:ranger:wizard:phb:
@@ -300,7 +300,7 @@ from detection. For the duration, each creature you choose within 30 feet of you
 tracked except by magical means. A creature that receives this bonus leaves
 behind no tracks or other traces of its passage.
 
-* Silence (C)                                        :bard:cleric:ranger:phb:
+** Silence (C)                                      :bard:cleric:ranger:phb:
 For the duration, no sound can be created within or pass through a 20ft radius
 sphere centered on a point you choose within range. Any creature or object
 entirely inside the sphere is immune to thunder damage, and creatures are
