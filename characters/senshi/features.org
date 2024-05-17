@@ -32,3 +32,10 @@ Your walking speed is 25 feet.
 |-------------------|
  
 ** Languages.
+
+* Chef
+
+* Fighting Style
+Defense (+1 AC)
+
+

@@ -4,6 +4,9 @@
 #+TITLE: Senshi Abilities
 #+FILETAGS: senshi abilities
 
+TODO
+
+
 * Class ([[file:~/.emacs.d/ignore/org-dnd/02.classes.org::Ranger][Ranger]])                                                        :pbh:
 ** [[file:~/.emacs.d/ignore/org-dnd/02.classes.org::Favored Foe][Favored Foe]]                              :lvl_1:lvl_6:lvl_14:alt_feature:
 - Description ::
