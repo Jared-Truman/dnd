@@ -1,0 +1,80 @@
+#+LATEX_CLASS: dnd
+#+STARTUP: content showstars indent
+#+OPTIONS: tags:nil
+#+TITLE: Senshi Abilities
+#+FILETAGS: senshi abilities
+
+* Class ([[file:~/.emacs.d/ignore/org-dnd/02.classes.org::Ranger][Ranger]])                                                        :pbh:
+** [[file:~/.emacs.d/ignore/org-dnd/02.classes.org::Favored Foe][Favored Foe]]                              :lvl_1:lvl_6:lvl_14:alt_feature:
+- Description ::
+  Hit an attack you can mark the enemy.
+
+- Damage ::
+  1d4 (1d6, 1d8)
+
+- Duration ::
+  1 Minute
+
+- Proficiency Usages ::  
+|------+---+---|
+| Used | 0 | 4 |
+|------+---+---|
+
+** [[file:~/.emacs.d/ignore/org-dnd/02.classes.org::Natural Explorer][Natural Explorer]]                                     :lvl_1:lvl_6:lvl_10:
+- Description ::
+  Proficient INT or WIS checks related to favored terrain.
+  Expertise if proficient
+
+|---------+-------+---+---|
+| Terrain | Swamp | ` | ` |
+|---------+-------+---+---|
+
+** Fighting Style
+|---------|
+| Defense |
+|---------|
+
+
+** [[file:~/.emacs.d/ignore/org-dnd/02.classes.org::Primeval Awareness][Primeval Awareness]]                                                :lvl_3:
+
+** Ability Score Improvement
+
+| Level | Type | Value  |
+|-------+------+--------|
+|     4 | ASI  | +2 DEX |
+
+** Archetype (Gloom stalker)                            :xgte:gloom_stalker:
+
+| Ranger Level | Spells        |
+|--------------+---------------|
+| 3rd          | [[file:~/.emacs.d/ignore/org-dnd/10.spells.org::Disguise Self][Disguise Self]] |
+
+*** [[file:~/.emacs.d/ignore/org-dnd/02.classes.org::Dread Ambusher][Dread Ambusher]]                                                  :lvl_3:
+- Descripton ::
+  Initiative +WIS MOD
+
+  1st turn of combat
+  - +10ft movement.
+  - 1d8 on attack action
+
+*** [[file:~/.emacs.d/ignore/org-dnd/02.classes.org::Umbral Sight][Umbral Sight]]                                         :lvl_3:darkvision:
+- Descripton ::
+  Darkvision 60ft. +30ft if you have darkvision
+
+  Invisible to creatures relying on dark vision to see you in the dark.
+
+* Racial (Shadar-Kai)
+** Blessing of the Raven Queen.
+As a bonus action, you can magically teleport up to 30 feet to an unoccupied
+space you can see. You can use this trait a number of times equal to your
+proficiency bonus, and you regain all expended uses when you finish a long rest.
+
+- Starting at 3rd level ::
+  you also gain resistance to all damage when you teleport using this trait. The
+  resistance lasts until the start of your next turn. During that time, you
+  appear ghostly and translucent.
+
+|------+---+---|
+| Used | 0 | 4 |
+|------+---+---|
+

@@ -1,0 +1,38 @@
+
+#+LATEX_CLASS: dnd
+#+STARTUP: content showstars indent
+#+OPTIONS: tags:nil
+#+TITLE: Senshi's Background Sheet
+#+FILETAGS: senshi background sheet
+
+* Starting Stats
+| Ability | Score |
+|---------+-------|
+| STR     |    15 |
+| DEX     |    14 |
+| CON     |    13 |
+| INT     |    10 |
+| WIS     |    12 |
+| CHA     |     8 |
+
+* Back story
+
+
+* Alignment
+
+* Physical Characteristics
+** Hair
+
+** Skin
+
+** Eyes
+
+** Height
+
+** Weight
+
+** Age (Years)
+
+** Gender
+
+** Deity

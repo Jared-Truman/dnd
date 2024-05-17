@@ -1,0 +1,34 @@
+b#+LATEX_CLASS: dnd
+#+STARTUP: content showstars indent
+#+OPTIONS: tags:nil
+#+TITLE: Senshi's Features Sheet
+#+FILETAGS: senshi features feature sheet
+
+* Racial (Mountain Dwarf)                                              :race:
+TODO
+
+** Age                                                                 :age:
+
+** Ability Score Increase                                              :asi:
+
+| Type | Value  | Reason |
+|------+--------+--------|
+| ASI  | +1 DEX |        |
+| ASI  | +2 WIS |        |
+
+** Creature Type                                                      :type:
+
+** Size                                                               :size:
+You are Medium.
+
+** Speed                                                             :speed:
+Your walking speed is 25 feet.
+
+|-------------------|
+| Proficient        |
+|-------------------|
+| Brewer's Supplies |
+| Short bow         |
+|-------------------|
+ 
+** Languages.

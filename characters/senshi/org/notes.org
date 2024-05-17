@@ -1,0 +1,3 @@
+
+#+Startupa: content showstars indent
+#+FILETAGS: dnd notes senshi
