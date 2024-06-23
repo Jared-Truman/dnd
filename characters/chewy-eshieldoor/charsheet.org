@@ -9,62 +9,62 @@
     (dnd-output-ability-constants table)
   #+END_SRC
 
-  #+RESULTS[fe869ac4a086dce7f213c7b51a3bd20bd6f5ef77]: define-constants-with-src-block
+  #+RESULTS[532ffec3aa8cfe687c53e3354cc95257510a9764]: define-constants-with-src-block
   :results:
-  #+CONSTANTS: STR=19
+  #+CONSTANTS: STR=18
   #+CONSTANTS: DEX=14
-  #+CONSTANTS: CON=16
+  #+CONSTANTS: CON=14
   #+CONSTANTS: INT=8
-  #+CONSTANTS: WIS=12
+  #+CONSTANTS: WIS=10
   #+CONSTANTS: CHA=12
-  #+CONSTANTS: PROF=4
+  #+CONSTANTS: PROF=3
   :end:
   
 * Traits
   | Level | Race    | Subrace | Class     | Subclass           | Age | Alignment | Size            |
   |-------+---------+---------+-----------+--------------------+-----+-----------+-----------------|
-  |     9 | Goliath |         | Barbarian | Bear Totem Warrior |  27 | Neutral   | Medium(340) 8FT |
+  |     7 | Goliath |         | Barbarian | Bear Totem Warrior |  27 | Neutral   | Medium(340) 8FT |
   
 * Stats  
   | Speed | Hit Points       | AC             | Throws      | Inspo | Hit dice | Exhaustion |
   |-------+------------------+----------------+-------------+-------+----------+------------|
-  | 40 ft | 95/95 (d12 or 7) | 18 +2 (shield) | Save: Fail: |     x |        9 |            |
+  | 40 ft | 56/66 (d12 or 7) | 18 +2 (shield) | Save: Fail: |     x |        9 |            |
 
 * Skills
   #+name: stats
   | Ability | Score | Mod | PB | Roll      | Skill           |
   |---------+-------+-----+----+-----------+-----------------|
-  | STR     |    19 |   4 | X  | 1d20 + 8  | Saving Throw    |
-  |         |       |     | XX | 1d20 + 12 | Athletics       |
+  | STR     |    18 |   4 | X  | 1d20 + 7  | Saving Throw    |
+  |         |       |     | X  | 1d20 + 4  | Athletics       |
   |---------+-------+-----+----+-----------+-----------------|
   | DEX     |    14 |   2 |    | 1d20 + 2  | Saving Throw    |
   |         |       |     |    | 1d20 + 2  | Acrobatics      |
   |         |       |     |    | 1d20 + 2  | Sleight of Hand |
   |         |       |     |    | 1d20 + 2  | Stealth         |
   |---------+-------+-----+----+-----------+-----------------|
-  | CON     |    16 |   3 | X  | 1d20 + 7  | Saving Throw    |
+  | CON     |    14 |   2 | X  | 1d20 + 5  | Saving Throw    |
   |---------+-------+-----+----+-----------+-----------------|
-hh | INT     |     8 |  -1 |    | 1d20 + -1 | Saving Throw    |
+  | INT     |     8 |  -1 |    | 1d20 + -1 | Saving Throw    |
   |         |       |     |    | 1d20 + -1 | Arcana          |
   |         |       |     |    | 1d20 + -1 | History         |
   |         |       |     |    | 1d20 + -1 | Investigation   |
   |         |       |     |    | 1d20 + -1 | Nature          |
   |         |       |     |    | 1d20 + -1 | Religion        |
   |---------+-------+-----+----+-----------+-----------------|
-  | WIS     |    12 |   1 |    | 1d20 + 1  | Saving Throw    |
-  |         |       |     |    | 1d20 + 1  | Animal Handling |
-  |         |       |     |    | 1d20 + 1  | Insight         |
-  |         |       |     |    | 1d20 + 1  | Medicine        |
-  |         |       |     | X  | 1d20 + 5  | Perception      |
-  |         |       |     | X  | 1d20 + 5  | Survival        |
+  | WIS     |    10 |   0 |    | 1d20 + 0  | Saving Throw    |
+  |         |       |     |    | 1d20 + 0  | Animal Handling |
+  |         |       |     |    | 1d20 + 0  | Insight         |
+  |         |       |     |    | 1d20 + 0  | Medicine        |
+  |         |       |     | X  | 1d20 + 3  | Perception      |
+  |         |       |     | X  | 1d20 + 3  | Survival        |
   |---------+-------+-----+----+-----------+-----------------|
   | CHA     |    12 |   1 |    | 1d20 + 1  | Saving Throw    |
   |         |       |     |    | 1d20 + 1  | Deception       |
-  |         |       |     | X  | 1d20 + 5  | Intimidation    |
+  |         |       |     | X  | 1d20 + 4  | Intimidation    |
   |         |       |     |    | 1d20 + 1  | Performance     |
   |         |       |     |    | 1d20 + 1  | Persuasion      |
   |---------+-------+-----+----+-----------+-----------------|
-  | PROF    |     4 |     |    |           |                 |
+  | PROF    |     3 |     |    |           |                 |
   #+TBLFM: @2$3='(calc-dnd-mod (string-to-number (org-table-get-constant $1)))
   #+TBLFM: @4$3='(calc-dnd-mod (string-to-number (org-table-get-constant $1)))
   #+TBLFM: @8$3='(calc-dnd-mod (string-to-number (org-table-get-constant $1)))
@@ -82,11 +82,11 @@ hh | INT     |     8 |  -1 |    | 1d20 + -1 | Saving Throw    |
   #+NAME: attacks
   | Weapon    | Ability | Prof | Type        | Die | Mod To Hit | Roll    |
   |-----------+---------+------+-------------+-----+------------+---------|
-  | Erebor +2 | STR     | X    | Bludgeoning | 1d6 |         10 | 1d6 + 6 |
-  | Shield +1 | STR     | X    | Bludgeoning | 1d4 |          8 | 1d4 + 4 |
-  | Javelin   | STR     | X    | Piercing    | 1d6 |          8 | 1d6 + 4 |
-  | Hand Ax   | STR     | X    | Slashing    | 1d6 |          8 | 1d6 + 4 |
-  | Whip      | STR     | X    | Slashing    | 1d4 |          8 | 1d4 + 4 |
+  | Erebor +2 | STR     | X    | Bludgeoning | 1d6 |          7 | 1d6 + 4 |
+  | Shield    | STR     | X    | Bludgeoning | 1d8 |          7 | 1d8 + 4 |
+  | Javelin   | STR     | X    | Piercing    | 1d6 |          7 | 1d6 + 4 |
+  | Hand Ax   | STR     | X    | Slashing    | 1d6 |          7 | 1d6 + 4 |
+  | Whip      | STR     | X    | Slashing    | 1d4 |          7 | 1d4 + 4 |
   #+TBLFM: $6='(+ (if (string= $3 "X") $PROF 0) (calc-dnd-mod (string-to-number (org-table-get-constant $2))))
   #+TBLFM: $7='(concat $5 " + " (number-to-string (calc-dnd-mod (string-to-number (org-table-get-constant $2)))))
  
@@ -99,6 +99,14 @@ hh | INT     |     8 |  -1 |    | 1d20 + -1 | Saving Throw    |
 
 * Equipment
   | Name                                 | Quantity | Cost (gp) | Weight (lbs) | Total Weight (lbs) | Total Cost (gp) |
+  |--------------------------------------+----------+-----------+--------------+--------------------+-----------------|
+  | Bag of holding                       |        1 |       500 |              |                  0 |               0 |
+  |                                      |          |           |              |                  0 |               0 |
+  |                                      |          |           |              |                  0 |               0 |
+  |                                      |          |           |              |                  0 |               0 |
+  |                                      |          |           |              |                  0 |               0 |
+  |                                      |          |           |              |                  0 |               0 |
+  | Full Plate (AC 18)                   |        1 |      1500 |              |                  0 |            1500 |
   |--------------------------------------+----------+-----------+--------------+--------------------+-----------------|
   | Bear Onesy                           |        1 |         0 |              |                  0 |               0 |
   | Breast plat(AC 14)                   |        1 |       400 |              |                  0 |             400 |
@@ -119,14 +127,14 @@ hh | INT     |     8 |  -1 |    | 1d20 + -1 | Saving Throw    |
   | Carry Capacity                       |      170 |           |              |                  0 |               0 |
   #+TBLFM: $5=($2 * $4)
   #+TBLFM: $6=($2 * $3)
-  #+TBLFM: @30$5=vsum(@4$5..@30$5)
-  #+TBLFM: @30$6=vsum(@4$6..@29$6)
-  #+TBLFM: @30$2=($STR * 10)
+  #+TBLFM: @37$5=vsum(@11$5..@37$5)
+  #+TBLFM: @37$6=vsum(@11$6..@36$6)
+  #+TBLFM: @37$2=($STR * 10)
  
 ** Money
 | Copper | Silver | Electrum | Gold | Platinum | Total (Gold) |
 |--------+--------+----------+------+----------+--------------|
-|      0 |      0 |        0 |   14 |        0 |            0 |
+|      0 |      0 |        0 |  340 |        0 |            0 |
 #+TBLFM: $6=(($1 / 100) + ($2 / 10) + ($3 / 2) + $4 + ($5 * 10))
 
 ** Attunements
@@ -136,4 +144,3 @@ Erebor - Mourningsteel Barricade
 1 kill is a point .5 is an assist. Keep Tracking!
 
 30.5
-VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVvvvV nnj h

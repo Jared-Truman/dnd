@@ -30,14 +30,14 @@ While wielding this shield, when a creature you can see attacks a target other t
 you that is within 5 feet of you, you can use your reaction to impose disadvantage
 on the attack roll. 
 * Abilities
-** Taunt :homebrew:
+** Taunt                                                 :mad_mage:homebrew:
 Bonus action taunt enemies into attacking the taunter (8 + PROF + STR)
 
-** Protection :homebrew:
+** Protection                                            :mad_mage:homebrew:
 Also at 2nd level, when a creature you can see attacks a target other than you that is within 5 ft. of you,
 you can use your reaction to impose a disadvantage on the attack roll. You must be wielding a shield.
 
-** Rage :lvl_1:
+** Rage                                                              :lvl_1:
 In battle, you fight with primal ferocity. On your turn, you can enter a rage as a bonus action.
 
 While raging, you gain the following benefits if you aren't wearing heavy armor:
@@ -63,7 +63,7 @@ Barbarian table, you must finish a long rest before you can rage again.
 
  | Total | Rages Used | In Rage | Turns Left (10) |
  |-------+------------+---------+-----------------|
- |     4 |          0 |         |                 |
+ |     4 |          1 | x       | 1               |
 
 ** Unarmored Defense :lvl_1:
 While you are not wearing any armor, your armor class equals
@@ -88,13 +88,14 @@ you can't be blinded, deafened, or incapacitated.
 The spirit of the bear makes you tough enough to stand up to any punishment.
    
 *** Totem :lvl_6:
-*Bear*. You gain the might of a bear. Your carrying capacity (including maximum load and maximum lift)
-is doubled, and you have advantage on Strength checks made to push, pull, lift, or break objects.
+*Bear*. You gain the might of a bear. Your carrying capacity (including maximum
+load and maximum lift) is doubled, and you have advantage on Strength checks
+made to push, pull, lift, or break objects.
 
 *** Totem :lvl_10:
-At 10th level, you can cast the commune with nature spell, but only as a ritual. When you do so, a
-spiritual version of one of the animals you chose for Totem Spirit or Aspect of the Beast appears
-to you to convey the information you seek.
+*Bear* At 10th level, you can cast the commune with nature spell, but only as a ritual.
+When you do so, a spiritual version of one of the animals you chose for Totem
+Spirit or Aspect of the Beast appears to you to convey the information you seek.
 
 **** Commune with Nature
 ***** Requirements
@@ -116,21 +117,25 @@ location of powerful undead in the area, the location of major sources of safe d
 the location of any nearby towns.
 
 *** Totem :lvl_14:
-While you’re raging, any creature within 5 feet of you that’s hostile to you has disadvantage
-on attack rolls against targets other than you or another character with this feature.
-An enemy is immune to this effect if it can’t see or hear you or if it can’t be frightened.
+*Bear* While you’re raging, any creature within 5 feet of you that’s hostile to you has
+disadvantage on attack rolls against targets other than you or another character
+with this feature. An enemy is immune to this effect if it can’t see or hear you
+or if it can’t be frightened.
 
 ** Reckless Attack :lvl_2:
-Starting at 2nd level, you can throw aside all concern for defense to attack with fierce desperation.
-When you make your first attack on your turn, you can decide to attack recklessly.
-Doing so gives you advantage on melee weapon attack rolls using Strength during this turn,
-but attack rolls against you have advantage until your next turn.
+Starting at 2nd level, you can throw aside all concern for defense to attack
+with fierce desperation. When you make your first attack on your turn, you can
+decide to attack recklessly. Doing so gives you advantage on melee weapon attack
+rolls using Strength during this turn, but attack rolls against you have
+advantage until your next turn.
 
 ** Extra Attack :lvl_5:
-Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.
+Beginning at 5th level, you can attack twice, instead of once, whenever you take
+the Attack action on your turn.
 
 ** Fast Movement :lvl_5:
-Starting at 5th level, your speed increases by 10 feet while you aren't wearing heavy armor.
+Starting at 5th level, your speed increases by 10 feet while you aren't wearing
+heavy armor.
 
 ** Feral Instinct :lvl_7:
 By 7th level, your instincts are so honed that you have advantage on
@@ -158,10 +163,13 @@ After you use this trait, you can’t use it again until you finish a short or l
 You use shields not just for protection but also for offense.
 You gain the following benefits while you are wielding a shield:
 
-- If you take the Attack action on your turn, you can use a bonus action to try to shove a creature within 5 feet
-  of you with your shield.
-- If you aren't incapacitated, you can add your shield's AC bonus to any Dexterity saving throw you make against
-  a spell or other harmful effect that targets only you.
-- If you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage,
-  you can use your reaction to take no damage if you succeed on the saving throw,
-  interposing your shield between yourself and the source of the effect.
+- If you take the Attack action on your turn, you can use a bonus action to try
+  to shove a creature within 5 feet of you with your shield.
+- If you aren't incapacitated, you can add your shield's AC bonus to any
+  Dexterity saving throw you make against a spell or other harmful effect that
+  targets only you.
+- If you are subjected to an effect that allows you to make a Dexterity saving
+  throw to take only half damage, you can use your reaction to take no damage if
+  you succeed on the saving throw, interposing your shield between yourself and
+  the source of the effect.
+  
