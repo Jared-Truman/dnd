@@ -1,0 +1,150 @@
+
+#+LATEX_CLASS: dnd
+#+STARTUP: content showstars indent
+#+OPTIONS: tags:nil
+#+TITLE: Senshi's Character Sheet
+#+FILETAGS: senshi character sheet
+
+* Constants
+  #+NAME: define-constants-with-src-block
+  #+BEGIN_SRC elisp :var table=stats :colnames yes :results output drawer :cache yes :lang elisp
+    (dnd-output-ability-constants table)
+  #+END_SRC
+
+  #+RESULTS[384fd7c9afa46a52820b7f0ac9d0ee97dc07cbd9]: define-constants-with-src-block
+  :results:
+  #+CONSTANTS: STR=20
+  #+CONSTANTS: DEX=14
+  #+CONSTANTS: CON=17
+  #+CONSTANTS: INT=10
+  #+CONSTANTS: WIS=12
+  #+CONSTANTS: CHA=8
+  #+CONSTANTS: PROF=3
+  #+CONSTANTS: SCA=
+  #+CONSTANTS: SAM=
+  :end:
+  
+* Traits
+|-------+----------------+---------+---------+-----------+-----------+--------|
+| Level | Race           | Subrace | Class   | Subclass  | Alignment | Size   |
+|-------+----------------+---------+---------+-----------+-----------+--------|
+|     8 | Mountain Dwarf |         | Fighter | Timeblade | Neutral   | Medium |
+|-------+----------------+---------+---------+-----------+-----------+--------|
+
+* Stats
+|------------+----+---------------+-------+-------+----------+------------|
+| Speed      | AC | Hit Points    | Saves | Inspo | Hit dice | Exhaustion |
+|------------+----+---------------+-------+-------+----------+------------|
+| 25 ft Walk | 21 | Fighter (d10) |       |       | 8/8      |            |
+|------------+----+---------------+-------+-------+----------+------------|
+| Total:     |    | 55/76         |       |       |          |            |
+|------------+----+---------------+-------+-------+----------+------------|
+
+* Abilities and Skills
+#+name: stats
+| Ability | Score | Mod | PB | Roll           | Skill                 |
+|---------+-------+-----+----+----------------+-----------------------|
+| STR     |    20 |   5 | X  | 1d20 + 8       | Saving Throw          |
+|         |       |     | X  | 1d20 + 8       | Athletics             |
+|---------+-------+-----+----+----------------+-----------------------|
+| DEX     |    14 |   2 |    | 1d20 + 2       | Saving Throw          |
+|         |       |     |    | 1d20 + 2       | Acrobatics            |
+|         |       |     |    | 1d20 + 2       | Sleight of Hand       |
+|         |       |     |    | 1d20 + 2       | Stealth               |
+|---------+-------+-----+----+----------------+-----------------------|
+| CON     |    17 |   3 | X  | 1d20 + 6       | Saving Throw          |
+|---------+-------+-----+----+----------------+-----------------------|
+| INT     |    10 |   0 |    | 1d20 + 0       | Saving Throw          |
+|         |       |     |    | 1d20 + 0       | Arcana                |
+|         |       |     |    | 1d20 + 0       | History               |
+|         |       |     |    | 1d20 + 0       | Investigation         |
+|         |       |     | X  | 1d20 + 3       | Nature                |
+|         |       |     |    | 1d20 + 0       | Religion              |
+|---------+-------+-----+----+----------------+-----------------------|
+| WIS     |    12 |   1 |    | 1d20 + 1       | Saving Throw          |
+|         |       |     | X  | 1d20 + 4       | Animal Handling       |
+|         |       |     |    | 1d20 + 1       | Insight               |
+|         |       |     |    | 1d20 + 1       | Medicine              |
+|         |       |     |    | 1d20 + 1       | Perception            |
+|         |       |     |    | 1d20 + 1       | Survival              |
+|---------+-------+-----+----+----------------+-----------------------|
+| CHA     |     8 |  -1 |    | 1d20 + -1      | Saving Throw          |
+|         |       |     |    | 1d20 + -1      | Deception             |
+|         |       |     | X  | 1d20 + 2       | Intimidation          |
+|         |       |     |    | 1d20 + -1      | Performance           |
+|         |       |     |    | 1d20 + -1      | Persuasion            |
+|---------+-------+-----+----+----------------+-----------------------|
+| PROF    |     3 |     |    |                |                       |
+| SCA     |       |     |    | 8 + PROF + WIS | SPELL CASTING ABILITY |
+| SAM     |       |     |    | PROF + WIS     | SPELL ATT MOD         |
+#+TBLFM: @2$3='(calc-dnd-mod (string-to-number (org-table-get-constant $1)))
+#+TBLFM: @4$3='(calc-dnd-mod (string-to-number (org-table-get-constant $1)))
+#+TBLFM: @8$3='(calc-dnd-mod (string-to-number (org-table-get-constant $1)))
+#+TBLFM: @9$3='(calc-dnd-mod (string-to-number (org-table-get-constant $1)))
+#+TBLFM: @15$3='(calc-dnd-mod (string-to-number (org-table-get-constant $1)))
+#+TBLFM: @21$3='(calc-dnd-mod (string-to-number (org-table-get-constant $1)))
+#+TBLFM: @2$5..@3$5='(concat "1d20 + " (number-to-string (+ (if (string= $4 "X") $PROF 0) (calc-dnd-mod (string-to-number (org-table-get-constant @2$1))))))
+#+TBLFM: @4$5..@7$5='(concat "1d20 + " (number-to-string (+ (if (string= $4 "X") $PROF 0) (calc-dnd-mod (string-to-number (org-table-get-constant @4$1))))))
+#+TBLFM: @8$5..@8$5='(concat "1d20 + " (number-to-string (+ (if (string= $4 "X") $PROF 0) (calc-dnd-mod (string-to-number (org-table-get-constant @8$1))))))
+#+TBLFM: @9$5..@14$5='(concat "1d20 + " (number-to-string (+ (if (string= $4 "X") $PROF 0) (calc-dnd-mod (string-to-number (org-table-get-constant @9$1))))))
+#+TBLFM: @15$5..@20$5='(concat "1d20 + " (number-to-string (+ (if (string= $4 "X") $PROF 0) (calc-dnd-mod (string-to-number (org-table-get-constant @15$1))))))
+#+TBLFM: @21$5..@25$5='(concat "1d20 + " (number-to-string (+ (if (string= $4 "X") $PROF 0) (calc-dnd-mod (string-to-number (org-table-get-constant @21$1))))))
+
+* Resistances
+
+- Poison ::
+
+* Immunities
+
+- Critical Hits ::
+
+* Attacks
+#+NAME: attacks
+| Weapon   | Ability | Prof | Type  | Die | Mod To Hit | Roll    |
+|----------+---------+------+-------+-----+------------+---------|
+| BattleAx | STR     | X    | Slash | 1d8 |          8 | 1d8 + 5 |
+#+TBLFM: $6='(+ (if (string= $3 "X") $PROF 0) (calc-dnd-mod (string-to-number (org-table-get-constant $2))))
+#+TBLFM: $7='(concat $5 " + " (number-to-string (calc-dnd-mod (string-to-number (org-table-get-constant $2)))))
+
+* Proficiencies
+|-----------+-----------------+---------+---------|
+| Languages | Tools           | Armor   | Weapons |
+|-----------+-----------------+---------+---------|
+| Common    | Cook's Utensils | Light   | Simple  |
+| Dwarvish  | Poisoner's Kit  | Medium  | Martial |
+|           | Smith's Tools   | Heavy   |         |
+|           |                 | Shields |         |
+|           |                 |         |         |
+|-----------+-----------------+---------+---------|
+
+* Equipment
+| Name                | Quantity | Cost (gp) | Weight (lbs) | Capacity | Total Weight (lbs) | Total Cost (gp) |
+|---------------------+----------+-----------+--------------+----------+--------------------+-----------------|
+| Backpack            |        1 |        10 |            1 |       30 | #ERROR             |              10 |
+| Adamantine Plate    |        1 |      1000 |           65 |          | #ERROR             |            1000 |
+| Battleaxe           |        1 |        10 |            4 |          | #ERROR             |              10 |
+| Handaxe             |        2 |         5 |            2 |          | #ERROR             |              10 |
+| Shield              |        1 |        10 |            6 |          | #ERROR             |              10 |
+| Bedroll             |        1 |         7 |            1 |          | #ERROR             |               7 |
+| Rations             |       10 |         5 |            2 |          | #ERROR             |              50 |
+| Rope, Hempen (50FT) |        1 |         1 |            1 |          | #ERROR             |               1 |
+| Tinderbox           |        1 |        .5 |            1 |          | #ERROR             |             0.5 |
+| Torch               |       10 |       0.1 |            1 |          | #ERROR             |              1. |
+| Water Skin          |        1 |       0.2 |            1 |          | #ERROR             |             0.2 |
+|---------------------+----------+-----------+--------------+----------+--------------------+-----------------|
+| Carry Capacity      |      200 |           |              |          | #ERROR             |               0 |
+#+TBLFM: $6=($ * $4)
+#+TBLFM: $7=($2 * $3)
+#+TBLFM: @15$6=vsum(@INVALID$6..@27$6)
+#+TBLFM: @15$7=vsum(@INVALID$7..@20$7)
+#+TBLFM: @15$2=($STR * 10)
+
+** Attunements
+
+
+** Money
+| Copper | Silver | Electrum | Gold | Platinum | Total (Gold) |
+|--------+--------+----------+------+----------+--------------|
+|      0 |      0 |        0 |   25 |        0 |            0 |
+#+TBLFM: $6=(($1 / 100) + ($2 / 10) + ($3 / 2) + $4 + ($5 * 10))
+   
