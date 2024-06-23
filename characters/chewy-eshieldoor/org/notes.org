@@ -140,3 +140,69 @@ Defeated the demons we aquired the hand of molar a dwarven king.
 /Entered on/ [2022-09-24 Sat 12:39]
 * Umbraxicar is at lvl 18
 /Entered on/ [2022-09-24 Sat 15:35]
+
+
+* VECNA
+** Baulder's Gate
+*** Elf Song (Tavern)
+- We hear that the death curese of chult has endedd
+- This could mean that chult is dangerous but ripe for adventuring
+*** Larkspur (Ship)
+- We boarded this ship from Baulder's Gate to get to chult
+** Chult                                                        :place:city:
+*** Environment
+Tropical, unknown languages, colorful building with dragons and mythical
+adventures depicted on them. The smell of salt water and fish hang in the air.
+The ground rumbles and we see large lizards being used similarly to domesticated
+animals. They be dinos 
+*** Port Nynzaru                                  :place:ships:port:harbor:
+- We arrived at this port aboard the ship larkspur
+- The captain is Willa Moonmeadow
+  - They will be here a few weeks, but may be headed out before we can return
+  - She mentions they would offer us passage back
+**** Larkspur                                                       :ship:
+***** Willa Moonmeadow                                   :person:captain:
+- Friendly
+- Captain
+  
+*** Red bizarre (General Goods)                                :place:shop:
+
+*** The Thundering Lizard                                    :place:tavern:
+- Rough crowd
+- Bartender mentions they have had issues with the living dead.
+- Tells us about the flaming fist losing numbers in the jungle since they were
+  not prepared for the jungle.
+**** Teron                                              :person:bartender:
+- Bartender
+- Friendly
+  
+*** Ifan Tairo'a                                          :person:merchant:
+Is a merchant prince that gets the dinos.
+
+*** The Flaming Fist                          :people:mecernaries:soldiers:
+- Baulders gates army / guards technically mercenaries.
+- Commander Liara Portyr seems pretty impatient and asks us what we want.
+  Midus is able to get her to talk with us about work.
+  - Talks about an adventure to Hisari and the party was 8 people and
+    a paladin. One of the members was from a nephew of a noble. Haven't
+    heard from them in months. The paladin was a little crazy and is
+    a goblin. His name is Toggo.
+
+**** Commander Liara Portyr                             :person:commander:
+- Friendly
+
+**** Toggo                                              :person:mercenary:
+- Crazy
+- Paladin
+- Goblin
+- Don't know personally. Liara mentioned him.
+
+** Refuge Bay                                                        :place:
+- Sunken city
+- Wave riders everywhere
+  - They are a shark
+- Our landing spot while on our way to hisari
+** Hisari                                                            :place:
+- Forbidden city in the Jungle
+- Tabaxi that live there say it is occupied by Yuan-Ti
+ 
