@@ -1,0 +1,25 @@
+
+#+STARTUP: content showstars indent
+#+FILETAGS: dnd notes avadra gahdouh
+* Party Members
+** Willow
+Mousefolk
+Druid
+** Norvus
+Hafling
+Rogue/Barbarian
+** Princess Donut
+Cat
+Bard
+** Carl
+Human
+Pugilist
+** Biggus Dickus
+Goliath
+Monk
+** Thalia
+Eldrain Elf
+Fighter cleric
+** Casseel
+aasmaar
+Warlock

@@ -1,0 +1,31 @@
+#+LATEX_CLASS: dnd
+#+STARTUP: content showstars indent
+#+OPTIONS: tags:nil
+#+TITLE: Avadra Gahdouh's Equipment Sheet
+#+FILETAGS: avadra gahdouh equipment sheet
+
+* Starting equipment
+| Equipment     | Quantity |
+|---------------+----------|
+| Emerald Pen   |        1 |
+| Blanket       |        1 |
+| Dagger        |        1 |
+| Mess kit      |        1 |
+| Parchment     |        5 |
+| Rations       |        4 |
+| Robes         |        1 |
+| Short Sword   |        1 |
+| Waterskin     |        1 |
+| Pouch of gold |    25 GP |
+
+** Bougie Robe
+Can be used every 2 days as a lessor restoration and can cure 2 levels of exhaustion.
+
+** Fist a cuffs
++2 to attacks and damage
+Activate the gauntlets (1d6 for piercing or bludgeoning)
+CON save of damage * 33% is the save because it is a prototype
+
+|------+---+----|
+| Used | 0 | 10 |
+|------+---+----|

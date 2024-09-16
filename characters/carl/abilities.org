@@ -1,0 +1,180 @@
+#+LATEX_CLASS: dnd
+#+STARTUP: content showstars indent
+#+OPTIONS: tags:nil
+#+TITLE: Carl's Abilities
+#+FILETAGS: avadra gahdouh abilities
+
+* Class (Pugilist)                                                      :pbh:
+** Fisticuffs
+At 1st level, your years of fighting in back alleys and taverns
+have given you mastery over combat styles that use unarmed
+strikes and pugilist weapons, which are simple melee
+weapons without the two-handed property, whips, and
+improvised weapons. You can’t use the finesse property of a
+weapon while using it as a pugilist weapon.
+You gain the following benefits while you are unarmed or
+using only pugilist weapons and you are wearing light or no
+armor and not using a shield:
+
+- You can roll a d6 in place of the normal damage of your
+unarmed strike or pugilist weapon. This die changes as you
+gain pugilist levels, as shown in the Fisticuffs column on
+the Pugilist table.
+
+- When you use the Attack action on your turn and make
+only unarmed strikes, attacks with pugilist weapons,
+shoves, or grapples, you can use a bonus action to make
+one grapple or unarmed strike.
+
+** Iron Chin
+Beginning at 1st level, while you are wearing light or no
+armor and not wielding a shield, your AC equals 12 + your
+Constitution modifier.
+
+** Moxie
+Starting at 2nd level, your experience laying the beatdown on
+others has given you a moxie you can channel in the midst
+of battle. This swagger is represented by a number of moxie
+points. Your pugilist level determines the maximum number
+of points you have, as shown in the Moxie Points column of
+the Pugilist table.
+
+You can spend these points to fuel various moxie features.
+You start knowing three such features: Brace Up, The Old
+One-Two, and Stick and Move. You learn more moxie
+features as you gain levels in this class. You regain all
+expended moxie points when you finish a short or long rest.
+
+*** Brace Up
+You can use a bonus action and spend 1 moxie point to brace
+for attacks. You gain a number of temporary hit points equal
+to a roll of your fisticuffs die + your pugilist level + your
+Constitution modifier. You lose any remaining temporary hit
+points gained in this way after 1 minute.
+
+*** The Old One-Two
+Immediately after you take the Attack action on your turn,
+you can spend 1 moxie point to make two unarmed strikes as
+a bonus action.
+
+*** Stick and Move
+You can use a bonus action and expend 1 moxie point to
+attempt to shove a creature or take the Dash action.
+
+** Street Smart
+Beginning at 2nd level, carousing, shadowboxing, and
+sparring all count as light activity for the purposes of resting
+for you. Additionally, once you have caroused in a settlement
+for 8 hours or more, you know all public locations in the city
+as if you were born and raised there and you cannot be lost
+by nonmagical means while within the city.
+
+** Bloodied but Unbowed
+Starting at 3rd level, when you take damage that reduces
+you to half your maximum hit points or less, you can use
+your reaction to gain temporary hit points equal to three
+times your pugilist level and regain all your expended moxie
+points. Once you use this feature, you can’t use it again until
+you finish a short or long rest.
+
+** Fight Club
+Starting at 3rd level, you choose a fight club that best
+exemplifies your style: Arena Royale, Bloodhound Bruisers,
+Dog & Hound, Hand of Dread, Piss & Vinegar, the Squared
+Circle, or the Sweet Science, all detailed at the end of the
+class description. Your fight club grants you features at 3rd
+level and again at 6th, 11th, and 17th level.
+
+** Ability Score Improvement
+When you reach 4th level, and again at 8th, 12th, 16th, and
+19th level, you can increase one ability score of your choice
+by 2, or you can increase two ability scores of your choice
+by 1. As normal, you can’t increase an ability score above 20
+using this feature.
+
+** Dig Deep
+Starting at 4th level, you discover a strength inside you that
+can’t be broken. As a bonus action, you gain resistance to
+bludgeoning, piercing, and slashing damage for one minute.
+At the end of that minute, you gain a level of exhaustion.
+Extra Attack
+Beginning at 5th level, you can attack twice, instead of once,
+whenever you take the Attack action on your turn.
+
+** Haymaker
+Starting at 5th level, when you make an attack, you can
+declare you are swinging a wild haymaker. When you do,
+you have disadvantage on the attack roll and, if you hit with
+a pugilist weapon or unarmed strike, you deal the maximum
+result of your weapon’s damage die instead of rolling.
+
+** Moxie-Fueled Fists
+Starting at 6th level, your unarmed strikes count as magical
+for the purpose of overcoming resistance and immunity to
+non-magical attacks and damage.
+
+** Fancy Footwork
+At 7th level, you gain proficiency in Dexterity saving throws.
+
+** Shake It Off
+Starting at 7th level, you can use your action to end
+one effect on yourself that is causing you to be charmed
+or frightened.
+
+** Down but Not Out
+Starting at 9th level, when you use your Bloodied But
+Unbowed feature, you can choose to also use this feature.
+If you do, you add your proficiency bonus to the damage
+of your unarmed strikes and pugilist weapons for the
+next minute.
+Once you use this feature, you can’t use it again until you
+finish a long rest.
+
+* Pugilist (The Sweet Science)
+** The Sweet Science
+Pugilists who practice the Sweet Science hit hard, fast, and
+often. This style is sometimes used by fighters who battle for
+the entertainment of the upper classes, but is just as often
+practiced in the back alleys and the bars by those whose next
+breath depends on a knockout.
+
+** Bare Knuckle Boxer
+Starting when you choose this fight club at 3rd level, your
+unarmed strikes score a critical hit on a roll of 19 or 20 on
+the d20.
+
+** Cross Counter
+Also starting at 3rd level, you can block the brunt of an
+attack and launch one of your own in the same fluid motion.
+When you take damage from a melee weapon attack, you
+can use your reaction and spend 2 moxie points to reduce
+the damage by 1d10 + your Strength modifier + your
+pugilist level.
+If you reduce the damage to 0, you can make an unarmed
+strike or pugilist weapon attack against a creature within
+range as part of the same reaction.
+
+** One, Two, Three, Floor
+Starting at 6th level, when you use your bonus action
+to use the Old One-Two and hit the same creature with
+both attacks, you can spend 1 moxie point to make an
+additional unarmed strike against that creature as part of
+the same bonus action. If you hit, the creature is knocked
+prone in addition to taking damage as normal for your
+unarmed strike.
+
+** Float Like a Butterfly, Sting Like a Bee
+Starting at 11th level, when you reduce damage from an
+attack to 0 and successfully hit an enemy creature using your
+Cross Counter feature, you regain 1 expended moxie point.
+
+** Knock Out
+Starting at 17th level, when you hit with an unarmed
+strike or pugilist weapon, you can spend 1 or more moxie
+points to try to knock out the opponent instead of dealing
+damage. Roll 3d12, plus an additional 2d12 for every moxie
+point spent after the first, and add your pugilist level to the
+result. If the total is equal to or greater than the creature’s
+remaining hit points, it is reduced to 0 hit points.
+
+* Racial (Human)
