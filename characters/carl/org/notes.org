@@ -23,3 +23,5 @@ Fighter cleric
 ** Casseel
 aasmaar
 Warlock
+
+* 
