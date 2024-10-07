@@ -61,6 +61,12 @@ a bonus action.
 You can use a bonus action and expend 1 moxie point to
 attempt to shove a creature or take the Dash action.
 
+|-------+------|
+| Total | Used |
+|-------+------|
+|     9 |    0 |
+|-------+------|
+
 ** Street Smart
 Beginning at 2nd level, carousing, shadowboxing, and
 sparring all count as light activity for the purposes of resting
@@ -129,6 +135,13 @@ of your unarmed strikes and pugilist weapons for the
 next minute.
 Once you use this feature, you can’t use it again until you
 finish a long rest.
+
+|-------+------|
+| Total | Used |
+|-------+------|
+|     1 |    0 |
+|-------+------|
+
 
 * Pugilist (The Sweet Science)
 ** The Sweet Science

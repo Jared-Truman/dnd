@@ -2,7 +2,7 @@
 #+STARTUP: content showstars indent
 #+OPTIONS: tags:nil
 #+TITLE: Carl's Character Sheet
-#+FILETAGS: avadra gahdouh character sheet
+#+FILETAGS: carls character sheet
 
 * Constants
   #+NAME: define-constants-with-src-block
@@ -32,7 +32,7 @@
 | 30 ft Walk | 16 | Pugilist (d8) |       |       | 9/9      |            |
 | 15 ft Swim |    |               |       |       |          |            |
 |            |    |               |       |       |          |            |
-| Total:     |    | 84/84         |       |       |          |            |
+| Total:     |    | 61/84         |       |       |          |            |
 
 * Abilities and Skills
 #+name: stats
@@ -102,7 +102,7 @@ Un armed strikes get a +1 for the next 24 hours
 * Proficiencies
 | Languages | Tools | Armor | Weapons       |
 |-----------+-------+-------+---------------|
-| Common    |       | Light | Simple        |
+| Common    | Light |       | Simple        |
 |           |       |       | Improvised    |
 |           |       |       | Whip          |
 |           |       |       | Hand Crossbow |
@@ -130,6 +130,6 @@ Un armed strikes get a +1 for the next 24 hours
 ** Money
 | Copper | Silver | Electrum | Gold | Platinum | Total (Gold) |
 |--------+--------+----------+------+----------+--------------|
-|      0 |      0 |        0 |  600 |        0 |          600 |
+|      0 |      0 |        0 |  550 |        0 |          600 |
 #+TBLFM: $6=(($1 / 100) + ($2 / 10) + ($3 / 2) + $4 + ($5 * 10))
    

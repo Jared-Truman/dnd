@@ -1,4 +1,5 @@
 
+
 #+LATEX_CLASS: dnd
 #+STARTUP: content showstars indent
 #+OPTIONS: tags:nil
@@ -11,7 +12,7 @@
     (dnd-output-ability-constants table)
   #+END_SRC
 
-  #+RESULTS[384fd7c9afa46a52820b7f0ac9d0ee97dc07cbd9]: define-constants-with-src-block
+  #+RESULTS[077a52e76dc417c0e4b2ab992b1c0754362c4e8b]: define-constants-with-src-block
   :results:
   #+CONSTANTS: STR=20
   #+CONSTANTS: DEX=14
@@ -19,7 +20,7 @@
   #+CONSTANTS: INT=10
   #+CONSTANTS: WIS=12
   #+CONSTANTS: CHA=8
-  #+CONSTANTS: PROF=3
+  #+CONSTANTS: PROF=4
   #+CONSTANTS: SCA=
   #+CONSTANTS: SAM=
   :end:
@@ -28,16 +29,16 @@
 |-------+----------------+---------+---------+-----------+-----------+--------|
 | Level | Race           | Subrace | Class   | Subclass  | Alignment | Size   |
 |-------+----------------+---------+---------+-----------+-----------+--------|
-|     8 | Mountain Dwarf |         | Fighter | Timeblade | Neutral   | Medium |
+|    12 | Mountain Dwarf |         | Fighter | Timeblade | Neutral   | Medium |
 |-------+----------------+---------+---------+-----------+-----------+--------|
 
 * Stats
 |------------+----+---------------+-------+-------+----------+------------|
 | Speed      | AC | Hit Points    | Saves | Inspo | Hit dice | Exhaustion |
 |------------+----+---------------+-------+-------+----------+------------|
-| 25 ft Walk | 21 | Fighter (d10) |       |       | 8/8      |            |
+| 25 ft Walk | 21 | Fighter (d10) |       |       | 11/11    |            |
 |------------+----+---------------+-------+-------+----------+------------|
-| Total:     |    | 55/76         |       |       |          |            |
+| Total:     |    | 48/103        |       |       |          |            |
 |------------+----+---------------+-------+-------+----------+------------|
 
 * Abilities and Skills
@@ -74,7 +75,7 @@
 |         |       |     |    | 1d20 + -1      | Performance           |
 |         |       |     |    | 1d20 + -1      | Persuasion            |
 |---------+-------+-----+----+----------------+-----------------------|
-| PROF    |     3 |     |    |                |                       |
+| PROF    |     4 |     |    |                |                       |
 | SCA     |       |     |    | 8 + PROF + WIS | SPELL CASTING ABILITY |
 | SAM     |       |     |    | PROF + WIS     | SPELL ATT MOD         |
 #+TBLFM: @2$3='(calc-dnd-mod (string-to-number (org-table-get-constant $1)))
@@ -100,11 +101,18 @@
 
 * Attacks
 #+NAME: attacks
-| Weapon   | Ability | Prof | Type  | Die | Mod To Hit | Roll    |
-|----------+---------+------+-------+-----+------------+---------|
-| BattleAx | STR     | X    | Slash | 1d8 |          8 | 1d8 + 5 |
-#+TBLFM: $6='(+ (if (string= $3 "X") $PROF 0) (calc-dnd-mod (string-to-number (org-table-get-constant $2))))
-#+TBLFM: $7='(concat $5 " + " (number-to-string (calc-dnd-mod (string-to-number (org-table-get-constant $2)))))
+| Weapon                 | Ability | Prof | Type  | Die | Roll    | Mod To Hit |
+|------------------------+---------+------+-------+-----+---------+------------|
+| Corrupted Battle Ax +1 | STR     | X    | Slash | 1d8 | 1d8 + 6 |          9 |
+| BattleAx               | STR     | X    | Slash | 1d8 | 1d8 + 5 |          9 |
+#+TBLFM: $7='(+ (if (string= $3 "X") $PROF 0) (calc-dnd-mod (string-to-number (org-table-get-constant $2))))
+#+TBLFM: $6='(concat $5 " + " (number-to-string (calc-dnd-mod (string-to-number (org-table-get-constant $2)))))
+
+CORRUPTED BATTLE AX
++1
+Corrupted Enemies +1d8
+DC14 CON on non-corrupted character 
+CON Save after battle gain a level.
 
 * Proficiencies
 |-----------+-----------------+---------+---------|
@@ -148,3 +156,12 @@
 |      0 |      0 |        0 |   25 |        0 |            0 |
 #+TBLFM: $6=(($1 / 100) + ($2 / 10) + ($3 / 2) + $4 + ($5 * 10))
    
+
+Dumplings
+Daydream spell - no components
+Every hour DC 16 WIS
+distracting thoughts so they don't have perception checks (uncharmable)
+Detect Magic spell withing 960
+
+Contamination
+- Mutation #1 - I gain telepathy within 10 ft. (4 more levels it goes out to 60ft)

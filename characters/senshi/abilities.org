@@ -4,78 +4,102 @@
 #+TITLE: Senshi Abilities
 #+FILETAGS: senshi abilities
 
-TODO
+* Class (Fighter)                                                       :pbh:
+** Second Wind
+You have a limited well of stamina that you can draw on to protect yourself from
+harm. On your turn, you can use a bonus action to regain hit points equal to
+1d10 + your fighter level.
 
+Once you use this feature, you must finish a short or long rest before you can
+use it again.
 
-* Class ([[file:~/.emacs.d/ignore/org-dnd/02.classes.org::Ranger][Ranger]])                                                        :pbh:
-** [[file:~/.emacs.d/ignore/org-dnd/02.classes.org::Favored Foe][Favored Foe]]                              :lvl_1:lvl_6:lvl_14:alt_feature:
-- Description ::
-  Hit an attack you can mark the enemy.
+** Action Surge
+Starting at 2nd level, you can push yourself beyond your normal limits for a
+moment. On your turn, you can take one additional action.
 
-- Damage ::
-  1d4 (1d6, 1d8)
-
-- Duration ::
-  1 Minute
-
-- Proficiency Usages ::  
-|------+---+---|
-| Used | 0 | 4 |
-|------+---+---|
-
-** [[file:~/.emacs.d/ignore/org-dnd/02.classes.org::Natural Explorer][Natural Explorer]]                                     :lvl_1:lvl_6:lvl_10:
-- Description ::
-  Proficient INT or WIS checks related to favored terrain.
-  Expertise if proficient
-
-|---------+-------+---+---|
-| Terrain | Swamp | ` | ` |
-|---------+-------+---+---|
-
-** Fighting Style
-|---------|
-| Defense |
-|---------|
-
-
-** [[file:~/.emacs.d/ignore/org-dnd/02.classes.org::Primeval Awareness][Primeval Awareness]]                                                :lvl_3:
+Once you use this feature, you must finish a short or long rest before you can
+use it again. Starting at 17th level, you can use it twice before a rest, but
+only once on the same turn.
 
 ** Ability Score Improvement
+When you reach 4th level, and again at 6th, 8th, 12th, 14th, 16th, and 19th
+level, you can increase one ability score of your choice by 2, or you can
+increase two ability scores of your choice by 1. As normal, you can't
+increase an ability score above 20 using this feature.
 
-| Level | Type | Value  |
-|-------+------+--------|
-|     4 | ASI  | +2 DEX |
 
-** Archetype (Gloom stalker)                            :xgte:gloom_stalker:
+** Extra Attack                                        :lvl_5:lvl_11:lvl_20:
+Beginning at 5th level, you can attack twice, instead of once, whenever you take
+the Attack action on your turn.
 
-| Ranger Level | Spells        |
-|--------------+---------------|
-| 3rd          | [[file:~/.emacs.d/ignore/org-dnd/10.spells.org::Disguise Self][Disguise Self]] |
+The number of attacks increases to three when you reach 11th level in this class
+and to four when you reach 20th level in this class.
 
-*** [[file:~/.emacs.d/ignore/org-dnd/02.classes.org::Dread Ambusher][Dread Ambusher]]                                                  :lvl_3:
-- Descripton ::
-  Initiative +WIS MOD
+** Indomitable
+Beginning at 9th level, you can reroll a saving throw that you fail. If you do so, you must use the new roll, and you can't use this feature again until you finish a long rest.
 
-  1st turn of combat
-  - +10ft movement.
-  - 1d8 on attack action
+You can use this feature twice between long rests starting at 13th level and three times between long rests starting at 17th level.
 
-*** [[file:~/.emacs.d/ignore/org-dnd/02.classes.org::Umbral Sight][Umbral Sight]]                                         :lvl_3:darkvision:
-- Descripton ::
-  Darkvision 60ft. +30ft if you have darkvision
 
-  Invisible to creatures relying on dark vision to see you in the dark.
+* Sub-class (Timeblade)
+** Temporal Strike
+Starting at 3rd level, when you hit a creature with a weapon attack, you can use
+a bonus action to trigger one of the following effects:
 
-* Racial (Shadar-Kai)
-** Blessing of the Raven Queen.
-As a bonus action, you can magically teleport up to 30 feet to an unoccupied
-space you can see. You can use this trait a number of times equal to your
-proficiency bonus, and you regain all expended uses when you finish a long rest.
+- Dislocative Step ::
+  You step outside of time and move to an unoccupied space you can see within 15
+  feet of you. This movement doesn’t provoke opportunity attacks. At 10th level,
+  you can move up to 30 feet.
 
-- Starting at 3rd level ::
-  you also gain resistance to all damage when you teleport using this trait. The
-  resistance lasts until the start of your next turn. During that time, you
-  appear ghostly and translucent.
+- Dislocative Shove ::
+  You push the target of your attack to an unoccupied space you can see within
+  15 feet of you. You can move the target only horizontally, and before moving
+  into damaging terrain, such as lava or a pit, the target can make a Strength
+  saving throw (DC equal to 8 + your proficiency bonus + your Strength modifier),
+  ending the movement in an unoccupied space next to the damaging terrain on a
+  success. At 10th level, you can move the target up to 30 feet.
+
+You can use this feature a number of times equal to your proficiency bonus. You
+regain all expended uses when you finish a short or long rest.
+
+** Chronologic Echo
+At 7th level, immediately after you use your Second Wind feature, you can
+trigger an echo in time, allowing you to use it twice. Roll separately for
+each use of Second Wind. Once you use this feature, you can’t use it again
+until you finish a long rest.
+
+
+** Improved Temporal Strike
+At 10th level, when you use your Temporal Strike feature, you can choose one of
+the following additional options:
+
+- Chronal Cleave ::
+  You immediately make a weapon attack against a different target within range.
+  
+- Chronal Shield :: You add your proficiency bonus to your Armor Class until the
+  beginning of your next turn.
+  
+** Continuity Rift
+At 15th level, when you hit a creature with a weapon attack, you can instantly
+open a rupture in spacetime to swallow the target. The creature disappears and
+falls through a realm outside of reality.
+
+At the end of your next turn, the target returns to the space it previously
+occupied, or the nearest unoccupied space.
+
+It takes 8d8 psychic damage as it grapples with the mind-breaking experience.
+The target must succeed on an Intelligence saving throw (DC equal to 8 + your
+proficiency bonus + your Intelligence modifier) or it acts randomly for 1
+minute as if under the effects of the confusion spell. It can repeat the
+saving throw at the end of each of its turns, ending the effect on itself on
+a success.
+
+Once you use this feature, you can’t use it again until you finish a long rest.
+
+** Temporal Warrior
+Starting at 18th level, you can momentarily step outside of time to attack your foes. As an action, you can briefly stop the flow of time for everyone but yourself. No time passes for other creatures, while you take 1d4 + 1 turns in a row, during which you can use actions and move as normal. This effect works like the time stop spell, except you can make one attack on each of your turns without ending the effect. Once you use this feature, you can’t use it again until you finish a long rest.
+
+* Racial ()
 
 |------+---+---|
 | Used | 0 | 4 |
