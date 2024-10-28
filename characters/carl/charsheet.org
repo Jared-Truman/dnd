@@ -27,12 +27,12 @@
 |     9 | Human |         | Pugilist | The sweet science | Neutral   | Medium |
 
 * Stats  
-| Speed      | AC | Hit Points    | Saves | Inspo | Hit dice | Exhaustion |
-|------------+----+---------------+-------+-------+----------+------------|
-| 30 ft Walk | 16 | Pugilist (d8) |       |       | 9/9      |            |
-| 15 ft Swim |    |               |       |       |          |            |
-|            |    |               |       |       |          |            |
-| Total:     |    | 61/84         |       |       |          |            |
+| Speed      | AC | Hit Points     | Saves | Inspo | Hit dice | Exhaustion |
+|------------+----+----------------+-------+-------+----------+------------|
+| 30 ft Walk | 16 | Artificer (d8) |       |       | 9/9      |            |
+|            |    |                |       |       |          |            |
+|            |    |                |       |       |          |            |
+| Total:     |    | 54/84 15/15    |       |       |          |            |
 
 * Abilities and Skills
 #+name: stats
@@ -68,7 +68,7 @@
 |         |       |     |    | 1d20 + -1 | Performance     |
 |         |       |     |    | 1d20 + -1 | Persuasion      |
 |---------+-------+-----+----+-----------+-----------------|
-| PROF    |     3 |     |    |           |                 |
+| PROF    |     4 |     |    |           |                 |
 #+TBLFM: @2$3='(calc-dnd-mod (string-to-number (org-table-get-constant $1)))
 #+TBLFM: @4$3='(calc-dnd-mod (string-to-number (org-table-get-constant $1)))
 #+TBLFM: @8$3='(calc-dnd-mod (string-to-number (org-table-get-constant $1)))

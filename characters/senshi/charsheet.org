@@ -12,13 +12,13 @@
     (dnd-output-ability-constants table)
   #+END_SRC
 
-  #+RESULTS[077a52e76dc417c0e4b2ab992b1c0754362c4e8b]: define-constants-with-src-block
+  #+RESULTS[738462b2f6c35d908bca8f3540bde990dab8b21f]: define-constants-with-src-block
   :results:
   #+CONSTANTS: STR=20
   #+CONSTANTS: DEX=14
   #+CONSTANTS: CON=17
   #+CONSTANTS: INT=10
-  #+CONSTANTS: WIS=12
+  #+CONSTANTS: WIS=14
   #+CONSTANTS: CHA=8
   #+CONSTANTS: PROF=4
   #+CONSTANTS: SCA=
@@ -33,27 +33,27 @@
 |-------+----------------+---------+---------+-----------+-----------+--------|
 
 * Stats
-|------------+----+---------------+-------+-------+----------+------------|
-| Speed      | AC | Hit Points    | Saves | Inspo | Hit dice | Exhaustion |
-|------------+----+---------------+-------+-------+----------+------------|
-| 25 ft Walk | 21 | Fighter (d10) |       |       | 11/11    |            |
-|------------+----+---------------+-------+-------+----------+------------|
-| Total:     |    | 48/103        |       |       |          |            |
-|------------+----+---------------+-------+-------+----------+------------|
+|------------+----+---------------+---------+-------+-------+----------+------------|
+| Speed      | AC | Hit Points    | Temp H. | Saves | Inspo | Hit dice | Exhaustion |
+|------------+----+---------------+---------+-------+-------+----------+------------|
+| 25 ft Walk | 21 | Fighter (d10) |         |       |       | 12/12    |            |
+|------------+----+---------------+---------+-------+-------+----------+------------|
+| Total:     |    | 0/109         |       7 |       |       |          |            |
+|------------+----+---------------+---------+-------+-------+----------+------------|
 
 * Abilities and Skills
 #+name: stats
 | Ability | Score | Mod | PB | Roll           | Skill                 |
 |---------+-------+-----+----+----------------+-----------------------|
-| STR     |    20 |   5 | X  | 1d20 + 8       | Saving Throw          |
-|         |       |     | X  | 1d20 + 8       | Athletics             |
+| STR     |    20 |   5 | X  | 1d20 + 9       | Saving Throw          |
+|         |       |     | X  | 1d20 + 9       | Athletics             |
 |---------+-------+-----+----+----------------+-----------------------|
 | DEX     |    14 |   2 |    | 1d20 + 2       | Saving Throw          |
 |         |       |     |    | 1d20 + 2       | Acrobatics            |
 |         |       |     |    | 1d20 + 2       | Sleight of Hand       |
 |         |       |     |    | 1d20 + 2       | Stealth               |
 |---------+-------+-----+----+----------------+-----------------------|
-| CON     |    17 |   3 | X  | 1d20 + 6       | Saving Throw          |
+| CON     |    17 |   3 | X  | 1d20 + 7       | Saving Throw          |
 |---------+-------+-----+----+----------------+-----------------------|
 | INT     |    10 |   0 |    | 1d20 + 0       | Saving Throw          |
 |         |       |     |    | 1d20 + 0       | Arcana                |
@@ -62,16 +62,16 @@
 |         |       |     | X  | 1d20 + 3       | Nature                |
 |         |       |     |    | 1d20 + 0       | Religion              |
 |---------+-------+-----+----+----------------+-----------------------|
-| WIS     |    12 |   1 |    | 1d20 + 1       | Saving Throw          |
-|         |       |     | X  | 1d20 + 4       | Animal Handling       |
-|         |       |     |    | 1d20 + 1       | Insight               |
-|         |       |     |    | 1d20 + 1       | Medicine              |
-|         |       |     |    | 1d20 + 1       | Perception            |
-|         |       |     |    | 1d20 + 1       | Survival              |
+| WIS     |    14 |   2 |    | 1d20 + 2       | Saving Throw          |
+|         |       |     | X  | 1d20 + 7       | Animal Handling       |
+|         |       |     |    | 1d20 + 2       | Insight               |
+|         |       |     |    | 1d20 + 2       | Medicine              |
+|         |       |     |    | 1d20 + 2       | Perception            |
+|         |       |     |    | 1d20 + 2       | Survival              |
 |---------+-------+-----+----+----------------+-----------------------|
 | CHA     |     8 |  -1 |    | 1d20 + -1      | Saving Throw          |
 |         |       |     |    | 1d20 + -1      | Deception             |
-|         |       |     | X  | 1d20 + 2       | Intimidation          |
+|         |       |     | X  | 1d20 + 3       | Intimidation          |
 |         |       |     |    | 1d20 + -1      | Performance           |
 |         |       |     |    | 1d20 + -1      | Persuasion            |
 |---------+-------+-----+----+----------------+-----------------------|
@@ -103,8 +103,8 @@
 #+NAME: attacks
 | Weapon                 | Ability | Prof | Type  | Die | Roll    | Mod To Hit |
 |------------------------+---------+------+-------+-----+---------+------------|
-| Corrupted Battle Ax +1 | STR     | X    | Slash | 1d8 | 1d8 + 6 |          9 |
-| BattleAx               | STR     | X    | Slash | 1d8 | 1d8 + 5 |          9 |
+| Corrupted Battle Ax +1 | STR     | X    | Slash | 1d8 | 1d8 + 6 |         10 |
+| BattleAx               | STR     | X    | Slash | 1d8 | 1d8 + 5 |         10 |
 #+TBLFM: $7='(+ (if (string= $3 "X") $PROF 0) (calc-dnd-mod (string-to-number (org-table-get-constant $2))))
 #+TBLFM: $6='(concat $5 " + " (number-to-string (calc-dnd-mod (string-to-number (org-table-get-constant $2)))))
 
@@ -163,5 +163,17 @@ Every hour DC 16 WIS
 distracting thoughts so they don't have perception checks (uncharmable)
 Detect Magic spell withing 960
 
+Sausages
+Fanged maw
+- 1d12 PEIRCING
+- Temporary hit point CHA + 6 MIN of 7 (start of turn)
+-
+
+Tung twister tart
+- you can turn into furniture
+- telepathy out to 1000 feet
+
+
 Contamination
 - Mutation #1 - I gain telepathy within 10 ft. (4 more levels it goes out to 60ft)
+- (no hitpots from dice) Mutation #2 - Spikes 1d10 to a grappled opponent

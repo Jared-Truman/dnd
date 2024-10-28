@@ -5,7 +5,6 @@ b#+LATEX_CLASS: dnd
 #+FILETAGS: senshi features feature sheet
 
 * Racial (Mountain Dwarf)                                              :race:
-TODO
 
 ** Age                                                                 :age:
 
