@@ -1,0 +1,45 @@
+
+#+LATEX_CLASS: dnd
+#+STARTUP: content showstars indent
+#+OPTIONS: tags:nil
+#+TITLE: Carl's Background Sheet
+#+FILETAGS: avadra gahdouh background sheet
+
+* Starting Stats
+| Ability | Score |
+|---------+-------|
+| STR     |    15 |
+| DEX     |    12 |
+| CON     |    15 |
+| INT     |     8 |
+| WIS     |    13 |
+| CHA     |     8 |
+
+* Back story
+
+* Alignment
+Lawful Good
+
+* Physical Characteristics
+** Hair
+
+
+** Skin
+
+
+** Eyes
+
+
+** Height
+
+
+** Weight
+
+
+** Age (Years)
+
+
+** Gender
+
+
+** Deity
