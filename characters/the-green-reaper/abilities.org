@@ -43,23 +43,4 @@
 |-------+------+--------|
 |     4 | ASI  | +2 DEX |
 
-** Archetype (Gloom stalker)                            :xgte:gloom_stalker:
-
-| Ranger Level | Spells        |
-|--------------+---------------|
-| 3rd          | [[file:~/.emacs.d/ignore/org-dnd/10.spells.org::Disguise Self][Disguise Self]] |
-
-*** [[file:~/.emacs.d/ignore/org-dnd/02.classes.org::Dread Ambusher][Dread Ambusher]]                                                  :lvl_3:
-- Descripton ::
-  Initiative +WIS MOD
-
-  1st turn of combat
-  - +10ft movement.
-  - 1d8 on attack action
-
-*** [[file:~/.emacs.d/ignore/org-dnd/02.classes.org::Umbral Sight][Umbral Sight]]                                         :lvl_3:darkvision:
-- Descripton ::
-  Darkvision 60ft. +30ft if you have darkvision
-
-  Invisible to creatures relying on dark vision to see you in the dark.
 

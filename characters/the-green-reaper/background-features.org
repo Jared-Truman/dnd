@@ -96,6 +96,189 @@ Male
 
 
 * Features
+** Class (Ranger)
+Hit Points
+Hit Dice: 1d10 per ranger level
+Hit Points at 1st Level: 10 + your Constitution modifier
+Hit Points at Higher Levels: 1d10 (or 6) + your Constitution modifier per ranger level after 1st
+
+Proficiencies
+Armor: Light armor, medium armor, shields
+Weapons: Simple weapons, martial weapons
+Tools: None
+Saving Throws: Strength, Dexterity
+Skills: Choose three from Animal Handling, Athletics, Insight, Investigation,
+ Nature, Perception, Stealth, and Survival
+
+Equipment
+You start with the following equipment, in addition to the equipment granted by
+your background:
+
+(a) scale mail or (b) leather armor
+(a) two shortswords or (b) two simple melee weapons
+(a) a dungeoneer's pack or (b) an explorer's pack
+A longbow and a quiver of 20 arrows
+
+|-----------+---------------+------------------------------|
+| Choice    | Item          | Note                         |
+|-----------+---------------+------------------------------|
+| Skill     | Stealth       |                              |
+| Skill     | Perception    |                              |
+| Skill     | Survival      |                              |
+| Equipment | Leather Armor | AC: 11 + Dex modifier +1 WIS |
+| Equipment | Daggers x 2   |                              |
+| Equipment | Longbow       |                              |
+| Equipment | Arrows x 20   |                              |
+|-----------+---------------+------------------------------|
+
+*** Fighting Style
+At 2nd level, you adopt a particular style of fighting as your specialty. Choose
+one of the following options. You can't take a Fighting Style option more than
+once, even if you later get to choose again.
+
+Two-Weapon Fighting. When you engage in two-weapon fighting, you can add your
+ability modifier to the damage of the second attack.
+
+*** Spellcasting
+By the time you reach 2nd level, you have learned to use the magical essence of
+nature to cast spells, much as a druid does.
+
+**** Spell Slots
+The Ranger table shows how many spell slots you have to cast your ranger spells
+of 1st level and higher. To cast one of these spells, you must expend a slot of
+the spell's level or higher. You regain all expended spell slots when you finish
+a long rest.
+
+For example, if you know the 1st-level spell Animal Friendship and have a
+1st-level and a 2nd-level spell slot available, you can cast Animal Friendship
+using either slot.
+
+**** Spells Known of 1st Level and Higher
+You know two 1st-level spells of your choice from the ranger spell list.
+
+The Spells Known column of the Ranger table shows when you learn more ranger
+spells of your choice. Each of these spells must be of a level for which you
+have spell slots. For instance, when you reach 5th level in this class, you can
+learn one new spell of 1st or 2nd level.
+
+Additionally, when you gain a level in this class, you can choose one of the
+ranger spells you know and replace it with another spell from the ranger spell
+list, which also must be of a level for which you have spell slots.
+
+*** Spellcasting Ability
+Wisdom is your spellcasting ability for your ranger spells, since your magic
+draws on your attunement to nature. You use your Wisdom whenever a spell
+refers to your spellcasting ability. In addition, you use your Wisdom modifier
+when setting the saving throw DC for a ranger spell you cast and when making
+an attack roll with one.
+
+Spell save DC = 8 + your proficiency bonus + your Wisdom modifier
+
+Spell attack modifier = your proficiency bonus + your Wisdom modifier
+
+Spellcasting Focus (Optional)
+At 2nd level, you can use a druidic focus as a spellcasting focus for your
+ranger spells. A druidic focus might be a sprig of mistletoe or holly, a wand or
+rod made of yew or another special wood, a staff drawn whole from a living tree,
+or an object incorporating feathers, fur, bones, and teeth from sacred animals.
+
+*** Primeval Awareness
+Beginning at 3rd level, you can use your action and expend one ranger spell slot
+to focus your awareness on the region around you. For 1 minute per level of the
+spell slot you expend, you can sense whether the following types of creatures
+are present within 1 mile of you (or within up to 6 miles if you are in your
+favored terrain): aberrations, celestials, dragons, elementals, fey, fiends, and
+undead. This feature doesn’t reveal the creatures’ location or number.
+
+*** Primal Awareness (Optional)
+This 3rd-level feature replaces the Primeval Awareness feature. You gain no
+benefit from the replaced feature and don't qualify for anything in the game
+that requires it.
+
+You can focus your awareness through the interconnections of nature: you learn
+additional spells when you reach certain levels in this class if you don't
+already know them, as shown in the Primal Awareness Spells table. These spells
+don't count against the number of ranger spells you know.
+
+*** Ability Score Improvement
+|------+--------|
+| Type | Value  |
+|------+--------|
+| ASI  | DEX +2 |
+|------+--------|
+
+*** Extra Attack
+Beginning at 5th level, you can attack twice, instead of once, whenever you take
+the Attack action on your turn.
+
+
+** Sub-Class (Green Reaper)
+*** Green Reaper Magic
+Starting at 3rd level, you learn an additional spell when you reach certain levels in this class, as shown in the Green Reaper Spells table. The spell counts as a ranger spell for you, but it doesn't count against the number of ranger spells you know.
+
+Green Reaper Spells
+|--------------+---------------------------|
+| Ranger Level | Spell                     |
+|--------------+---------------------------|
+|            3 | detect poison and disease |
+|            5 | hold person               |
+|            9 | bestow curse              |
+|           13 | greater invisibility      |
+|           17 | cloudkill                 |
+|--------------+---------------------------|
+
+*** Envenomed Attack
+At 3rd level, you can use your poisoner's kit as a bonus action to coat a weapon
+or up to 20 pieces of ammunition with a dose of toxic poison. For the next
+minute, each time you deal damage with the weapon or ammunition you deal an
+additional 1d4 poison damage. You can do this a number of times equal to your
+proficiency bonus, and expended uses of this feature are recovered at the end of
+a long rest. At 11th level, this additional damage increases to 2d4 Also, the
+expended uses of this feature are recovered at the end of a short or long rest.
+At 11th level, this additional damage increases to 2d4. Also, the expended uses
+of this feature are recovered at the end of a short or long rest.
+
+*** Toxic Tradecraft
+Also at 3rd level, you gain proficiency with poisoner's kits. Your proficiency
+bonus is doubled for any ability check that uses this proficiency. Additionally,
+when you gain this feature you also gain a poisoner's kit. If you ever lose this
+kit you can spend 8 hours creating a replacement by collecting toxic flora and
+harvesting venomous fauna.
+
+As a final benefit of this feature once per turn when you hit a creature with a
+weapon or ammunition enhanced by your envenomed attack feature, you can spend a
+spell slot to apply a magical toxin to the attack. The toxin deals additional
+1d6 poinson damage and the creature is poisoned until the end of your next turn.
+The toxin has additional effects based on the spell slot expended casting the
+spell. These additinal effects are detailed at the end of this subclass
+description under Toxin effects.
+
+**** Level 1
+- Attenuate ::
+  While a creature is poisoned by this toxin, it has disadvantage on STR and DEX
+  saving throws.
+
+- Befuddled ::
+  While a creature is poisoned by this toxin, it cannot speak, read, or write
+  any language and it has disadvantage on saving throws made to maintain
+  concentration on spells.
+
+- Uncoordinated ::
+  While a creature is poisoned by  this toxin, it cannot take reactions or the
+  disengage or dodge action.
+  
+**** Level 2
+- Debilitate ::
+  The creature can't regain hit points for the next minute.
+
+- Potent ::
+  If the creature has resistance to poison damage, it loses that resistance for
+  the next minute.
+
+- Suffer ::
+  For the next minute, the first time the creature takes poison damage each turn
+  it takes an additional 1d6 poison damage.
+  
 ** Racial (Grung)
 - Amphibious ::
   You can breathe air and water
@@ -144,4 +327,3 @@ different scores by 1. You can't raise any of your scores above 20.
 |------------|
 |            |
 |------------|
-

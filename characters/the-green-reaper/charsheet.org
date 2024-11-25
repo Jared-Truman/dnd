@@ -31,13 +31,13 @@
 |     5 | Grung | Purple  | Ranger | Green Reaper | Lawful Good | Medium |
 
 * Stats  
-| Speed      | AC | Hit Points   | Saves | Inspo | Hit dice | Exhaustion |
-|------------+----+--------------+-------+-------+----------+------------|
-| 45 ft Walk |    | Ranger (d10) |       |       | 5/5      |            |
-| 30 ft Swim |    |              |       |       |          |            |
-| 0 ft Climb |    |              |       |       |          |            |
-|            |    |              |       |       |          |            |
-| Total:     |    | 27/74        |       |       |          |            |
+| Speed       | AC | Hit Points   | Saves | Inspo | Hit dice | Exhaustion |
+|-------------+----+--------------+-------+-------+----------+------------|
+| 25 ft Walk  | 15 | Ranger (d10) |       |       | 5/5      |            |
+| 12 ft Swim  |    |              |       |       |          |            |
+| 25 ft Climb |    |              |       |       |          |            |
+|             |    |              |       |       |          |            |
+| Total:      |    | 29/40        |       | X     |          |            |
 
 * Abilities and Skills
 #+name: stats
@@ -56,13 +56,13 @@
 | INT     |    10 |   1 |    | 1d20 + 1       | Saving Throw          |
 |         |       |     |    | 1d20 + 1       | Arcana                |
 |         |       |     |    | 1d20 + 1       | History               |
-|         |       |     | X  | 1d20 + 5       | Investigation         |
+|         |       |     |    | 1d20 + 5       | Investigation         |
 |         |       |     |    | 1d20 + 1       | Nature                |
 |         |       |     |    | 1d20 + 1       | Religion              |
 |---------+-------+-----+----+----------------+-----------------------|
 | WIS     |    16 |   3 |    | 1d20 + 3       | Saving Throw          |
-|         |       |     | X  | 1d20 + 7       | Animal Handling       |
-|         |       |     | X  | 1d20 + 7       | Insight               |
+|         |       |     |    | 1d20 + 7       | Animal Handling       |
+|         |       |     |    | 1d20 + 7       | Insight               |
 |         |       |     |    | 1d20 + 3       | Medicine              |
 |         |       |     | X  | 1d20 + 7       | Perception            |
 |         |       |     | X  | 1d20 + 7       | Survival              |
@@ -73,10 +73,9 @@
 |         |       |     |    | 1d20 + 0       | Performance           |
 |         |       |     |    | 1d20 + 0       | Persuasion            |
 |---------+-------+-----+----+----------------+-----------------------|
-| PROF    |     4 |     |    |                |                       |
-| SCA     |    15 |     |    | 8 + PROF + WIS | SPELL CASTING ABILITY |
-| SAM     |     7 |     |    | PROF + WIS     | SPELL ATT MOD         |
-| KIST    |    15 |     |    | 8 + PB + WIS   | KI SAVING THROW       |
+| PROF    |     3 |     |    |                |                       |
+| SCA     |       |  14 |    | 8 + PROF + WIS | SPELL CASTING ABILITY |
+| SAM     |       |   6 |    | PROF + WIS     | SPELL ATT MOD         |
 #+TBLFM: @2$3='(calc-dnd-mod (string-to-number (org-table-get-constant $1)))
 #+TBLFM: @4$3='(calc-dnd-mod (string-to-number (org-table-get-constant $1)))
 #+TBLFM: @8$3='(calc-dnd-mod (string-to-number (org-table-get-constant $1)))
@@ -92,11 +91,10 @@
 
 * Resistances
 
-- Necrotic ::
 
 * Immunities
 
-- Magical Sleep ::
+- Poison ::
 
 * Attacks
 Un armed strikes get a +1 for the next 24 hours
