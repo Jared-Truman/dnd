@@ -1,0 +1,65 @@
+#+LATEX_CLASS: dnd
+#+STARTUP: content showstars indent
+#+OPTIONS: tags:nil
+#+TITLE: Avadra's Spells
+#+FILETAGS: avadra gahdouh spells
+
+* Components
+|------------------------------+----------|
+| Component                    | Quantity |
+|------------------------------+----------|
+| Dried Carrot                 |        1 |
+| Small Straight Piece of Iron |        1 |
+|------------------------------+----------|
+
+* 1st Level                                                           :lvl_1:
+
+|------+---+---|
+| Used | 1 | 4 |
+|------+---+---|
+
+** Detect Poison and Disease
+- Reason :: Green Reaper
+- Casting Time :: 1 action
+- Range :: Self
+- Components :: V, S, M (a yew leaf)
+- Duration :: Concentration, up to 10 minutes
+
+For the duration, you can sense the presence and location of poisons, poisonous
+creatures, and diseases within 30 feet of you. You also identify the kind of
+poison, poisonous creature, or disease in each case.
+
+The spell can penetrate most barriers, but is blocked by 1 foot of stone, 1 inch
+of common metal, a thin sheet of lead, or 3 feet of wood or dirt.
+
+* 2nd Level                                                           :lvl_2:
+
+|------+---+---|
+| Used | 2 | 2 |
+|------+---+---|
+
+** Darkvision                   :artificer:druid:ranger:sorcerer:wizard:phb:
+- Casting Time :: 1 action
+- Range :: Touch
+- Components :: V, S, M (either a pinch of dried carrot or an agate)
+- Duration :: 8 hours
+
+You touch a willing creature to grant it the ability to see in the dark.
+For the duration, that creature has darkvision out to a range of 60
+feet.
+
+** Hold Person
+- Reason :: Green Reaper
+- Casting Time :: 1 action
+- Range :: 60 feet
+- Components :: V, S, M (a small, straight piece of iron)
+- Duration :: Concentration, up to 1 minute
+
+Choose a humanoid that you can see within range. The target must succeed on a
+Wisdom saving throw or be paralyzed for the duration. At the end of each of its
+turns, the target can make another Wisdom saving throw. On a success, the spell
+ends on the target.
+
+At Higher Levels. When you cast this spell using a spell slot of 3rd level or
+higher, you can target one additional humanoid for each slot level above 2nd.
+The humanoids must be within 30 feet of each other when you target them.
