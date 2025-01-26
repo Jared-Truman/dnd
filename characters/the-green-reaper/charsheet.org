@@ -11,18 +11,17 @@
     (dnd-output-ability-constants table)
   #+END_SRC
 
-  #+RESULTS[aec46307b9572a62cc89d3143361870f2fab01ba]: define-constants-with-src-block
+  #+RESULTS[d5a925f8d1c8a821d9b47e7e894a7d323448e1f5]: define-constants-with-src-block
   :results:
   #+CONSTANTS: STR=8
-  #+CONSTANTS: DEX=20
-  #+CONSTANTS: CON=13
-  #+CONSTANTS: INT=12
+  #+CONSTANTS: DEX=18
+  #+CONSTANTS: CON=14
+  #+CONSTANTS: INT=10
   #+CONSTANTS: WIS=16
   #+CONSTANTS: CHA=10
-  #+CONSTANTS: PROF=4
-  #+CONSTANTS: SCA=15
-  #+CONSTANTS: SAM=7
-  #+CONSTANTS: KIST=15
+  #+CONSTANTS: PROF=3
+  #+CONSTANTS: SCA=14
+  #+CONSTANTS: SAM=6
   :end:
   
 * Traits
@@ -37,35 +36,35 @@
 | 12 ft Swim  |    |              |       |       |          |            |
 | 25 ft Climb |    |              |       |       |          |            |
 |             |    |              |       |       |          |            |
-| Total:      |    | 29/40        |       | X     |          |            |
+| Total:      |    | 29/40        |       |       |          |            |
 
 * Abilities and Skills
 #+name: stats
 | Ability | Score | Mod | PB | Roll           | Skill                 |
 |---------+-------+-----+----+----------------+-----------------------|
-| STR     |     8 |  -1 | X  | 1d20 + 3       | Saving Throw          |
-|         |       |     |    | 1d20 + -1      | Athletics             |
+| STR     |     8 |  -1 | X  | 1d20 + 2       | Saving Throw          |
+|         |       |     | X  | 1d20 + 2       | Athletics             |
 |---------+-------+-----+----+----------------+-----------------------|
-| DEX     |    18 |   5 | X  | 1d20 + 9       | Saving Throw          |
-|         |       |     |    | 1d20 + 5       | Acrobatics            |
-|         |       |     |    | 1d20 + 5       | Sleight of Hand       |
-|         |       |     | X  | 1d20 + 9       | Stealth               |
+| DEX     |    18 |   4 | X  | 1d20 + 7       | Saving Throw          |
+|         |       |     |    | 1d20 + 4       | Acrobatics            |
+|         |       |     |    | 1d20 + 4       | Sleight of Hand       |
+|         |       |     | X  | 1d20 + 7       | Stealth               |
 |---------+-------+-----+----+----------------+-----------------------|
-| CON     |    14 |   1 |    | 1d20 + 1       | Saving Throw          |
+| CON     |    14 |   2 |    | 1d20 + 2       | Saving Throw          |
 |---------+-------+-----+----+----------------+-----------------------|
-| INT     |    10 |   1 |    | 1d20 + 1       | Saving Throw          |
-|         |       |     |    | 1d20 + 1       | Arcana                |
-|         |       |     |    | 1d20 + 1       | History               |
-|         |       |     |    | 1d20 + 5       | Investigation         |
-|         |       |     |    | 1d20 + 1       | Nature                |
-|         |       |     |    | 1d20 + 1       | Religion              |
+| INT     |    10 |   0 |    | 1d20 + 0       | Saving Throw          |
+|         |       |     |    | 1d20 + 0       | Arcana                |
+|         |       |     |    | 1d20 + 0       | History               |
+|         |       |     |    | 1d20 + 0       | Investigation         |
+|         |       |     |    | 1d20 + 0       | Nature                |
+|         |       |     |    | 1d20 + 0       | Religion              |
 |---------+-------+-----+----+----------------+-----------------------|
 | WIS     |    16 |   3 |    | 1d20 + 3       | Saving Throw          |
-|         |       |     |    | 1d20 + 7       | Animal Handling       |
-|         |       |     |    | 1d20 + 7       | Insight               |
+|         |       |     |    | 1d20 + 3       | Animal Handling       |
+|         |       |     |    | 1d20 + 3       | Insight               |
 |         |       |     |    | 1d20 + 3       | Medicine              |
-|         |       |     | X  | 1d20 + 7       | Perception            |
-|         |       |     | X  | 1d20 + 7       | Survival              |
+|         |       |     | X  | 1d20 + 6       | Perception            |
+|         |       |     |    | 1d20 + 3       | Survival              |
 |---------+-------+-----+----+----------------+-----------------------|
 | CHA     |    10 |   0 |    | 1d20 + 0       | Saving Throw          |
 |         |       |     |    | 1d20 + 0       | Deception             |
@@ -74,8 +73,8 @@
 |         |       |     |    | 1d20 + 0       | Persuasion            |
 |---------+-------+-----+----+----------------+-----------------------|
 | PROF    |     3 |     |    |                |                       |
-| SCA     |       |  14 |    | 8 + PROF + WIS | SPELL CASTING ABILITY |
-| SAM     |       |   6 |    | PROF + WIS     | SPELL ATT MOD         |
+| SCA     |    14 |     |    | 8 + PROF + WIS | SPELL CASTING ABILITY |
+| SAM     |     6 |     |    | PROF + WIS     | SPELL ATT MOD         |
 #+TBLFM: @2$3='(calc-dnd-mod (string-to-number (org-table-get-constant $1)))
 #+TBLFM: @4$3='(calc-dnd-mod (string-to-number (org-table-get-constant $1)))
 #+TBLFM: @8$3='(calc-dnd-mod (string-to-number (org-table-get-constant $1)))
@@ -100,11 +99,9 @@
 Un armed strikes get a +1 for the next 24 hours
 
 #+NAME: attacks
-| Weapon              | Ability | Prof | Type        | Die | Mod To Hit | Roll    |
-|---------------------+---------+------+-------------+-----+------------+---------|
-| Unarmed Strike      | DEX     | X    | Bludgeoning | 1d6 |          9 | 1d6 + 5 |
-| Fist s cuffs (+2)   | DEX     | X    | Bludgeoning | 1d6 |         11 | 1d6 + 7 |
-| Tolerant Torture +2 | DEX     | X    | Bludgeoning | 1d6 |          9 | 1d6 + 5 |
+| Weapon | Ability | Prof | Type     | Die | Mod To Hit | Roll    |
+|--------+---------+------+----------+-----+------------+---------|
+| Dagger | DEX     | X    | Piercing | 1d4 |          7 | 1d4 + 4 |
 #+TBLFM: $6='(+ (if (string= $3 "X") $PROF 0) (calc-dnd-mod (string-to-number (org-table-get-constant $2))))
 #+TBLFM: $7='(concat $5 " + " (number-to-string (calc-dnd-mod (string-to-number (org-table-get-constant $2)))))
 
@@ -118,30 +115,16 @@ Un armed strikes get a +1 for the next 24 hours
 |           |                |         |         |
 
 * Equipment
-| Name                             | Quantity | Cost (gp) | Weight (lbs) | Capacity | Total Weight (lbs) | Total Cost (gp) |
-|----------------------------------+----------+-----------+--------------+----------+--------------------+-----------------|
-| Emerald Pen                      |        1 |           |              |          | #ERROR             |               0 |
-| Blanket                          |        1 |           |              |          | #ERROR             |               0 |
-| Dagger                           |        1 |           |              |          | #ERROR             |               0 |
-| Mess kit                         |        1 |           |              |          | #ERROR             |               0 |
-| Parchment                        |        5 |           |              |          | #ERROR             |               0 |
-| Rations                          |        4 |           |              |          | #ERROR             |               0 |
-| Robes                            |        1 |           |              |          | #ERROR             |               0 |
-| Waterskin                        |        1 |        .2 |            5 |          | #ERROR             |             0.2 |
-| Bag of Holding                   |        1 |           |              |          | #ERROR             |               0 |
-| Rope of climbing                 |        1 |           |              |          | #ERROR             |               0 |
-| Vials of unknown liquid          |        2 |           |              |          | #ERROR             |               0 |
-| Bougie Robe (Lesser restoration) |        1 |           |              |          | #ERROR             |               0 |
-| Long sword (+1)                  |        1 |           |              |          |                    |                 |
-| Health Pot                       |        1 |           |              |          |                    |                 |
-| War documents / Identification   |        1 |           |              |          |                    |                 |
-|----------------------------------+----------+-----------+--------------+----------+--------------------+-----------------|
-| Carry Capacity                   |      200 |           |              |          | #ERROR             |               0 |
+| Name           | Quantity | Cost (gp) | Weight (lbs) | Capacity | Total Weight (lbs) | Total Cost (gp) |
+|----------------+----------+-----------+--------------+----------+--------------------+-----------------|
+| Dagger         |        9 |           |              |          | #ERROR             |               0 |
+|----------------+----------+-----------+--------------+----------+--------------------+-----------------|
+| Carry Capacity |      200 |           |              |          | #ERROR             |               0 |
 #+TBLFM: $6=($ * $4)
 #+TBLFM: $7=($2 * $3)
-#+TBLFM: @19$6=vsum(@INVALID$6..@31$6)
-#+TBLFM: @19$7=vsum(@INVALID$7..@24$7)
-#+TBLFM: @19$2=($STR * 10)
+#+TBLFM: @5$6=vsum(@INVALID$6..@17$6)
+#+TBLFM: @5$7=vsum(@INVALID$7..@10$7)
+#+TBLFM: @5$2=($STR * 10)
 
 ** Attunements
 

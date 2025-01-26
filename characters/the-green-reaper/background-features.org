@@ -124,7 +124,7 @@ A longbow and a quiver of 20 arrows
 |-----------+---------------+------------------------------|
 | Skill     | Stealth       |                              |
 | Skill     | Perception    |                              |
-| Skill     | Survival      |                              |
+| Skill     | Athletics     |                              |
 | Equipment | Leather Armor | AC: 11 + Dex modifier +1 WIS |
 | Equipment | Daggers x 2   |                              |
 | Equipment | Longbow       |                              |
@@ -291,7 +291,7 @@ description under Toxin effects.
   must succeed on a DC 12 Constitution saving throw or become poisoned for 1 minute. A
   poisoned creature no longer in direct contact with you can repeat the saving throw
   at the end of each of its turns, ending the effect on itself on a success.
-    
+
   - You can also apply this poison to any piercing weapon as part of an attack with
     that weapon, though when you hit the poison reacts differently. The target must
     succeed on a DC 12 Constitution saving throw or take 2d4 poison damage.
@@ -300,6 +300,10 @@ description under Toxin effects.
     The Poisoned creature feels a desperate need to soak itself in
     liquid or mud. It can’t take Actions or move except to do so or to reach a
     body of liquid or mud.
+
+  8 + CON + PROF
+
+  1d4, 5th 2d4, 11th 3d4, 17th 4d4
       
 - Standing Leap ::
   Your long jump is up to 25 feet and your high jump is up to 15 feet, with or without

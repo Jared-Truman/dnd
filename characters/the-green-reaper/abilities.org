@@ -1,8 +1,8 @@
 #+LATEX_CLASS: dnd
 #+STARTUP: content showstars indent
 #+OPTIONS: tags:nil
-#+TITLE: Avadra Gahdouhs's Abilities
-#+FILETAGS: avadra gahdouh abilities
+#+TITLE: Leap Ledger's Abilities
+#+FILETAGS: leap ledger abilities
 
 * Class ([[file:~/.emacs.d/ignore/org-dnd/02.classes.org::Ranger][Ranger]])                                                        :pbh:
 ** [[file:~/.emacs.d/ignore/org-dnd/02.classes.org::Favored Foe][Favored Foe]]                              :lvl_1:lvl_6:lvl_14:alt_feature:
@@ -30,17 +30,46 @@
 |---------+-------+---+---|
 
 ** Fighting Style
-|---------|
-| Defense |
-|---------|
+|------------|
+| Two Handed |
+|------------|
 
 
 ** [[file:~/.emacs.d/ignore/org-dnd/02.classes.org::Primeval Awareness][Primeval Awareness]]                                                :lvl_3:
 
-** Ability Score Improvement
+** Ability Score Improvement                                         :lvl_4:
 
 | Level | Type | Value  |
 |-------+------+--------|
 |     4 | ASI  | +2 DEX |
 
 
+** Extra Attack                                                      :lvl_5:
+During the attack action do another attack
+
+* Sub Class
+
+** Envenomed Attack ::
+Bonus action cover 20 pieces of ammo
+
+1d4 (2d4 11th)
+
+- Proficiency Usages ::  
+  |------+---+---|
+  | Used | 0 | 3 |
+  |------+---+---|
+
+Regained after short or long rest
+
+* Race (Grung)
+** Poisonous Skin
+8 + CON + PROF saving throw
+|----|
+| 13 |
+|----|
+
+1d4, 5th 2d4, 11th 3d4, 17th 4d4 damage
+|-----|
+| 2d4 |
+|-----|
+  
