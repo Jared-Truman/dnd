@@ -73,12 +73,12 @@ turn.
 
 *** Attacks                                                        :attack:
 #+NAME: attacks
-| ! | Weapon                  | Mod | Roll              | Mastery | Bonus_DMG | Bonus_Mod | Ability | PB | Type     | Die | DieCount | Offhand_Penalty | Hands |
-|---+-------------------------+-----+-------------------+---------+-----------+-----------+---------+----+----------+-----+----------+-----------------+-------|
-| # | Dagger                  |   7 | 1d4 + 4           | X/Nick  | -         |         - | DEX     | X  | Piercing |   4 |        1 | -               |     1 |
-| # | Dagger (offhand)        |   7 | 1d4 + 0           | X/Nick  | -         |         - | DEX     | X  | Piercing |   4 |        1 | X               |     1 |
-| # | Dagger (thrown)         |   7 | 1d4 + 4           | X/Nick  | -         |         2 | DEX     | X  | Piercing |   4 |        1 | -               |     1 |
-| # | Dagger (thrown/offhand) |   7 | 1d4 + 0           | X/Nick  | -         |         2 | DEX     | X  | Piercing |   4 |        1 | X               |     1 |
+| ! | Weapon                  | Mod | Roll    | Mastery | Bonus_DMG | Bonus_Mod | Ability | PB | Type     | Die | DieCount | Offhand_Penalty | Hands |
+|---+-------------------------+-----+---------+---------+-----------+-----------+---------+----+----------+-----+----------+-----------------+-------|
+| # | Dagger                  |   7 | 1d4 + 4 | X/Nick  | -         | -         | DEX     | X  | Piercing |   4 |        1 | -               |     1 |
+| # | Dagger (offhand)        |   7 | 1d4 + 0 | X/Nick  | -         | -         | DEX     | X  | Piercing |   4 |        1 | X               |     1 |
+| # | Dagger (thrown)         |   7 | 1d4 + 4 | X/Nick  | -         | 2         | DEX     | X  | Piercing |   4 |        1 | -               |     1 |
+| # | Dagger (thrown/offhand) |   7 | 1d4 + 0 | X/Nick  | -         | 2         | DEX     | X  | Piercing |   4 |        1 | X               |     1 |
 ##+TBLFM: $3='(+ (dnd-calc-pb (dnd-get-stat "PROF") $PB) (dnd-calc-mod (dnd-get-stat $Ability)) (string-to-number $Bonus_Mod))::$4='(format "%s + %s%s" (dnd-calc-dice $Die $DieCount (dnd-get-stat "SIZE")) (dnd-calc-offhand-mod (dnd-calc-mod (dnd-get-stat $Ability)) $Offhand_Penalty) (dnd-calc-bonus-dmg $Bonus_DMG))
 
 **** Triggers                                                    :trigger:
@@ -110,9 +110,9 @@ only once per turn.
 
 ** Bonus Actions                                              :bonus_action:
 #+NAME: bonus_actions
-| ! | Bonus Action   | Used | Total | Refills  | Count | PB |
-|---+----------------+------+-------+----------+-------+----|
-| # | Offhand Attack |    - |     0 | -        |     - | -  |
+| ! | Bonus Action   | Used | Total | Refills | Count | PB |
+|---+----------------+------+-------+---------+-------+----|
+| # | Offhand Attack | -    |     0 | -       | -     | -  |
 ##+TBLFM: $4='(+ (dnd-calc-pb (dnd-get-stat "PROF") $PB) (string-to-number $Count))
 
 *** Spells                                                          :spell:
