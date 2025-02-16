@@ -1,138 +1,178 @@
-
-#+LATEX_CLASS: dnd
 #+STARTUP: content showstars indent
 #+OPTIONS: tags:nil
-#+TITLE: Leap Ledger's Character Sheet
-#+FILETAGS: leap ledger character sheet
-
-* Constants
-  #+NAME: define-constants-with-src-block
-  #+BEGIN_SRC elisp :var table=stats :colnames yes :results output drawer :cache yes :lang elisp
-    (dnd-output-ability-constants table)
-  #+END_SRC
-
-  #+RESULTS[d5a925f8d1c8a821d9b47e7e894a7d323448e1f5]: define-constants-with-src-block
-  :results:
-  #+CONSTANTS: STR=8
-  #+CONSTANTS: DEX=18
-  #+CONSTANTS: CON=14
-  #+CONSTANTS: INT=10
-  #+CONSTANTS: WIS=16
-  #+CONSTANTS: CHA=10
-  #+CONSTANTS: PROF=3
-  #+CONSTANTS: SCA=14
-  #+CONSTANTS: SAM=6
-  :end:
+#+TITLE: Leap Ledger - Character Sheet
+#+FILETAGS: leap char_sheet
   
 * Traits
-| Level | Race  | Subrace | Class  | Subclass     | Alignment   | Size   |
-|-------+-------+---------+--------+--------------+-------------+--------|
-|     5 | Grung | Purple  | Ranger | Green Reaper | Lawful Good | Medium |
+| Level | Race  | Subrace | Class  | Subclass     | Size    | Alignment      | Age |
+|-------+-------+---------+--------+--------------+---------+----------------+-----|
+|     5 | Grung | Purple  | Ranger | Green Reaper | 2ft 6in | Lawful Neutral |  24 |
 
 * Stats  
-| Speed       | AC | Hit Points   | Saves | Inspo | Hit dice | Exhaustion |
-|-------------+----+--------------+-------+-------+----------+------------|
-| 25 ft Walk  | 15 | Ranger (d10) |       |       | 5/5      |            |
-| 12 ft Swim  |    |              |       |       |          |            |
-| 25 ft Climb |    |              |       |       |          |            |
-|             |    |              |       |       |          |            |
-| Total:      |    | 29/40        |       |       |          |            |
+| ! | Walking Speed | Swim | Climb | Hit Points | AC | Death Saves | Inspiration | Armor       | Armor_Bonus | Shield |
+|---+---------------+------+-------+------------+----+-------------+-------------+-------------+-------------+--------|
+| # | 25 ft         |   12 |    25 | 24/40      | 15 |             |             | Breastplate | -           | -      |
+##+TBLFM: $4='(dnd-calc-ac $Armor (dnd-get-stat "DEX") (dnd-get-stat "CON") (string-to-number $Armor_Bonus) (string-to-number $Shield))
 
-* Abilities and Skills
-#+name: stats
-| Ability | Score | Mod | PB | Roll           | Skill                 |
-|---------+-------+-----+----+----------------+-----------------------|
-| STR     |     8 |  -1 | X  | 1d20 + 2       | Saving Throw          |
-|         |       |     | X  | 1d20 + 2       | Athletics             |
-|---------+-------+-----+----+----------------+-----------------------|
-| DEX     |    18 |   4 | X  | 1d20 + 7       | Saving Throw          |
-|         |       |     |    | 1d20 + 4       | Acrobatics            |
-|         |       |     |    | 1d20 + 4       | Sleight of Hand       |
-|         |       |     | X  | 1d20 + 7       | Stealth               |
-|---------+-------+-----+----+----------------+-----------------------|
-| CON     |    14 |   2 |    | 1d20 + 2       | Saving Throw          |
-|---------+-------+-----+----+----------------+-----------------------|
-| INT     |    10 |   0 |    | 1d20 + 0       | Saving Throw          |
-|         |       |     |    | 1d20 + 0       | Arcana                |
-|         |       |     |    | 1d20 + 0       | History               |
-|         |       |     |    | 1d20 + 0       | Investigation         |
-|         |       |     |    | 1d20 + 0       | Nature                |
-|         |       |     |    | 1d20 + 0       | Religion              |
-|---------+-------+-----+----+----------------+-----------------------|
-| WIS     |    16 |   3 |    | 1d20 + 3       | Saving Throw          |
-|         |       |     |    | 1d20 + 3       | Animal Handling       |
-|         |       |     |    | 1d20 + 3       | Insight               |
-|         |       |     |    | 1d20 + 3       | Medicine              |
-|         |       |     | X  | 1d20 + 6       | Perception            |
-|         |       |     |    | 1d20 + 3       | Survival              |
-|---------+-------+-----+----+----------------+-----------------------|
-| CHA     |    10 |   0 |    | 1d20 + 0       | Saving Throw          |
-|         |       |     |    | 1d20 + 0       | Deception             |
-|         |       |     |    | 1d20 + 0       | Intimidation          |
-|         |       |     |    | 1d20 + 0       | Performance           |
-|         |       |     |    | 1d20 + 0       | Persuasion            |
-|---------+-------+-----+----+----------------+-----------------------|
-| PROF    |     3 |     |    |                |                       |
-| SCA     |    14 |     |    | 8 + PROF + WIS | SPELL CASTING ABILITY |
-| SAM     |     6 |     |    | PROF + WIS     | SPELL ATT MOD         |
-#+TBLFM: @2$3='(calc-dnd-mod (string-to-number (org-table-get-constant $1)))
-#+TBLFM: @4$3='(calc-dnd-mod (string-to-number (org-table-get-constant $1)))
-#+TBLFM: @8$3='(calc-dnd-mod (string-to-number (org-table-get-constant $1)))
-#+TBLFM: @9$3='(calc-dnd-mod (string-to-number (org-table-get-constant $1)))
-#+TBLFM: @15$3='(calc-dnd-mod (string-to-number (org-table-get-constant $1)))
-#+TBLFM: @21$3='(calc-dnd-mod (string-to-number (org-table-get-constant $1)))
-#+TBLFM: @2$5..@3$5='(concat "1d20 + " (number-to-string (+ (if (string= $4 "X") $PROF 0) (calc-dnd-mod (string-to-number (org-table-get-constant @2$1))))))
-#+TBLFM: @4$5..@7$5='(concat "1d20 + " (number-to-string (+ (if (string= $4 "X") $PROF 0) (calc-dnd-mod (string-to-number (org-table-get-constant @4$1))))))
-#+TBLFM: @8$5..@8$5='(concat "1d20 + " (number-to-string (+ (if (string= $4 "X") $PROF 0) (calc-dnd-mod (string-to-number (org-table-get-constant @8$1))))))
-#+TBLFM: @9$5..@14$5='(concat "1d20 + " (number-to-string (+ (if (string= $4 "X") $PROF 0) (calc-dnd-mod (string-to-number (org-table-get-constant @9$1))))))
-#+TBLFM: @15$5..@20$5='(concat "1d20 + " (number-to-string (+ (if (string= $4 "X") $PROF 0) (calc-dnd-mod (string-to-number (org-table-get-constant @15$1))))))
-#+TBLFM: @21$5..@25$5='(concat "1d20 + " (number-to-string (+ (if (string= $4 "X") $PROF 0) (calc-dnd-mod (string-to-number (org-table-get-constant @21$1))))))
+* Saves and Skills
+** Saves
+#+NAME: saves
+| ! | Ability | Score | Saving Throw | Mod | PB |
+|---+---------+-------+--------------+-----+----|
+| # | STR     |     8 | 1d20 + 0     |  -1 | X  |
+| # | DEX     |    18 | 1d20 + 7     |   4 | X  |
+| # | CON     |    14 | 1d20 + 2     |   2 | -  |
+| # | INT     |    10 | 1d20 + 0     |   0 | -  |
+| # | WIS     |    16 | 1d20 + 5     |   3 | -  |
+| # | CHA     |    10 | 1d20 + 0     |   0 | -  |
+##+TBLFM: @2$3..@7$3='(dnd-get-stat $Ability)::@2$4..@7$4='(format "1d20 + %s" (+ (dnd-calc-pb (dnd-get-stat "PROF") $PB) (dnd-calc-mod (dnd-get-stat $Ability))))::@2$5..@7$5='(dnd-calc-mod (dnd-get-stat $Ability))
 
-* Resistances
+** Skills
+#+name: skills
+| ! | Ability | Skill           | Roll     | PB |
+|---+---------+-----------------+----------+----|
+| # | STR     | Athletics       | 1d20 + 2 | -  |
+|---+---------+-----------------+----------+----|
+| # | DEX     | Acrobatics      | 1d20 + 7 | X  |
+| # | DEX     | Sleight of Hand | 1d20 + 4 | -  |
+| # | DEX     | Stealth         | 1d20 + 7 | X  |
+|---+---------+-----------------+----------+----|
+| # | INT     | Arcana          | 1d20 + 0 | -  |
+| # | INT     | History         | 1d20 + 0 | -  |
+| # | INT     | Investigation   | 1d20 + 0 | -  |
+| # | INT     | Nature          | 1d20 + 0 | -  |
+| # | INT     | Religion        | 1d20 + 0 | -  |
+|---+---------+-----------------+----------+----|
+| # | WIS     | Animal Handling | 1d20 + 3 | -  |
+| # | WIS     | Insight         | 1d20 + 3 | -  |
+| # | WIS     | Medicine        | 1d20 + 3 | -  |
+| # | WIS     | Perception      | 1d20 + 6 | X  |
+| # | WIS     | Survival        | 1d20 + 3 | -  |
+|---+---------+-----------------+----------+----|
+| # | CHA     | Deception       | 1d20 + 0 | -  |
+| # | CHA     | Intimidation    | 1d20 + 0 | -  |
+| # | CHA     | Performance     | 1d20 + 0 | -  |
+| # | CHA     | Persuasion      | 1d20 + 0 | -  |
+##+TBLFM: @2$4..@19$4='(format "1d20 + %s" (+ (dnd-calc-pb (dnd-get-stat "PROF") $PB) (dnd-calc-mod (dnd-get-stat $Ability))))
 
+* Combat                                                             :combat:
+** Actions                                                          :action:
+*** Extra Attack
+You can attack twice instead of once whenever you take the Attack action on your
+turn.
 
-* Immunities
+*** Spells                                                          :spell:
+#+NAME: spells
+| ! | Spell                     | Range | Effect                     | Concentration | DC     | Level | Has_DC | Due To       |
+|---+---------------------------+-------+----------------------------+---------------+--------+-------+--------+--------------|
+| # | Detect Poison and Disease | Self  | Sense poison within 30 ft  | 10 min        | -      |     1 | -      | Green Reaper |
+| # | Alarm                     | 30 ft | Audible, Mental 20 FT cube | -             | -      |     1 | -      | Ranger       |
+| # | Hold Person               | 90 ft | Paralyze Target            | 1 min         | WIS 14 |     2 | X      | Green Reaper |
+| # | Darkvision                | Touch | Grant Darkvision           | 8 hours       | -      |     2 | -      | Ranger       |
+##+TBLFM: $6='(dnd-calc-spell-save-dc (dnd-get-stat (dnd-get-stat "Spell_Ability")) (dnd-get-stat "PROF") $Has_DC)
 
-- Poison ::
-
-* Attacks
-Un armed strikes get a +1 for the next 24 hours
-
+*** Attacks                                                        :attack:
 #+NAME: attacks
-| Weapon | Ability | Prof | Type     | Die | Mod To Hit | Roll    |
-|--------+---------+------+----------+-----+------------+---------|
-| Dagger | DEX     | X    | Piercing | 1d4 |          7 | 1d4 + 4 |
-#+TBLFM: $6='(+ (if (string= $3 "X") $PROF 0) (calc-dnd-mod (string-to-number (org-table-get-constant $2))))
-#+TBLFM: $7='(concat $5 " + " (number-to-string (calc-dnd-mod (string-to-number (org-table-get-constant $2)))))
+| ! | Weapon                  | Mod | Roll    | Mastery | Bonus_DMG | Bonus_Mod | Ability | PB | Type     | Die | DieCount | Offhand_Penalty | Hands |
+|---+-------------------------+-----+---------+---------+-----------+-----------+---------+----+----------+-----+----------+-----------------+-------|
+| # | Dagger                  |   7 | 1d4 + 4 | X/Nick  | -         | -         | DEX     | X  | Piercing |   4 |        1 | -               |     1 |
+| # | Dagger (offhand)        |   7 | 1d4 + 0 | X/Nick  | -         | -         | DEX     | X  | Piercing |   4 |        1 | X               |     1 |
+| # | Dagger (thrown)         |   7 | 1d4 + 4 | X/Nick  | -         | 2         | DEX     | X  | Piercing |   4 |        1 | -               |     1 |
+| # | Dagger (thrown/offhand) |   7 | 1d4 + 0 | X/Nick  | -         | 2         | DEX     | X  | Piercing |   4 |        1 | X               |     1 |
+##+TBLFM: $3='(+ (dnd-calc-pb (dnd-get-stat "PROF") $PB) (dnd-calc-mod (dnd-get-stat $Ability)) (string-to-number $Bonus_Mod))::$4='(format "%s + %s%s" (dnd-calc-dice $Die $DieCount (dnd-get-stat "SIZE")) (dnd-calc-offhand-mod (dnd-calc-mod (dnd-get-stat $Ability)) $Offhand_Penalty) (dnd-calc-bonus-dmg $Bonus_DMG))
+
+**** Triggers                                                    :trigger:
+#+NAME: attack_triggers
+| ! | Trigger       | Effect                                              | Cost | DC | Triggered_By      | PB | Ability |
+|---+---------------+-----------------------------------------------------+------+----+-------------------+----+---------|
+| # | Poison        | 1d4                                                 | BA   | -  | Piercing          | -  | -       |
+| # | Poison Skin   | Target takes 2d4 poison                             | -    | 13 | Piercing          | X  | CON     |
+| # | Hunter's Mark | 1d6 force                                           | -    | -  | Hit Marked Target | -  | -       |
+| # | Attenuate     | 1d6 poison; DisAdv on STR/DEX saves                 | SS1  | -  | Envenomed Strike  | -  | -       |
+| # | Befuddled     | 1d6 poison; Can't speak and DisAdv on concentration | SS1  | -  | Envenomed Strike  | -  | -       |
+| # | Uncoordinated | 1d6 poison; No reactions, disengage, or dodge       | SS1  | -  | Envenomed Strike  | -  | -       |
+| # | Debilitate    | 1d6 poison; Can't regain hit points for 1 min       | SS2  | -  | Envenomed Strike  | -  | -       |
+| # | Potent        | 1d6 poison; Loses resistance to poison for 1 min    | SS2  | -  | Envenomed Strike  | -  | -       |
+| # | Suffer        | 1d6 poison; + 1d6 when takes poison dmg (10/turns)  | SS2  | -  | Envenomed Strike  | -  | -       |
+##+TBLFM: $5='(+ (dnd-calc-pb (dnd-get-stat "PROF") $PB) (dnd-calc-mod (dnd-get-stat $Ability)) 8)
+
+***** Descriptions                                          :description:
+****** Mastery                                          :mastery:weapon:
+******* Vex
+If you hit a creature with this weapon and deal damage to the creature, you have
+Advantage on your next attack roll against that creature before the end of your
+next turn.
+
+******* Nick
+When you make the extra attack of the Light property, you can make it as part of
+the Attack action instead of as a Bonus Action. You can make this extra attack
+only once per turn.
+
+** Bonus Actions                                              :bonus_action:
+#+NAME: bonus_actions
+| ! | Bonus Action   | Used | Total | Refills | Count | PB |
+|---+----------------+------+-------+---------+-------+----|
+| # | Offhand Attack | -    |     0 | -       | -     | -  |
+##+TBLFM: $4='(+ (dnd-calc-pb (dnd-get-stat "PROF") $PB) (string-to-number $Count))
+
+*** Spells                                                          :spell:
+#+NAME: spells
+| ! | Spell         | Range | Effect                     | Concentration | DC | Level | Has_DC |
+|---+---------------+-------+----------------------------+---------------+----+-------+--------|
+| # | Hunter's Mark | Self  | Deal additional 1d6 on hit | 1 hour        | -  |     1 | -      |
+##+TBLFM: $6='(dnd-calc-spell-save-dc (dnd-get-stat (dnd-get-stat "Spell_Ability")) (dnd-get-stat "PROF") $Has_DC)
+
+** Special Resources
+#+NAME: special_resouces
+| ! | Resource           | Used | Total | SR | LR | Count | PB | Die | DC |
+|---+--------------------+------+-------+----+----+-------+----+-----+----|
+| # | Hit Dice           |    0 |     5 | -  | X  |     5 | -  | D10 | -  |
+| # | Spell Slot (1)     |    0 |     4 | -  | X  |     4 | -  | -   | -  |
+| # | Spell Slot (2)     |    0 |     2 | -  | X  |     2 | -  | -   | -  |
+| # | Free Hunter's Mark |    0 |     3 | -  | X  |     3 | -  | D6  | -  |
+| # | Envenomed Attack   |    0 |     3 | -  | X  |    20 | X  | D6  | -  |
+##+TBLFM: $4='(+ (dnd-calc-pb (dnd-get-stat "PROF") $PB) (string-to-number $Count))::$3='(dnd-reset-based-on-rest (dnd-get-stat "SHORT") (dnd-get-stat "LONG") $Used $SR $LR)
 
 * Proficiencies
-| Languages | Tools          | Armor   | Weapons |
-|-----------+----------------+---------+---------|
-| Common    | Brewer's Tools | Light   | Simple  |
-| Draconic  | Playing Cards  | Medium  | Martial |
-| Elvish    |                | Heavy   |         |
-|           |                | Shields |         |
-|           |                |         |         |
+  | Languages | Tools                | Armor   | Weapons |
+  |-----------+----------------------+---------+---------|
+  | Common    | Thieves' Tools       | Light   | Simple  |
+  | Grung     | Flute                | Medium  | Martial |
+  |           | Alchemist's Supplies | Heavy   |         |
+  |           | Tinkerer's Tools     | Shields |         |
+
+* Immunities
+** Poison
 
 * Equipment
-| Name           | Quantity | Cost (gp) | Weight (lbs) | Capacity | Total Weight (lbs) | Total Cost (gp) |
-|----------------+----------+-----------+--------------+----------+--------------------+-----------------|
-| Dagger         |        9 |           |              |          | #ERROR             |               0 |
-|----------------+----------+-----------+--------------+----------+--------------------+-----------------|
-| Carry Capacity |      200 |           |              |          | #ERROR             |               0 |
-#+TBLFM: $6=($ * $4)
-#+TBLFM: $7=($2 * $3)
-#+TBLFM: @5$6=vsum(@INVALID$6..@17$6)
-#+TBLFM: @5$7=vsum(@INVALID$7..@10$7)
-#+TBLFM: @5$2=($STR * 10)
-
-** Attunements
-
-
-
+#+NAME: equipment
+| ! | Name               |   QTY | Cost | Weight | Tot_Weight | Tot_Cost |
+|---+--------------------+-------+------+--------+------------+----------|
+| # | Backpack           |     1 |    2 |      5 |          5 |        2 |
+| # | Bedroll            |     1 |    1 |      7 |          7 |        1 |
+| # | Ration             |    10 |   .5 |      2 |         20 |       5. |
+| # | Rope               |     1 |    1 |      5 |          5 |        1 |
+| # | Tinderbox          |     1 |   .5 |      1 |          1 |      0.5 |
+| # | Torch              |    10 |  .01 |      1 |         10 |      0.1 |
+| # | Waterskin          |     1 |   .2 |      5 |          5 |      0.2 |
+| # | Dagger             |     9 |    2 |      1 |          4 |        8 |
+| # | Poisoner's Kit     |     1 |   50 |      2 |          2 |       50 |
+| # | Un-refined cocaine |   .25 |  $$$ |   kilo |          - |        - |
+|---+--------------------+-------+------+--------+------------+----------|
+| # | Carry/Drag         | 150.0 |  300 |      - |         63 |    142.8 |
+##+TBLFM: @>$7=vsum(@2$Tot_Cost..@>>$Tot_Cost)::@>$6=vsum(@2$Tot_Weight..@>>$Tot_Weight)::@>$5='(format "%s" "-")::@>$3='(dnd-calc-carry-capacity (dnd-get-stat "STR") (dnd-get-stat "SIZE") (dnd-get-stat "Carry_Bonus"))::@>$4='(dnd-calc-drag-capacity (dnd-get-stat "STR") (dnd-get-stat "SIZE") (dnd-get-stat "Carry_Bonus"))::$6=($QTY * $Weight)::$7=($QTY * $Cost)
+    
 ** Money
-| Copper | Silver | Electrum | Gold | Platinum | Total (Gold) |
-|--------+--------+----------+------+----------+--------------|
-|      0 |      0 |        0 | 8659 |        0 |            0 |
-#+TBLFM: $6=(($1 / 100) + ($2 / 10) + ($3 / 2) + $4 + ($5 * 10))
-   
+| ! | Copper | Silver | Electrum | Gold | Platinum | Total |           |
+|---+--------+--------+----------+------+----------+-------+-----------|
+| # |      0 |      0 |        0 |  134 |        0 |   134 | Mine      |
+|---+--------+--------+----------+------+----------+-------+-----------|
+| # |      0 |      5 |        0 |  787 |        0 | 787.5 | Converter |
+##+TBLFM: $7=(($Copper / 100) + ($Silver / 10) + ($Electrum / 2) + $Gold + ($Platinum * 10))
+
+* Abilities
+#+NAME: stats
+| STR | DEX | CON | INT | WIS | CHA | PROF | SHORT | LONG | Spell_Ability | SIZE  | Carry_Bonus |
+|-----+-----+-----+-----+-----+-----+------+-------+------+---------------+-------+-------------|
+|   8 |  18 |  14 |  10 |  16 |  10 |    3 | -     | -    | WIS           | Small |           0 |
+#+TBLFM: $8='(format "%s" "-")::$9='(format "%s" "-")

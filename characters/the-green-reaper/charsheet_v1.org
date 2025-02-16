@@ -1,0 +1,138 @@
+
+#+LATEX_CLASS: dnd
+#+STARTUP: content showstars indent
+#+OPTIONS: tags:nil
+#+TITLE: Leap Ledger's Character Sheet
+#+FILETAGS: leap ledger character sheet
+
+* Constants
+  #+NAME: define-constants-with-src-block
+  #+BEGIN_SRC elisp :var table=stats :colnames yes :results output drawer :cache yes :lang elisp
+    (dnd-output-ability-constants table)
+  #+END_SRC
+
+  #+RESULTS[d5a925f8d1c8a821d9b47e7e894a7d323448e1f5]: define-constants-with-src-block
+  :results:
+  #+CONSTANTS: STR=8
+  #+CONSTANTS: DEX=18
+  #+CONSTANTS: CON=14
+  #+CONSTANTS: INT=10
+  #+CONSTANTS: WIS=16
+  #+CONSTANTS: CHA=10
+  #+CONSTANTS: PROF=3
+  #+CONSTANTS: SCA=14
+  #+CONSTANTS: SAM=6
+  :end:
+  
+* Traits
+| Level | Race  | Subrace | Class  | Subclass     | Alignment   | Size   |
+|-------+-------+---------+--------+--------------+-------------+--------|
+|     5 | Grung | Purple  | Ranger | Green Reaper | Lawful Good | Medium |
+
+* Stats  
+| Speed       | AC | Hit Points   | Saves | Inspo | Hit dice | Exhaustion |
+|-------------+----+--------------+-------+-------+----------+------------|
+| 25 ft Walk  | 15 | Ranger (d10) |       |       | 5/5      |            |
+| 12 ft Swim  |    |              |       |       |          |            |
+| 25 ft Climb |    |              |       |       |          |            |
+|             |    |              |       |       |          |            |
+| Total:      |    | 29/40        |       |       |          |            |
+
+* Abilities and Skills
+#+name: stats
+| Ability | Score | Mod | PB | Roll           | Skill                 |
+|---------+-------+-----+----+----------------+-----------------------|
+| STR     |     8 |  -1 | X  | 1d20 + 2       | Saving Throw          |
+|         |       |     | X  | 1d20 + 2       | Athletics             |
+|---------+-------+-----+----+----------------+-----------------------|
+| DEX     |    18 |   4 | X  | 1d20 + 7       | Saving Throw          |
+|         |       |     |    | 1d20 + 4       | Acrobatics            |
+|         |       |     |    | 1d20 + 4       | Sleight of Hand       |
+|         |       |     | X  | 1d20 + 7       | Stealth               |
+|---------+-------+-----+----+----------------+-----------------------|
+| CON     |    14 |   2 |    | 1d20 + 2       | Saving Throw          |
+|---------+-------+-----+----+----------------+-----------------------|
+| INT     |    10 |   0 |    | 1d20 + 0       | Saving Throw          |
+|         |       |     |    | 1d20 + 0       | Arcana                |
+|         |       |     |    | 1d20 + 0       | History               |
+|         |       |     |    | 1d20 + 0       | Investigation         |
+|         |       |     |    | 1d20 + 0       | Nature                |
+|         |       |     |    | 1d20 + 0       | Religion              |
+|---------+-------+-----+----+----------------+-----------------------|
+| WIS     |    16 |   3 |    | 1d20 + 3       | Saving Throw          |
+|         |       |     |    | 1d20 + 3       | Animal Handling       |
+|         |       |     |    | 1d20 + 3       | Insight               |
+|         |       |     |    | 1d20 + 3       | Medicine              |
+|         |       |     | X  | 1d20 + 6       | Perception            |
+|         |       |     |    | 1d20 + 3       | Survival              |
+|---------+-------+-----+----+----------------+-----------------------|
+| CHA     |    10 |   0 |    | 1d20 + 0       | Saving Throw          |
+|         |       |     |    | 1d20 + 0       | Deception             |
+|         |       |     |    | 1d20 + 0       | Intimidation          |
+|         |       |     |    | 1d20 + 0       | Performance           |
+|         |       |     |    | 1d20 + 0       | Persuasion            |
+|---------+-------+-----+----+----------------+-----------------------|
+| PROF    |     3 |     |    |                |                       |
+| SCA     |    14 |     |    | 8 + PROF + WIS | SPELL CASTING ABILITY |
+| SAM     |     6 |     |    | PROF + WIS     | SPELL ATT MOD         |
+#+TBLFM: @2$3='(calc-dnd-mod (string-to-number (org-table-get-constant $1)))
+#+TBLFM: @4$3='(calc-dnd-mod (string-to-number (org-table-get-constant $1)))
+#+TBLFM: @8$3='(calc-dnd-mod (string-to-number (org-table-get-constant $1)))
+#+TBLFM: @9$3='(calc-dnd-mod (string-to-number (org-table-get-constant $1)))
+#+TBLFM: @15$3='(calc-dnd-mod (string-to-number (org-table-get-constant $1)))
+#+TBLFM: @21$3='(calc-dnd-mod (string-to-number (org-table-get-constant $1)))
+#+TBLFM: @2$5..@3$5='(concat "1d20 + " (number-to-string (+ (if (string= $4 "X") $PROF 0) (calc-dnd-mod (string-to-number (org-table-get-constant @2$1))))))
+#+TBLFM: @4$5..@7$5='(concat "1d20 + " (number-to-string (+ (if (string= $4 "X") $PROF 0) (calc-dnd-mod (string-to-number (org-table-get-constant @4$1))))))
+#+TBLFM: @8$5..@8$5='(concat "1d20 + " (number-to-string (+ (if (string= $4 "X") $PROF 0) (calc-dnd-mod (string-to-number (org-table-get-constant @8$1))))))
+#+TBLFM: @9$5..@14$5='(concat "1d20 + " (number-to-string (+ (if (string= $4 "X") $PROF 0) (calc-dnd-mod (string-to-number (org-table-get-constant @9$1))))))
+#+TBLFM: @15$5..@20$5='(concat "1d20 + " (number-to-string (+ (if (string= $4 "X") $PROF 0) (calc-dnd-mod (string-to-number (org-table-get-constant @15$1))))))
+#+TBLFM: @21$5..@25$5='(concat "1d20 + " (number-to-string (+ (if (string= $4 "X") $PROF 0) (calc-dnd-mod (string-to-number (org-table-get-constant @21$1))))))
+
+* Resistances
+
+
+* Immunities
+
+- Poison ::
+
+* Attacks
+Un armed strikes get a +1 for the next 24 hours
+
+#+NAME: attacks
+| Weapon | Ability | Prof | Type     | Die | Mod To Hit | Roll    |
+|--------+---------+------+----------+-----+------------+---------|
+| Dagger | DEX     | X    | Piercing | 1d4 |          7 | 1d4 + 4 |
+#+TBLFM: $6='(+ (if (string= $3 "X") $PROF 0) (calc-dnd-mod (string-to-number (org-table-get-constant $2))))
+#+TBLFM: $7='(concat $5 " + " (number-to-string (calc-dnd-mod (string-to-number (org-table-get-constant $2)))))
+
+* Proficiencies
+| Languages | Tools          | Armor   | Weapons |
+|-----------+----------------+---------+---------|
+| Common    | Brewer's Tools | Light   | Simple  |
+| Draconic  | Playing Cards  | Medium  | Martial |
+| Elvish    |                | Heavy   |         |
+|           |                | Shields |         |
+|           |                |         |         |
+
+* Equipment
+| Name           | Quantity | Cost (gp) | Weight (lbs) | Capacity | Total Weight (lbs) | Total Cost (gp) |
+|----------------+----------+-----------+--------------+----------+--------------------+-----------------|
+| Dagger         |        9 |           |              |          | #ERROR             |               0 |
+|----------------+----------+-----------+--------------+----------+--------------------+-----------------|
+| Carry Capacity |      200 |           |              |          | #ERROR             |               0 |
+#+TBLFM: $6=($ * $4)
+#+TBLFM: $7=($2 * $3)
+#+TBLFM: @5$6=vsum(@INVALID$6..@17$6)
+#+TBLFM: @5$7=vsum(@INVALID$7..@10$7)
+#+TBLFM: @5$2=($STR * 10)
+
+** Attunements
+
+
+
+** Money
+| Copper | Silver | Electrum | Gold | Platinum | Total (Gold) |
+|--------+--------+----------+------+----------+--------------|
+|      0 |      0 |        0 | 8659 |        0 |            0 |
+#+TBLFM: $6=(($1 / 100) + ($2 / 10) + ($3 / 2) + $4 + ($5 * 10))
+   
