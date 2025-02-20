@@ -1,0 +1,27 @@
+
+#+LATEX_CLASS: dnd
+#+STARTUP: content showstars indent
+#+OPTIONS: tags:nil
+#+TITLE: Chewy Jr. - Abilities
+#+FILETAGS: chewy jr abil_sheet
+
+* Fighter (Bulwark Warrior)
+
+** PROTECTIVE TAUNT **
+
+Starting at 3rd level, once per turn whenever you make
+a melee weapon attack against a creature, you can taunt
+them into attacking you. When a creature you've hit since
+the start of your last turn attacks someone other than you,
+use your reaction to force them to attack you instead. This
+effect ends early if they move more than 5 feet out of your
+reach, you become incapacitated, or you die.
+
+** WEATHER THE STORM **
+
+Also at 3rd level, you have grown accustomed to being
+battered and bruised. As a bonus action, for the next
+minute at the end of each of your turns, you can gain
+temporary hit points equal to your fighter level. Once
+you use this feature, you can't use it again until you
+finish a short or long rest.

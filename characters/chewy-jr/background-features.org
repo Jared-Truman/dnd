@@ -1,0 +1,96 @@
+
+b#+LATEX_CLASS: dnd
+#+STARTUP: content showstars indent
+#+OPTIONS: tags:nil
+#+TITLE: Leap Ledger Features Sheet
+#+FILETAGS: leap ledger features feature sheet
+
+* Background
+Starting Stats
+
+| Ability | Score |
+|---------+-------|
+| STR     |    15 |
+| DEX     |    13 |
+| CON     |    14 |
+| INT     |    10 |
+| WIS     |    10 |
+| CHA     |    10 |
+
+
+** Background Ability
+*** Soldier
+- Ability Scores :: Strength, Dexterity, Constitution
+- Feat: : Savage Attacker (see chapter 5)
+- Skill Proficiencies :: Athletics and Intimidation
+- Tool Proficiency :: Choose one kind of Gaming Set (see chapter 6)
+
+Equipment: Choose A or B:
+- (A) Spear, Shortbow, 20 Arrows, Gaming Set (same as above), Healer’s Kit, Quiver,
+  Traveler’s Clothes, 14 GP; or
+- (B) 50 GP
+
+You began training for war as soon as you reached adulthood and carry precious few
+memories of life before you took up arms. Battle is in your blood. Sometimes you
+catch yourself reflexively performing the basic fighting exercises you learned first.
+Eventually, you put that training to use on the battlefield, protecting the realm by
+waging war.
+
+You grew up on the streets surrounded by similarly ill-fated castoffs, a few of them
+friends and a few of them rivals. You slept where you could and did odd jobs for food.
+At times, when the hunger became unbearable, you resorted to theft. Still, you never
+lost your pride and never abandoned hope. Fate is not yet finished with you.
+
+**** Savage Attacker
+Origin Feat
+
+You’ve trained to deal particularly damaging strikes. Once per turn when you hit a
+target with a weapon, you can roll the weapon’s damage dice twice and use either
+roll against the target.
+
+|------+--------+--------|
+| Type | Value  | Reason |
+|------+--------+--------|
+| ASI  | +1 STR |        |
+| ASI  | +1 DEX |        |
+| ASI  | +1 CON |        |
+|------+--------+--------|
+
+
+** Back story
+-  Strength :: Protective
+-  Dexterity :: Dynamic
+-  Constitution :: Hearty
+-  Intelligence :: Uninformed
+-  Wisdom :: Oblivious
+-  Charisma  :: Reserved
+
+  
+*** 
+
+** Alignment
+
+
+** Physical Characteristics
+*** Hair
+none
+
+*** Skin
+
+
+*** Eyes
+
+
+*** Height
+
+
+*** Weight
+
+
+*** Age (Years)
+
+
+*** Gender
+Male
+
+*** Deity
