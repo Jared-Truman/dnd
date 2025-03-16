@@ -222,7 +222,7 @@ point within 60 feet of you
 When you reduce a creature to 0 hit points all other creature's within 30 feet
 of you must make a WIS save against your spell DC. On a failed save the creature
 is frightened, on a success the creature is immune to this effect until the next
-dawn. You gain a number of temp HP equal to your proficiency bonus+ the number
+dawn. You gain a number of temp HP equal to your proficiency bonus + the number
 of creatures frightened. Your Allies have ADV against this save and if your in
 darkness enemies have disadvantage. 
 

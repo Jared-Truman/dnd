@@ -1,96 +1,224 @@
-
-#+LATEX_CLASS: dnd
 #+STARTUP: content showstars indent
 #+OPTIONS: tags:nil
-#+TITLE: Avadra Gahdouh's Character Sheet
-#+FILETAGS: avadra gahdouh character sheet
-
-* Constants
-  #+NAME: define-constants-with-src-block
-  #+BEGIN_SRC elisp :var table=stats :colnames yes :results output drawer :cache yes :lang elisp
-    (dnd-output-ability-constants table)
-  #+END_SRC
-
-  #+RESULTS[aec46307b9572a62cc89d3143361870f2fab01ba]: define-constants-with-src-block
-  :results:
-  #+CONSTANTS: STR=8
-  #+CONSTANTS: DEX=20
-  #+CONSTANTS: CON=13
-  #+CONSTANTS: INT=12
-  #+CONSTANTS: WIS=16
-  #+CONSTANTS: CHA=10
-  #+CONSTANTS: PROF=4
-  #+CONSTANTS: SCA=15
-  #+CONSTANTS: SAM=7
-  #+CONSTANTS: KIST=15
-  :end:
+#+TITLE: Leap Ledger - Character Sheet
+#+FILETAGS: leap char_sheet
   
 * Traits
-| Level | Race       | Subrace | Class  | Subclass      | Alignment | Size   |
-|-------+------------+---------+--------+---------------+-----------+--------|
-|     4 | Shadar-Kai |         | Ranger | Gloomstalker  | Neutral   | Medium |
-|     1 |            |         | Cleric | Twilight      |           |        |
-|     6 |            |         | Monk   | Way of Shadow |           |        |
-|    11 |            |         |        |               |           |        |
+| Level | Race       | Subrace | Class  | Subclass      | Size  | Alignment | Age |
+|-------+------------+---------+--------+---------------+-------+-----------+-----|
+|     4 | Shadar-Kai |         | Ranger | Gloomstalker  | 5'11" | Neutral   |  31 |
+|     3 |            |         | Cleric | Twilight      |       |           |     |
+|     5 |            |         | Monk   | Way of Shadow |       |           |     |
+|    12 |            |         |        |               |       |           |     |
 
 * Stats  
-| Speed      | AC | Hit Points   | Saves | Inspo | Hit dice | Exhaustion |
-|------------+----+--------------+-------+-------+----------+------------|
-| 45 ft Walk | 19 | Ranger (d10) |       |       | 4/4      |            |
-| 30 ft Swim |    | Cleric (d8)  |       |       | 1/1      |            |
-|            |    | Monk (d8)    |       |       | 6/6      |            |
-| Total:     |    | 27/74        |       |       |          |            |
+| ! | Walk | Swim | Climb | Hit Points | AC | Death Saves | Inspiration | Armor | Armor_Bonus | Shield |
+|---+------+------+-------+------------+----+-------------+-------------+-------+-------------+--------|
+| # |   45 |   30 |  22.5 | 74/74      | 19 |             |             | -     | -           | -      |
+##+TBLFM: $4='(dnd-calc-ac $Armor (dnd-get-stat "DEX") (dnd-get-stat "CON") (string-to-number $Armor_Bonus) (string-to-number $Shield))
 
-* Abilities and Skills
-#+name: stats
-| Ability | Score | Mod | PB | Roll           | Skill                 |
-|---------+-------+-----+----+----------------+-----------------------|
-| STR     |     8 |  -1 | X  | 1d20 + 3       | Saving Throw          |
-|         |       |     |    | 1d20 + -1      | Athletics             |
-|---------+-------+-----+----+----------------+-----------------------|
-| DEX     |    20 |   5 | X  | 1d20 + 9       | Saving Throw          |
-|         |       |     |    | 1d20 + 5       | Acrobatics            |
-|         |       |     |    | 1d20 + 5       | Sleight of Hand       |
-|         |       |     | X  | 1d20 + 9       | Stealth               |
-|---------+-------+-----+----+----------------+-----------------------|
-| CON     |    13 |   1 |    | 1d20 + 1       | Saving Throw          |
-|---------+-------+-----+----+----------------+-----------------------|
-| INT     |    12 |   1 |    | 1d20 + 1       | Saving Throw          |
-|         |       |     |    | 1d20 + 1       | Arcana                |
-|         |       |     |    | 1d20 + 1       | History               |
-|         |       |     | X  | 1d20 + 5       | Investigation         |
-|         |       |     |    | 1d20 + 1       | Nature                |
-|         |       |     |    | 1d20 + 1       | Religion              |
-|---------+-------+-----+----+----------------+-----------------------|
-| WIS     |    16 |   3 |    | 1d20 + 3       | Saving Throw          |
-|         |       |     | X  | 1d20 + 7       | Animal Handling       |
-|         |       |     | X  | 1d20 + 7       | Insight               |
-|         |       |     |    | 1d20 + 3       | Medicine              |
-|         |       |     | X  | 1d20 + 7       | Perception            |
-|         |       |     | X  | 1d20 + 7       | Survival              |
-|---------+-------+-----+----+----------------+-----------------------|
-| CHA     |    10 |   0 |    | 1d20 + 0       | Saving Throw          |
-|         |       |     |    | 1d20 + 0       | Deception             |
-|         |       |     |    | 1d20 + 0       | Intimidation          |
-|         |       |     |    | 1d20 + 0       | Performance           |
-|         |       |     |    | 1d20 + 0       | Persuasion            |
-|---------+-------+-----+----+----------------+-----------------------|
-| PROF    |     4 |     |    |                |                       |
-| SCA     |    15 |     |    | 8 + PROF + WIS | SPELL CASTING ABILITY |
-| SAM     |     7 |     |    | PROF + WIS     | SPELL ATT MOD         |
-| KIST    |    15 |     |    | 8 + PB + WIS   | KI SAVING THROW       |
-#+TBLFM: @2$3='(calc-dnd-mod (string-to-number (org-table-get-constant $1)))
-#+TBLFM: @4$3='(calc-dnd-mod (string-to-number (org-table-get-constant $1)))
-#+TBLFM: @8$3='(calc-dnd-mod (string-to-number (org-table-get-constant $1)))
-#+TBLFM: @9$3='(calc-dnd-mod (string-to-number (org-table-get-constant $1)))
-#+TBLFM: @15$3='(calc-dnd-mod (string-to-number (org-table-get-constant $1)))
-#+TBLFM: @21$3='(calc-dnd-mod (string-to-number (org-table-get-constant $1)))
-#+TBLFM: @2$5..@3$5='(concat "1d20 + " (number-to-string (+ (if (string= $4 "X") $PROF 0) (calc-dnd-mod (string-to-number (org-table-get-constant @2$1))))))
-#+TBLFM: @4$5..@7$5='(concat "1d20 + " (number-to-string (+ (if (string= $4 "X") $PROF 0) (calc-dnd-mod (string-to-number (org-table-get-constant @4$1))))))
-#+TBLFM: @8$5..@8$5='(concat "1d20 + " (number-to-string (+ (if (string= $4 "X") $PROF 0) (calc-dnd-mod (string-to-number (org-table-get-constant @8$1))))))
-#+TBLFM: @9$5..@14$5='(concat "1d20 + " (number-to-string (+ (if (string= $4 "X") $PROF 0) (calc-dnd-mod (string-to-number (org-table-get-constant @9$1))))))
-#+TBLFM: @15$5..@20$5='(concat "1d20 + " (number-to-string (+ (if (string= $4 "X") $PROF 0) (calc-dnd-mod (string-to-number (org-table-get-constant @15$1))))))
-#+TBLFM: @21$5..@25$5='(concat "1d20 + " (number-to-string (+ (if (string= $4 "X") $PROF 0) (calc-dnd-mod (string-to-number (org-table-get-constant @21$1))))))
+* Saves and Skills
+** Saves
+#+NAME: saves
+| ! | Ability | Score | Saving Throw | Mod | PB |
+|---+---------+-------+--------------+-----+----|
+| # | STR     |     8 | 1d20 + 3     |  -1 | X  |
+| # | DEX     |    20 | 1d20 + 9     |   5 | X  |
+| # | CON     |    13 | 1d20 + 1     |   1 | -  |
+| # | INT     |    12 | 1d20 + 1     |   1 | -  |
+| # | WIS     |    16 | 1d20 + 3     |   3 | -  |
+| # | CHA     |    10 | 1d20 + 0     |   0 | -  |
+##+TBLFM: @2$3..@7$3='(dnd-get-stat $Ability)::@2$4..@7$4='(format "1d20 + %s" (+ (dnd-calc-pb (dnd-get-stat "PROF") $PB) (dnd-calc-mod (dnd-get-stat $Ability))))::@2$5..@7$5='(dnd-calc-mod (dnd-get-stat $Ability))
+
+** Skills
+#+name: skills
+| ! | Ability | Skill           | Roll      | PB |
+|---+---------+-----------------+-----------+----|
+| # | STR     | Athletics       | 1d20 + -1 | -  |
+|---+---------+-----------------+-----------+----|
+| # | DEX     | Acrobatics      | 1d20 + 5  | -  |
+| # | DEX     | Sleight of Hand | 1d20 + 5  | -  |
+| # | DEX     | Stealth         | 1d20 + 9  | X  |
+|---+---------+-----------------+-----------+----|
+| # | INT     | Arcana          | 1d20 + 1  | -  |
+| # | INT     | History         | 1d20 + 1  | -  |
+| # | INT     | Investigation   | 1d20 + 5  | X  |
+| # | INT     | Nature          | 1d20 + 1  | -  |
+| # | INT     | Religion        | 1d20 + 1  | -  |
+|---+---------+-----------------+-----------+----|
+| # | WIS     | Animal Handling | 1d20 + 7  | X  |
+| # | WIS     | Insight         | 1d20 + 7  | X  |
+| # | WIS     | Medicine        | 1d20 + 3  | -  |
+| # | WIS     | Perception      | 1d20 + 7  | X  |
+| # | WIS     | Survival        | 1d20 + 7  | X  |
+|---+---------+-----------------+-----------+----|
+| # | CHA     | Deception       | 1d20 + 0  | -  |
+| # | CHA     | Intimidation    | 1d20 + 0  | -  |
+| # | CHA     | Performance     | 1d20 + 0  | -  |
+| # | CHA     | Persuasion      | 1d20 + 0  | -  |
+##+TBLFM: @2$4..@19$4='(format "1d20 + %s" (+ (dnd-calc-pb (dnd-get-stat "PROF") $PB) (dnd-calc-mod (dnd-get-stat $Ability))))
+
+* Combat                                                             :combat:
+** Additional Stats
+|      | Name                  | Calculation    | Amount |
+|------+-----------------------+----------------+--------|
+| SCA  | SPELL CASTING ABILITY | 8 + PROF + WIS |     15 |
+| SAM  | SPELL ATT MOD         | PROF + WIS     |      7 |
+| KIST | KI SAVING THROW       | 8 + PB + WIS   |     15 |
+|------+-----------------------+----------------+--------|
+
+** Actions                                                          :action:
+
+*** Skills
+| ! | Name               | Effect                                                                                            | DC |         Level | From                   |
+|---+--------------------+---------------------------------------------------------------------------------------------------+----+---------------+------------------------|
+| # | Eyes of Night      | 300 ft darkvision. Grant to WIS # of creatures. 1 hour. Long Rest                                 | -  |             1 | Twilight Domain Cleric |
+| # | Vigilant Blessing  | ADV on initiative.                                                                                | -  |             1 | Twilight Domain Cleric |
+| # | Natural Explorer   | PROF INT or WIS in SWAMP                                                                          | -  |        1,6,10 | Ranger                 |
+| # | Fighting Style     | Defense (+ 1 AC)                                                                                  | -  |             2 | Ranger                 |
+| # | Unarmored Defense  | No armor or shield 10 + DEX + WIS.                                                                | -  |             2 | Monk                   |
+| # | Unarmored Movement | No armor or shield +10 speed (based on level)(10, 15, 20, 25, 30)                                 | -  | 2,6,10,14,18  | Monk                   |
+| # | Dread Ambusher     | Initiative +WIS MOD, 1st turn +10ft, 1d8 on attack                                                | -  |             3 | Gloom stalker          |
+| # | Umbral Sight       | Darkvision 60ft. +30 ft if you have darkvision                                                    | -  |             3 | Gloom stalker          |
+| # | Primeval Awareness | Is there: aberrations, celestials, dragons, elementals, fey, fiends, and undead. Within 1-6 miles | -  |             3 | Ranger                 |
+| # | Extra Attacks      | Attack action 2 times                                                                             | -  |             5 | Monk                   |
+| # | Evasion            | DEX saves. Fails half damage. Success no damage.                                                  | -  |             7 | Monk                   |
+| # | Stillness of mind  | Once per turn, 1 action, remove effect Charmed or Frightened                                      | -  |             7 | Monk                   |
+
+*** Ki
+| ! | Name             | KI | Effect                                                      | DC     | Level |
+|---+------------------+----+-------------------------------------------------------------+--------+-------|
+| # | Flurry of Blows  |  1 | Make two unarmed strikes as a bonus action                  | -      |     2 |
+| # | Patient Defense  |  1 | Dodge as a bonus action                                     | -      |     2 |
+| # | Step of the Wind |  1 | Disengage or Dash as bonus action. Jump distance is doubled | -      |     2 |
+| # | Stunning Strike  |  1 | Stunned until the end of your next turn.                    | 15 CON |     5 |
+
+*** Spells                                                          :spell:
+#+NAME: spells
+| ! | Spell                    | Range  | Effect                                         | Concentration | DC | Duration | Cost | Level | Due To      | Has_DC |
+|---+--------------------------+--------+------------------------------------------------+---------------+----+----------+------+-------+-------------+--------|
+| # | Spare the Dying (A)      | Touch  | Stabilize 0 hit point creature                 | -             | -  | -        |      | c (r) | Cleric      | -      |
+| # | Guidance (A)             | Touch  | D4 on ability check                            | 1 min         | -  | -        |      | c (r) | -           | -      |
+| # | Minor Illusion (A)       | 30 ft  | Create sound or image lasts for time           | -             | -  | 1 min    |      | c (r) | -           | -      |
+| # | Thaumaturgy (A)          | 30 ft  | Minor wonders (use imagination)                | -             | -  | 1 min    |      |     c | -           | -      |
+| # | Alarm (A)                | 30 ft  | Set an alarm against unwanted intrusion        | -             | -  | 8 hours  |      |     1 | -           | -      |
+| # | Detect Evil and Good (A) | Self   | 30ft from me know location of creatures        | 10 min        | -  | 10 min   |      |     1 | -           | -      |
+| # | Detect Magic (A)         | Self   | 30 ft sense magic                              | 10 min        | -  | 10 min   |      | 1 (r) | -           | -      |
+| # | Disguise Self (A)        | Self   | Disguise yourself magically                    | -             | -  | 1 hour   |      |     1 | -           | -      |
+| # | Faerie Fire (A)          | 60 ft  | 20 ft cube, on fail, attack roll advantage     | 1 min         | 15 | 1 min    |      |     1 | -           | X      |
+| # | Goodberry (A)            | Touch  | 10 berries, no hunger, 1 hp regain             | -             | -  | -        |      |     1 | -           | -      |
+| # | Healing Word (B)         | 60 ft  | 1d4 + 7 (SAM)                                  | -             | -  | -        |      |     1 | -           | -      |
+| # | Hunter's Mark (B)        | 90 ft  | 1d6 ADV Perception, and Survival               | 1 hour        | -  | -        |      |     1 | -           | -      |
+| # | Shield of Faith (B)      | 60 ft  | +2 AC                                          | 10 min        | -  | 10 min   |      |     1 | -           | -      |
+| # | Sleep (A)                | 90 ft  | 5d8 20 ft from point, for hp it takes to sleep | -             | -  | -        | 2 KI |     1 | Shadow Arts | -      |
+| # | Darkness (A)             | 60 ft  | 15 ft sphere of magical darkness.              | 10 min        | -  | -        | 2 KI |     2 | Shadow Arts | -      |
+| # | Darkvision (A)           | Touch  | 60 ft of darkvision                            | -             | -  | 8 hours  | 2 KI |     2 | Shadow Arts | -      |
+| # | Pass without a Trace (A) | Self   | +10 stealth rolls, removes traces of feet      | 1 hour        | -  | 1 hour   | 2 KI |     2 | Shadow Arts | -      |
+| # | Silence (A)              | 120 ft | 20 ft radius sphere of no sound (no spell)     | 10 min        | -  | 10 min   |      |     2 | Ranger      | -      |
+##+TBLFM: $6='(dnd-calc-spell-save-dc (dnd-get-stat (dnd-get-stat "Spell_Ability")) (dnd-get-stat "PROF") $Has_DC)
+
+*** Attacks                                                        :attack:
+#+NAME: attacks
+| ! | Weapon           | Mod | Roll | Mastery | Bonus_DMG | Bonus_Mod | Ability | PB | Type        | Die | DieCount | Offhand_Penalty | Hands |
+|---+------------------+-----+------+---------+-----------+-----------+---------+----+-------------+-----+----------+-----------------+-------|
+| # | Unarmed Strike   |   9 |  1d6 | -       |         - |         - | DEX     | X  | Bludgeoning |   6 |        1 | -               |     1 |
+| # | Fist a cuffs     |  11 |  1d6 | -       |         2 |         2 | DEX     | X  | Bludgeoning |   6 |        1 | -               |     1 |
+| # | Tolerant Torture |  11 |  1d6 | -       |         2 |         2 | DEX     | X  | Bludgeoning |   6 |        1 | -               |     1 |
+##+TBLFM: $3='(+ (dnd-calc-pb (dnd-get-stat "PROF") $PB) (dnd-calc-mod (dnd-get-stat $Ability)) (string-to-number $Bonus_Mod))::$4='(format "%s + %s%s" (dnd-calc-dice $Die $DieCount (dnd-get-stat "SIZE")) (dnd-calc-offhand-mod (dnd-calc-mod (dnd-get-stat $Ability)) $Offhand_Penalty) (dnd-calc-bonus-dmg $Bonus_DMG))
+
+**** Triggers                                                    :trigger:
+#+NAME: attack_triggers
+| ! | Trigger       | Effect    | Cost | DC | Triggered_By      | PB | Ability |
+|---+---------------+-----------+------+----+-------------------+----+---------|
+| # | Hunter's Mark | 1d6 force | -    | -  | Hit Marked Target | -  | -       |
+| # |               |           |      |    |                   |    |         |
+##+TBLFM: $5='(+ (dnd-calc-pb (dnd-get-stat "PROF") $PB) (dnd-calc-mod (dnd-get-stat $Ability)) 8)
+
+** Bonus Actions                                              :bonus_action:
+#+NAME: bonus_actions
+| ! | Bonus Action   | Used | Total | Refills | Count | PB |
+|---+----------------+------+-------+---------+-------+----|
+| # | Offhand Attack | -    |     0 | -       | -     | -  |
+##+TBLFM: $4='(+ (dnd-calc-pb (dnd-get-stat "PROF") $PB) (string-to-number $Count))
+
+*** Spells                                                          :spell:
+#+NAME: spells
+| ! | Spell                       | Range | Effect                                            | Concentration | DC     | Level | Has_DC |
+|---+-----------------------------+-------+---------------------------------------------------+---------------+--------+-------+--------|
+| # | Hunter's Mark               | Self  | Deal additional 1d6 on hit                        | 1 hour        | #ERROR |     1 | -      |
+| # | Blessing of the Raven Queen | 30 ft | Magically teleport to a place you can see.        |               | #ERROR |       |        |
+| # |                             |       | Resistance to all damage till start of next turn. |               |        |       |        |
+##+TBLFM: $6='(dnd-calc-spell-save-dc (dnd-get-stat (dnd-get-stat "Spell_Ability")) (dnd-get-stat "PROF") $Has_DC)
+
+** Reactions
+#+NAME: reactions
+| ! | Effect           | Effect                                                                                                     | Ki          |
+|---+------------------+------------------------------------------------------------------------------------------------------------+-------------|
+| # | Deflect Missiles | 1d10 + your Dexterity modifier + your monk level to reduce damage. If it hits 0 you may throw back at them | 1 if thrown |
+| # | Slow Fall        | Reduce fall damage by 5 * monk level                                                                       | -           |
+
+
+** Special Resources
+#+NAME: special_resouces
+| ! | Resource                | Used | Total | SR | LR | Count | PB | Die | DC     | How to total   |
+|---+-------------------------+------+-------+----+----+-------+----+-----+--------+----------------|
+| # | Hit Dice                |    0 |     4 | -  | X  |     4 | -  | D10 | -      | Ranger         |
+| # | Hit Dice                |    0 |     7 | -  | X  |     8 | -  | D8  | -      | Monk/Cleric    |
+| # | Spell Slot (1)          |    0 |     4 | -  | X  |     4 | -  | -   | -      | Class          |
+| # | Spell Slot (2)          |    0 |     2 | -  | X  |     2 | -  | -   | -      | Class          |
+| # | Ki points               |    0 |     5 | -  | X  |     5 | -  | D6  | -      | Monk Level     |
+| # | Blessing of Raven Queen |    0 |     4 | -  | X  |     4 | -  | -   | -      | PROF for Total |
+| # | Temnota's Avatarl       |    0 |     1 | -  | X  |     1 | -  | -   | CON 10 | Divine Gift    |
+##+TBLFM: $4='(+ (dnd-calc-pb (dnd-get-stat "PROF") $PB) (string-to-number $Count))::$3='(dnd-reset-based-on-rest (dnd-get-stat "SHORT") (dnd-get-stat "LONG") $Used $SR $LR)
+
+*** Temnota's Avatarl                                         :divine_gift:
+Once per day you can use an action to expend 1 use of your channel divinity and
+call upon the powers of the raven queen and cloak yourself within her darkness.
+When you do, for 1 minute your entire body becomes draped in shadow and has the
+following properties: 
+
+- Erased presence ::
+  When in darkness you are invisible and are able to erase your presence. Only a
+  creature with True sight is able to see you
+
+- Amorphus ::
+  You can move through a space as narrow as 1 inch wide without squeezing
+
+- Sunlight Weakness ::
+  While in sunlight, the shadow has disadvantage on attack rolls, ability checks,
+  and saving throws
+
+- Advantage against being frightened
+
+Eclipse: As an action you shroud an area you see within 60 feet of you in
+darkness (requires concentration), while maintaining concentration you can use
+your bonus action on subsequent turns to move the darkness to another point you
+can see in range
+
+- Shadow step ::
+As a bonus action you can teleport via the shadows choosing a
+point within 60 feet of you
+
+- Face of death ::
+When you reduce a creature to 0 hit points all other creature's within 30 feet
+of you must make a WIS save against your spell DC. On a failed save the creature
+is frightened, on a success the creature is immune to this effect until the next
+dawn. You gain a number of temp HP equal to your proficiency bonus+ the number
+of creatures frightened. Your Allies have ADV against this save and if your in
+darkness enemies have disadvantage. 
+
+Once the minute is up you must make a CON save DC 10 on a fail you gain 2 levels
+of exhaustion as your body is drained from overexhertion. On a success you
+aren't exhausted but the DC increases by 1 each time you succeed. The DC resets
+to 10 on a failed save.
+
+* Proficiencies
+  | Languages | Tools          | Armor   | Weapons |
+  |-----------+----------------+---------+---------|
+  | Common    | Brewer's Tools | Light   | Simple  |
+  | Draconic  | Playing Cards  | Medium  | Martial |
+  | Elvish    |                | Heavy   |         |
+  |           |                | Shields |         |
 
 * Resistances
 
@@ -100,60 +228,40 @@
 
 - Magical Sleep ::
 
-* Attacks
-Un armed strikes get a +1 for the next 24 hours
-
-#+NAME: attacks
-| Weapon              | Ability | Prof | Type        | Die | Mod To Hit | Roll    |
-|---------------------+---------+------+-------------+-----+------------+---------|
-| Unarmed Strike      | DEX     | X    | Bludgeoning | 1d6 |          9 | 1d6 + 5 |
-| Fist s cuffs (+2)   | DEX     | X    | Bludgeoning | 1d6 |         11 | 1d6 + 7 |
-| Tolerant Torture +2 | DEX     | X    | Bludgeoning | 1d6 |          9 | 1d6 + 5 |
-#+TBLFM: $6='(+ (if (string= $3 "X") $PROF 0) (calc-dnd-mod (string-to-number (org-table-get-constant $2))))
-#+TBLFM: $7='(concat $5 " + " (number-to-string (calc-dnd-mod (string-to-number (org-table-get-constant $2)))))
-
-* Proficiencies
-| Languages | Tools          | Armor   | Weapons |
-|-----------+----------------+---------+---------|
-| Common    | Brewer's Tools | Light   | Simple  |
-| Draconic  | Playing Cards  | Medium  | Martial |
-| Elvish    |                | Heavy   |         |
-|           |                | Shields |         |
-|           |                |         |         |
-
 * Equipment
-| Name                             | Quantity | Cost (gp) | Weight (lbs) | Capacity | Total Weight (lbs) | Total Cost (gp) |
-|----------------------------------+----------+-----------+--------------+----------+--------------------+-----------------|
-| Emerald Pen                      |        1 |           |              |          | #ERROR             |               0 |
-| Blanket                          |        1 |           |              |          | #ERROR             |               0 |
-| Dagger                           |        1 |           |              |          | #ERROR             |               0 |
-| Mess kit                         |        1 |           |              |          | #ERROR             |               0 |
-| Parchment                        |        5 |           |              |          | #ERROR             |               0 |
-| Rations                          |        4 |           |              |          | #ERROR             |               0 |
-| Robes                            |        1 |           |              |          | #ERROR             |               0 |
-| Waterskin                        |        1 |        .2 |            5 |          | #ERROR             |             0.2 |
-| Bag of Holding                   |        1 |           |              |          | #ERROR             |               0 |
-| Rope of climbing                 |        1 |           |              |          | #ERROR             |               0 |
-| Vials of unknown liquid          |        2 |           |              |          | #ERROR             |               0 |
-| Bougie Robe (Lesser restoration) |        1 |           |              |          | #ERROR             |               0 |
-| Long sword (+1)                  |        1 |           |              |          |                    |                 |
-| Health Pot                       |        1 |           |              |          |                    |                 |
-| War documents / Identification   |        1 |           |              |          |                    |                 |
-|----------------------------------+----------+-----------+--------------+----------+--------------------+-----------------|
-| Carry Capacity                   |      200 |           |              |          | #ERROR             |               0 |
-#+TBLFM: $6=($ * $4)
-#+TBLFM: $7=($2 * $3)
-#+TBLFM: @19$6=vsum(@INVALID$6..@31$6)
-#+TBLFM: @19$7=vsum(@INVALID$7..@24$7)
-#+TBLFM: @19$2=($STR * 10)
-
-** Attunements
-
-
-
+#+NAME: equipment
+| ! | Name                             | QTY | Cost | Weight | Tot_Weight | Tot_Cost |
+|---+----------------------------------+-----+------+--------+------------+----------|
+| # | Emerald Pen                      |   1 |    0 |      0 |          0 |        0 |
+| # | Blanket                          |   1 |    0 |      0 |          0 |        0 |
+| # | Dagger                           |   1 |    0 |      0 |          0 |        0 |
+| # | Mess kit                         |   1 |    0 |      0 |          0 |        0 |
+| # | Parchment                        |   5 |    0 |      0 |          0 |        0 |
+| # | Rations                          |   4 |    0 |      0 |          0 |        0 |
+| # | Robes                            |   1 |    0 |      0 |          0 |        0 |
+| # | Waterskin                        |   1 |   .2 |      5 |          0 |      0.2 |
+| # | Bag of Holding                   |   1 |    0 |      0 |          0 |        0 |
+| # | Rope of climbing                 |   1 |    0 |      0 |          0 |        0 |
+| # | Vials of unknown liquid          |   2 |    0 |      0 |          0 |        0 |
+| # | Bougie Robe (Lesser restoration) |   1 |    0 |      0 |          0 |        0 |
+| # | Long sword (+1)                  |   1 |    0 |      0 |          0 |        0 |
+| # | Health Pot                       |   1 |    0 |      0 |          0 |        0 |
+| # | War documents / Identification   |   1 |    0 |      0 |          0 |        0 |
+|---+----------------------------------+-----+------+--------+------------+----------|
+| # | Carry/Drag                       | 200 |      |        |          0 |      0.2 |
+##+TBLFM: @>$7=vsum(@2$Tot_Cost..@>>$Tot_Cost)::@>$6=vsum(@2$Tot_Weight..@>>$Tot_Weight)::@>@>$4='(dnd-calc-carry-capacity (dnd-get-stat "STR") (dnd-get-stat "SIZE") (dnd-get-stat "Carry_Bonus"))::@>$5='(dnd-calc-drag-capacity (dnd-get-stat "STR") (dnd-get-stat "SIZE") (dnd-get-stat "Carry_Bonus"))::$6=($QTY * $Weight)::$7=($QTY * $Cost)
+    
 ** Money
-| Copper | Silver | Electrum | Gold | Platinum | Total (Gold) |
-|--------+--------+----------+------+----------+--------------|
-|      0 |      0 |        0 | 8659 |        0 |            0 |
-#+TBLFM: $6=(($1 / 100) + ($2 / 10) + ($3 / 2) + $4 + ($5 * 10))
-   
+| ! | Copper | Silver | Electrum | Gold | Platinum | Total |           |
+|---+--------+--------+----------+------+----------+-------+-----------|
+| # |      0 |      0 |        0 | 8659 |        0 |  8659 | Mine      |
+|---+--------+--------+----------+------+----------+-------+-----------|
+| # |      0 |      0 |        0 | 8659 |        0 |  8659 | Converter |
+#+TBLFM: $7=(($Copper / 100) + ($Silver / 10) + ($Electrum / 2) + $Gold + ($Platinum * 10))
+
+* Abilities
+#+NAME: stats
+| STR | DEX | CON | INT | WIS | CHA | PROF | SHORT | LONG | Spell_Ability | SIZE   | Carry_Bonus |
+|-----+-----+-----+-----+-----+-----+------+-------+------+---------------+--------+-------------|
+|   8 |  20 |  13 |  12 |  16 |  10 |    4 | -     | -    | WIS           | Medium |           0 |
+#+TBLFM: $8='(format "%s" "-")::$9='(format "%s" "-")

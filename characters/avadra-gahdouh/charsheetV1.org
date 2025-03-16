@@ -1,0 +1,159 @@
+
+#+LATEX_CLASS: dnd
+#+STARTUP: content showstars indent
+#+OPTIONS: tags:nil
+#+TITLE: Avadra Gahdouh's Character Sheet
+#+FILETAGS: avadra gahdouh character sheet
+
+* Constants
+  #+NAME: define-constants-with-src-block
+  #+BEGIN_SRC elisp :var table=stats :colnames yes :results output drawer :cache yes :lang elisp
+    (dnd-output-ability-constants table)
+  #+END_SRC
+
+  #+RESULTS[aec46307b9572a62cc89d3143361870f2fab01ba]: define-constants-with-src-block
+  :results:
+  #+CONSTANTS: STR=8
+  #+CONSTANTS: DEX=20
+  #+CONSTANTS: CON=13
+  #+CONSTANTS: INT=12
+  #+CONSTANTS: WIS=16
+  #+CONSTANTS: CHA=10
+  #+CONSTANTS: PROF=4
+  #+CONSTANTS: SCA=15
+  #+CONSTANTS: SAM=7
+  #+CONSTANTS: KIST=15
+  :end:
+  
+* Traits
+| Level | Race       | Subrace | Class  | Subclass      | Alignment | Size   |
+|-------+------------+---------+--------+---------------+-----------+--------|
+|     4 | Shadar-Kai |         | Ranger | Gloomstalker  | Neutral   | Medium |
+|     1 |            |         | Cleric | Twilight      |           |        |
+|     6 |            |         | Monk   | Way of Shadow |           |        |
+|    11 |            |         |        |               |           |        |
+
+* Stats  
+| Speed      | AC | Hit Points   | Saves | Inspo | Hit dice | Exhaustion |
+|------------+----+--------------+-------+-------+----------+------------|
+| 45 ft Walk | 19 | Ranger (d10) |       |       | 4/4      |            |
+| 30 ft Swim |    | Cleric (d8)  |       |       | 1/1      |            |
+|            |    | Monk (d8)    |       |       | 6/6      |            |
+| Total:     |    | 27/74        |       |       |          |            |
+
+* Abilities and Skills
+#+name: stats
+| Ability | Score | Mod | PB | Roll           | Skill                 |
+|---------+-------+-----+----+----------------+-----------------------|
+| STR     |     8 |  -1 | X  | 1d20 + 3       | Saving Throw          |
+|         |       |     |    | 1d20 + -1      | Athletics             |
+|---------+-------+-----+----+----------------+-----------------------|
+| DEX     |    20 |   5 | X  | 1d20 + 9       | Saving Throw          |
+|         |       |     |    | 1d20 + 5       | Acrobatics            |
+|         |       |     |    | 1d20 + 5       | Sleight of Hand       |
+|         |       |     | X  | 1d20 + 9       | Stealth               |
+|---------+-------+-----+----+----------------+-----------------------|
+| CON     |    13 |   1 |    | 1d20 + 1       | Saving Throw          |
+|---------+-------+-----+----+----------------+-----------------------|
+| INT     |    12 |   1 |    | 1d20 + 1       | Saving Throw          |
+|         |       |     |    | 1d20 + 1       | Arcana                |
+|         |       |     |    | 1d20 + 1       | History               |
+|         |       |     | X  | 1d20 + 5       | Investigation         |
+|         |       |     |    | 1d20 + 1       | Nature                |
+|         |       |     |    | 1d20 + 1       | Religion              |
+|---------+-------+-----+----+----------------+-----------------------|
+| WIS     |    16 |   3 |    | 1d20 + 3       | Saving Throw          |
+|         |       |     | X  | 1d20 + 7       | Animal Handling       |
+|         |       |     | X  | 1d20 + 7       | Insight               |
+|         |       |     |    | 1d20 + 3       | Medicine              |
+|         |       |     | X  | 1d20 + 7       | Perception            |
+|         |       |     | X  | 1d20 + 7       | Survival              |
+|---------+-------+-----+----+----------------+-----------------------|
+| CHA     |    10 |   0 |    | 1d20 + 0       | Saving Throw          |
+|         |       |     |    | 1d20 + 0       | Deception             |
+|         |       |     |    | 1d20 + 0       | Intimidation          |
+|         |       |     |    | 1d20 + 0       | Performance           |
+|         |       |     |    | 1d20 + 0       | Persuasion            |
+|---------+-------+-----+----+----------------+-----------------------|
+| PROF    |     4 |     |    |                |                       |
+| SCA     |    15 |     |    | 8 + PROF + WIS | SPELL CASTING ABILITY |
+| SAM     |     7 |     |    | PROF + WIS     | SPELL ATT MOD         |
+| KIST    |    15 |     |    | 8 + PB + WIS   | KI SAVING THROW       |
+#+TBLFM: @2$3='(calc-dnd-mod (string-to-number (org-table-get-constant $1)))
+#+TBLFM: @4$3='(calc-dnd-mod (string-to-number (org-table-get-constant $1)))
+#+TBLFM: @8$3='(calc-dnd-mod (string-to-number (org-table-get-constant $1)))
+#+TBLFM: @9$3='(calc-dnd-mod (string-to-number (org-table-get-constant $1)))
+#+TBLFM: @15$3='(calc-dnd-mod (string-to-number (org-table-get-constant $1)))
+#+TBLFM: @21$3='(calc-dnd-mod (string-to-number (org-table-get-constant $1)))
+#+TBLFM: @2$5..@3$5='(concat "1d20 + " (number-to-string (+ (if (string= $4 "X") $PROF 0) (calc-dnd-mod (string-to-number (org-table-get-constant @2$1))))))
+#+TBLFM: @4$5..@7$5='(concat "1d20 + " (number-to-string (+ (if (string= $4 "X") $PROF 0) (calc-dnd-mod (string-to-number (org-table-get-constant @4$1))))))
+#+TBLFM: @8$5..@8$5='(concat "1d20 + " (number-to-string (+ (if (string= $4 "X") $PROF 0) (calc-dnd-mod (string-to-number (org-table-get-constant @8$1))))))
+#+TBLFM: @9$5..@14$5='(concat "1d20 + " (number-to-string (+ (if (string= $4 "X") $PROF 0) (calc-dnd-mod (string-to-number (org-table-get-constant @9$1))))))
+#+TBLFM: @15$5..@20$5='(concat "1d20 + " (number-to-string (+ (if (string= $4 "X") $PROF 0) (calc-dnd-mod (string-to-number (org-table-get-constant @15$1))))))
+#+TBLFM: @21$5..@25$5='(concat "1d20 + " (number-to-string (+ (if (string= $4 "X") $PROF 0) (calc-dnd-mod (string-to-number (org-table-get-constant @21$1))))))
+
+* Resistances
+
+- Necrotic ::
+
+* Immunities
+
+- Magical Sleep ::
+
+* Attacks
+Un armed strikes get a +1 for the next 24 hours
+
+#+NAME: attacks
+| Weapon              | Ability | Prof | Type        | Die | Mod To Hit | Roll    |
+|---------------------+---------+------+-------------+-----+------------+---------|
+| Unarmed Strike      | DEX     | X    | Bludgeoning | 1d6 |          9 | 1d6 + 5 |
+| Fist s cuffs (+2)   | DEX     | X    | Bludgeoning | 1d6 |         11 | 1d6 + 7 |
+| Tolerant Torture +2 | DEX     | X    | Bludgeoning | 1d6 |          9 | 1d6 + 5 |
+#+TBLFM: $6='(+ (if (string= $3 "X") $PROF 0) (calc-dnd-mod (string-to-number (org-table-get-constant $2))))
+#+TBLFM: $7='(concat $5 " + " (number-to-string (calc-dnd-mod (string-to-number (org-table-get-constant $2)))))
+
+* Proficiencies
+| Languages | Tools          | Armor   | Weapons |
+|-----------+----------------+---------+---------|
+| Common    | Brewer's Tools | Light   | Simple  |
+| Draconic  | Playing Cards  | Medium  | Martial |
+| Elvish    |                | Heavy   |         |
+|           |                | Shields |         |
+|           |                |         |         |
+
+* Equipment
+| Name                             | Quantity | Cost (gp) | Weight (lbs) | Capacity | Total Weight (lbs) | Total Cost (gp) |
+|----------------------------------+----------+-----------+--------------+----------+--------------------+-----------------|
+| Emerald Pen                      |        1 |           |              |          | #ERROR             |               0 |
+| Blanket                          |        1 |           |              |          | #ERROR             |               0 |
+| Dagger                           |        1 |           |              |          | #ERROR             |               0 |
+| Mess kit                         |        1 |           |              |          | #ERROR             |               0 |
+| Parchment                        |        5 |           |              |          | #ERROR             |               0 |
+| Rations                          |        4 |           |              |          | #ERROR             |               0 |
+| Robes                            |        1 |           |              |          | #ERROR             |               0 |
+| Waterskin                        |        1 |        .2 |            5 |          | #ERROR             |             0.2 |
+| Bag of Holding                   |        1 |           |              |          | #ERROR             |               0 |
+| Rope of climbing                 |        1 |           |              |          | #ERROR             |               0 |
+| Vials of unknown liquid          |        2 |           |              |          | #ERROR             |               0 |
+| Bougie Robe (Lesser restoration) |        1 |           |              |          | #ERROR             |               0 |
+| Long sword (+1)                  |        1 |           |              |          |                    |                 |
+| Health Pot                       |        1 |           |              |          |                    |                 |
+| War documents / Identification   |        1 |           |              |          |                    |                 |
+|----------------------------------+----------+-----------+--------------+----------+--------------------+-----------------|
+| Carry Capacity                   |      200 |           |              |          | #ERROR             |               0 |
+#+TBLFM: $6=($ * $4)
+#+TBLFM: $7=($2 * $3)
+#+TBLFM: @19$6=vsum(@INVALID$6..@31$6)
+#+TBLFM: @19$7=vsum(@INVALID$7..@24$7)
+#+TBLFM: @19$2=($STR * 10)
+
+** Attunements
+
+
+
+** Money
+| Copper | Silver | Electrum | Gold | Platinum | Total (Gold) |
+|--------+--------+----------+------+----------+--------------|
+|      0 |      0 |        0 | 8659 |        0 |            0 |
+#+TBLFM: $6=(($1 / 100) + ($2 / 10) + ($3 / 2) + $4 + ($5 * 10))
+   
