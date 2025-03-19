@@ -1,5 +1,5 @@
 
-b#+LATEX_CLASS: dnd
+#+LATEX_CLASS: dnd
 #+STARTUP: content showstars indent
 #+OPTIONS: tags:nil
 #+TITLE: Leap Ledger Features Sheet
