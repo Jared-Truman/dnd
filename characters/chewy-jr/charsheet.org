@@ -1,4 +1,4 @@
-#+LATEX_CLASS: dnd
+#+Latex_CLASS: dnd
 #+STARTUP: content showstars indent
 #+OPTIONS: tags:nil
 #+TITLE: Chewy Jr. - Character Sheet
@@ -12,7 +12,7 @@
 * Stats  
 | ! | Walking Speed | Swim | Climb | Hit Points | AC | Death Saves | Inspiration | Armor | Armor_Bonus | Shield |
 |---+---------------+------+-------+------------+----+-------------+-------------+-------+-------------+--------|
-| # |            35 |   15 |    15 |/48         | 14 |             | x           | -     | -           | -      |
+| # |            35 |   15 |    15 | 36/52  10  | 14 |             |             | -     | -           | -      |
 ##+TBLFM: $4='(dnd-calc-ac $Armor (dnd-get-stat "DEX") (dnd-get-stat "CON") (string-to-number $Armor_Bonus) (string-to-number $Shield))
 
 * Saves and Skills
@@ -21,7 +21,7 @@
 | ! | Ability | Score | Saving Throw | Mod | PB |
 |---+---------+-------+--------------+-----+----|
 | # | STR     |    18 | 1d20 + 7     |   4 | X  |
-| # | DEX     |    14 | 1d20 + 2     |   2 | X  |
+| # | DEX     |    14 | 1d20 + 5     |   2 | X  |
 | # | CON     |    15 | 1d20 + 5     |   2 | X  |
 | # | INT     |    10 | 1d20 + 0     |   0 | -  |
 | # | WIS     |    10 | 1d20 + 0     |   0 | -  |
@@ -30,30 +30,30 @@
 
 ** Skills
 #+name: skills
-| ! | Ability | Skill           | Roll     | PB |
-|---+---------+-----------------+----------+----|
-| # | STR     | Athletics       | 1d20 + 7 | X  |
-|---+---------+-----------------+----------+----|
-| # | DEX     | Acrobatics      | 1d20 + 5 | X  |
-| # | DEX     | Sleight of Hand | 1d20 + 5 | X  |
-| # | DEX     | Stealth         | 1d20 + 5 | -  |
-|---+---------+-----------------+----------+----|
-| # | INT     | Arcana          | 1d20 + 0 | -  |
-| # | INT     | History         | 1d20 + 0 | -  |
-| # | INT     | Investigation   | 1d20 + 0 | -  |
-| # | INT     | Nature          | 1d20 + 0 | -  |
-| # | INT     | Religion        | 1d20 + 0 | -  |
-|---+---------+-----------------+----------+----|
-| # | WIS     | Animal Handling | 1d20 + 0 | -  |
-| # | WIS     | Insight         | 1d20 + 0 | -  |
-| # | WIS     | Medicine        | 1d20 + 0 | -  |
-| # | WIS     | Perception      | 1d20 + 0 | -  |
-| # | WIS     | Survival        | 1d20 + 0 | -  |
-|---+---------+-----------------+----------+----|
-| # | CHA     | Deception       | 1d20 + 0 | -  |
-| # | CHA     | Intimidation    | 1d20 + 3 | -  |
-| # | CHA     | Performance     | 1d20 + 0 | -  |
-| # | CHA     | Persuasion      | 1d20 + 0 | -  |
+| ! | Ability | Skill           | Roll      | PB |
+|---+---------+-----------------+-----------+----|
+| # | STR     | Athletics       | 1d20 + 10 | XX |
+|---+---------+-----------------+-----------+----|
+| # | DEX     | Acrobatics      | 1d20 + 5  | -  |
+| # | DEX     | Sleight of Hand | 1d20 + 5  | X  |
+| # | DEX     | Stealth         | 1d20 + 5  | -  |
+|---+---------+-----------------+-----------+----|
+| # | INT     | Arcana          | 1d20 + 0  | -  |
+| # | INT     | History         | 1d20 + 0  | -  |
+| # | INT     | Investigation   | 1d20 + 0  | -  |
+| # | INT     | Nature          | 1d20 + 0  | -  |
+| # | INT     | Religion        | 1d20 + 0  | -  |
+|---+---------+-----------------+-----------+----|
+| # | WIS     | Animal Handling | 1d20 + 0  | -  |
+| # | WIS     | Insight         | 1d20 + 0  | -  |
+| # | WIS     | Medicine        | 1d20 + 0  | -  |
+| # | WIS     | Perception      | 1d20 + 0  | -  |
+| # | WIS     | Survival        | 1d20 + 0  | -  |
+|---+---------+-----------------+-----------+----|
+| # | CHA     | Deception       | 1d20 + 0  | -  |
+| # | CHA     | Intimidation    | 1d20 + 0  | -  |
+| # | CHA     | Performance     | 1d20 + 0  | -  |
+| # | CHA     | Persuasion      | 1d20 + 0  | -  |
 ##+TBLFM: @2$4..@19$4='(format "1d20 + %s" (+ (dnd-calc-pb (dnd-get-stat "PROF") $PB) (dnd-calc-mod (dnd-get-stat $Ability))))
 
 * Combat                                                             :combat:
@@ -61,29 +61,32 @@
 ** Additional Stats
 |      | Name                  | Calculation    | Amount |
 |------+-----------------------+----------------+--------|
-| SCA  | SPELL CASTING ABILITY | 8 + PROF + WIS |     15 |
-| SAM  | SPELL ATT MOD         | PROF + WIS     |      7 |
-| KIST | KI SAVING THROW       | 8 + PB + WIS   |     15 |
+| SCA  | SPELL CASTING ABILITY | 8 + PROF + WIS |      0 |
+| SAM  | SPELL ATT MOD         | PROF + WIS     |      0 |
+| KIST | KI SAVING THROW       | 8 + PB + WIS   |      0 |
 |------+-----------------------+----------------+--------|
 
 *** Skills
-| ! | Name               | Effect                                                                         | DC | Level | From           |
-|---+--------------------+--------------------------------------------------------------------------------+----+-------+----------------|
-| # | Powerful Build     | ADV on grappled condition                                                      | -  |     1 | Goliath        |
-| # | Savage Attacker    | Once per turn roll twice DAM and choose either roll                            | -  |     1 | Soldier Origin |
-| # | Iron Chin          | Unarmored 12 + CON                                                             | -  |     1 | Pugilist       |
-| # | Street Smart       | Carousing, shadowboxing, and sparring count as light activity.                 | -  |     2 | Pugilist       |
-| # | Muscle Mass        | ATH Prof                                                                       | -  |     3 | Square Circle  |
-| # | -                  | 8 hours or more, you know all public locations in the city as if you were born | -  |     - | -              |
-| # | Extra Attack       | Attack twice and attack action                                                 | -  |     5 | Pugilist       |
-| # | Haymaker           | DISADV attack (called out) if hit then max damage                              | -  |     5 | Pugilist       |
-| # | ASI                | +2 STR                                                                         |    |       |                |
-| # | Moxie-Fueled Fists | Strikes count as magical                                                       | -  |     6 | Pugilist       |
-| # | Meat shield        | Half cover when attached by non-grappled by me sources.                        | -  |     6 | Square Circle  |
-| # | -                  | On misses 1 moxie point to have that attack hit the grapped enemy              | -  |     - | -              |
-| # | Fancy Footwork     | Prof DEX                                                                       | -  |     7 | Pugilist       |
-| # | Shake it off       | End effect causing charmed or frightened                                       | -  |     7 | Pugilist       |
-| # |                    |                                                                                |    |       |                |
+| ! | Name                 | Effect                                                                                         | DC | Level | From             |
+|---+----------------------+------------------------------------------------------------------------------------------------+----+-------+------------------|
+| # | Powerful Build       | ADV to escape grappled condition, counts as size larger for carrying.                          | -  |     1 | Goliath          |
+| # | Savage Attacker      | Once per turn roll twice DAM and choose either roll                                            | -  |     1 | Soldier Origin   |
+| # | Iron Chin            | Unarmored 12 + CON                                                                             | -  |     1 | Pugilist         |
+| # | Street Smart         | Carousing, shadowboxing, and sparring count as light activity.                                 | -  |     2 | Pugilist         |
+| # | -                    | 8 hours or more, you know all public locations in the city as if you were born                 | -  |     - | -                |
+| # | Muscle Mass          | ATH Prof, Expert if you have it already                                                        | -  |     3 | Square Circle    |
+| # | Extra Attack         | Attack twice and attack action                                                                 | -  |     5 | Pugilist         |
+| # | Haymaker             | DISADV attack (called out) if hit then max damage                                              | -  |     5 | Pugilist         |
+| # | ASI                  | +2 STR                                                                                         |    |       |                  |
+| # | Moxie-Fueled Fists   | Strikes count as magical                                                                       | -  |     6 | Pugilist         |
+| # | Meat shield          | Half cover when attached by non-grappled by me sources.                                        | -  |     6 | Square Circle    |
+| # | -                    | On misses 1 moxie point and reaction to have that attack hit the grapped enemy                 | -  |     - | -                |
+| # | Fancy Footwork       | Prof DEX                                                                                       | -  |     7 | Pugilist         |
+| # | Shake it off         | End effect causing charmed or frightened                                                       | -  |     7 | Pugilist         |
+| # |                      |                                                                                                |    |       |                  |
+| # | Combination          | Second time you attack an enemy unarmed + PROF                                                 |    |     2 | Pugilist Mastery |
+| # | Upper Cut specialist | Crit threshold -1 AKA crit 19, 20                                                              | -  |     4 | Pugilist Mastery |
+| # | Superior Strike      | ATT pugilist weapon/unarmed stikes then make unarmed strike to gain flurry mastery. COUNT PROF | -  |     6 | Pugilist Mastery |
 
 *** Moxie
 | ! | Name             | Moxie | Effect                                                                                | DC | Level | From           |
@@ -99,10 +102,16 @@
 
 *** Attacks                                                        :attack:
 #+NAME: attacks
-| ! | Weapon | Mod | Roll    | Mastery | Bonus_DMG | Bonus_Mod | Ability | PB | Type     | Die | DieCount | Offhand_Penalty | Hands |
-|---+--------+-----+---------+---------+-----------+-----------+---------+----+----------+-----+----------+-----------------+-------|
-| # | Fist   |   6 | 1d8 + 3 | -       | -         | -         | STR     | X  | Piercing |   4 |        1 | -               |     1 |
+| ! | Weapon        | Mod | Roll     | Mastery | Bonus_DMG | Bonus_Mod | Ability | PB | Type        | Die | DieCount | Offhand_Penalty | Hands |
+|---+---------------+-----+----------+---------+-----------+-----------+---------+----+-------------+-----+----------+-----------------+-------|
+| # | Pugilist Fist |   7 | 1d8 + 4  | Flurry  | -         | -         | STR     | X  | Bludgeoning |   4 |        1 | -               |     1 |
+| # | Spiked cestus |   7 | 1d12 + 4 | Flurry  | -         | -         | STR     | X  | Piercing    |     |          |                 |       |
+| # | Frosticuffs   |   7 | 1d12 + 4 | Flurry  | -         | -         | STR     | X  | Piercing    |     |          |                 |       |
 ##+TBLFM: $3='(+ (dnd-calc-pb (dnd-get-stat "PROF") $PB) (dnd-calc-mod (dnd-get-stat $Ability)) (string-to-number $Bonus_Mod))::$4='(format "%s + %s%s" (dnd-calc-dice $Die $DieCount (dnd-get-stat "SIZE")) (dnd-calc-offhand-mod (dnd-calc-mod (dnd-get-stat $Ability)) $Offhand_Penalty) (dnd-calc-bonus-dmg $Bonus_DMG))
+
+**** Mastery
+***** Flurry
+Make a number of unarmed strikes equal to 1 + (.5 * proficiency bonus rounded down). Each strike must be against a different creature. +2 AC until start of next turn
 
 **** Triggers                                                    :trigger:
 #+NAME: attack_triggers
@@ -113,19 +122,24 @@
 
 ** Bonus Actions                                              :bonus_action:
 #+NAME: bonus_actions
-| ! | Bonus Action   | Used | Total | Effect                                                                                | Count | PB | Level | From     |
-|---+----------------+------+-------+---------------------------------------------------------------------------------------+-------+----+-------+----------|
-| # | Offhand Attack | -    |     0 | -                                                                                     |     - | -  |       |          |
-| # | Dig Deep       | -    |     - | Risistance to bludgeoning, piercing, and slashing for 1 min. 1 level exhaustion after |     0 | -  |     4 | Pugilist |
-| # | Large Form     | 0    |     1 | Change size to large. 10 min ADV STR throws                                           |     1 | -  |     5 | Goliath  |
+| ! | Bonus Action    | Used | Total | Effect                                                                                | Count | PB | Level | From     |
+|---+-----------------+------+-------+---------------------------------------------------------------------------------------+-------+----+-------+----------|
+| # | Offhand Attack  | -    | 0     | -                                                                                     | -     | -  |       |          |
+| # | Fist a cuffs    | -    | -     | Attack action, make a grapple or unarmed strike.                                      | -     | -  |     1 | Pugilist |
+| # | Brace up        | -    | -     | MOXIE TABLE                                                                           | -     | -  |     3 | Pugilist |
+| # | The old one-two | -    | -     | MOXIE TABLE                                                                           | -     | -  |     3 | Pugilist |
+| # | Stick and move  | -    | -     | MOXIE TABLE                                                                           | -     | -  |     3 | Pugilist |
+| # | To the mat      | -    | -     | MOXIE TABLE                                                                           | -     | -  |     3 | Pugilist |
+| # | Dig Deep        | -    | -     | Risistance to bludgeoning, piercing, and slashing for 1 min. 1 level exhaustion after | 0     | -  |     4 | Pugilist |
+| # | Large Form      | 0    | 1     | Change size to large. 10 min ADV STR throws                                           | 1     | -  |     5 | Goliath  |
 ##+TBLFM: $4='(+ (dnd-calc-pb (dnd-get-stat "PROF") $PB) (string-to-number $Count))
 
 ** Reactions                                                      :reaction:
 #+NAME: reactions
-| ! | Name                 | Effect                                            | DC | Level | From     |
-|---+----------------------+---------------------------------------------------+----+-------+----------|
-| # | Bloodied but unbowed | Damaged to half HP. Temp HP an 3 * pugilist level | -  |     3 | Pugilist |
-| # |                      |                                                   |    |       |          |
+| ! | Name                 | Effect                                                                      | DC | Level | From           |
+|---+----------------------+-----------------------------------------------------------------------------+----+-------+----------------|
+| # | Bloodied but unbowed | Damaged to half HP. Temp HP an 3 * pugilist level                           | -  |     3 | Pugilist       |
+| # | Meat Shield          | Missed attack spend moxie to have the attack go against the grappled target | -  |     6 | Squared Circle |
 
 
 *** Spells                                                          :spell:
@@ -137,40 +151,41 @@
 
 ** Special Resources
 #+NAME: special_resouces
-| ! | Resource     | Used | Total | SR | LR | Count | PB | Die                  | DC |
-|---+--------------+------+-------+----+----+-------+----+----------------------+----|
-| # | Hit Dice     |    0 |     5 | -  | X  |     5 | -  | 1d8                  | -  |
-| # | Frost Chill  |    0 |     3 | -  | X  |     3 | -  | 1d6                  | -  |
+| ! | Resource         | Used | Total | SR | LR | Count | PB | Die | DC |
+|---+------------------+------+-------+----+----+-------+----+-----+----|
+| # | Hit Dice         |    0 |     5 | -  | X  |     5 | -  | 1d8 | -  |
+| # | Frost Chill      |    1 |     3 | -  | X  |     3 | -  | 1d6 | -  |
+| # | Moxie            |    1 |     4 | -  | X  |     4 | -  | -   | -  |
+| # | Superior Strike  |    0 |     3 | -  | X  |     3 | -  | -   | -  |
+| # | Frosticuff Spike |    0 |     3 | -  | -  |     3 | -  | -   | -  |
 ##+TBLFM: $4='(+ (dnd-calc-pb (dnd-get-stat "PROF") $PB) (string-to-number $Count))::$3='(dnd-reset-based-on-rest (dnd-get-stat "SHORT") (dnd-get-stat "LONG") $Used $SR $LR)
 
 * Proficiencies
-  | Languages | Tools | Armor   | Weapons |
-  |-----------+-------+---------+---------|
-  | Common    |       | Light   | Simple  |
-  | Giant     |       | Medium  | Martial |
-  | Gnomish   |       | Heavy   |         |
-  |           |       | Shields |         |
+  | Languages | Tools         | Armor | Weapons    |
+  |-----------+---------------+-------+------------|
+  | Common    | Thieves tools | Light | Simple     |
+  | Giant     |               |       | Improvised |
+  | Gnomish   |               |       | Whip       |
+  |           |               |       | Crossbow   |
 
 * Immunities
 ** Poison
 
 * Equipment
 #+NAME: equipment
-| ! | Name              |   QTY | Cost | Weight | Tot_Weight | Tot_Cost |
-|---+-------------------+-------+------+--------+------------+----------|
-| # | flail             |     1 |    2 |      5 |          5 |        2 |
-| # | shield            |     1 |    1 |      7 |          7 |        1 |
-| # | chain mail        |     1 |    1 |      1 |          1 |        1 |
-| # | hand ax           |     2 |    1 |      5 |          5 |        1 |
-| # | dungeoneer's pack |     1 |   .5 |      1 |          1 |      0.5 |
-|---+-------------------+-------+------+--------+------------+----------|
-| # | Carry/Drag        | 150.0 |  300 |      - |         63 |    142.8 |
+| ! | Name           |   QTY | Cost | Weight | Tot_Weight | Tot_Cost |
+|---+----------------+-------+------+--------+------------+----------|
+| # | hand ax        |     3 |    1 |      5 |          5 |        1 |
+| # | dungeon's pack |     1 |   .5 |      1 |          1 |      0.5 |
+| # | thieves tools  |     1 |    1 |      1 |          1 |        1 |
+|---+----------------+-------+------+--------+------------+----------|
+| # | Carry/Drag     | 150.0 |  300 |      - |         63 |    142.8 |
 ##+TBLFM: @>$7=vsum(@2$Tot_Cost..@>>$Tot_Cost)::@>$6=vsum(@2$Tot_Weight..@>>$Tot_Weight)::@>$5='(format "%s" "-")::@>$3='(dnd-calc-carry-capacity (dnd-get-stat "STR") (dnd-get-stat "SIZE") (dnd-get-stat "Carry_Bonus"))::@>$4='(dnd-calc-drag-capacity (dnd-get-stat "STR") (dnd-get-stat "SIZE") (dnd-get-stat "Carry_Bonus"))::$6=($QTY * $Weight)::$7=($QTY * $Cost)
     
 ** Money
 | ! | Copper | Silver | Electrum | Gold | Platinum | Total |           |
 |---+--------+--------+----------+------+----------+-------+-----------|
-| # |      0 |      0 |        0 |   64 |        0 |    14 | Mine      |
+| # |      0 |      0 |        0 |  598 |        0 |   598 | Mine      |
 |---+--------+--------+----------+------+----------+-------+-----------|
 | # |      0 |      0 |        0 |    0 |        0 |     0 | Converter |
 #+TBLFM: $7=(($Copper / 100) + ($Silver / 10) + ($Electrum / 2) + $Gold + ($Platinum * 10))
