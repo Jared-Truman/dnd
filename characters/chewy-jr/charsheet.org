@@ -1,18 +1,19 @@
-#+Latex_CLASS: dnd
+#+LATEX_CLASS: dnd
 #+STARTUP: content showstars indent
 #+OPTIONS: tags:nil
 #+TITLE: Chewy Jr. - Character Sheet
-#+FILETAGS: chewy jr char_sheet
+#+Filetags: Chewy jr char_sheet
   
 * Traits
-| Level | Race    | Subrace     | Class    | Subclass           | Size    | Alignment   | Age |
-|-------+---------+-------------+----------+--------------------+---------+-------------+-----|
-|     7 | Goliath | Frost Giant | Pugilist | The squared circle | 7ft 4in | Lawful Good |  26 |
+| Level | Race    | Subrace     | Class     | Subclass           | Size    | Alignment   | Age |
+|-------+---------+-------------+-----------+--------------------+---------+-------------+-----|
+|     7 | Goliath | Frost Giant | Pugilist  | The squared circle | 7ft 4in | Lawful Good |  26 |
+|     1 |         |             | Barbarian |                    |         |             |     |
 
 * Stats  
-| ! | Walking Speed | Swim | Climb | Hit Points | AC | Death Saves | Inspiration | Armor | Armor_Bonus | Shield |
-|---+---------------+------+-------+------------+----+-------------+-------------+-------+-------------+--------|
-| # |            35 |   15 |    15 | 36/52  10  | 14 |             |             | -     | -           | -      |
+| ! | Walking | Swim | Climb | Hit Points | AC | Death Saves | Insp | Armor | Armor_Bonus | Shield |
+|---+---------+------+-------+------------+----+-------------+------+-------+-------------+--------|
+| # |      35 |   15 |    15 | 36/61  10  | 14 |             |      | -     | -           | -      |
 ##+TBLFM: $4='(dnd-calc-ac $Armor (dnd-get-stat "DEX") (dnd-get-stat "CON") (string-to-number $Armor_Bonus) (string-to-number $Shield))
 
 * Saves and Skills
@@ -34,9 +35,9 @@
 |---+---------+-----------------+-----------+----|
 | # | STR     | Athletics       | 1d20 + 10 | XX |
 |---+---------+-----------------+-----------+----|
-| # | DEX     | Acrobatics      | 1d20 + 5  | -  |
+| # | DEX     | Acrobatics      | 1d20 + 2  | -  |
 | # | DEX     | Sleight of Hand | 1d20 + 5  | X  |
-| # | DEX     | Stealth         | 1d20 + 5  | -  |
+| # | DEX     | Stealth         | 1d20 + 2  | -  |
 |---+---------+-----------------+-----------+----|
 | # | INT     | Arcana          | 1d20 + 0  | -  |
 | # | INT     | History         | 1d20 + 0  | -  |
@@ -71,6 +72,8 @@
 |---+----------------------+------------------------------------------------------------------------------------------------+----+-------+------------------|
 | # | Powerful Build       | ADV to escape grappled condition, counts as size larger for carrying.                          | -  |     1 | Goliath          |
 | # | Savage Attacker      | Once per turn roll twice DAM and choose either roll                                            | -  |     1 | Soldier Origin   |
+| # | Unarmored Defense    | Unarmored 10 + DEX + CON. Can use shield.                                                      | -  |     1 | Barbarian        |
+| # | Rage                 | DAM + 2, Resistance bludgeoning, piercing, and slashing                                        | -  |     1 | Barbarian        |
 | # | Iron Chin            | Unarmored 12 + CON                                                                             | -  |     1 | Pugilist         |
 | # | Street Smart         | Carousing, shadowboxing, and sparring count as light activity.                                 | -  |     2 | Pugilist         |
 | # | -                    | 8 hours or more, you know all public locations in the city as if you were born                 | -  |     - | -                |
@@ -122,16 +125,17 @@ Make a number of unarmed strikes equal to 1 + (.5 * proficiency bonus rounded do
 
 ** Bonus Actions                                              :bonus_action:
 #+NAME: bonus_actions
-| ! | Bonus Action    | Used | Total | Effect                                                                                | Count | PB | Level | From     |
-|---+-----------------+------+-------+---------------------------------------------------------------------------------------+-------+----+-------+----------|
-| # | Offhand Attack  | -    | 0     | -                                                                                     | -     | -  |       |          |
-| # | Fist a cuffs    | -    | -     | Attack action, make a grapple or unarmed strike.                                      | -     | -  |     1 | Pugilist |
-| # | Brace up        | -    | -     | MOXIE TABLE                                                                           | -     | -  |     3 | Pugilist |
-| # | The old one-two | -    | -     | MOXIE TABLE                                                                           | -     | -  |     3 | Pugilist |
-| # | Stick and move  | -    | -     | MOXIE TABLE                                                                           | -     | -  |     3 | Pugilist |
-| # | To the mat      | -    | -     | MOXIE TABLE                                                                           | -     | -  |     3 | Pugilist |
-| # | Dig Deep        | -    | -     | Risistance to bludgeoning, piercing, and slashing for 1 min. 1 level exhaustion after | 0     | -  |     4 | Pugilist |
-| # | Large Form      | 0    | 1     | Change size to large. 10 min ADV STR throws                                           | 1     | -  |     5 | Goliath  |
+| ! | Bonus Action    | Effect                                                                                | PB | Level | From      |
+|---+-----------------+---------------------------------------------------------------------------------------+----+-------+-----------|
+| # | Offhand Attack  | -                                                                                     | -  |       |           |
+| # | Fist a cuffs    | Attack action, make a grapple or unarmed strike.                                      | -  |     1 | Pugilist  |
+| # | Rage            | +Attack & +Resistance, ADV STR, no spells, 1 min, take DAM or attack to keep rage     | -  |     1 | Barbarian |
+| # | Brace up        | MOXIE TABLE                                                                           | -  |     3 | Pugilist  |
+| # | The old one-two | MOXIE TABLE                                                                           | -  |     3 | Pugilist  |
+| # | Stick and move  | MOXIE TABLE                                                                           | -  |     3 | Pugilist  |
+| # | To the mat      | MOXIE TABLE                                                                           | -  |     3 | Pugilist  |
+| # | Dig Deep        | Risistance to bludgeoning, piercing, and slashing for 1 min. 1 level exhaustion after | -  |     4 | Pugilist  |
+| # | Large Form      | Change size to large. 10 min ADV STR throws                                           | -  |     5 | Goliath   |
 ##+TBLFM: $4='(+ (dnd-calc-pb (dnd-get-stat "PROF") $PB) (string-to-number $Count))
 
 ** Reactions                                                      :reaction:
@@ -151,13 +155,16 @@ Make a number of unarmed strikes equal to 1 + (.5 * proficiency bonus rounded do
 
 ** Special Resources
 #+NAME: special_resouces
-| ! | Resource         | Used | Total | SR | LR | Count | PB | Die | DC |
-|---+------------------+------+-------+----+----+-------+----+-----+----|
-| # | Hit Dice         |    0 |     5 | -  | X  |     5 | -  | 1d8 | -  |
-| # | Frost Chill      |    1 |     3 | -  | X  |     3 | -  | 1d6 | -  |
-| # | Moxie            |    1 |     4 | -  | X  |     4 | -  | -   | -  |
-| # | Superior Strike  |    0 |     3 | -  | X  |     3 | -  | -   | -  |
-| # | Frosticuff Spike |    0 |     3 | -  | -  |     3 | -  | -   | -  |
+| ! | Resource         | Used | Total | SR | LR | Count | PB | Die  | DC |
+|---+------------------+------+-------+----+----+-------+----+------+----|
+| # | Hit Dice         |    0 |     1 | -  | X  |     1 | -  | 1d12 | -  |
+| # | Hit Dice         |    0 |     7 | -  | X  |     7 | -  | 1d8  | -  |
+| # | Frost Chill      |    1 |     3 | -  | X  |     3 | -  | 1d6  | -  |
+| # | Moxie            |    1 |     4 | -  | X  |     4 | -  | -    | -  |
+| # | Superior Strike  |    0 |     3 | -  | X  |     3 | -  | -    | -  |
+| # | Frosticuff Spike |    0 |     3 | -  | -  |     3 | -  | -    | -  |
+| # | Large Form       |    0 |     1 | -  | X  |     1 | -  | -    | -  |
+| # | Rage             |    0 |     2 | -  | X  |     2 | -  | -    | -  |
 ##+TBLFM: $4='(+ (dnd-calc-pb (dnd-get-stat "PROF") $PB) (string-to-number $Count))::$3='(dnd-reset-based-on-rest (dnd-get-stat "SHORT") (dnd-get-stat "LONG") $Used $SR $LR)
 
 * Proficiencies

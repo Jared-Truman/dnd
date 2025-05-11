@@ -2,8 +2,8 @@
 #+LATEX_CLASS: dnd
 #+STARTUP: content showstars indent
 #+OPTIONS: tags:nil
-#+TITLE: Leap Ledger Features Sheet
-#+FILETAGS: leap ledger features feature sheet
+#+TITLE: Chewy JR.  Features Sheet
+#+FILETAGS: chewy jr. feature sheet
 
 * Background
 Starting Stats
